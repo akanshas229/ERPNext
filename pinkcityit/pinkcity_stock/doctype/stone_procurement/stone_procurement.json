@@ -1,0 +1,1187 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "color": "Blue",
+ "creation": "2024-03-29 10:59:40.663096",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_details_tab",
+  "po_details_section",
+  "unit_name",
+  "customer",
+  "po_no",
+  "order_rec_date",
+  "column_break_3jxn0",
+  "order_creation_date",
+  "client_code",
+  "po_date",
+  "column_break_u947a",
+  "sales_person_name",
+  "chin_box_app",
+  "export_date",
+  "naming_series",
+  "order_no_section_break",
+  "order_prefix",
+  "final_order_no",
+  "column_break_q9yhv",
+  "order_year",
+  "column_break_fwdap",
+  "order_type",
+  "column_break_b0e9a",
+  "regular_order_name",
+  "design_details_tab",
+  "design_details_section",
+  "stone_apply_to_design",
+  "design_no",
+  "fetch_design",
+  "fetch_design_no",
+  "fetch_from_company",
+  "fetch_design_data",
+  "column_break_prquy",
+  "design_image",
+  "column_break_8jbt0",
+  "image_preview",
+  "stone_details_tab",
+  "stone_details_section",
+  "stone_name",
+  "stone_height",
+  "design_order_qty",
+  "target_date",
+  "column_break_enlda",
+  "cut",
+  "stone_quality",
+  "req_stone_qty",
+  "target_price",
+  "column_break_tw0jn",
+  "shape",
+  "stone_medium",
+  "uom",
+  "target_weight_per_piece",
+  "column_break_xlspp",
+  "size",
+  "stone_code",
+  "sales_remarks",
+  "total_target_weight",
+  "purchase_team_remarks_section",
+  "source",
+  "column_break_pidbt",
+  "accepted_date",
+  "column_break_xmnix",
+  "accepted_by",
+  "column_break_hvdjl",
+  "stone_dept_remarks",
+  "order_acceptance_stone_purchase_section",
+  "final_req_stone_qty",
+  "column_break_hvbsv",
+  "chin_box_tab",
+  "cb_add",
+  "cb_pb",
+  "column_break_00xnj",
+  "cb_sdfa",
+  "column_break_a7yao",
+  "cb_ad",
+  "cb_ab",
+  "cb_ab_1",
+  "cb_ddffs",
+  "cb_fsid",
+  "stock_details_tab",
+  "main_design_no",
+  "stk_stone_name",
+  "sd_stone_code",
+  "sd_uom",
+  "column_break_lohau",
+  "stk_req_stone_qty",
+  "column_break_fkmxw",
+  "margin",
+  "column_break_izzri",
+  "total_req_stone_qty",
+  "section_break_eonqz",
+  "stock_details_table",
+  "section_break_px2dh",
+  "stock_in_inventory",
+  "last_stock_updated_by",
+  "column_break_2cvc6",
+  "use_for_production",
+  "column_break_w4qqv",
+  "final_demand",
+  "stone_order_details_tab",
+  "stone_order_details",
+  "section_break_xmleu",
+  "sod_total_dispatch_qty",
+  "total_qc_qty",
+  "delayed_by",
+  "column_break_jvxon",
+  "required_dispatch_qty",
+  "remaining_qc_qty",
+  "sod_total_amt",
+  "rate_average",
+  "column_break_xjf15",
+  "remaining_dispatch_qty",
+  "final_demand_achieved",
+  "last_dispatch_date",
+  "total_in_words",
+  "broken_stone_qty",
+  "broken_stn_ref_order",
+  "reopen_reason",
+  "quality_check_details_section",
+  "update_receive_details_button",
+  "stone_receive_details_table",
+  "update_sender_qc_button",
+  "sender_qc_table",
+  "update_receiver_qc_button",
+  "receiver_qc_table",
+  "section_break_qkj3o",
+  "total_received_qty",
+  "column_break_uxxws",
+  "total_accepted_qty",
+  "column_break_pigo7",
+  "total_rejected_qty",
+  "rate_review_tab",
+  "rate_review",
+  "add_rate_approval_button",
+  "rate_approval",
+  "weight_tolerance",
+  "weight_diff_table",
+  "history_tab",
+  "history_table",
+  "prev_workflow_state",
+  "prev_workflow_change_date",
+  "style_manager",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Order Details"
+  },
+  {
+   "fieldname": "po_details_section",
+   "fieldtype": "Section Break",
+   "label": "PO Details",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "default": "\n",
+   "fieldname": "unit_name",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Unit Name",
+   "options": "Company",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "columns": 1,
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "PO No.",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "order_rec_date",
+   "fieldtype": "Date",
+   "label": "Order Receive Date",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3jxn0",
+   "fieldtype": "Column Break",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "columns": 1,
+   "default": "Today",
+   "fieldname": "order_creation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Order Creation Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "client_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Client Code",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "PO Date",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_u947a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sales_person.sales_person_name",
+   "fieldname": "sales_person_name",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Sales Person Name",
+   "options": "Sales Person",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "chin_box_app",
+   "fieldtype": "Check",
+   "label": "Chin box applicable",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "columns": 1,
+   "fieldname": "export_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Export Date",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "SPC-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "order_no_section_break",
+   "fieldtype": "Section Break",
+   "label": "Emporer Order No"
+  },
+  {
+   "default": "SO",
+   "fieldname": "order_prefix",
+   "fieldtype": "Data",
+   "label": "Order No. Prefix",
+   "read_only": 1
+  },
+  {
+   "fieldname": "final_order_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Final Order No.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_q9yhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "25",
+   "fieldname": "order_year",
+   "fieldtype": "Select",
+   "label": "Order Year",
+   "options": "\n27\n26\n25\n24\n23\n22\n21",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_fwdap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "label": "Order Type",
+   "options": "\nREG\nSMP\nMOD\nREP\nEFM\nPSM\nDSM"
+  },
+  {
+   "fieldname": "column_break_b0e9a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "regular_order_name",
+   "fieldtype": "Data",
+   "label": "Regular Order No."
+  },
+  {
+   "fieldname": "design_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Design Details"
+  },
+  {
+   "fieldname": "design_details_section",
+   "fieldtype": "Section Break",
+   "label": "Design Details",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "default": "Single Design",
+   "fieldname": "stone_apply_to_design",
+   "fieldtype": "Select",
+   "label": "Stone Apply To Design",
+   "options": "Single Design\nMix Design",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "depends_on": "eval: doc.stone_apply_to_design==\"Single Design\" && !doc.fetch_design",
+   "fieldname": "design_no",
+   "fieldtype": "Link",
+   "label": "Design No",
+   "options": "EMR Design 3D Library",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.stone_apply_to_design==\"Single Design\"",
+   "description": "Use it when design no is not available",
+   "fieldname": "fetch_design",
+   "fieldtype": "Check",
+   "label": "Fetch Design",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "depends_on": "eval: doc.stone_apply_to_design==\"Single Design\" && doc.fetch_design",
+   "fieldname": "fetch_design_no",
+   "fieldtype": "Data",
+   "label": "Fetch Design No",
+   "mandatory_depends_on": "eval: doc.fetch_design",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "depends_on": "eval: doc.stone_apply_to_design==\"Single Design\" && doc.fetch_design",
+   "fieldname": "fetch_from_company",
+   "fieldtype": "Select",
+   "label": "Fetch From Company",
+   "mandatory_depends_on": "eval: doc.fetch_design",
+   "options": "\nPinkcity Jewelhouse Private Ltd-Mahapura\nPinkcity Jewelhouse Private Limited- Unit 1\nPinkcity Jewelhouse Private Limited-Unit 2",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "depends_on": "eval: (doc.stone_apply_to_design==\"Single Design\" && doc.fetch_design) && ((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "fieldname": "fetch_design_data",
+   "fieldtype": "Button",
+   "label": "Fetch Design Data",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_prquy",
+   "fieldtype": "Column Break",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fetch_from": "design_no.image",
+   "fetch_if_empty": 1,
+   "fieldname": "design_image",
+   "fieldtype": "Attach Image",
+   "label": "Design Image",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_8jbt0",
+   "fieldtype": "Column Break",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "depends_on": "eval: doc.stone_apply_to_design==\"Single Design\"",
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "label": "Image Preview",
+   "options": "design_image",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "stone_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stone Details",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "stone_details_section",
+   "fieldtype": "Section Break",
+   "label": "Stone Details",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "stone_code.stone",
+   "fieldname": "stone_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Stone Name",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stone_height",
+   "fieldtype": "Data",
+   "label": "Stone Height",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "design_order_qty",
+   "fieldtype": "Float",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Design Order Qty (as per PO)",
+   "precision": "0",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Target/Due Date",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_enlda",
+   "fieldtype": "Column Break",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fetch_from": "stone_code.cut",
+   "fieldname": "cut",
+   "fieldtype": "Link",
+   "label": "Stone Cut",
+   "options": "Stone Cut",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "stone_quality",
+   "fieldtype": "Link",
+   "label": "Stone Quality",
+   "options": "Stone Quality",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "req_stone_qty",
+   "fieldtype": "Float",
+   "label": "Req Stone Qty (in Pcs)",
+   "precision": "1",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "target_price",
+   "fieldtype": "Currency",
+   "label": "Target Purchase Price (per UOM)",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tw0jn",
+   "fieldtype": "Column Break",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fetch_from": "stone_code.shape",
+   "fieldname": "shape",
+   "fieldtype": "Link",
+   "label": "Stone Shape",
+   "options": "Stone Shape",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "stone_medium",
+   "fieldtype": "Data",
+   "label": "Stone Medium",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fetch_from": "stone_code.uom",
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "label": "UOM (Purchase)",
+   "options": "\nPcs\nCts",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "target_weight_per_piece",
+   "fieldtype": "Float",
+   "label": "Target Weight Per Piece (in Cts)",
+   "precision": "3",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_xlspp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Stone Size",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "stone_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Stone Code",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Stock Update\") && ([\"Stock User\", \"Stock Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "sales_remarks",
+   "fieldtype": "Data",
+   "label": "Sales Team Remarks",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "total_target_weight",
+   "fieldtype": "Float",
+   "label": "Req Stone Wt (in Cts)",
+   "precision": "3",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "purchase_team_remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Purchase Team Remarks"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Purchase Source",
+   "mandatory_depends_on": "eval: ((doc.workflow_state == \"Pending For Source Update\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "options": "\nIn House\nMarket\nAvailable In Stock\nUnit-1 Purchase\nUnit-2 Purchase\nProvided By Customer\nUnit 2 In House",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Source Update\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_pidbt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "accepted_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Order Accepted Date",
+   "mandatory_depends_on": "eval: ((doc.workflow_state == \"Pending For Source Update\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Source Update\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_xmnix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accepted_by",
+   "fieldtype": "Link",
+   "label": "Accepted By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hvdjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stone_dept_remarks",
+   "fieldtype": "Data",
+   "label": "Stone Dept. Remarks",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Source Update\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "order_acceptance_stone_purchase_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Order Acceptance Stone Purchase",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "final_req_stone_qty",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Final Req Stone Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hvbsv",
+   "fieldtype": "Column Break",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "depends_on": "eval:doc.chin_box_app",
+   "fieldname": "chin_box_tab",
+   "fieldtype": "Tab Break",
+   "label": "Chin Box"
+  },
+  {
+   "fieldname": "cb_add",
+   "fieldtype": "Date",
+   "label": "Approval Due Date"
+  },
+  {
+   "fieldname": "cb_pb",
+   "fieldtype": "Data",
+   "label": "Prepared By"
+  },
+  {
+   "fieldname": "column_break_00xnj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb_sdfa",
+   "fieldtype": "Date",
+   "label": "Sent Date For Approval"
+  },
+  {
+   "fieldname": "column_break_a7yao",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb_ad",
+   "fieldtype": "Date",
+   "label": "Approval Date"
+  },
+  {
+   "description": "For Purchase Head Only",
+   "fieldname": "cb_ab",
+   "fieldtype": "Data",
+   "label": "Approved By"
+  },
+  {
+   "description": "For Merchandiser Only",
+   "fieldname": "cb_ab_1",
+   "fieldtype": "Data",
+   "label": "Approved By"
+  },
+  {
+   "fieldname": "cb_ddffs",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Due Date For FPI Stones"
+  },
+  {
+   "fieldname": "cb_fsid",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "FPI Stone Issue Date"
+  },
+  {
+   "fieldname": "stock_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stock Details"
+  },
+  {
+   "fetch_from": "design_no.design_3d_code",
+   "fetch_if_empty": 1,
+   "fieldname": "main_design_no",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Order Design No.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stk_stone_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Stone Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "stone_code.stone_code",
+   "fieldname": "sd_stone_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Stone Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "stone_code.uom",
+   "fieldname": "sd_uom",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lohau",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stk_req_stone_qty",
+   "fieldtype": "Float",
+   "label": "Req Stone Qty",
+   "precision": "1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fkmxw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "margin",
+   "fieldtype": "Float",
+   "label": "Extra Purchase Qty",
+   "precision": "1",
+   "read_only_depends_on": "eval: !(([\"Pending For Stock Update\", \"Pending For Mahapura Stock Update\", \"Unit-1 Stock Updated\", \"Unit-2 Stock Updated\"].find(workflow=>doc.workflow_state == workflow)) && ([\"Stock User\", \"Stock Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_izzri",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_req_stone_qty",
+   "fieldtype": "Float",
+   "label": "Total Req Stone Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_eonqz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stock_details_table",
+   "fieldtype": "Table",
+   "label": "Stock Details",
+   "options": "Stone Procurement Stock Details Table",
+   "read_only_depends_on": "eval: !(([\"Pending For Stock Update\", \"Pending For Mahapura Stock Update\", \"Unit-1 Stock Updated\", \"Unit-2 Stock Updated\"].find(workflow=>doc.workflow_state == workflow)) && ([\"Stock User\", \"Stock Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "section_break_px2dh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stock_in_inventory",
+   "fieldtype": "Float",
+   "label": "Stock Inventory",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_stock_updated_by",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Last Stock Updated By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2cvc6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "use_for_production",
+   "fieldtype": "Float",
+   "label": "Usable For Production",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_w4qqv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Req Stone Qty + Margin - Use For Production",
+   "fieldname": "final_demand",
+   "fieldtype": "Float",
+   "label": "Final Demand",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_order_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Dispatch & QC Details"
+  },
+  {
+   "fieldname": "stone_order_details",
+   "fieldtype": "Table",
+   "label": "Stone Order Details",
+   "options": "Stone Order Details Table",
+   "read_only_depends_on": "eval: !(([\"Pending For Stock Dispatch\", \"Stone Production WIP\", \"Partially Dispatched\", \"Purchase In Progress\", \"Partially Completed\", \"Pending For Vendor Dispatch\"].find(workflow=>doc.workflow_state == workflow)) && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "section_break_xmleu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sod_total_dispatch_qty",
+   "fieldtype": "Float",
+   "label": "Total Dispatch Qty",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_qc_qty",
+   "fieldtype": "Float",
+   "label": "Total QC Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "delayed_by",
+   "fieldtype": "Int",
+   "label": "Delayed By (in Days)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jvxon",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "required_dispatch_qty",
+   "fieldtype": "Float",
+   "label": "Required Dispatch Qty",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "remaining_qc_qty",
+   "fieldtype": "Float",
+   "label": "Remaining QC Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sod_total_amt",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate_average",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Rate Average",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xjf15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remaining_dispatch_qty",
+   "fieldtype": "Float",
+   "label": "Remaining Dispatch Qty",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "final_demand_achieved",
+   "fieldtype": "Percent",
+   "label": "Final Demand Achieved %",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_dispatch_date",
+   "fieldtype": "Date",
+   "label": "Last Dispatch Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_in_words",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Total In Words",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.broken_stn_ref_order",
+   "fieldname": "broken_stone_qty",
+   "fieldtype": "Float",
+   "label": "Re-Open Stone Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "broken_stn_ref_order",
+   "fieldtype": "Data",
+   "label": "Re-Open Reference Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reopen_reason",
+   "fieldtype": "Select",
+   "label": "Re-Open Reason",
+   "mandatory_depends_on": "eval: doc.broken_stone_qty > 0",
+   "options": "\nBroken Pieces\nRejection After Order Complete\nOrder not completed by Mahapura Team",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quality_check_details_section",
+   "fieldtype": "Section Break",
+   "label": "Receive & QC Details"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state == \"Pending For Receiver QC\"",
+   "fieldname": "update_receive_details_button",
+   "fieldtype": "Button",
+   "label": "Update Receive Details",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Receiver QC\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "stone_receive_details_table",
+   "fieldtype": "Table",
+   "label": "Stone Receive Details",
+   "options": "Stone Procurement Receive Detail Table",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Receiver QC\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "update_sender_qc_button",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Update Sender QC"
+  },
+  {
+   "fieldname": "sender_qc_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Sender Quality Check",
+   "options": "Stone Procurement Sender QC Table"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state == \"Pending For Receiver QC\"",
+   "fieldname": "update_receiver_qc_button",
+   "fieldtype": "Button",
+   "label": "Update Receiver QC",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Receiver QC\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "receiver_qc_table",
+   "fieldtype": "Table",
+   "label": "Receiver Quality Check",
+   "options": "Stone Procurement Receiver QC Table",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Receiver QC\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "section_break_qkj3o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_received_qty",
+   "fieldtype": "Float",
+   "label": "Total Received Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uxxws",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "total_accepted_qty",
+   "fieldtype": "Float",
+   "label": "Total Accepted Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pigo7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "total_rejected_qty",
+   "fieldtype": "Float",
+   "label": "Total Rejected Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate_review_tab",
+   "fieldtype": "Tab Break",
+   "label": "Rate Review & Approval"
+  },
+  {
+   "fieldname": "rate_review",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Rate Review",
+   "options": "Stone Procurement Rate Review Table"
+  },
+  {
+   "depends_on": "eval: ([\"Material Approver\", \"Management\", \"Procurement Admin\"].find(role=>frappe.user.has_role(role)))",
+   "fieldname": "add_rate_approval_button",
+   "fieldtype": "Button",
+   "label": "Auto Add/Update Rate Approval",
+   "read_only_depends_on": "eval: !([\"Material Approver\", \"Procurement Admin\"].find(role=>frappe.user.has_role(role)))"
+  },
+  {
+   "fieldname": "rate_approval",
+   "fieldtype": "Table",
+   "label": "Rate Approval",
+   "options": "Stone Procurement Rate Approval Table",
+   "read_only_depends_on": "eval: !([\"Material Approver\", \"Procurement Admin\"].find(role=>frappe.user.has_role(role)))"
+  },
+  {
+   "default": "0.2",
+   "description": "in Cts",
+   "fieldname": "weight_tolerance",
+   "fieldtype": "Float",
+   "label": "\u00b1 Weight Tolerance",
+   "precision": "3"
+  },
+  {
+   "fieldname": "weight_diff_table",
+   "fieldtype": "Table",
+   "label": "Weight Difference",
+   "options": "Stone Procurement Weight Difference Table",
+   "read_only_depends_on": "eval: !([\"Material Approver\", \"Procurement Admin\"].find(role=>frappe.user.has_role(role)))"
+  },
+  {
+   "fieldname": "history_tab",
+   "fieldtype": "Tab Break",
+   "label": "History"
+  },
+  {
+   "fieldname": "history_table",
+   "fieldtype": "Table",
+   "label": "Workflow History",
+   "options": "Stone Procurement History Table",
+   "read_only_depends_on": "eval: !frappe.user.has_role(\"Procurement Admin\")"
+  },
+  {
+   "fieldname": "prev_workflow_state",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Previous Workflow State",
+   "options": "Workflow State",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prev_workflow_change_date",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Previous Workflow Change Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "style_manager",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "ignore_xss_filter": 1,
+   "label": "Style Manager",
+   "options": "<style>\n    div[data-fieldname=\"stone_receive_details_table\"] .grid-field .control-label {\n        font-weight: 600;\n        font-size: 14px;\n        letter-spacing: 0.5px;\n    }\n\n    div[data-fieldname=\"receiver_qc_table\"] .grid-field .control-label {\n        font-weight: 600;\n        font-size: 14px;\n        letter-spacing: 0.5px;\n    }\n\n    div[data-fieldname=\"total_received_qty\"] .form-group .control-value {\n        background: #fff9a7;\n        color: #074700 !important;\n        font-weight: 600;\n    }\n\n    div[data-fieldname=\"total_accepted_qty\"] .form-group .control-value {\n        background: #bbffb3;\n        color: #074700 !important;\n        font-weight: 600;\n    }\n\n    div[data-fieldname=\"total_rejected_qty\"] .form-group .control-value {\n        background: #ffafaf;\n        color: #890000 !important;\n        font-weight: 600;\n    }\n\n    div[data-fieldname=\"remaining_dispatch_qty\"] .form-group .control-value {\n        background: #ff5e5d;\n        color: #ffffff !important;\n        font-weight: 600;\n    }\n\n    div[data-fieldname=\"final_demand\"] .form-group .control-value {\n        background: #fff9a7;\n        color: #6f6700 !important;\n        font-weight: 600;\n    }\n\n    div[data-fieldname=\"remaining_qc_qty\"] .form-group .control-value {\n        background: #5f5f5f;\n        color: #ffffff !important;\n        font-weight: 600;\n    }\n\n    div[data-fieldname=\"req_stone_qty\"] .form-group .control-value {\n        background: #ff9900;\n        color: #ffffff !important;\n        font-weight: 600;\n    }\n\n    div[data-fieldname=\"target_date\"] .form-group .control-value {\n        background: #ff9900;\n        color: #ffffff !important;\n        font-weight: 600;\n    }\n\n    div[data-fieldname=\"accepted_date\"] .form-group .control-value {\n        background: #ff9900;\n        color: #ffffff !important;\n        font-weight: 600;\n    }\n\n    div[data-fieldname=\"source\"] .form-group .control-value {\n        background: #ff9900;\n        color: #ffffff !important;\n        font-weight: 600;\n    }\n\n    div[data-fieldname=\"design_order_qty\"] .form-group .control-value {\n        background: #bfa4ff;\n        background: linear-gradient(45deg, #fca4ff, #a4aaff, #bfa4ff);\n        color: #ffffff !important;\n        font-weight: 600;\n    }\n\n    div[data-fieldname=\"chin_box_app\"].form-group.frappe-control {\n        height: 55px;\n        display: flex;\n        align-items: center;\n        transform: translate(0px, 20px);\n    }\n\n    button[data-fieldname=\"update_receive_details_button\"],\n    button[data-fieldname=\"update_receiver_qc_button\"] {\n        transition: 0.6s all;\n    }\n\n    button[data-fieldname=\"update_receive_details_button\"]:hover {\n        transform: scale(1.02);\n        background: #393939 !important;\n        color: white !important;\n        border-radius: 4px !important;\n        box-shadow: 2px 2px 0px #00bed5;\n    }\n\n    button[data-fieldname=\"update_receiver_qc_button\"]:hover {\n        transform: scale(1.02);\n        background: #393939 !important;\n        color: white !important;\n        border-radius: 4px !important;\n        box-shadow: 2px 2px 0px #d59700;\n    }\n</style>"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stone Procurement",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "image_field": "design_image",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-08 17:09:23.394329",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "Stone Procurement",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "client_code, po_no",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

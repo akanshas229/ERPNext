@@ -1,0 +1,836 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "beta": 1,
+ "creation": "2024-05-09 15:22:39.377347",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_details_tab",
+  "po_details_section",
+  "company",
+  "customer",
+  "po_no",
+  "order_receive_date",
+  "column_break_ryhvi",
+  "sales_person",
+  "client_code",
+  "po_date",
+  "order_creation_date",
+  "column_break_hpd9j",
+  "order_type",
+  "regular_order_no",
+  "export_date",
+  "naming_series",
+  "design_details_tab",
+  "design_details_section",
+  "design_no",
+  "fetch_from_company",
+  "fetch_design_button",
+  "extra_image",
+  "column_break_wxqbu",
+  "design_image",
+  "image_preview",
+  "accessory_details_tab",
+  "accessory_details_section",
+  "metal_group",
+  "accessory",
+  "size",
+  "column_break_3lwyl",
+  "metal_category",
+  "required_qty",
+  "length_type",
+  "column_break_pjuen",
+  "metal_color",
+  "uom",
+  "length",
+  "column_break_68ayp",
+  "accessory_code",
+  "section_break_fjv5z",
+  "target_date",
+  "column_break_ndxxk",
+  "target_price_per_uom",
+  "column_break_nf1gw",
+  "target_weight_per_uom",
+  "column_break_cdrhg",
+  "total_target_weight",
+  "purchase_team_remarks_section",
+  "source",
+  "source_type",
+  "column_break_8xzmw",
+  "accepted_date",
+  "column_break_ymdnb",
+  "accepted_by",
+  "stock_details_tab",
+  "accessory_name",
+  "inventory",
+  "column_break_ghqdi",
+  "stk_required_qty",
+  "available_qty",
+  "column_break_dhdjh",
+  "extra_purchase_qty",
+  "usable_qty",
+  "column_break_qsro1",
+  "total_required_qty",
+  "final_demand",
+  "section_break_wloek",
+  "stock_approved",
+  "column_break_z1ibd",
+  "stock_approved_by",
+  "column_break_fmh6a",
+  "stock_approved_datetime",
+  "receive_and_test_details_tab",
+  "receive_details_table",
+  "order_analytics_section",
+  "total_received_qty",
+  "final_demand_achieved",
+  "total_qc_qty",
+  "column_break_fe4tn",
+  "req_receive_qty",
+  "last_receive_date",
+  "remaining_qc_qty",
+  "column_break_udppe",
+  "rem_receive_qty",
+  "delayed_by",
+  "qc_and_test_details_section",
+  "update_qc_button",
+  "receiver_qc_table",
+  "section_break_biyrd",
+  "total_accepted_qty",
+  "column_break_y7s9b",
+  "total_rejected_qty",
+  "section_break_d7etx",
+  "testing_details_table",
+  "last_notification_value",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Order Details"
+  },
+  {
+   "fieldname": "po_details_section",
+   "fieldtype": "Section Break",
+   "label": "PO Details"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "PO No.",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "order_receive_date",
+   "fieldtype": "Date",
+   "label": "Order Receive Date",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_ryhvi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Link",
+   "label": "Sales Person",
+   "options": "Sales Person",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "client_code",
+   "fieldtype": "Data",
+   "label": "Client Code",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "po_date",
+   "fieldtype": "Date",
+   "label": "PO Date",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "default": "Now",
+   "fieldname": "order_creation_date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Order Creation Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hpd9j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "label": "Order Type",
+   "options": "\nNPD\nREG\nSMP\nMOD\nREP",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "regular_order_no",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Regular Order No."
+  },
+  {
+   "fieldname": "export_date",
+   "fieldtype": "Date",
+   "label": "Export Date",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "APC-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "design_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Design Details"
+  },
+  {
+   "fieldname": "design_details_section",
+   "fieldtype": "Section Break",
+   "label": "Design Details"
+  },
+  {
+   "fieldname": "design_no",
+   "fieldtype": "Autocomplete",
+   "in_standard_filter": 1,
+   "label": "Design No.",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "default": "Pinkcity Jewelhouse Private Limited-Unit 2",
+   "fieldname": "fetch_from_company",
+   "fieldtype": "Select",
+   "label": "Fetch From Company",
+   "options": "\nPinkcity Jewelhouse Private Ltd-Mahapura\nPinkcity Jewelhouse Private Limited- Unit 1\nPinkcity Jewelhouse Private Limited-Unit 2",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "depends_on": "eval: ((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "fieldname": "fetch_design_button",
+   "fieldtype": "Button",
+   "label": "Fetch Design"
+  },
+  {
+   "fieldname": "extra_image",
+   "fieldtype": "Attach Image",
+   "label": "Extra Image",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_wxqbu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "design_no.image",
+   "fieldname": "design_image",
+   "fieldtype": "Attach Image",
+   "label": "Design Image",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "label": "Image Preview",
+   "options": "design_image"
+  },
+  {
+   "fieldname": "accessory_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Accessory & Source Details"
+  },
+  {
+   "fieldname": "accessory_details_section",
+   "fieldtype": "Section Break",
+   "label": "Accessory Details"
+  },
+  {
+   "fieldname": "metal_group",
+   "fieldtype": "Link",
+   "label": "Metal Group",
+   "options": "Metal Group",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "accessory",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Accessory",
+   "options": "Accessory Master",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Size (in mm)",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_3lwyl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metal_category",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Metal Category",
+   "options": "Metal Category",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "required_qty",
+   "fieldtype": "Float",
+   "label": "Required Qty",
+   "precision": "0",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "length_type",
+   "fieldtype": "Select",
+   "label": "Length Type",
+   "options": "\nInner\nOuter\nHole Size",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_pjuen",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metal_color",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Metal Color",
+   "options": "Metal Color",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "\nPcs\nGms",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval: doc.length_type",
+   "fieldname": "length",
+   "fieldtype": "Data",
+   "label": "Length (in mm)",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_68ayp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accessory_code",
+   "fieldtype": "Link",
+   "label": "Accessory Code",
+   "mandatory_depends_on": "eval: ((doc.workflow_state == \"Pending For Stock Update\") && ([\"Stock User\", \"Stock Manager\"].find(role=>frappe.user.has_role(role))))",
+   "options": "DM Rm Code Master",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "section_break_fjv5z",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "label": "Target/Due Date",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ndxxk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_price_per_uom",
+   "fieldtype": "Currency",
+   "label": "Target Price Per UOM",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_nf1gw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_weight_per_uom",
+   "fieldtype": "Float",
+   "label": "Target Weight Per UOM",
+   "precision": "3",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Order Created\") && ([\"Sales User\", \"Sales Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_cdrhg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_target_weight",
+   "fieldtype": "Float",
+   "label": "Total Target Weight",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purchase_team_remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Purchase Team Remarks"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "mandatory_depends_on": "eval: ((doc.workflow_state == \"Pending For Source Update\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))",
+   "options": "\nAvailable In Stock\nMahapura Purchase\nUnit-1 Purchase\nUnit-2 Purchase\nHO Purchase",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Source Update\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "depends_on": "eval: doc.source == \"HO Purchase\"",
+   "fieldname": "source_type",
+   "fieldtype": "Select",
+   "label": "Source Type",
+   "mandatory_depends_on": "eval: doc.source == \"HO Purchase\"",
+   "options": "\nDomestic\nImport",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Source Update\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_8xzmw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accepted_date",
+   "fieldtype": "Date",
+   "label": "Accepted Date",
+   "mandatory_depends_on": "eval: ((doc.workflow_state == \"Pending For Source Update\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Source Update\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_ymdnb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accepted_by",
+   "fieldtype": "Link",
+   "label": "Accepted By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stock Details"
+  },
+  {
+   "fetch_from": "accessory.accessory_name",
+   "fieldname": "accessory_name",
+   "fieldtype": "Data",
+   "label": "Accessory Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "inventory",
+   "fieldtype": "Select",
+   "label": "Inventory",
+   "options": "\nMahapura\nSitapura Unit-1\nSitapura Unit-2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ghqdi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stk_required_qty",
+   "fieldtype": "Float",
+   "label": "Required Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.inventory",
+   "fieldname": "available_qty",
+   "fieldtype": "Float",
+   "label": "Available Qty",
+   "precision": "0",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Stock Update\") && ([\"Stock User\", \"Stock Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_dhdjh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "extra_purchase_qty",
+   "fieldtype": "Float",
+   "label": "Extra Purchase Qty",
+   "precision": "0",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Stock Update\") && ([\"Stock User\", \"Stock Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "depends_on": "eval: doc.inventory",
+   "fieldname": "usable_qty",
+   "fieldtype": "Float",
+   "label": "Usable Qty",
+   "precision": "0",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Stock Update\") && ([\"Stock User\", \"Stock Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_qsro1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_required_qty",
+   "fieldtype": "Float",
+   "label": "Total Required Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "final_demand",
+   "fieldtype": "Float",
+   "label": "Final Demand",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_wloek",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "stock_approved",
+   "fieldtype": "Check",
+   "label": "Stock Approved",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Stock Update\") && ([\"Stock User\", \"Stock Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "column_break_z1ibd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock_approved_by",
+   "fieldtype": "Link",
+   "label": "Stock Approved By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fmh6a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock_approved_datetime",
+   "fieldtype": "Datetime",
+   "label": "Stock Approved Date & Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "receive_and_test_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Receive & QC Details"
+  },
+  {
+   "fieldname": "receive_details_table",
+   "fieldtype": "Table",
+   "label": "Receive Details",
+   "options": "Accessory Procurement Order Details Table",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Purchase In Progress\" || doc.workflow_state == \"Partially Completed\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "order_analytics_section",
+   "fieldtype": "Section Break",
+   "label": "Order Analytics"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_received_qty",
+   "fieldtype": "Float",
+   "label": "Total Received Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "final_demand_achieved",
+   "fieldtype": "Percent",
+   "label": "Final Demand Achieved",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_qc_qty",
+   "fieldtype": "Float",
+   "label": "Total QC Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fe4tn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "req_receive_qty",
+   "fieldtype": "Float",
+   "label": "Required Receive Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_receive_date",
+   "fieldtype": "Date",
+   "label": "Last Receive Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remaining_qc_qty",
+   "fieldtype": "Float",
+   "label": "Remaining QC Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_udppe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "rem_receive_qty",
+   "fieldtype": "Float",
+   "label": "Remaining Receive Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "delayed_by",
+   "fieldtype": "Int",
+   "label": "Delayed By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qc_and_test_details_section",
+   "fieldtype": "Section Break",
+   "label": "Receiver QC Details"
+  },
+  {
+   "depends_on": "eval: ((doc.workflow_state == \"Pending For Receiver QC\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))",
+   "fieldname": "update_qc_button",
+   "fieldtype": "Button",
+   "label": "Update QC"
+  },
+  {
+   "documentation_url": "https://youtube.com/",
+   "fieldname": "receiver_qc_table",
+   "fieldtype": "Table",
+   "label": "Receiver QC",
+   "options": "Accessory Procurement Receiver QC Table",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Receiver QC\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "section_break_biyrd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_accepted_qty",
+   "fieldtype": "Float",
+   "label": "Total Accepted Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_y7s9b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_rejected_qty",
+   "fieldtype": "Float",
+   "label": "Total Rejected Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_d7etx",
+   "fieldtype": "Tab Break",
+   "label": "Testing Details"
+  },
+  {
+   "fieldname": "testing_details_table",
+   "fieldtype": "Table",
+   "label": "Testing Certificates",
+   "options": "Accessory Procurement Test Details Table",
+   "read_only_depends_on": "eval: !((doc.workflow_state == \"Pending For Receiver QC\") && ([\"Purchase User\", \"Purchase Manager\"].find(role=>frappe.user.has_role(role))))"
+  },
+  {
+   "fieldname": "last_notification_value",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Last Notification Value",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Accessory Procurement",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "image_field": "design_image",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-28 11:13:58.679065",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "Accessory Procurement",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Procurement Admin",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Management",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

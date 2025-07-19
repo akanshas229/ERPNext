@@ -1,0 +1,76 @@
+{
+ "cards": [
+  {
+   "card": "Total task"
+  },
+  {
+   "card": "Completed Task"
+  },
+  {
+   "card": "To Do"
+  },
+  {
+   "card": "Hold"
+  },
+  {
+   "card": "open"
+  },
+  {
+   "card": "working"
+  },
+  {
+   "card": "Pending Review Status"
+  },
+  {
+   "card": "Cancelled"
+  },
+  {
+   "card": "Draft"
+  },
+  {
+   "card": "Pending for Development"
+  },
+  {
+   "card": "Pending Review"
+  },
+  {
+   "card": "Pending for UAT"
+  },
+  {
+   "card": "Completed"
+  },
+  {
+   "card": "Assigned to Kaustubh Sharma"
+  },
+  {
+   "card": "Assigned to Akansha Saxena"
+  },
+  {
+   "card": "Assigned to Shyam Sunder Sahani"
+  }
+ ],
+ "chart_options": "",
+ "charts": [
+  {
+   "chart": "Assigned",
+   "width": "Full"
+  },
+  {
+   "chart": "Task Status",
+   "width": "Full"
+  }
+ ],
+ "creation": "2025-05-26 13:06:19.188459",
+ "dashboard_name": "PinkCity Task",
+ "disable": 0,
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-05-28 17:21:30.410256",
+ "modified_by": "akansha.saxena@atelierpinkcity.com",
+ "module": "PinkCity CRM",
+ "name": "PinkCity Task",
+ "owner": "akansha.saxena@atelierpinkcity.com"
+}

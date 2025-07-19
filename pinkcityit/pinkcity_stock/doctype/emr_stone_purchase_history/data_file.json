@@ -1,0 +1,26 @@
+{
+    "doc1": {
+        "emr_id": "purchase_001",
+        "company": "Company A",
+        "supplier_name": "Supplier A",
+        "supplier_code": 12345,
+        "bill_no": 67890,
+        "bill_date": "2025-03-22",
+        "rm_code": "RM001",
+        "rm_description": "Granite Stone",
+        "rm_weight": 100.0,
+        "purchase_rate": 50.0
+    },
+    "doc2": {
+        "emr_id": "purchase_001",
+        "company": "Company A",
+        "supplier_name": "Supplier A",
+        "supplier_code": 12345,
+        "bill_no": 67890,
+        "bill_date": "2025-03-22",
+        "rm_code": "RM001",
+        "rm_description": "Granite Stone",
+        "rm_weight": 100.0,
+        "purchase_rate": 50.0
+    }
+}

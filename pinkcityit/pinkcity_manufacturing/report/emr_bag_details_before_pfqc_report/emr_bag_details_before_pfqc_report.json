@@ -1,0 +1,27 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2025-03-31 10:39:05.317892",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "",
+ "modified": "2025-03-31 14:49:01.388502",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "EMR Bag Details Before PFQC Report",
+ "owner": "shyam.sunder@pinkcityindia.com",
+ "prepared_report": 0,
+ "ref_doctype": "EMR Bag  Details Before PFQC",
+ "report_name": "EMR Bag Details Before PFQC Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "color": "green",
+ "creation": "2023-08-19 14:43:49.306645",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "employee_code",
+  "company",
+  "department",
+  "designation",
+  "sub_department",
+  "column_break_6",
+  "date_of_joining",
+  "category",
+  "reporting_person",
+  "reporting_person_name",
+  "ctc_salary",
+  "gross_salary",
+  "naming_series",
+  "documents_checklist_section",
+  "document_checklist_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Select Employee",
+   "options": "Employee",
+   "unique": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.attendance_device_id",
+   "fieldname": "employee_code",
+   "fieldtype": "Data",
+   "label": "Employee Code"
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "employee.custom_sub_department",
+   "fieldname": "sub_department",
+   "fieldtype": "Link",
+   "label": "Sub Department",
+   "options": "Sub Department"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fetch_from": "employee.occupation",
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "Employee Group"
+  },
+  {
+   "fetch_from": "employee.reports_to",
+   "fieldname": "reporting_person",
+   "fieldtype": "Link",
+   "label": "Reporting Person",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "reporting_person.employee_name",
+   "fieldname": "reporting_person_name",
+   "fieldtype": "Data",
+   "label": "Reporting Person Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ctc_salary",
+   "fieldtype": "Currency",
+   "label": "CTC Salary"
+  },
+  {
+   "fetch_from": "employee.gross_monthly_salary",
+   "fieldname": "gross_salary",
+   "fieldtype": "Currency",
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "DCL-.YYYY.-"
+  },
+  {
+   "fieldname": "documents_checklist_section",
+   "fieldtype": "Section Break",
+   "label": "Documents Checklist"
+  },
+  {
+   "fieldname": "document_checklist_table",
+   "fieldtype": "Table",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "options": "Document Checklist Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-24 11:01:36.522409",
+ "modified_by": "Administrator",
+ "module": "Pinkcity HR",
+ "name": "Document Checklist",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Payroll",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

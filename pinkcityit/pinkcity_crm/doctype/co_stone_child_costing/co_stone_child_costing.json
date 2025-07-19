@@ -1,0 +1,465 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-26 13:26:33.234457",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "column_break_qonft",
+  "uom",
+  "column_break_ykxln",
+  "stone_code",
+  "stone_details_section",
+  "stone_name",
+  "column_break_wfkyr",
+  "shape_name",
+  "column_break_8ozrz",
+  "cut_name",
+  "column_break_xfy3k",
+  "quality",
+  "column_break_km6ml",
+  "size",
+  "column_break_juh9b",
+  "width",
+  "column_break_sz0yp",
+  "height",
+  "column_break_fyvox",
+  "medium",
+  "column_break_txd5d",
+  "column_break_k7wkv",
+  "stone_cost_section",
+  "price",
+  "column_break_0zgbw",
+  "value_addition",
+  "column_break_axely",
+  "value_addition_amount",
+  "column_break_lf1fp",
+  "revice_stone_price",
+  "column_break_i0xyl",
+  "sale_price_uom_dollar",
+  "column_break_purme",
+  "qty",
+  "column_break_brbk3",
+  "weight_per_pcs_cts",
+  "column_break_eg2ds",
+  "total_weight",
+  "section_break_pwzmk",
+  "total_stone_cost",
+  "stone_rate_in_dollar",
+  "column_break_ie3ja",
+  "stone_priceper_cts",
+  "dollar",
+  "stone_setting_section",
+  "setting_type",
+  "column_break_9thc2",
+  "setting_category",
+  "column_break_prdxf",
+  "setting_currency",
+  "column_break_rosr0",
+  "stone_setting_price",
+  "column_break_y3mol",
+  "column_break_ixxdo",
+  "stone_price_details_section",
+  "send_details_to_stone_dpt",
+  "column_break_c1ohp",
+  "stone_generated_val",
+  "remove_table",
+  "section_break_mgqrf",
+  "stone_price_html",
+  "stone_price_history",
+  "section_break_rg8o5",
+  "column_break_5a3jd",
+  "column_break_xd677",
+  "price_accepted",
+  "column_break_siiu5",
+  "price_rejected"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description (As Per DM)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qonft",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "Cts\nPcs"
+  },
+  {
+   "fieldname": "column_break_ykxln",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "default": "XXXXXXXXXXXX",
+   "fieldname": "stone_code",
+   "fieldtype": "Data",
+   "label": "Stone Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_details_section",
+   "fieldtype": "Section Break",
+   "label": "Stone Details"
+  },
+  {
+   "columns": 2,
+   "fieldname": "stone_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stone ",
+   "options": "Gemstone"
+  },
+  {
+   "fieldname": "column_break_wfkyr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "shape_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shape ",
+   "options": "Stone Shape"
+  },
+  {
+   "fieldname": "column_break_8ozrz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cut_name",
+   "fieldtype": "Link",
+   "label": "Cut ",
+   "options": "Stone Cut"
+  },
+  {
+   "fieldname": "column_break_xfy3k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Link",
+   "label": "Quality",
+   "options": "Stone Quality"
+  },
+  {
+   "fieldname": "column_break_km6ml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "size",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Length",
+   "precision": "3"
+  },
+  {
+   "fieldname": "column_break_juh9b",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Width",
+   "precision": "3"
+  },
+  {
+   "fieldname": "column_break_sz0yp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height",
+   "precision": "3"
+  },
+  {
+   "fieldname": "column_break_fyvox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medium",
+   "fieldtype": "Select",
+   "label": "Color",
+   "options": "\nS\nM\nL"
+  },
+  {
+   "fieldname": "column_break_txd5d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_k7wkv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stone_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Stone Pricing"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Purchase Price (\u20b9 Uom)"
+  },
+  {
+   "fieldname": "column_break_0zgbw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "value_addition",
+   "fieldtype": "Float",
+   "label": "Value Addition (%)"
+  },
+  {
+   "fieldname": "column_break_axely",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "value_addition_amount",
+   "fieldtype": "Currency",
+   "label": "Value Addition Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lf1fp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "revice_stone_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Sale Price (Uom)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_i0xyl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "sale_price_uom_dollar",
+   "fieldtype": "Currency",
+   "label": "Sale Price (UOM)",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_purme",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Quantity (No. Of Pcs)",
+   "mandatory_depends_on": "// eval:doc.uom == 'pcs'",
+   "read_only_depends_on": "// eval:doc.uom == 'cts'"
+  },
+  {
+   "fieldname": "column_break_brbk3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight_per_pcs_cts",
+   "fieldtype": "Float",
+   "label": "Weight (Per Pcs Cts)",
+   "mandatory_depends_on": "// eval:doc.uom == 'cts'"
+  },
+  {
+   "fieldname": "column_break_eg2ds",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_weight",
+   "fieldtype": "Float",
+   "label": "Total Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_pwzmk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'INR'",
+   "fieldname": "total_stone_cost",
+   "fieldtype": "Currency",
+   "label": "Total Stone Price",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "stone_rate_in_dollar",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Stone Value (Sales)",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ie3ja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "stone_priceper_cts",
+   "fieldtype": "Currency",
+   "label": "Per Stone Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dollar",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Current Dollar Rate",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_setting_section",
+   "fieldtype": "Section Break",
+   "label": "Stone Setting "
+  },
+  {
+   "fieldname": "setting_type",
+   "fieldtype": "Link",
+   "label": "Setting Type",
+   "options": "Setting"
+  },
+  {
+   "fieldname": "column_break_9thc2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "setting_category",
+   "fieldtype": "Select",
+   "label": "Setting Category",
+   "options": "\nHand Setting\nWax Setting"
+  },
+  {
+   "fieldname": "column_break_prdxf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "setting_currency",
+   "fieldtype": "Select",
+   "label": "Setting Currency",
+   "options": "\nUSD\nINR"
+  },
+  {
+   "fieldname": "column_break_rosr0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stone_setting_price",
+   "fieldtype": "Currency",
+   "label": "Setting Price (Pcs)",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_y3mol",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ixxdo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stone_price_details_section",
+   "fieldtype": "Section Break",
+   "label": "Stone Price Quotation"
+  },
+  {
+   "fieldname": "send_details_to_stone_dpt",
+   "fieldtype": "Button",
+   "label": "Send Details to Stone Dpt"
+  },
+  {
+   "fieldname": "column_break_c1ohp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stone_generated_val",
+   "fieldtype": "Link",
+   "label": "Stone Price Request Id",
+   "options": "Stone Price Request",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remove_table",
+   "fieldtype": "Button",
+   "label": "Remove Stone Id"
+  },
+  {
+   "fieldname": "section_break_mgqrf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stone_price_html",
+   "fieldtype": "HTML",
+   "label": "Stone Price"
+  },
+  {
+   "fieldname": "stone_price_history",
+   "fieldtype": "HTML",
+   "label": "Costing Stone Price History"
+  },
+  {
+   "fieldname": "section_break_rg8o5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_5a3jd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xd677",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "price_accepted",
+   "fieldtype": "Button",
+   "label": "Price Accepted"
+  },
+  {
+   "fieldname": "column_break_siiu5",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "price_rejected",
+   "fieldtype": "Button",
+   "label": "Price Rejected"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 10:40:14.660480",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "CO Stone Child Costing",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

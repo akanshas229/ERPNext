@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-26 13:09:43.355146",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "finding_code",
+  "column_break_ywk9l",
+  "description",
+  "column_break_kpw4l",
+  "section_break_5x1pm",
+  "finding_type",
+  "column_break_vmpp1",
+  "finding_uom",
+  "column_break_pdzdu",
+  "weight",
+  "column_break_6cpfk",
+  "quantity",
+  "column_break_fhx8s",
+  "rate_gram",
+  "column_break_du50g",
+  "rate_in_dollar",
+  "rate_in_inr"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "finding_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Finding Code"
+  },
+  {
+   "fieldname": "column_break_ywk9l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_kpw4l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5x1pm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "finding_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Finding Type"
+  },
+  {
+   "fieldname": "column_break_vmpp1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "finding_uom",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "\nPcs\nGram\nPair"
+  },
+  {
+   "fieldname": "column_break_pdzdu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:doc.finding_uom != 'Pcs'",
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "column_break_6cpfk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_fhx8s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "rate_gram",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_du50g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "rate_in_dollar",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Finding Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate_in_inr",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Finding Cost "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 10:53:24.388841",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "CO Finding",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-17 10:49:14.015177",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "send",
+  "sent_by",
+  "sent_date",
+  "received_qty",
+  "rejected_qty",
+  "column_break_jxzai",
+  "reject_reason",
+  "accepted_qty",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "send",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Send"
+  },
+  {
+   "bold": 1,
+   "columns": 2,
+   "description": "Name of sender",
+   "fieldname": "sent_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sent By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "description": "Receive Date",
+   "fieldname": "sent_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "columns": 2,
+   "fieldname": "received_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Received Qty",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "columns": 2,
+   "fieldname": "rejected_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Rejected Qty"
+  },
+  {
+   "fieldname": "column_break_jxzai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.rejected_qty > 0",
+   "fieldname": "reject_reason",
+   "fieldtype": "Small Text",
+   "label": "Reject Reason"
+  },
+  {
+   "columns": 2,
+   "fieldname": "accepted_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Accepted Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:40:41.836467",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "Stone Procurement Sender QC Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

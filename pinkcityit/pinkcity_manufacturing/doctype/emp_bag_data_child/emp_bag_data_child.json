@@ -1,0 +1,639 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-10 14:46:48.155477",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bag_order_detail_section",
+  "column_break_2",
+  "emporer_bag_no",
+  "section_break_17",
+  "design_code",
+  "design_category",
+  "metal_1_type",
+  "metal_1_code",
+  "metal_1_name",
+  "metal_1_weight",
+  "metal_2_type",
+  "metal_2_code",
+  "metal_2_name",
+  "metal_2_weight",
+  "gross_wt",
+  "bag_qty",
+  "size",
+  "cust_design_instruction",
+  "design_instruction",
+  "stone_1_code",
+  "stone_1_name",
+  "stone_1_qty",
+  "stone_1_wt",
+  "stone_2_code",
+  "stone_2_name",
+  "stone_2_qty",
+  "stone_2_wt",
+  "stone_3_code",
+  "stone_3_name",
+  "stone_3_qty",
+  "stone_3_wt",
+  "stone_4_code",
+  "stone_4_name",
+  "stone_4_qty",
+  "stone_4_wt",
+  "stone_5_code",
+  "stone_5_name",
+  "stone_5_qty",
+  "stone_5_wt",
+  "stone_6_code",
+  "stone_6_name",
+  "stone_6_qty",
+  "stone_6_wt",
+  "stone_7_code",
+  "stone_7_name",
+  "stone_7_qty",
+  "stone_7_wt",
+  "stone_8_code",
+  "stone_8_name",
+  "stone_8_qty",
+  "stone_8_wt",
+  "stone_9_code",
+  "stone_9_name",
+  "stone_9_qty",
+  "stone_9_wt",
+  "stone_10_code",
+  "stone_10_name",
+  "stone_10_qty",
+  "stone_10_wt",
+  "diamond_1_code",
+  "diamond_1_name",
+  "diamond_1_qty",
+  "diamond_1_wt",
+  "diamond_2_code",
+  "diamond_2_name",
+  "diamond_2_qty",
+  "diamond_2_wt",
+  "diamond_3_code",
+  "diamond_3_name",
+  "diamond_3_qty",
+  "diamond_3_wt",
+  "diamond_4_code",
+  "diamond_4_name",
+  "diamond_4_qty",
+  "diamond_4_wt",
+  "diamond_5_code",
+  "diamond_5_name",
+  "diamond_5_qty",
+  "diamond_5_wt",
+  "image_path",
+  "image_preview",
+  "design_image_html",
+  "file_name",
+  "check_image"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "bag_order_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Production Order & Bag Detail"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "emporer_bag_no",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Emporer Bag No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "order_no.design_code",
+   "fieldname": "design_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Design Code",
+   "options": "Design 3D Library",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "design_code.design_category",
+   "fieldname": "design_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Design Category",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_1_type",
+   "fieldtype": "Data",
+   "label": "Metal 1 Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_1_code",
+   "fieldtype": "Data",
+   "label": "Metal 1 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_1_name",
+   "fieldtype": "Data",
+   "label": "Metal 1 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_1_weight",
+   "fieldtype": "Data",
+   "label": "Metal  1 Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_2_type",
+   "fieldtype": "Data",
+   "label": "Metal 2 Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_2_code",
+   "fieldtype": "Data",
+   "label": "Metal 2 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_2_name",
+   "fieldtype": "Data",
+   "label": "Metal 2 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_2_weight",
+   "fieldtype": "Data",
+   "label": "Metal  2 Weight",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "gross_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gross Wt.",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "bag_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bag Qty",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "cust_design_instruction",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Customer Design Instruction",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "order_no.design_instruction",
+   "fieldname": "design_instruction",
+   "fieldtype": "Small Text",
+   "label": "Design Instruction",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_1_code",
+   "fieldtype": "Data",
+   "label": "Stone 1 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_1_name",
+   "fieldtype": "Data",
+   "label": "Stone 1 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_1_qty",
+   "fieldtype": "Data",
+   "label": "Stone 1 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_1_wt",
+   "fieldtype": "Data",
+   "label": "Stone 1 Wt.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_2_code",
+   "fieldtype": "Data",
+   "label": "Stone 2 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_2_name",
+   "fieldtype": "Data",
+   "label": "Stone 2 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_2_qty",
+   "fieldtype": "Data",
+   "label": "Stone 2 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_2_wt",
+   "fieldtype": "Data",
+   "label": "Stone 2 Wt.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_3_code",
+   "fieldtype": "Data",
+   "label": "Stone 3 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_3_name",
+   "fieldtype": "Data",
+   "label": "Stone 3 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_3_qty",
+   "fieldtype": "Data",
+   "label": "Stone 3 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_3_wt",
+   "fieldtype": "Data",
+   "label": "Stone 3 Wt.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_4_code",
+   "fieldtype": "Data",
+   "label": "Stone 4 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_4_name",
+   "fieldtype": "Data",
+   "label": "Stone 4 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_4_qty",
+   "fieldtype": "Data",
+   "label": "Stone 4 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_4_wt",
+   "fieldtype": "Data",
+   "label": "Stone 4 Wt.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_5_code",
+   "fieldtype": "Data",
+   "label": "Stone 5 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_5_name",
+   "fieldtype": "Data",
+   "label": "Stone 5 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_5_qty",
+   "fieldtype": "Data",
+   "label": "Stone 5 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_5_wt",
+   "fieldtype": "Data",
+   "label": "Stone 5 Wt.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_6_code",
+   "fieldtype": "Data",
+   "label": "Stone 6 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_6_name",
+   "fieldtype": "Data",
+   "label": "Stone 6 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_6_qty",
+   "fieldtype": "Data",
+   "label": "Stone 6 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_6_wt",
+   "fieldtype": "Data",
+   "label": "Stone 6 Wt.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_7_code",
+   "fieldtype": "Data",
+   "label": "Stone 7 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_7_name",
+   "fieldtype": "Data",
+   "label": "Stone 7 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_7_qty",
+   "fieldtype": "Data",
+   "label": "Stone 7 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_7_wt",
+   "fieldtype": "Data",
+   "label": "Stone 7 Wt.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_8_code",
+   "fieldtype": "Data",
+   "label": "Stone 8 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_8_name",
+   "fieldtype": "Data",
+   "label": "Stone 8 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_8_qty",
+   "fieldtype": "Data",
+   "label": "Stone 8 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_8_wt",
+   "fieldtype": "Data",
+   "label": "Stone 8 Wt.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_9_code",
+   "fieldtype": "Data",
+   "label": "Stone 9 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_9_name",
+   "fieldtype": "Data",
+   "label": "Stone 9 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_9_qty",
+   "fieldtype": "Data",
+   "label": "Stone 9 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_9_wt",
+   "fieldtype": "Data",
+   "label": "Stone 9 Wt.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_10_code",
+   "fieldtype": "Data",
+   "label": "Stone 10 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_10_name",
+   "fieldtype": "Data",
+   "label": "Stone 10 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_10_qty",
+   "fieldtype": "Data",
+   "label": "Stone 10 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_10_wt",
+   "fieldtype": "Data",
+   "label": "Stone 10 Wt.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_1_code",
+   "fieldtype": "Data",
+   "label": "Diamond 1 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_1_name",
+   "fieldtype": "Data",
+   "label": "Diamond 1 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_1_qty",
+   "fieldtype": "Data",
+   "label": "Diamond 1 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_1_wt",
+   "fieldtype": "Data",
+   "label": "Diamond 1 Wt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_2_code",
+   "fieldtype": "Data",
+   "label": "Diamond 2 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_2_name",
+   "fieldtype": "Data",
+   "label": "Diamond 2 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_2_qty",
+   "fieldtype": "Data",
+   "label": "Diamond 2 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_2_wt",
+   "fieldtype": "Data",
+   "label": "Diamond 2 Wt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_3_code",
+   "fieldtype": "Data",
+   "label": "Diamond 3 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_3_name",
+   "fieldtype": "Data",
+   "label": "Diamond 3 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_3_qty",
+   "fieldtype": "Data",
+   "label": "Diamond 3 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_3_wt",
+   "fieldtype": "Data",
+   "label": "Diamond 3 Wt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_4_code",
+   "fieldtype": "Data",
+   "label": "Diamond 4 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_4_name",
+   "fieldtype": "Data",
+   "label": "Diamond 4 Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_4_qty",
+   "fieldtype": "Data",
+   "label": "Diamond 4 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_4_wt",
+   "fieldtype": "Data",
+   "label": "Diamond 4 Wt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_5_code",
+   "fieldtype": "Data",
+   "label": "Diamond 5 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_5_name",
+   "fieldtype": "Data",
+   "label": "Diamond 5 Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_5_qty",
+   "fieldtype": "Data",
+   "label": "Diamond 5 Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_5_wt",
+   "fieldtype": "Data",
+   "label": "Diamond 5 Wt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image_path",
+   "fieldtype": "Attach Image",
+   "label": "Image Path",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "label": "Design Image view",
+   "options": "image_path"
+  },
+  {
+   "fieldname": "design_image_html",
+   "fieldtype": "Data",
+   "label": "Design Image HTML",
+   "read_only": 1
+  },
+  {
+   "fieldname": "file_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "File Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "check_image",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Check Image",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [
+  {
+   "hidden": 1,
+   "link_doctype": "Stock Entry",
+   "link_fieldname": "bag_order_id"
+  }
+ ],
+ "modified": "2025-06-26 11:49:13.301972",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "Emp Bag Data Child",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

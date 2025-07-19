@@ -1,0 +1,327 @@
+{
+ "_comments": "[{\"comment\": \"<div class=\\\"ql-editor read-mode\\\"><p>Old depend on condition for Complete Product (Latest), Polish...\", \"by\": \"shyam.sunder@pinkcityindia.com\", \"name\": \"33b3e95fc9\"}]",
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "color": "success",
+ "creation": "2024-03-14 15:07:05.839169",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "design",
+  "design_picture",
+  "design_description",
+  "status",
+  "column_break_fc82l",
+  "design_no",
+  "fetch_design",
+  "design_category",
+  "client_code",
+  "design_date",
+  "document_upload",
+  "design_rate_section",
+  "rate_uom",
+  "approved_date",
+  "previous_design_rate",
+  "remark",
+  "column_break_nfhjw",
+  "complete_product",
+  "polishing",
+  "filing",
+  "puwai_work",
+  "design_rate",
+  "section_break_g2gop",
+  "revised_images",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "DRL-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "description": "Select from Design 3D Library",
+   "fieldname": "design",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Design",
+   "options": "EMR Design 3D Library",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'",
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "design.image",
+   "fieldname": "design_picture",
+   "fieldtype": "Attach Image",
+   "label": "Design Picture",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "design.design_3d_code_description",
+   "fieldname": "design_description",
+   "fieldtype": "Small Text",
+   "label": "Design Description",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nDisabled",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "fieldname": "column_break_fc82l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "design.design_3d_code",
+   "fieldname": "design_no",
+   "fieldtype": "Data",
+   "label": "Design No.",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "fetch_design",
+   "fieldtype": "Button",
+   "label": "Fetch Design",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "design.design_category",
+   "fieldname": "design_category",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Design Category",
+   "options": "Design Category",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "fetch_from": "design.client_code",
+   "fieldname": "client_code",
+   "fieldtype": "Data",
+   "label": "Client Code",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "fetch_from": "design.design_date",
+   "fieldname": "design_date",
+   "fieldtype": "Date",
+   "label": "Design Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "document_upload",
+   "fieldtype": "Attach",
+   "label": "Approved Design Rate Document Upload",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "fieldname": "design_rate_section",
+   "fieldtype": "Section Break",
+   "label": "Design Rate",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "fieldname": "rate_uom",
+   "fieldtype": "Select",
+   "label": "Rate UOM",
+   "options": "\nPcs\nSet\nPair\nGrm",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "default": "Today",
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Rate Approved Date",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'",
+   "reqd": 1
+  },
+  {
+   "fieldname": "previous_design_rate",
+   "fieldtype": "Float",
+   "label": "Previous Design Rate",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "columns": 2,
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Rate Remark",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "fieldname": "column_break_nfhjw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "complete_product",
+   "fieldtype": "Currency",
+   "label": "Complete Product (Latest)",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "polishing",
+   "fieldtype": "Currency",
+   "label": "Polishing",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "filing",
+   "fieldtype": "Currency",
+   "label": "Filing",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "puwai_work",
+   "fieldtype": "Currency",
+   "label": "Puwai Work",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "design_rate",
+   "fieldtype": "Currency",
+   "label": "Total Design Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_g2gop",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "revised_images",
+   "fieldtype": "Table",
+   "label": "Revised Images",
+   "options": "DLRL Image",
+   "read_only_depends_on": "eval:doc.workflow_state=='Approved by Management'"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Design Labour Rate Library",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "image_field": "design_picture",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:49:24.241176",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Design Labour Rate Library",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Team Custom Rights",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "General Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Management",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "design_no, design",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "design_no",
+ "track_changes": 1
+}

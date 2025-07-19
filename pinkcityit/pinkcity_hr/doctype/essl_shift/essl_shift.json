@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-02 10:42:20.225943",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "shift_name",
+  "short_name",
+  "begin_time",
+  "end_time",
+  "column_break_ocqte",
+  "punch_begin_before",
+  "punch_end_after",
+  "grace_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "shift_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shift Name"
+  },
+  {
+   "fieldname": "short_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Short Name"
+  },
+  {
+   "fieldname": "begin_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Begin Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "End Time"
+  },
+  {
+   "fieldname": "punch_begin_before",
+   "fieldtype": "Int",
+   "label": "Punch Begin Before"
+  },
+  {
+   "fieldname": "punch_end_after",
+   "fieldtype": "Int",
+   "label": "Punch End After"
+  },
+  {
+   "fieldname": "grace_time",
+   "fieldtype": "Int",
+   "label": "Grace Time"
+  },
+  {
+   "fieldname": "column_break_ocqte",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2025-05-26 11:56:40.484639",
+ "modified_by": "Administrator",
+ "module": "Pinkcity HR",
+ "name": "ESSL Shift",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MIS Rights",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "short_name"
+}

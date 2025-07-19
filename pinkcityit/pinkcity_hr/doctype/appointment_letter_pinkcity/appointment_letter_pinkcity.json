@@ -1,0 +1,270 @@
+{
+ "actions": [],
+ "autoname": "HR-AP-LETTER-.#####",
+ "creation": "2025-07-17 15:01:43.489356",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_code",
+  "company",
+  "date",
+  "date_of_joining",
+  "designation",
+  "report_to",
+  "image",
+  "column_break_3",
+  "salutation",
+  "employee_name",
+  "employee_group",
+  "address",
+  "department",
+  "parent_department",
+  "salary_structure_id",
+  "json_data",
+  "hidden_section_section",
+  "appointment_date",
+  "job_applicant",
+  "applicant_name",
+  "appointment_letter_template",
+  "body_section",
+  "introduction",
+  "terms",
+  "closing_notes"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.attendance_device_id",
+   "fieldname": "employee_code",
+   "fieldtype": "Data",
+   "label": "Employee Code",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "Today",
+   "description": "Select appointment letter date.",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Appointment Date"
+  },
+  {
+   "fetch_from": "employee.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Designation",
+   "options": "Designation",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.image",
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.salutation",
+   "fetch_if_empty": 1,
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.occupation_accounts",
+   "fieldname": "employee_group",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Group",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.permanent_address",
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "department.department_name",
+   "fieldname": "parent_department",
+   "fieldtype": "Data",
+   "label": "Parent Department"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "salary_structure_id",
+   "fieldtype": "Link",
+   "label": "Salary Structure Assignment",
+   "options": "Salary Structure Assignment",
+   "read_only": 1
+  },
+  {
+   "fieldname": "json_data",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Salary Detail Json Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hidden_section_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Hidden section"
+  },
+  {
+   "default": "Today",
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Appointment Date"
+  },
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Link",
+   "label": "Job Applicant",
+   "options": "Job Applicant"
+  },
+  {
+   "fetch_from": "job_applicant.applicant_name",
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Applicant Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appointment_letter_template",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Appointment Letter Template",
+   "options": "Appointment Letter Template"
+  },
+  {
+   "fieldname": "body_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Body"
+  },
+  {
+   "fetch_from": "appointment_letter_template.introduction",
+   "fieldname": "introduction",
+   "fieldtype": "Long Text",
+   "label": "Introduction"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Table",
+   "label": "Terms",
+   "options": "Appointment Letter content"
+  },
+  {
+   "fieldname": "closing_notes",
+   "fieldtype": "Text",
+   "label": "Closing Notes"
+  },
+  {
+   "fetch_from": "employee.reports_to_name",
+   "fieldname": "report_to",
+   "fieldtype": "Data",
+   "label": "Report To"
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2025-07-18 13:07:17.962436",
+ "modified_by": "Administrator",
+ "module": "Pinkcity HR",
+ "name": "Appointment Letter Pinkcity",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "applicant_name, company",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "applicant_name",
+ "track_changes": 1
+}

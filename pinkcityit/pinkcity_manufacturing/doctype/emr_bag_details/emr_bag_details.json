@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-25 16:05:29.423945",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bag_no",
+  "bag_order_sr_no",
+  "order_no",
+  "order_date",
+  "customer",
+  "customer_code",
+  "bag_open_location",
+  "bag_location",
+  "bag_open_date",
+  "bag_qty",
+  "gross_wt"
+ ],
+ "fields": [
+  {
+   "fieldname": "bag_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bag No"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Order No"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer "
+  },
+  {
+   "fieldname": "customer_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Code"
+  },
+  {
+   "fieldname": "bag_open_location",
+   "fieldtype": "Data",
+   "label": "Bag Open Location"
+  },
+  {
+   "fieldname": "bag_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bag Location"
+  },
+  {
+   "fieldname": "bag_open_date",
+   "fieldtype": "Date",
+   "label": "Bag Open Date"
+  },
+  {
+   "fieldname": "bag_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bag Qty"
+  },
+  {
+   "fieldname": "gross_wt",
+   "fieldtype": "Float",
+   "label": "Gross Wt"
+  },
+  {
+   "fieldname": "bag_order_sr_no",
+   "fieldtype": "Data",
+   "label": "Bag Order Sr. No."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2025-03-26 11:16:04.418053",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "EMR Bag Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

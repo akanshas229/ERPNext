@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2025-03-22 11:50:08.229863",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "emr_id",
+  "company",
+  "supllier_name",
+  "supplier_code",
+  "bill_no",
+  "bill_date",
+  "rm_code",
+  "rm_description",
+  "rm_weight",
+  "purchase_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "emr_id",
+   "fieldtype": "Data",
+   "label": "EMR ID"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "supllier_name",
+   "fieldtype": "Data",
+   "label": "Supllier Name"
+  },
+  {
+   "fieldname": "supplier_code",
+   "fieldtype": "Data",
+   "label": "Supplier Code"
+  },
+  {
+   "fieldname": "bill_no",
+   "fieldtype": "Data",
+   "label": "Bill No"
+  },
+  {
+   "fieldname": "bill_date",
+   "fieldtype": "Date",
+   "label": "Bill Date"
+  },
+  {
+   "fieldname": "rm_code",
+   "fieldtype": "Data",
+   "label": "RM Code"
+  },
+  {
+   "fieldname": "rm_description",
+   "fieldtype": "Small Text",
+   "label": "RM Description"
+  },
+  {
+   "fieldname": "rm_weight",
+   "fieldtype": "Float",
+   "label": "RM Weight"
+  },
+  {
+   "fieldname": "purchase_rate",
+   "fieldtype": "Currency",
+   "label": "Purchase Rate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2025-03-22 11:50:08.229863",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "EMR Stone Purchase History",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

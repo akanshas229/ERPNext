@@ -1,0 +1,247 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-30 15:27:49.661239",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stone_po_id",
+  "column_break_df4sh",
+  "stone_name",
+  "column_break_inaiw",
+  "stone_cut",
+  "column_break_w81gp",
+  "stone_shape",
+  "section_break_gsi8s",
+  "design_code",
+  "column_break_xnbw7",
+  "status",
+  "column_break_bjodk",
+  "stone_size",
+  "column_break_3qots",
+  "uom_purchase",
+  "section_break_xiwg7",
+  "req_stone_wt_in_cts",
+  "column_break_q85bm",
+  "design_order_qty_as_per_po",
+  "column_break_hzvbp",
+  "req_stone_qty_in_pcs",
+  "column_break_1rxae",
+  "target_weight_per_piece_in_cts",
+  "column_break_nleo0",
+  "required_dispatch_qty",
+  "section_break_5bt7r",
+  "targetdue_date",
+  "section_break_vnyxh",
+  "last_dispatch_date",
+  "column_break_hrb1c",
+  "target_purchase_price_per_uom",
+  "column_break_tb5ty",
+  "accepted_date",
+  "column_break_klc6q",
+  "source"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "stone_po_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stone PO ID",
+   "options": "Stone Procurement",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_df4sh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "stone_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stone Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_inaiw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stone_cut",
+   "fieldtype": "Data",
+   "label": "Stone Cut",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_w81gp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stone_shape",
+   "fieldtype": "Data",
+   "label": "Stone Shape",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_gsi8s",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "label": "Design Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xnbw7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bjodk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stone_size",
+   "fieldtype": "Data",
+   "label": "Stone Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3qots",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom_purchase",
+   "fieldtype": "Data",
+   "label": "UOM (Purchase)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_xiwg7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "req_stone_wt_in_cts",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Req Stone Wt (in Cts)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_q85bm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_order_qty_as_per_po",
+   "fieldtype": "Data",
+   "label": "Design Order Qty (as per PO)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hzvbp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "req_stone_qty_in_pcs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Req Stone Qty (in Pcs)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1rxae",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_weight_per_piece_in_cts",
+   "fieldtype": "Data",
+   "label": "Target Weight Per Piece (in Cts)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nleo0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "required_dispatch_qty",
+   "fieldtype": "Data",
+   "label": "Required Dispatch Qty"
+  },
+  {
+   "fieldname": "section_break_5bt7r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "targetdue_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Target/Due Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vnyxh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_dispatch_date",
+   "fieldtype": "Date",
+   "label": "Last Dispatch Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hrb1c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_purchase_price_per_uom",
+   "fieldtype": "Data",
+   "label": "Target Purchase Prc (UOM)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tb5ty",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accepted_date",
+   "fieldtype": "Date",
+   "label": "Accepted Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_klc6q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Purchase Source",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:34:56.481664",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "OS Stone Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

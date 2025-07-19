@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-01 11:45:52.719596",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bag_no",
+  "bag_id_no",
+  "metal",
+  "size",
+  "section_break_zorpa",
+  "design_code",
+  "bag_quantity",
+  "column_break_fyxzn",
+  "design_category",
+  "location",
+  "order_design_id_no"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "bag_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bag No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bag_id_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Bag Id"
+  },
+  {
+   "columns": 1,
+   "fieldname": "metal",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Metal",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_zorpa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Design Code",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "bag_quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bag Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fyxzn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "design_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Design Category",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "order_design_id_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Order Design ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:35:09.220158",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "OS What Is Where",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

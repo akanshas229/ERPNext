@@ -1,0 +1,402 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-26 14:09:45.315086",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "column_break_vhobs",
+  "diamond_code",
+  "diamond_details_section",
+  "diamond_name",
+  "column_break_yzuyc",
+  "diamond_cut",
+  "column_break_t5gwh",
+  "diamond_shape",
+  "section_break_te3rg",
+  "diamond_size",
+  "column_break_2amz6",
+  "diamond_width",
+  "section_break_iaa30",
+  "diamond_height",
+  "column_break_74crt",
+  "diamond_quality",
+  "column_break_974sd",
+  "diamond_color",
+  "column_break_gqjbf",
+  "column_break_i8uz9",
+  "diamond_cost",
+  "diamond_price",
+  "column_break_aq9vi",
+  "value_addition",
+  "column_break_qglfx",
+  "value_addition_amount",
+  "column_break_v9tm3",
+  "revise_diamond_price",
+  "column_break_kvqsk",
+  "diamond_sales_price_uom",
+  "section_break_vm4x1",
+  "uom",
+  "column_break_8hroi",
+  "quantity_no_of_pcs",
+  "column_break_cjwil",
+  "diamond_weight_cost_per_cts",
+  "column_break_zkcm4",
+  "total_weight_diamond",
+  "column_break_csaen",
+  "diamond_dollar",
+  "diamond_total_cost",
+  "column_break_olq4s",
+  "diamond_rate_in_dollar",
+  "column_break_prxox",
+  "diamond_price_per_cts",
+  "column_break_seq4l",
+  "column_break_7cbsn",
+  "column_break_wtjkx",
+  "diamond_setting_section",
+  "setting_type",
+  "column_break_9zzcg",
+  "setting_category",
+  "column_break_r8f9h",
+  "diamond_setting_currency",
+  "column_break_wj9qg",
+  "diamond_sett_price",
+  "column_break_lxr6n",
+  "currency_check"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_vhobs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_code",
+   "fieldtype": "Data",
+   "label": "Diamond Code"
+  },
+  {
+   "fieldname": "diamond_details_section",
+   "fieldtype": "Section Break",
+   "label": "Diamond Details"
+  },
+  {
+   "columns": 2,
+   "fieldname": "diamond_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "Gemstone"
+  },
+  {
+   "fieldname": "column_break_yzuyc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "diamond_cut",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cut",
+   "options": "Diamond Cut"
+  },
+  {
+   "fieldname": "column_break_t5gwh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "diamond_shape",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shape",
+   "options": "Stone Shape"
+  },
+  {
+   "fieldname": "section_break_te3rg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "diamond_size",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Length",
+   "precision": "3"
+  },
+  {
+   "fieldname": "column_break_2amz6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "diamond_width",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Width",
+   "precision": "3"
+  },
+  {
+   "fieldname": "section_break_iaa30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "diamond_height",
+   "fieldtype": "Float",
+   "label": "Height",
+   "precision": "3"
+  },
+  {
+   "fieldname": "column_break_74crt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_quality",
+   "fieldtype": "Data",
+   "label": "Quality"
+  },
+  {
+   "fieldname": "column_break_974sd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "diamond_color",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Color",
+   "options": "Diamond Color"
+  },
+  {
+   "fieldname": "column_break_gqjbf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_i8uz9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_cost",
+   "fieldtype": "Section Break",
+   "label": "Diamond Cost"
+  },
+  {
+   "fieldname": "diamond_price",
+   "fieldtype": "Currency",
+   "label": "Diamond Purchase Price (\u20b9) "
+  },
+  {
+   "fieldname": "column_break_aq9vi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "value_addition",
+   "fieldtype": "Percent",
+   "label": "Value Addition (%)"
+  },
+  {
+   "fieldname": "column_break_qglfx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "value_addition_amount",
+   "fieldtype": "Currency",
+   "label": "Value Addition Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_v9tm3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "revise_diamond_price",
+   "fieldtype": "Currency",
+   "label": "Diamond Sales Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kvqsk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "diamond_sales_price_uom",
+   "fieldtype": "Currency",
+   "label": "Diamond Sales Price",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vm4x1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "Cts"
+  },
+  {
+   "fieldname": "column_break_8hroi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity_no_of_pcs",
+   "fieldtype": "Data",
+   "label": "Quantity (No. Of Pcs)"
+  },
+  {
+   "fieldname": "column_break_cjwil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "diamond_weight_cost_per_cts",
+   "fieldtype": "Float",
+   "label": "Weight (Per Pcs Cts)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zkcm4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_weight_diamond",
+   "fieldtype": "Float",
+   "label": "Total Diamond Weight"
+  },
+  {
+   "fieldname": "column_break_csaen",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.currency_check == 0 || doc.currency_check == 2",
+   "fieldname": "diamond_dollar",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Diamond Dollar ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.currency_check == 0 || doc.currency_check == 1",
+   "fieldname": "diamond_total_cost",
+   "fieldtype": "Currency",
+   "label": "Diamond Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_olq4s",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "diamond_rate_in_dollar",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Diamond Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_prxox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "diamond_price_per_cts",
+   "fieldtype": "Currency",
+   "label": "Per Diamond Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_seq4l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7cbsn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wtjkx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_setting_section",
+   "fieldtype": "Section Break",
+   "label": "Diamond Setting"
+  },
+  {
+   "fieldname": "setting_type",
+   "fieldtype": "Link",
+   "label": "Setting Type",
+   "options": "Setting"
+  },
+  {
+   "fieldname": "column_break_9zzcg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "setting_category",
+   "fieldtype": "Select",
+   "label": "Setting Category",
+   "options": "\nWax Setting\nHand Setting"
+  },
+  {
+   "fieldname": "column_break_r8f9h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_setting_currency",
+   "fieldtype": "Select",
+   "label": "Setting Currency",
+   "options": "\nUSD\nINR"
+  },
+  {
+   "fieldname": "column_break_wj9qg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_sett_price",
+   "fieldtype": "Currency",
+   "label": "Setting Price (Pcs) ",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_lxr6n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "currency_check",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Currency check",
+   "options": "0\n1\n2",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 10:46:35.222107",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "CO Diamond Costin",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

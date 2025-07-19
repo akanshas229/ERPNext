@@ -1,0 +1,93 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": "name",
+   "fieldtype": "Data",
+   "label": "Plating Name",
+   "width": 0
+  },
+  {
+   "fieldname": "creation",
+   "fieldtype": "Date",
+   "label": "Date",
+   "width": 0
+  },
+  {
+   "fieldname": "current_bag",
+   "fieldtype": "Data",
+   "label": "Current Bag",
+   "width": 0
+  },
+  {
+   "fieldname": "plating_bath",
+   "fieldtype": "Select",
+   "label": "Tank",
+   "width": 0
+  },
+  {
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "label": "Design Code",
+   "width": 0
+  },
+  {
+   "fieldname": "bag_quantity",
+   "fieldtype": "Data",
+   "label": "Bag Quantity",
+   "width": 0
+  },
+  {
+   "fieldname": "plating_in_weight",
+   "fieldtype": "Float",
+   "label": "Plating In Weight",
+   "width": 0
+  },
+  {
+   "fieldname": "plating_out_weight",
+   "fieldtype": "Float",
+   "label": "Plating Out Weight",
+   "width": 0
+  },
+  {
+   "fieldname": "difference_weight",
+   "fieldtype": "Float",
+   "label": "Difference",
+   "width": 0
+  }
+ ],
+ "creation": "2025-03-18 12:43:53.944408",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "plating_bath",
+   "fieldtype": "Data",
+   "label": "Tank",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "letter_head": "Pinkcity Jewelhouse Pvt. Ltd. Mahapura",
+ "modified": "2025-04-14 10:14:08.405478",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "Mateler Scale",
+ "owner": "akansha.saxena@atelierpinkcity.com",
+ "prepared_report": 0,
+ "query": "SELECT \n    tpt.name, \n    DATE(tpt.creation), \n    tpt.current_bag, \n    tpmbd.plating_bath, \n    tpmbd.cell_no,\n    tpmbd.design_code, \n    tpmbd.bag_quantity,\n    tpmbd.plating_in_weight, \n    tpmbd.plating_out_weight,\n    tpmbd.total_stone_weight,\n    tpmbd.design_metal_in_weight,\n    tpmbd.design_metal_out_weight,\n    tpmbd.difference_weight,\n    (SELECT tc.amount_in_dollar_in_plating\n     FROM `tabTest Costing` tc\n     WHERE tc.design_code = tpmbd.design_code\n     AND tc.owner NOT IN ('shyam.sunder@pinkcityindia.com', \n                          'akansha.saxena@atelierpinkcity.com', \n                          'ashutosh.bhati@pinkcityindia.com')\n     LIMIT 1) AS amount_in_dollar_in_plating,\n    (SELECT tc.customer\n     FROM `tabTest Costing` tc\n     WHERE tc.design_code = tpmbd.design_code\n     AND tc.owner NOT IN ('shyam.sunder@pinkcityindia.com', \n                          'akansha.saxena@atelierpinkcity.com', \n                          'ashutosh.bhati@pinkcityindia.com')\n     LIMIT 1) AS customer,\n    (SELECT tc.owner\n     FROM `tabTest Costing` tc\n     WHERE tc.design_code = tpmbd.design_code\n     AND tc.owner NOT IN ('shyam.sunder@pinkcityindia.com', \n                          'akansha.saxena@atelierpinkcity.com', \n                          'ashutosh.bhati@pinkcityindia.com')\n     LIMIT 1) AS owner\nFROM `tabMateler Bag Detail` tpmbd  \nLEFT JOIN `tabMateler Scale` tpt ON tpt.name = tpmbd.parent \nGROUP BY tpt.creation, tpmbd.design_code;\n",
+ "ref_doctype": "Plating Transaction",
+ "report_name": "Mateler Scale",
+ "report_script": "",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

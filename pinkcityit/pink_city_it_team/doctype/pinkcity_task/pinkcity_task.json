@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Task-{YY}-{####}",
+ "creation": "2025-05-22 19:28:17.414654",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task_name",
+  "task_type",
+  "request_person_id",
+  "request_person_name",
+  "lft",
+  "rgt",
+  "column_break_gjld7",
+  "module",
+  "assigned_to",
+  "start_date",
+  "end_date",
+  "go_live_date",
+  "column_break_zlg6q",
+  "status",
+  "assigned_by",
+  "priority",
+  "parent_task_new",
+  "is_group",
+  "section_break_oudf8",
+  "description",
+  "section_break_lwmqk",
+  "sub_task",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PinkCity Task",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "parent_task_new",
+   "fieldtype": "Link",
+   "label": "Parent Task ",
+   "options": "PinkCity Task"
+  },
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "label": "Task Name"
+  },
+  {
+   "fieldname": "task_type",
+   "fieldtype": "Select",
+   "label": "Task Type",
+   "options": "\nDoctype\nReport\nWeb Page/Web Form\nServer\nTask\nNew Development\nBug\nTraining\nFigma\nWebsite\nRole Permission\nPrint Format"
+  },
+  {
+   "fieldname": "request_person_id",
+   "fieldtype": "Link",
+   "label": "Request Person ID",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "request_person_id.employee_name",
+   "fieldname": "request_person_name",
+   "fieldtype": "Data",
+   "label": "Request Person Name"
+  },
+  {
+   "fieldname": "column_break_gjld7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "module",
+   "fieldtype": "Link",
+   "label": "Module",
+   "options": "Module Def"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "User"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "Target Date"
+  },
+  {
+   "fieldname": "go_live_date",
+   "fieldtype": "Date",
+   "label": "Go Live Date"
+  },
+  {
+   "fieldname": "column_break_zlg6q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Open\nHold\nWorking\nPending Review\nTo Do\nOverdue\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "assigned_by",
+   "fieldtype": "Link",
+   "label": "Assigned By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "section_break_oudf8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_lwmqk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sub_task",
+   "fieldtype": "Table",
+   "label": "Sub-Task",
+   "options": "Task CT"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2025-06-03 12:17:24.741709",
+ "modified_by": "Administrator",
+ "module": "Pink City IT Team",
+ "name": "PinkCity Task",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_task_new",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "task_name"
+}

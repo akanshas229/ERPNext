@@ -1,0 +1,1963 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-04-04 10:37:41.888765",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_documents_tab",
+  "naming_series",
+  "related_to",
+  "company",
+  "cetificate_name",
+  "cetificate_type",
+  "cetificate_no",
+  "cetificate_date",
+  "issued_by",
+  "description",
+  "column_break_6",
+  "valid_from",
+  "valid_to",
+  "related_department",
+  "parent_department",
+  "documents_status",
+  "image",
+  "files",
+  "is_private",
+  "image_preview",
+  "amended_from",
+  "audit_tab",
+  "audit_section",
+  "document_type",
+  "contact_audit",
+  "column_break_ksuah",
+  "categorytype",
+  "mail_audit",
+  "column_break_elszs",
+  "audit_name",
+  "audit_status",
+  "column_break_pfquo",
+  "agency_name",
+  "area_of_focus",
+  "column_break_exnn2",
+  "auditor_name",
+  "audit_approval",
+  "findings_section",
+  "compliant",
+  "column_break_0u970",
+  "non_compliant",
+  "column_break_vspow",
+  "risk_level",
+  "column_break_nxlgy",
+  "action_required",
+  "audit_dates_section",
+  "audit_start",
+  "cap_submission",
+  "column_break_2dzzb",
+  "audit_end",
+  "follow_review",
+  "column_break_cddpd",
+  "report_issue_date",
+  "column_break_6vvfc",
+  "next_audit_date",
+  "corrective_action_plan",
+  "implementation_date",
+  "column_break_iqqat",
+  "assigned",
+  "column_break_leyxv",
+  "status",
+  "column_break_fgnyb",
+  "cap_deadline",
+  "certification_details_section",
+  "certification_type",
+  "column_break_eb1nh",
+  "issue",
+  "column_break_pietx",
+  "certification_number",
+  "validity_period_section",
+  "start_audit",
+  "column_break_u0txh",
+  "exp_audit",
+  "column_break_tgqnn",
+  "ren_audit",
+  "agreements_tab",
+  "agreements_section",
+  "agreement_type",
+  "agreement_status",
+  "column_break_2jrde",
+  "party_name",
+  "column_break_rvcwy",
+  "department",
+  "column_break_xiyff",
+  "signed_person",
+  "column_break_ia9qw",
+  "third_party_person",
+  "agreement_dates_section",
+  "date_of_signing",
+  "column_break_okvuq",
+  "start_date",
+  "column_break_42njk",
+  "end_date",
+  "column_break_xgrff",
+  "renewal",
+  "column_break_clrwi",
+  "termination",
+  "document_version_section",
+  "version_number",
+  "column_break_zofjh",
+  "revision_date",
+  "column_break_cghuy",
+  "amendments",
+  "section_break_nzepi",
+  "approval_status",
+  "column_break_vuih9",
+  "security_and_access_permissions",
+  "column_break_hu2f9",
+  "government_licenses_section",
+  "license_details_section",
+  "license_type",
+  "consultant_name",
+  "column_break_yplhk",
+  "name_of_govt",
+  "amount",
+  "contact_govt",
+  "column_break_t9pax",
+  "issuing_juridiction",
+  "required_document_list",
+  "column_break_g3neo",
+  "license_no",
+  "column_break_p0qjs",
+  "license_status",
+  "validity_license",
+  "issue_govt",
+  "grace_govt",
+  "column_break_kxdf4",
+  "expiry_govt",
+  "column_break_tgodh",
+  "renewal_govt",
+  "column_break_xzrld",
+  "total_fee_paid",
+  "column_break_hisvw",
+  "govt_payment",
+  "fee_deatails_section",
+  "column_break_didmn",
+  "column_break_ww3lc",
+  "payment_status",
+  "column_break_md55l",
+  "next_payment",
+  "policy_tab",
+  "policy_details_section",
+  "policy_type",
+  "internal_guide",
+  "column_break_awobc",
+  "policy_dept",
+  "ext_certi",
+  "column_break_ib0ew",
+  "status_policy",
+  "column_break_xrykz",
+  "policy_scope",
+  "column_break_gfukt",
+  "legalregulatory_compliance_policy",
+  "policy_dates_section",
+  "policy_creation",
+  "column_break_prdfu",
+  "last_updated",
+  "column_break_khhpd",
+  "due_policy",
+  "column_break_0wfah",
+  "policy_implementation",
+  "revision_history_section",
+  "version_policy",
+  "column_break_c9zif",
+  "revsion_policy",
+  "column_break_xwtsx",
+  "nature_of_changes",
+  "column_break_lwqik",
+  "reason_for_change",
+  "testing_certificate_tab",
+  "certificate_details_section",
+  "certificate_type",
+  "item_test",
+  "column_break_gdxv1",
+  "certificate_no",
+  "contact_test",
+  "column_break_x6dz9",
+  "testing_agency",
+  "mail_test",
+  "column_break_jvi0i",
+  "certificate_status",
+  "accreditation_body",
+  "column_break_1mpzu",
+  "cert_test",
+  "validity_testing",
+  "issue_test",
+  "column_break_g3tei",
+  "expiry_test",
+  "column_break_v3hvu",
+  "renewal_test",
+  "column_break_jqwbf",
+  "validity_test",
+  "summary_section",
+  "test_results",
+  "column_break_fbapn",
+  "test_location",
+  "column_break_xlf7e",
+  "test_frequency",
+  "column_break_9oemj",
+  "summary_of_findings",
+  "insurance_tab",
+  "insurance_details_section",
+  "insurance_type",
+  "column_break_jz6sl",
+  "insurance_company",
+  "column_break_sjqsk",
+  "broker",
+  "column_break_nwcdu",
+  "policy_number",
+  "column_break_wnxep",
+  "policy_status",
+  "column_break_lha1h",
+  "vehicle_no",
+  "payment_and_contact_info_section",
+  "payment_frequency",
+  "column_break_bvrp7",
+  "payment_amount",
+  "column_break_k2oc8",
+  "insured_amount",
+  "column_break_1sm9n",
+  "contact_no",
+  "column_break_fblf9",
+  "mail_id",
+  "coverage_details_section",
+  "column_break_6wo5g",
+  "type_of_coverage",
+  "column_break_yuojj",
+  "deductibles",
+  "column_break_vpzck",
+  "exclusions_if_any",
+  "policy_validity_section",
+  "start_insurance",
+  "column_break_sme0f",
+  "end_insurance",
+  "column_break_wk462",
+  "renewal_insurance",
+  "column_break_naml5",
+  "grace_insurance",
+  "column_break_ikbn7",
+  "premium_insurance",
+  "payment_details_section",
+  "column_break_mhako",
+  "column_break_gvoa8",
+  "status_insurance",
+  "column_break_krukn",
+  "next_insurance",
+  "other_section",
+  "name_of_beneficiary",
+  "column_break_xhfp9",
+  "column_break_fyfmz",
+  "insured_assests",
+  "legal_cases_tab",
+  "case_details_section",
+  "case_type",
+  "column_break_kdbwe",
+  "case_status",
+  "column_break_atkti",
+  "case_number",
+  "column_break_rag9n",
+  "case_stage",
+  "column_break_nm6wj",
+  "case_outcome",
+  "court_details_section",
+  "court_name",
+  "column_break_c4q3b",
+  "lawyer_name",
+  "column_break_smokt",
+  "firm_name",
+  "column_break_kmsot",
+  "case_dates_section",
+  "filing",
+  "column_break_vt5ez",
+  "first_hearing",
+  "column_break_jafhr",
+  "next_hearing",
+  "column_break_0xorn",
+  "judgement",
+  "column_break_1vsvm",
+  "case_closure",
+  "financial_impact_section",
+  "claimed_amount",
+  "column_break_uorx0",
+  "settlement_amount",
+  "column_break_8d1ux",
+  "legal_fees",
+  "column_break_uvv9z",
+  "provision",
+  "column_break_xppxi",
+  "fines_penalties",
+  "accounts_tab",
+  "document_name",
+  "column_break_lkwzo",
+  "document_number",
+  "column_break_kxhzx",
+  "issue_date",
+  "company_circular_tab",
+  "circular_name",
+  "column_break_r8qmq",
+  "issue_circular",
+  "column_break_ygk8f",
+  "dept_circular",
+  "column_break_xnor0",
+  "signed_by",
+  "govt_return_tab",
+  "govt_return",
+  "column_break_w8pri",
+  "frequency_name",
+  "column_break_5iezs",
+  "due_date",
+  "column_break_52z16",
+  "submit_date",
+  "process_flow_chart_tab",
+  "process_flow",
+  "column_break_rtgzm",
+  "dept_flow",
+  "column_break_velxq",
+  "creator_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Documents"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "options": "CD-.YY.-",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "related_to",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "\nAccounts\nAgreements\nAudit Documents\nCompany Circular\nGovt Licenses\nGovernment Return\nHR Policies\nInsurance\nLegal Cases\nProcess Flow Chart\nTesting Certificate",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "cetificate_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cetificate Name",
+   "search_index": 1
+  },
+  {
+   "fieldname": "cetificate_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_global_search": 1,
+   "label": "Cetificate Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cetificate_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Cetificate No."
+  },
+  {
+   "fieldname": "cetificate_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Certificate Issued Date"
+  },
+  {
+   "fieldname": "issued_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Issued By"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "valid_from",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Valid From",
+   "search_index": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "valid_to",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Valid To",
+   "search_index": 1
+  },
+  {
+   "fieldname": "related_department",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "related_department.department_name",
+   "fieldname": "parent_department",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "documents_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Documents Status",
+   "options": "Active\nClose\nExpired\nUnder Process",
+   "search_index": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "in_preview": 1,
+   "label": "Image"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "files",
+   "fieldtype": "Attach",
+   "label": "Files"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('General Manager') ",
+   "fieldname": "is_private",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Private"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "hidden": 1,
+   "in_preview": 1,
+   "label": "Image Preview",
+   "options": "image"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Company Documents",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Audit Reports\" \n||  doc.related_to == \"Audit Certificate\" \n|| doc.related_to == \"Audit Cap\"\n|| doc.related_to == \"Audit Documents\"",
+   "fieldname": "audit_tab",
+   "fieldtype": "Tab Break",
+   "label": "Audit"
+  },
+  {
+   "fieldname": "audit_section",
+   "fieldtype": "Section Break",
+   "label": "Audit Details"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "Document Type",
+   "options": "\nAudit Report (Internal/External)\nCompliance Certificate\nInspection Report\nCorrective Action Plan\nSafety Audit\nFinancial Audit\nPerformance Report"
+  },
+  {
+   "fieldname": "contact_audit",
+   "fieldtype": "Phone",
+   "label": "Contact No"
+  },
+  {
+   "fieldname": "column_break_ksuah",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "categorytype",
+   "fieldtype": "Select",
+   "label": "Category/Type",
+   "options": "\nOperational Audit\nFinancial Audit\nSafety/Health Audit\nEnvironmental Compliance Audit\nLegal/Regulatory Compliance Audit\nIT/System Audit"
+  },
+  {
+   "fieldname": "mail_audit",
+   "fieldtype": "Data",
+   "label": "Mail ID"
+  },
+  {
+   "fieldname": "column_break_elszs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "audit_name",
+   "fieldtype": "Data",
+   "label": "Audit Name"
+  },
+  {
+   "fieldname": "audit_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Audit Status",
+   "options": "\nCompleted\nClosed\nIn Progress\nPending Action\nUnder Review"
+  },
+  {
+   "fieldname": "column_break_pfquo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "agency_name",
+   "fieldtype": "Data",
+   "label": "Agency Name"
+  },
+  {
+   "fieldname": "area_of_focus",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Area of Focus",
+   "options": "\nInventory\nCompliance\nHealth & Safety\nSales\nFinancial"
+  },
+  {
+   "fieldname": "column_break_exnn2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "auditor_name",
+   "fieldtype": "Data",
+   "label": "Auditor Name"
+  },
+  {
+   "fieldname": "audit_approval",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Approval Status",
+   "options": "\nApproved\nPending Approval\nRejected\nUnder Review"
+  },
+  {
+   "fieldname": "findings_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Findings"
+  },
+  {
+   "fieldname": "compliant",
+   "fieldtype": "Data",
+   "label": "Compliant"
+  },
+  {
+   "fieldname": "column_break_0u970",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "non_compliant",
+   "fieldtype": "Data",
+   "label": "Non-Compliant"
+  },
+  {
+   "fieldname": "column_break_vspow",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "risk_level",
+   "fieldtype": "Select",
+   "label": "Risk Level",
+   "options": "\nHigh\nLow\nMedium"
+  },
+  {
+   "fieldname": "column_break_nxlgy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "action_required",
+   "fieldtype": "Select",
+   "label": "Action Required",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "audit_dates_section",
+   "fieldtype": "Section Break",
+   "label": "Audit Dates"
+  },
+  {
+   "fieldname": "audit_start",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "cap_submission",
+   "fieldtype": "Date",
+   "label": "CAP Submission"
+  },
+  {
+   "fieldname": "column_break_2dzzb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "audit_end",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "follow_review",
+   "fieldtype": "Date",
+   "label": "Follow-up/Review"
+  },
+  {
+   "fieldname": "column_break_cddpd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_issue_date",
+   "fieldtype": "Date",
+   "label": "Report Issue Date"
+  },
+  {
+   "fieldname": "column_break_6vvfc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_audit_date",
+   "fieldtype": "Date",
+   "label": "Next Audit Date"
+  },
+  {
+   "fieldname": "corrective_action_plan",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Corrective Action Plan"
+  },
+  {
+   "fieldname": "implementation_date",
+   "fieldtype": "Date",
+   "label": "Implementation Date"
+  },
+  {
+   "fieldname": "column_break_iqqat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned",
+   "fieldtype": "Select",
+   "label": "Action Assigned to",
+   "options": "\nManager\nDepartment"
+  },
+  {
+   "fieldname": "column_break_leyxv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nOpen\nIn Progress\nResolved"
+  },
+  {
+   "fieldname": "column_break_fgnyb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cap_deadline",
+   "fieldtype": "Date",
+   "label": "CAP Deadline"
+  },
+  {
+   "fieldname": "certification_details_section",
+   "fieldtype": "Section Break",
+   "label": "Certification Details"
+  },
+  {
+   "fieldname": "certification_type",
+   "fieldtype": "Select",
+   "label": "Certification Type",
+   "options": "\nISO\nCompliance\nHealth & Safety"
+  },
+  {
+   "fieldname": "column_break_eb1nh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issue",
+   "fieldtype": "Data",
+   "label": "Issued By"
+  },
+  {
+   "fieldname": "column_break_pietx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certification_number",
+   "fieldtype": "Data",
+   "label": "Certification Number"
+  },
+  {
+   "fieldname": "validity_period_section",
+   "fieldtype": "Section Break",
+   "label": "Validity period"
+  },
+  {
+   "fieldname": "start_audit",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_u0txh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exp_audit",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "column_break_tgqnn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ren_audit",
+   "fieldtype": "Date",
+   "label": "Renewal Date"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Agreements\" ",
+   "fieldname": "agreements_tab",
+   "fieldtype": "Tab Break",
+   "label": "Agreements"
+  },
+  {
+   "fieldname": "agreements_section",
+   "fieldtype": "Section Break",
+   "label": "Agreement Detail"
+  },
+  {
+   "fieldname": "agreement_type",
+   "fieldtype": "Select",
+   "label": "Agreement Type",
+   "options": "\nFranchise Agreement\nLease Agreement\nSupply Agreement\nService Level Agreement\nVendor Agreement"
+  },
+  {
+   "fieldname": "agreement_status",
+   "fieldtype": "Select",
+   "label": "Agreement Status",
+   "options": "\nActive\nExpired\nIn Draft/Under Review\nPending Renewal\nTerminated"
+  },
+  {
+   "fieldname": "column_break_2jrde",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Link",
+   "label": "Party name",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_rvcwy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_xiyff",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "signed_person",
+   "fieldtype": "Data",
+   "label": "Signed Person(Pink City)"
+  },
+  {
+   "fieldname": "column_break_ia9qw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "third_party_person",
+   "fieldtype": "Data",
+   "label": "Third Party Person"
+  },
+  {
+   "fieldname": "agreement_dates_section",
+   "fieldtype": "Section Break",
+   "label": "Agreement Dates"
+  },
+  {
+   "fieldname": "date_of_signing",
+   "fieldtype": "Date",
+   "label": "Date of Signing"
+  },
+  {
+   "fieldname": "column_break_okvuq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_42njk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "column_break_xgrff",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "renewal",
+   "fieldtype": "Date",
+   "label": "Renewal"
+  },
+  {
+   "fieldname": "column_break_clrwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "termination",
+   "fieldtype": "Date",
+   "label": "Termination"
+  },
+  {
+   "fieldname": "document_version_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Document Version"
+  },
+  {
+   "fieldname": "version_number",
+   "fieldtype": "Data",
+   "label": "Version Number"
+  },
+  {
+   "fieldname": "column_break_zofjh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "revision_date",
+   "fieldtype": "Date",
+   "label": "Revision Date"
+  },
+  {
+   "fieldname": "column_break_cghuy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amendments",
+   "fieldtype": "Data",
+   "label": "Amendments"
+  },
+  {
+   "fieldname": "section_break_nzepi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Approval Status",
+   "options": "\nApproved\nRejected\nPending Approval\nSent for Revision"
+  },
+  {
+   "fieldname": "column_break_vuih9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "security_and_access_permissions",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Security and Access Permissions",
+   "options": "\nConfidential\nPublic/Internal\nRestricted"
+  },
+  {
+   "fieldname": "column_break_hu2f9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Govt Licenses\" ",
+   "fieldname": "government_licenses_section",
+   "fieldtype": "Tab Break",
+   "label": "Government Licenses"
+  },
+  {
+   "fieldname": "license_details_section",
+   "fieldtype": "Section Break",
+   "label": "License Issuing Authority"
+  },
+  {
+   "fieldname": "license_type",
+   "fieldtype": "Select",
+   "label": "License Type",
+   "options": "\nTrade/Business\nFood Safety (FSSAI)\nHealth and Safety\nEnvironmental Permit\nFire Safety Certificate\nSignage/Advertising Permit"
+  },
+  {
+   "fieldname": "consultant_name",
+   "fieldtype": "Data",
+   "label": "Consultant Name"
+  },
+  {
+   "fieldname": "column_break_yplhk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_of_govt",
+   "fieldtype": "Data",
+   "label": "Name of Government Body/Agency"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "contact_govt",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Contact Information"
+  },
+  {
+   "fieldname": "column_break_t9pax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issuing_juridiction",
+   "fieldtype": "Select",
+   "label": "Issuing Juridiction",
+   "options": "\nCity\nState\nNational"
+  },
+  {
+   "fieldname": "required_document_list",
+   "fieldtype": "Data",
+   "label": "Required Document List"
+  },
+  {
+   "fieldname": "column_break_g3neo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "license_no",
+   "fieldtype": "Data",
+   "label": "License No"
+  },
+  {
+   "fieldname": "column_break_p0qjs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "license_status",
+   "fieldtype": "Select",
+   "label": "License Status",
+   "options": "\nActive\nCancelled\nExpired\nPending Renewal\nSuspended\nUnder Review"
+  },
+  {
+   "fieldname": "validity_license",
+   "fieldtype": "Section Break",
+   "label": "License Validity and Fee Details"
+  },
+  {
+   "fieldname": "issue_govt",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "grace_govt",
+   "fieldtype": "Data",
+   "label": "Grace Period (If Applicable)"
+  },
+  {
+   "fieldname": "column_break_kxdf4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expiry_govt",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "column_break_tgodh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "renewal_govt",
+   "fieldtype": "Date",
+   "label": "Renewal Date"
+  },
+  {
+   "fieldname": "column_break_xzrld",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_fee_paid",
+   "fieldtype": "Currency",
+   "label": "Total Fee Paid"
+  },
+  {
+   "fieldname": "column_break_hisvw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "govt_payment",
+   "fieldtype": "Date",
+   "label": "Payment Date"
+  },
+  {
+   "fieldname": "fee_deatails_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Fee Deatails"
+  },
+  {
+   "fieldname": "column_break_didmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ww3lc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "\nPaid\nPending\nOverdue"
+  },
+  {
+   "fieldname": "column_break_md55l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_payment",
+   "fieldtype": "Date",
+   "label": "Next Payment Due Date"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"HR Policies\" ",
+   "fieldname": "policy_tab",
+   "fieldtype": "Tab Break",
+   "label": "Policy"
+  },
+  {
+   "fieldname": "policy_details_section",
+   "fieldtype": "Section Break",
+   "label": "Policy Details"
+  },
+  {
+   "fieldname": "policy_type",
+   "fieldtype": "Select",
+   "label": "Policy Type",
+   "options": "\nEmployment Policy\nLeave Policy\nCode of Conduct\nAttendance and Punctuality Policy\nHealth and Safety Policy\nCompensation and Benefits Policy\nPerformance Management Policy\nWorkplace Harassment & Anti - Discrimination Policy\nTraining and Development Policy\nTermination and Exit Policy"
+  },
+  {
+   "fieldname": "internal_guide",
+   "fieldtype": "Data",
+   "label": "Internal Standard/Guidelines"
+  },
+  {
+   "fieldname": "column_break_awobc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "policy_dept",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "ext_certi",
+   "fieldtype": "Data",
+   "label": "External Certifications Required"
+  },
+  {
+   "fieldname": "column_break_ib0ew",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status_policy",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nArchived\nIn Review\nPending Approval\nRevised/Updated"
+  },
+  {
+   "fieldname": "column_break_xrykz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "policy_scope",
+   "fieldtype": "Select",
+   "label": "Policy Scope",
+   "options": "\nCompany-Wide\nStore-Specific\nDepartmental\nRegional/Location Specific"
+  },
+  {
+   "fieldname": "column_break_gfukt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "legalregulatory_compliance_policy",
+   "fieldtype": "Data",
+   "label": "Legal/Regulatory Compliance Policy"
+  },
+  {
+   "fieldname": "policy_dates_section",
+   "fieldtype": "Section Break",
+   "label": "Policy Dates"
+  },
+  {
+   "fieldname": "policy_creation",
+   "fieldtype": "Date",
+   "label": "Policy Creation"
+  },
+  {
+   "fieldname": "column_break_prdfu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_updated",
+   "fieldtype": "Date",
+   "label": "Last Updated"
+  },
+  {
+   "fieldname": "column_break_khhpd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "due_policy",
+   "fieldtype": "Date",
+   "label": "Review Due Date"
+  },
+  {
+   "fieldname": "column_break_0wfah",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "policy_implementation",
+   "fieldtype": "Date",
+   "label": "Policy Implementation"
+  },
+  {
+   "fieldname": "revision_history_section",
+   "fieldtype": "Section Break",
+   "label": "Revision History"
+  },
+  {
+   "fieldname": "version_policy",
+   "fieldtype": "Data",
+   "label": "Version Number"
+  },
+  {
+   "fieldname": "column_break_c9zif",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "revsion_policy",
+   "fieldtype": "Date",
+   "label": "Revision Date"
+  },
+  {
+   "fieldname": "column_break_xwtsx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nature_of_changes",
+   "fieldtype": "Select",
+   "label": "Nature of Changes",
+   "options": "\nMajor Revision\nMinor Update"
+  },
+  {
+   "fieldname": "column_break_lwqik",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason_for_change",
+   "fieldtype": "Data",
+   "label": "Reason For Change"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Testing Certificate\" ",
+   "fieldname": "testing_certificate_tab",
+   "fieldtype": "Tab Break",
+   "label": "Testing Certificate"
+  },
+  {
+   "fieldname": "certificate_details_section",
+   "fieldtype": "Section Break",
+   "label": "Certificate Details"
+  },
+  {
+   "fieldname": "certificate_type",
+   "fieldtype": "Select",
+   "label": "Certificate Type",
+   "options": "\nProduct Quality\nSafety Compliance\nEnvironmental Testing\nEquipment Calibration\nFire Safety Testing\nHealth & Hygiene\nElectrical/Mechanical Testing"
+  },
+  {
+   "fieldname": "item_test",
+   "fieldtype": "Data",
+   "label": "Equipment/Item Tested"
+  },
+  {
+   "fieldname": "column_break_gdxv1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certificate_no",
+   "fieldtype": "Data",
+   "label": "Certificate No"
+  },
+  {
+   "fieldname": "contact_test",
+   "fieldtype": "Phone",
+   "label": "Contact No"
+  },
+  {
+   "fieldname": "column_break_x6dz9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "testing_agency",
+   "fieldtype": "Data",
+   "label": "Testing Agency "
+  },
+  {
+   "fieldname": "mail_test",
+   "fieldtype": "Data",
+   "label": "Mail ID"
+  },
+  {
+   "fieldname": "column_break_jvi0i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certificate_status",
+   "fieldtype": "Select",
+   "label": "Certificate Status",
+   "options": "\nActive\nExpired\nPending Renewal\nSuspended\nUnder Review"
+  },
+  {
+   "fieldname": "accreditation_body",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Accreditation Body"
+  },
+  {
+   "fieldname": "column_break_1mpzu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cert_test",
+   "fieldtype": "Currency",
+   "label": "Certification or Testing Cost"
+  },
+  {
+   "fieldname": "validity_testing",
+   "fieldtype": "Section Break",
+   "label": "Validity Period"
+  },
+  {
+   "fieldname": "issue_test",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "column_break_g3tei",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expiry_test",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "column_break_v3hvu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "renewal_test",
+   "fieldtype": "Date",
+   "label": "Renewal Due Date"
+  },
+  {
+   "fieldname": "column_break_jqwbf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "validity_test",
+   "fieldtype": "Date",
+   "label": "Validity Period (In Days/Months)"
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "test_results",
+   "fieldtype": "Select",
+   "label": "Test Results",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "column_break_fbapn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_location",
+   "fieldtype": "Select",
+   "label": "Test Location",
+   "options": "\nOn-Site\nOff-Site\nIn-Store"
+  },
+  {
+   "fieldname": "column_break_xlf7e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "test_frequency",
+   "fieldtype": "Select",
+   "label": "Test Frequency",
+   "options": "\nAnnual\nSemi-Annual\nQuarterly Testing"
+  },
+  {
+   "fieldname": "column_break_9oemj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "summary_of_findings",
+   "fieldtype": "Data",
+   "label": "Summary of Findings"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Insurance\" ",
+   "fieldname": "insurance_tab",
+   "fieldtype": "Tab Break",
+   "label": "Insurance"
+  },
+  {
+   "fieldname": "insurance_details_section",
+   "fieldtype": "Section Break",
+   "label": "Insurance Details"
+  },
+  {
+   "fieldname": "insurance_type",
+   "fieldtype": "Select",
+   "label": "Insurance Type",
+   "options": "\nProperty\nLiability\nBusiness Interruption\nWorker's Compensation\nTheft/Burglary\nEquipment/Machinery\nFire/Flood\nVehicle/Transport"
+  },
+  {
+   "fieldname": "column_break_jz6sl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insurance_company",
+   "fieldtype": "Data",
+   "label": "Insurance Company Name"
+  },
+  {
+   "fieldname": "column_break_sjqsk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "broker",
+   "fieldtype": "Data",
+   "label": "Broker (If Applicable)"
+  },
+  {
+   "fieldname": "column_break_nwcdu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "policy_number",
+   "fieldtype": "Data",
+   "label": "Policy Number"
+  },
+  {
+   "fieldname": "column_break_wnxep",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "policy_status",
+   "fieldtype": "Select",
+   "label": "Policy Status",
+   "options": "\nActive\nExpired\nPending Renewal\nCancelled\nUnder Review"
+  },
+  {
+   "fieldname": "column_break_lha1h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle_no",
+   "fieldtype": "Data",
+   "label": "Vehicle No"
+  },
+  {
+   "fieldname": "payment_and_contact_info_section",
+   "fieldtype": "Section Break",
+   "label": "Payment and Contact Info"
+  },
+  {
+   "fieldname": "payment_frequency",
+   "fieldtype": "Select",
+   "label": "Payment Frequency",
+   "options": "\nMonthly\nQuarterly\nAnnually"
+  },
+  {
+   "fieldname": "column_break_bvrp7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_amount",
+   "fieldtype": "Currency",
+   "label": "Payment Amount"
+  },
+  {
+   "fieldname": "column_break_k2oc8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insured_amount",
+   "fieldtype": "Currency",
+   "label": "Insured Amount"
+  },
+  {
+   "fieldname": "column_break_1sm9n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Phone",
+   "label": "Contact No"
+  },
+  {
+   "fieldname": "column_break_fblf9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mail_id",
+   "fieldtype": "Data",
+   "label": "Mail ID"
+  },
+  {
+   "fieldname": "coverage_details_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Coverage Details"
+  },
+  {
+   "fieldname": "column_break_6wo5g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_of_coverage",
+   "fieldtype": "Select",
+   "label": "Type of Coverage",
+   "options": "\nProperty Damage\nLiability"
+  },
+  {
+   "fieldname": "column_break_yuojj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deductibles",
+   "fieldtype": "Data",
+   "label": "Deductibles"
+  },
+  {
+   "fieldname": "column_break_vpzck",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exclusions_if_any",
+   "fieldtype": "Data",
+   "label": "Exclusions (if any)"
+  },
+  {
+   "fieldname": "policy_validity_section",
+   "fieldtype": "Section Break",
+   "label": "Policy Validity"
+  },
+  {
+   "fieldname": "start_insurance",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_sme0f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_insurance",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "column_break_wk462",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "renewal_insurance",
+   "fieldtype": "Date",
+   "label": "Renewal Date"
+  },
+  {
+   "fieldname": "column_break_naml5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grace_insurance",
+   "fieldtype": "Data",
+   "label": "Grace Period"
+  },
+  {
+   "fieldname": "column_break_ikbn7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "premium_insurance",
+   "fieldtype": "Date",
+   "label": "Premium Due Date"
+  },
+  {
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "column_break_mhako",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gvoa8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status_insurance",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPaid\nPending\nOverdue"
+  },
+  {
+   "fieldname": "column_break_krukn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_insurance",
+   "fieldtype": "Date",
+   "label": "Next Payment Date"
+  },
+  {
+   "fieldname": "other_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Other "
+  },
+  {
+   "fieldname": "name_of_beneficiary",
+   "fieldtype": "Data",
+   "label": "Name of Beneficiary"
+  },
+  {
+   "fieldname": "column_break_xhfp9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fyfmz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insured_assests",
+   "fieldtype": "Select",
+   "label": "Insured Assests",
+   "options": "\nStore/Building\nInventory\nEquipment/Machinery"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Legal Cases\" ",
+   "fieldname": "legal_cases_tab",
+   "fieldtype": "Tab Break",
+   "label": "Legal Cases"
+  },
+  {
+   "fieldname": "case_details_section",
+   "fieldtype": "Section Break",
+   "label": "Case Details"
+  },
+  {
+   "fieldname": "case_type",
+   "fieldtype": "Select",
+   "label": "Case Type",
+   "options": "\nCivil\nCriminal\nContract Dispute\nCompliance/Regulatory Violation\nEmployment/Lease\nIntellectual Property\nProperty Dispute\nTax/Financial"
+  },
+  {
+   "fieldname": "column_break_kdbwe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive/Ongoing\nAppealed\nClosed\nPending\nSettled\nUnder Review"
+  },
+  {
+   "fieldname": "column_break_atkti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_number",
+   "fieldtype": "Data",
+   "label": "Case Number"
+  },
+  {
+   "fieldname": "column_break_rag9n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_stage",
+   "fieldtype": "Select",
+   "label": "Case Stage",
+   "options": "\nAppeal\nInvestigation\nPre-Trial\nTrial\nSettlement Negotiation"
+  },
+  {
+   "fieldname": "column_break_nm6wj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_outcome",
+   "fieldtype": "Select",
+   "label": "Case Outcome",
+   "options": "\nWon\nLost\nSettled Out of Court\nDismissed\nOngoing with No Judgement"
+  },
+  {
+   "fieldname": "court_details_section",
+   "fieldtype": "Section Break",
+   "label": "Court Details"
+  },
+  {
+   "fieldname": "court_name",
+   "fieldtype": "Select",
+   "label": "Court Name",
+   "options": "\nDistrict\nHigh Court"
+  },
+  {
+   "fieldname": "column_break_c4q3b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lawyer_name",
+   "fieldtype": "Data",
+   "label": "Lawyer Name"
+  },
+  {
+   "fieldname": "column_break_smokt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "firm_name",
+   "fieldtype": "Data",
+   "label": "Firm Name"
+  },
+  {
+   "fieldname": "column_break_kmsot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_dates_section",
+   "fieldtype": "Section Break",
+   "label": "Case Dates"
+  },
+  {
+   "fieldname": "filing",
+   "fieldtype": "Date",
+   "label": "Filing"
+  },
+  {
+   "fieldname": "column_break_vt5ez",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_hearing",
+   "fieldtype": "Date",
+   "label": "First Hearing "
+  },
+  {
+   "fieldname": "column_break_jafhr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_hearing",
+   "fieldtype": "Date",
+   "label": "Next Hearing"
+  },
+  {
+   "fieldname": "column_break_0xorn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "judgement",
+   "fieldtype": "Date",
+   "label": "Judgement "
+  },
+  {
+   "fieldname": "column_break_1vsvm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_closure",
+   "fieldtype": "Date",
+   "label": "Case Closure"
+  },
+  {
+   "fieldname": "financial_impact_section",
+   "fieldtype": "Section Break",
+   "label": "Financial Impact"
+  },
+  {
+   "fieldname": "claimed_amount",
+   "fieldtype": "Currency",
+   "label": "Claimed Amount"
+  },
+  {
+   "fieldname": "column_break_uorx0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "settlement_amount",
+   "fieldtype": "Currency",
+   "label": "Settlement Amount (if settled)"
+  },
+  {
+   "fieldname": "column_break_8d1ux",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "legal_fees",
+   "fieldtype": "Currency",
+   "label": "Legal Fees"
+  },
+  {
+   "fieldname": "column_break_uvv9z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "provision",
+   "fieldtype": "Currency",
+   "label": "Provision for Future Costs"
+  },
+  {
+   "fieldname": "column_break_xppxi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fines_penalties",
+   "fieldtype": "Currency",
+   "label": "Fines or Penalties Imposed"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Accounts\" ",
+   "fieldname": "accounts_tab",
+   "fieldtype": "Tab Break",
+   "label": "Accounts"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "label": "Document Name"
+  },
+  {
+   "fieldname": "column_break_lkwzo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_number",
+   "fieldtype": "Data",
+   "label": "Document Number"
+  },
+  {
+   "fieldname": "column_break_kxhzx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Company Circular\" ",
+   "fieldname": "company_circular_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Circular"
+  },
+  {
+   "fieldname": "circular_name",
+   "fieldtype": "Data",
+   "label": "Circular Name"
+  },
+  {
+   "fieldname": "column_break_r8qmq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issue_circular",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "column_break_ygk8f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dept_circular",
+   "fieldtype": "Link",
+   "label": "Related Department Name",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_xnor0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "signed_by",
+   "fieldtype": "Data",
+   "label": "Signed By"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Government Return\"",
+   "fieldname": "govt_return_tab",
+   "fieldtype": "Tab Break",
+   "label": "Govt Return"
+  },
+  {
+   "fieldname": "govt_return",
+   "fieldtype": "Link",
+   "label": "Govt Dept Name",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_w8pri",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "frequency_name",
+   "fieldtype": "Data",
+   "label": "Frequency Name"
+  },
+  {
+   "fieldname": "column_break_5iezs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "column_break_52z16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "submit_date",
+   "fieldtype": "Date",
+   "label": "Submit Date"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Process Flow Chart\"",
+   "fieldname": "process_flow_chart_tab",
+   "fieldtype": "Tab Break",
+   "label": "Process Flow Chart"
+  },
+  {
+   "fieldname": "process_flow",
+   "fieldtype": "Data",
+   "label": "Process Flow Name"
+  },
+  {
+   "fieldname": "column_break_rtgzm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dept_flow",
+   "fieldtype": "Link",
+   "label": "Department Name",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_velxq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "creator_name",
+   "fieldtype": "Data",
+   "label": "Creator Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:50:17.188579",
+ "modified_by": "Administrator",
+ "module": "Pinkcity HR",
+ "name": "Document Library",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

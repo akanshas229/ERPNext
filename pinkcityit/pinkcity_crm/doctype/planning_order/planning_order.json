@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-01 11:42:40.059462",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "metal",
+  "qty",
+  "value_of_order",
+  "no_of_sku",
+  "currency"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "metal",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Metal",
+   "options": "Metal Type"
+  },
+  {
+   "columns": 2,
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "columns": 2,
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "value_of_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Value"
+  },
+  {
+   "columns": 2,
+   "fieldname": "no_of_sku",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No. of SKU"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:49:03.533340",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Planning Order",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

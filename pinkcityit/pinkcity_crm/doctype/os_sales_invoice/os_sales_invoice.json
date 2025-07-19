@@ -1,0 +1,174 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-16 10:49:02.281254",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_no",
+  "sr_no",
+  "column_break_lhpaj",
+  "invoice_date",
+  "quantity",
+  "column_break_ubfya",
+  "design_code",
+  "weight",
+  "size",
+  "section_break_tu5f2",
+  "invoice_fob",
+  "raw_material_weight_section",
+  "gold_weight",
+  "stone_weight",
+  "column_break_048xd",
+  "silver_weight",
+  "metal_weight",
+  "column_break_ssofk",
+  "diamond_weight",
+  "other_weight",
+  "invoice_design_id"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Data",
+   "label": "Sr No.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lhpaj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Invoice Date",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ubfya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Design Code",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_tu5f2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "invoice_fob",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Invoice FOB",
+   "read_only": 1
+  },
+  {
+   "fieldname": "raw_material_weight_section",
+   "fieldtype": "Section Break",
+   "label": "Raw Material Weight"
+  },
+  {
+   "fieldname": "gold_weight",
+   "fieldtype": "Float",
+   "label": "Gold Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_weight",
+   "fieldtype": "Float",
+   "label": "Stone Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_048xd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "silver_weight",
+   "fieldtype": "Float",
+   "label": "Silver Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_weight",
+   "fieldtype": "Float",
+   "label": "Metal Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ssofk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_weight",
+   "fieldtype": "Float",
+   "label": "Diamond Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "other_weight",
+   "fieldtype": "Float",
+   "label": "Other Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_design_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Invoice Design ID",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-16 10:49:02.281254",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "OS Sales Invoice",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

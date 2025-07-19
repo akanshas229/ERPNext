@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-08 10:37:41.342467",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stone_code",
+  "column_break_su5vl",
+  "design_code",
+  "column_break_o99ab",
+  "length",
+  "column_break_jnvid",
+  "description",
+  "section_break_ldmui",
+  "width",
+  "design_quantity",
+  "column_break_7n86t",
+  "weight",
+  "total_required_qty_pcs",
+  "column_break_t1gdu",
+  "quantity",
+  "total_accessory_weight",
+  "column_break_zrk41",
+  "order_design_id",
+  "order_design_rm_id"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "stone_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stone Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_su5vl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Design Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_o99ab",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Data",
+   "label": "Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jnvid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ldmui",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Data",
+   "label": "Width",
+   "read_only": 1
+  },
+  {
+   "fieldname": "design_quantity",
+   "fieldtype": "Data",
+   "label": "Design Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7n86t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Wt Pc (cts)",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_required_qty_pcs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Req Qty(Pcs)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_t1gdu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qty Pc",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_accessory_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Req Wt(Cts)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zrk41",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "order_design_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Order Design Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "order_design_rm_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Order Design Rm Id",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:34:50.619236",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "OS Stone Proc",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

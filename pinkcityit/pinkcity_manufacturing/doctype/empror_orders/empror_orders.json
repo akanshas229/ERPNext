@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-05 14:55:53.057955",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_details",
+  "order_no",
+  "company_code",
+  "column_break_jmxkw",
+  "client_code",
+  "client_name",
+  "column_break_vgmjy",
+  "purchase_order_no",
+  "order_date",
+  "column_break_gyvow",
+  "export_delivery_date",
+  "order_date_from",
+  "order_date_to",
+  "photograhphy_details_section",
+  "design_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order No"
+  },
+  {
+   "fieldname": "company_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company Code"
+  },
+  {
+   "fieldname": "client_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Code"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_jmxkw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchase_order_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Purchase Order No"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "export_delivery_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Export Delivery Date"
+  },
+  {
+   "fieldname": "order_date_from",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Order Date From"
+  },
+  {
+   "fieldname": "order_date_to",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Order Date To"
+  },
+  {
+   "fieldname": "order_details",
+   "fieldtype": "Section Break",
+   "label": "Order Details"
+  },
+  {
+   "fieldname": "photograhphy_details_section",
+   "fieldtype": "Section Break",
+   "label": "Design Details"
+  },
+  {
+   "fieldname": "column_break_vgmjy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gyvow",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_list",
+   "fieldtype": "Table",
+   "label": "Design LIst",
+   "options": "EO Design Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2025-04-07 09:49:28.121647",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "Empror Orders",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MIS Rights",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "select": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

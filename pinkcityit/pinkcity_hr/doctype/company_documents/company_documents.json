@@ -1,0 +1,322 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-08-10 14:47:31.063907",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_documents_tab",
+  "naming_series",
+  "related_to",
+  "cetificate_name",
+  "cetificate_type",
+  "cetificate_no",
+  "cetificate_date",
+  "issued_by",
+  "description",
+  "column_break_7",
+  "valid_from",
+  "valid_to",
+  "company",
+  "related_department",
+  "parent_department",
+  "documents_status",
+  "image",
+  "files",
+  "is_private",
+  "image_preview",
+  "amended_from",
+  "audit_tab",
+  "audit_section",
+  "audit_agency_name",
+  "column_break_22",
+  "audit_date",
+  "agreements_tab",
+  "agreements_section",
+  "customer",
+  "column_break_pdty9",
+  "sales_person"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Documents"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "options": "CD-.YY.-",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "related_to",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "\nAccounts\nAgreements\nAudit Certificate\nAudit Documents\nAudit Reports\nAudit Cap\nCompany Circular\nEnvironment\nGovt Licenses\nGovernment Return\nHR Policies\nInspection Report\nInsurance\nLegal Cases\nProcess Flow Chart\nTesting Certificate\nTraining",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cetificate_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cetificate Name",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "cetificate_type",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Cetificate Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cetificate_no",
+   "fieldtype": "Data",
+   "label": "Cetificate No."
+  },
+  {
+   "fieldname": "cetificate_date",
+   "fieldtype": "Date",
+   "label": "Certificate Issued Date"
+  },
+  {
+   "fieldname": "issued_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Issued By"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "valid_from",
+   "fieldtype": "Date",
+   "label": "Valid From",
+   "search_index": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "valid_to",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Valid To",
+   "search_index": 1
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "related_department",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "related_department.department_name",
+   "fieldname": "parent_department",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "documents_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Documents Status",
+   "options": "Active\nClose\nExpired\nUnder Process",
+   "search_index": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "in_preview": 1,
+   "label": "Image"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "files",
+   "fieldtype": "Attach",
+   "label": "Files"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('General Manager') ",
+   "fieldname": "is_private",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Private"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "hidden": 1,
+   "in_preview": 1,
+   "label": "Image Preview",
+   "options": "image"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Company Documents",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Audit Reports\" \n||  doc.related_to == \"Audit Certificate\" \n|| doc.related_to == \"Audit Cap\"\n|| doc.related_to == \"Audit Documents\"",
+   "fieldname": "audit_tab",
+   "fieldtype": "Tab Break",
+   "label": "Audit"
+  },
+  {
+   "fieldname": "audit_section",
+   "fieldtype": "Section Break",
+   "label": "Audit"
+  },
+  {
+   "fieldname": "audit_agency_name",
+   "fieldtype": "Data",
+   "label": "Audit Agency Name"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "audit_date",
+   "fieldtype": "Date",
+   "label": "Audit Date"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Agreements\" ",
+   "fieldname": "agreements_tab",
+   "fieldtype": "Tab Break",
+   "label": "Agreements"
+  },
+  {
+   "fieldname": "agreements_section",
+   "fieldtype": "Section Break",
+   "label": "Agreements"
+  },
+  {
+   "depends_on": "eval:doc.related_to == \"Agreements\" ",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_pdty9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Link",
+   "label": "Sales Person",
+   "options": "Sales Person"
+  }
+ ],
+ "icon": "fa fa-calendar",
+ "image_field": "image",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-28 10:59:35.891873",
+ "modified_by": "Administrator",
+ "module": "Pinkcity HR",
+ "name": "Company Documents",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Operator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "set_user_permissions": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "related_to",
+ "track_changes": 1
+}

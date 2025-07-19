@@ -1,0 +1,254 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-22 18:03:39.371661",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "custom_opp_base",
+  "company",
+  "status",
+  "column_break0",
+  "source",
+  "custom_project_name",
+  "custom_column_break_n1bzw",
+  "party_name",
+  "custom_opportunity_owner",
+  "custom_column_break_26grc",
+  "client_code",
+  "section_break_14",
+  "currency",
+  "total_amount",
+  "column_break_36",
+  "opportunity_amount",
+  "column_break_17",
+  "probability",
+  "custom_column_break_apobj",
+  "conversion_rate",
+  "new_development_tab",
+  "development_details",
+  "amended_from",
+  "po_details_tab",
+  "design_no",
+  "column_break_tvcxo",
+  "quantity",
+  "column_break_zvi9e",
+  "po_no",
+  "column_break_1xjbp",
+  "value"
+ ],
+ "fields": [
+  {
+   "fieldname": "custom_opp_base",
+   "fieldtype": "Tab Break",
+   "label": "OPP Base"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1,
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Open\nConverted\nLost",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break0",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "label": "Source",
+   "options": "Lead Source"
+  },
+  {
+   "fieldname": "custom_project_name",
+   "fieldtype": "Data",
+   "label": "Project Name/Collection Name",
+   "translatable": 1
+  },
+  {
+   "fieldname": "custom_column_break_n1bzw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "party_name",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "default": "__user",
+   "fieldname": "custom_opportunity_owner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Opportunity Owner",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "custom_column_break_26grc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "party_name.client_code",
+   "fieldname": "client_code",
+   "fieldtype": "Data",
+   "label": "Client Code"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break",
+   "label": "Opportunity Value"
+  },
+  {
+   "default": "USD",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "opportunity_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Opportunity Amount",
+   "options": "currency",
+   "reqd": 1,
+   "width": "10"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "100",
+   "fieldname": "probability",
+   "fieldtype": "Percent",
+   "label": "Probability (%)"
+  },
+  {
+   "fieldname": "custom_column_break_apobj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "85.7",
+   "fieldname": "conversion_rate",
+   "fieldtype": "Float",
+   "label": "Exchange Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "new_development_tab",
+   "fieldtype": "Tab Break",
+   "label": "New Development"
+  },
+  {
+   "fieldname": "development_details",
+   "fieldtype": "Table",
+   "label": "Development Details",
+   "options": "Opp NPD CT"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Opportunity New",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "po_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "PO Details"
+  },
+  {
+   "fieldname": "design_no",
+   "fieldtype": "Data",
+   "label": "Design No"
+  },
+  {
+   "fieldname": "column_break_tvcxo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_zvi9e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "po_no",
+   "fieldtype": "Data",
+   "label": "PO No"
+  },
+  {
+   "fieldname": "column_break_1xjbp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "label": "Value"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-06 11:47:15.773085",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Opportunity New",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

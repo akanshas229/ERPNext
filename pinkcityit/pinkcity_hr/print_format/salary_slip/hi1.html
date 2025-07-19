@@ -1,0 +1,522 @@
+<section class="content px-5">
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    <div class="company mb-2 border-bottom pt-4">
+                        <img src="https://erp.pinkcityindia.com/files/pc-logo-white.png" class="logo" />
+                        <p class="name">{{doc.company}}</p>
+                    </div>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="row mb-3">
+                        <div class="col-50">
+                            <p class="fw-bold fs-large">Ref-&ensp;{{doc.name}}</p>
+                        </div>
+                        <div class="col-50">
+                            <p class="fw-bold fs-large text-right">
+                                <!-- prettier-ignore -->
+                                Date - {{ frappe.utils.get_datetime(doc.appointment_date).strftime('%d/%m/%Y') }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-100">
+                            <p class="text-center fw-bold fs-large fst-underline fst-upper">
+                                {{ _("Appointment Letter") }}
+                            </p>
+                        </div>
+                    </div>
+                    <!-- prettier-ignore -->
+                    {% set employee_full_name =   doc.employee_name %}
+
+                    <div class="row mb-4">
+                        <div class="col-100 fw-bold fs-large">
+                            <p class="fs-large mb-3">To,</p>
+                            <table class="w-100 emp-detail-table mb-3">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <!-- prettier-ignore -->
+                                            {{employee_full_name}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-20">
+                                            Emp Code&emsp;<span class="ff-gill-sans">-</span>
+                                        </td>
+                                        <td class="w-80">{{doc.employee_code}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-20">
+                                            {{_("Address")}}&emsp;<span class="ff-gill-sans">-</span>
+                                        </td>
+                                        <td class="w-80">
+                                            <span class="emp-address">
+                                                {{", ".join(doc.address.split(","))}}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p>
+                                <!-- prettier-ignore -->
+                                Dear&nbsp;{{employee_full_name}},
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-100 fs-large">
+                            <p class="mb-3 text-justify">
+                                <!-- style="text-indent: {{(10*employee_full_name|length) + 50}}px" -->
+                                <!-- prettier-ignore -->
+                                <span style="visibility: hidden;margin-right: 15px !important;">
+                                    Dear&nbsp;{{employee_full_name}},
+                                </span>
+                                {%- set text = "With reference to your application and
+                                subsequent interview held with us, we have great pleasure to
+                                offer you employment as
+                                <b>" + doc.designation + "</b> in
+                                <b> " + doc.parent_department + "</b> Department in our organization ,
+                                the terms and conditions mentioned below." -%} {{_(text)}}
+                            </p>
+                            <!-- prettier-ignore -->
+                            <ol class="terms mb-4">
+                                <li>
+                                    Your appointment commences from
+                                    <b>{{ frappe.utils.get_datetime(doc.appointment_date).strftime('%d/%m/%Y') }}</b> and
+                                    your monthly
+                                    emoluments will be as given in the enclosed annexure.
+                                </li>
+                                <li>
+                                    In addition to the above you will be allowed Leave with wages
+                                    as per the factory act.1948.
+                                </li>
+                                <li>
+                                    You will be on probation for a period of six months with
+                                    effect from your date of joining
+                                    <b>{{ frappe.utils.get_datetime(doc.date_of_joining).strftime('%d/%m/%Y') }}</b>
+                                    which can be
+                                    further extended at the discretion of the management.
+                                </li>
+                                <li>
+                                    Your services will automatically come to an end on the expiry
+                                    of the probation period, unless specifically confirmed in
+                                    writing, you will remain on probation after the expiry of the
+                                    probation period or the extended period of probation, your
+                                    appointment can be terminated without assigning any reason.
+                                    Unless an order in writing confirming, you are issued, you
+                                    will not be deemed to have been made permanent.
+                                </li>
+                                <li>
+                                    During your employment you will discharge your duties,
+                                    efficiently and diligently to the best of your ability and
+                                    shall devote your whole time and attention to the interest to
+                                    the company and generally Carry out duties and work as
+                                    assigned to you and shall obey and comply with all the lawful
+                                    orders and directions given to you by your superiors.You shall
+                                    honestly, diligently and faith fully serves the organization
+                                    and uses your utmost endeavor to promote the interest of the
+                                    company.
+                                </li>
+                                <li>
+                                    You will be just and a faithful employee of the company in all
+                                    matters and shall not at any time expect under the legal
+                                    process with prior written approval divulge to any person and
+                                    shall use your best endeavor to prevent the publication or
+                                    disclosure of any trade secret of manufacturing processor any
+                                    other information concerning, or in respect of the items as
+                                    manufactured or marketed by the company or dealing
+                                    transactions or affairs, which may your knowledge.
+                                </li>
+                                <li>
+                                    Further, you will not give to any one, by word of mouth or
+                                    otherwise any particulars/or details of our manufacturing
+                                    process technical know -how, security arrangements,
+                                    administrative and / organizational matters whether
+                                    confidential, secret or otherwise which you acquire during the
+                                    course of your employment at any time, while in employment or
+                                    afterwards. Failure to observe, this condition would be
+                                    considered a gross misconduct entailing dismissal from
+                                    service.
+                                </li>
+                                <li>
+                                    That during the period of your employment, you will not work
+                                    directly or indirectly for any other person, firm or company
+                                    either with or without remuneration, nor will you engage
+                                    yourself or be interested directly or indirectly. in any trade
+                                    or business either as employer or employee or partner or
+                                    advisor or in any other capacity.
+                                </li>
+                                <li>
+                                    The appointment or its continuance is further subject to your
+                                    remaining medically, physically and mentally fit. You shall
+                                    appear before the medical officer of the company or any
+                                    medical practitioner nominated for the purpose of medical
+                                    examination and /or health survey as and when required you
+                                    will submit to such medical examination as required and
+                                    failing to do so would be considered a gross misconduct
+                                    entailing dismissal from service.
+                                </li>
+                                <li>
+                                    Your services are liable to be transferred /assigned any
+                                    wherein India to any office Establishment /Branch or any other
+                                    concern of the company and its associates.
+                                </li>
+                                <li>
+                                    If You are found absent for ten consecutive days without
+                                    express permission in Writing to the management or if you
+                                    proceed on leave without prior sanction or over stay the
+                                    sanctioned leave without obtaining sanction ,your services
+                                    shall automatically come to an end and a presumption will be
+                                    drawn that you have abandoned the employment of your own
+                                    accord and you will be liable to give one month salary in lieu
+                                    thereof , which will be adjustment from payment of your salary
+                                    or other benefits .
+                                </li>
+                                <li>
+                                    Any material, instrument, gold, silver, precious stones given
+                                    by the company for the working shall be at your responsibility
+                                    and you will be responsible to keep them in safe Intact and
+                                    good condition and will deliver the same in safe condition to
+                                    the management. In case of damage or loss of material, you
+                                    shall alone be responsible for the same and management will be
+                                    entitled to recover the said loss from you.
+                                </li>
+                                <li>
+                                    In case of any change in the address during the course of your
+                                    employment with the management it shall be your duty to
+                                    intimate the same in writing within three days from such
+                                    change and shall also get the change so effected recorded.
+                                </li>
+                                <li>
+                                    That all communication sent to you by the management at your
+                                    last given address shall be deemed to have been delivered to
+                                    you at correct address.
+                                </li>
+                                <li>
+                                    In case any act, Omission constituting misconduct is alleged
+                                    against you, you may be placed under suspension allowances as
+                                    per standing order or rules of the company.
+                                </li>
+                                <li>
+                                    You shall be governed by rules and regulations of the company
+                                    / standing orders and work according to directions
+                                    /Instructions given to you from time to time.
+                                </li>
+                                <li>
+                                    You will not wear jeans pent and shirt on the duty because it
+                                    is against Security norms as they are not satisfied while
+                                    checking in Jeans.
+                                </li>
+                                <li>
+                                    That you shall retire on the age of 58 years without any
+                                    Notice.
+                                </li>
+                                <li>
+                                    After confirmation of your appointment, your services shall be
+                                    terminable at any time without assigning any reason, by giving
+                                    one month’s notice or consolidated salary in lieu of notice
+                                    period similarly If you want to leave the service of the
+                                    company you are required to give one month’s notice in
+                                    advance, failing which the company shall recover amount
+                                    equivalent to one-month salary from the dues if any payable
+                                    and if the amount is not sufficient than from you personally.
+                                </li>
+                            </ol>
+                            <p class="mb-3 text-justify">
+                                If the above terms and conditions of the offer of employment are
+                                acceptable to you, please sign the duplicate copy of this letter
+                                and return to us.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-100">
+                            <p class="text-right fw-bold fs-large">
+                                For M/S PINKCITY JEWELHOUSE PVT.LTD.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-100">
+                            <p class="fw-bold fs-normal text-right" style="padding-top: 50px !important">
+                                Authorized Signatory
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 80px !important">
+                        <div class="col-100">
+                            <p class="fw-bold text-center fs-large mb-3" style="line-height: 1 !important">
+                                DECLARATION BY THE EMPLOYEE
+                            </p>
+                            <p class="fs-normal text-center mb-5" style="line-height: 1 !important">
+                                I accept the offer and the terms and conditions mentioned in the
+                                aforesaid letter.
+                            </p>
+                            <p class="fw-bold fs-normal text-right" style="padding-top: 50px !important">
+                                Signature of the Employee
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page-break"></div>
+                    <div class="row mt-5 mb-3 pt-5">
+                        <div class="col-100">
+                            <p class="fs-large fw-bold text-center"
+                                style="font-family: 'Times New Roman', Times, serif !important">
+                                Annexure-1
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-100">
+                            <div class="annexure">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p class="fw-bold fs-normal sdfwer">Employee Name</p>
+                                            </td>
+                                            <td>
+                                                <p class="fw-bold fs-normal sdfwer">
+                                                    {{doc.employee_name}}
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="fw-bold fs-normal sdfwer">Date of Joining</p>
+                                            </td>
+                                            <td>
+                                                <!-- prettier-ignore -->
+                                                <p class="fw-bold fs-normal sdfwer">
+                                                    {{
+                                                    frappe.utils.get_datetime(doc.appointment_date).strftime('%d/%m/%Y')
+                                                    }}
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="fw-bold fs-normal sdfwer">Department</p>
+                                            </td>
+                                            <td>
+                                                <p class="fw-bold fs-normal sdfwer">
+                                                    {{doc.parent_department}}
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="fw-bold fs-normal sdfwer">Designation</p>
+                                            </td>
+                                            <td>
+                                                <p class="fw-bold fs-normal sdfwer">
+                                                    <!-- prettier-ignore -->
+                                                    {%- if doc.designation -%}
+                                                    {{doc.designation.title()}}
+                                                    {%- else -%}
+                                                    -
+                                                    {%- endif -%}
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- prettier-ignore -->
+                                {%- with json_data = json.loads(doc.json_data), sdata={"et":0, "dt":0, "pf":0, "esi":0,
+                                "wa":0, "employer_esi":0}, print_data=[] -%}
+
+                                {%- for comp in json_data.earnings -%}
+                                {%- set _ = print_data.append({"name" : comp.name, "value" : comp.value, "abbr" :
+                                comp.abbr, "is_total" : False, "type":"earnings"}) -%}
+                                {%- set _ = sdata.update({"et" : sdata.et + comp.value}) -%}
+                                {%- if comp.abbr.lower() == "wa" -%}
+                                {%- set _ = sdata.update({"wa" : sdata.wa + comp.value}) -%}
+                                {%- endif -%}
+                                {%- endfor -%}
+
+                                {%- for comp in json_data.deductions -%}
+                                {%- if "esi" in comp.name.lower().strip(" ") -%}
+                                {%- set _ = sdata.update({"esi" : (sdata.esi + comp.value)|round}) -%}
+                                {% elif "pf" in comp.name.lower().strip(" ") %}
+                                {%- set _ = sdata.update({"pf" : (sdata.pf + comp.value)|round}) -%}
+                                {%- set _ = sdata.update({"dt" : (sdata.dt + comp.value)|round}) -%}
+                                {%- else -%}
+                                {%- set _ = print_data.append({"name" : comp.name, "value" : comp.value, "abbr" :
+                                comp.abbr, "is_total" : False, "type":"deductions"}) -%}
+                                {%- set _ = sdata.update({"dt" : (sdata.dt + comp.value)|round}) -%}
+                                {%- endif -%}
+                                {%- endfor -%}
+                                {%- set _ = print_data.append({"name" : "Gross Total", "value" : sdata.et|round|int,
+                                "abbr"
+                                : "", "is_total" : True, "type":"earnings"}) -%}
+                                {% if sdata.esi > 0 %}
+                                {%- set _ = sdata.update({"employer_esi" : (sdata.employer_esi +
+                                (sdata.et-sdata.wa)*(0.0325))|round}) -%}
+                                {% else %}
+                                {%- set _ = sdata.update({"employer_esi" : 0}) -%}
+                                {% endif %}
+
+
+                                {%- set _ = print_data.append({"name" : "Less Employee Provident Fund", "value" :
+                                sdata.pf|round|int, "abbr" : "", "is_total" : False, "type":"deductions"}) -%}
+                                {%- set _ = print_data.append({"name" : "Less Employee ESIC", "value" :
+                                sdata.esi|round|int, "abbr" : "", "is_total" : False, "type":"deductions"}) -%}
+                                {%- set _ = print_data.append({"name" : "Net Payable", "value" :
+                                (sdata.et-(sdata.pf+sdata.esi))|round|int, "abbr" : "", "is_total" : True,
+                                "type":"deductions"}) -%}
+
+                                {%- set _ = print_data.append({"name" : "Add Employer Provident Fund", "value" :
+                                sdata.pf|round|int, "abbr" : "", "is_total" : False, "type":"deductions"}) -%}
+                                {%- set _ = print_data.append({"name" : "Add Employer ESIC", "value" :
+                                sdata.employer_esi|round|int, "abbr" : "", "is_total" : False, "type":"deductions"}) -%}
+                                {%- set _ = print_data.append({"name" : "Cost to Company", "value" :
+                                (sdata.et+sdata.dt+sdata.employer_esi)|round|int, "abbr" : "", "is_total" : True,
+                                "type":"deductions"}) -%}
+                                <table class="table" style="margin-top: -1px !important">
+                                    <thead>
+                                        <tr>
+                                            <th>S.No.</th>
+                                            <th>Particuler</th>
+                                            <th class="text-end">Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- prettier-ignore -->
+                                        {%- for pd in print_data -%}
+                                        {%- if not pd.is_total and pd.type == "earnings" -%}
+                                        <tr>
+                                            <td>
+                                                <p class="fs-normal sdfwer">{{loop.index}}</p>
+                                            </td>
+                                            <td>
+                                                <!-- <p class="fw-bold fs-normal sdfwer">Hemant Bhardwaj</p> -->
+                                                <p class="fs-normal sdfwer">{{pd.name}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="fs-normal sdfwer text-end">{{pd.value|round|int}}</p>
+                                            </td>
+                                        </tr>
+                                        {%- elif pd.type == "earnings" -%}
+                                        <tr>
+                                            <td>
+                                                <p class="fs-normal sdfwer">{{loop.index}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="fs-normal sdfwer text-end fw-bold">
+                                                    {{pd.name}}
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="fs-normal sdfwer text-end fw-bold">
+                                                    {{pd.value|round|int}}
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        {%- endif -%} {%- endfor -%}
+                                        <!-- prettier-ignore -->
+                                        {%- for pd in print_data -%}
+                                        {%- if not pd.is_total and pd.type == "deductions" -%}
+                                        <tr>
+                                            <td>
+                                                <p class="fs-normal sdfwer">{{loop.index}}</p>
+                                            </td>
+                                            <td>
+                                                <!-- <p class="fw-bold fs-normal sdfwer">Hemant Bhardwaj</p> -->
+                                                <p class="fs-normal sdfwer">{{pd.name}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="fs-normal sdfwer text-end">{{pd.value|round|int}}</p>
+                                            </td>
+                                        </tr>
+                                        {%- elif pd.type == "deductions" -%}
+                                        <tr>
+                                            <td>
+                                                <p class="fs-normal sdfwer">{{loop.index}}</p>
+                                            </td>
+                                            <td>
+                                                <p class="fs-normal sdfwer text-end fw-bold">
+                                                    {{pd.name}}
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p class="fs-normal sdfwer text-end fw-bold">
+                                                    {{pd.value|round|int}}
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        {%- endif -%} {%- endfor -%}
+                                    </tbody>
+                                </table>
+                                {%- endwith -%}
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <div class="page-footer-space"></div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>&nbsp;</p>
+    <footer class="footer p-3">
+        {% if "unit 1" in doc.company.lower() %}
+        <div class="pb-4 abcd">
+            <p class="w-100 border-bottom mb-2"></p>
+            <p class="text-justify fs-small sdf">
+                <b>FACTORY ADDRESS :-</b> G1- 179/180, SEZ-II, SITAPURA INDUSTRIAL AREA, JAIPUR SITAPURA.
+            </p>
+            <p class="text-justify fs-small sdf">
+                <b>REG. OFFICE:</b> 76, DHULESHWAR GARDEN, C-SCHEME, JAIPUR-302 001, INDIA
+            </p>
+            <p class="text-justify fs-small sdf">
+                <b>PHONE:</b> +91 141 2955080, <b>Mobile:</b> 9116625036
+                <b>E-mail:</b> <u>hr@pinkcityindia.com</u> <b>Website:</b>
+                www.pinkcityindia.com
+            </p>
+        </div>
+        {% elif "unit 2" in doc.company.lower() %}
+        <div class="pb-4 abcd">
+            <p class="w-100 border-bottom mb-2"></p>
+            <p class="text-justify fs-small sdf">
+                <b>FACTORY ADDRESS :-</b> E 13 & 14 A, SEZ-II, SITAPURA INDUSTRIAL AREA,
+                JAIPUR SITAPURA.
+            </p>
+            <p class="text-justify fs-small sdf">
+                <b>REG. OFFICE:</b> 76, DHULESHWAR GARDEN, C-SCHEME, JAIPUR-302001
+            </p>
+            <p class="text-justify fs-small sdf">
+                <b>INDIA PHONE:</b> +91 141 2955079, <b>Mobile:</b> 09773379014
+                <b>E-mail:</b> <u>hr2@pinkcityindia.com</u> <b>Website:</b>
+                www.pinkcityindia.com
+            </p>
+        </div>
+        {% elif "mahapura" in doc.company.lower() %}
+        <div class="pb-4 abcd">
+            <p class="w-100 border-bottom mb-2"></p>
+            <p class="text-justify fs-small sdf">
+                <b>FACTORY ADDRESS :-</b> MAIN LINK ROAD, AJMER ROAD, VILLAGE MAHAPURA JAIPUR-302026
+            </p>
+            <p class="text-justify fs-small sdf">
+                <b>REG. OFFICE:</b> 76, DHULESHWAR GARDEN, C-SCHEME, JAIPUR-302 001, INDIA
+            </p>
+            <p class="text-justify fs-small sdf">
+                <b>PHONE:</b> +91 7300081859, <b>Mobile:</b> 7300081857
+                <b>E-mail:</b> <u>hr@pinkcityindia.com</u> <b>Website:</b>
+                www.pinkcityindia.com
+            </p>
+        </div>
+        {% endif %}
+    </footer>
+</section>

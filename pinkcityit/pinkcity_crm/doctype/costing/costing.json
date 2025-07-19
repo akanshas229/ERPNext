@@ -1,0 +1,1873 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-12 10:22:43.009501",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "base_formula_tab",
+  "client_details",
+  "customer",
+  "column_break_d4moq",
+  "clients_code",
+  "column_break_hsiai",
+  "quotation_no__project_id",
+  "column_break_lcmkx",
+  "opportunity__id",
+  "section_break_tepvk",
+  "costing_type",
+  "column_break_7ewzs",
+  "purchase_order",
+  "column_break_25ley",
+  "purchase",
+  "column_break_c1ls1",
+  "assigned_to",
+  "product_development",
+  "base_data_section",
+  "metal_type",
+  "loss_percent",
+  "column_break_ieu0d",
+  "ounce_rate",
+  "final_cost",
+  "mix_metal_weight",
+  "column_break_syuny",
+  "conversion_per_grams",
+  "costing_currency",
+  "currency",
+  "column_break_8vcc0",
+  "us_dollar_per_gram",
+  "usd_converstion_rate",
+  "section_break_v5wmo",
+  "mix_metal",
+  "tab_break_axlrp",
+  "design_details_section",
+  "design__type",
+  "main_design_code",
+  "design_code_2d",
+  "design_code",
+  "customer_design_code",
+  "design_description",
+  "design_category",
+  "column_break_thvdo",
+  "stone_weights",
+  "metal_weights",
+  "dimnd_weight",
+  "total_design_weights",
+  "image",
+  "clear_image",
+  "column_break_o2gn9",
+  "stone_image",
+  "section_break_qdooj",
+  "bom_details",
+  "metal_tab",
+  "design_weight_section",
+  "design_weight",
+  "column_break_gcm93",
+  "weight_addition",
+  "column_break_b4kos",
+  "value_added_weight",
+  "column_break_vj09k",
+  "revise_weight",
+  "metal_price_section",
+  "amount_in_dollar_in_metal",
+  "amount_in_inr_in_metal",
+  "column_break_unn6c",
+  "column_break_sttnf",
+  "column_break_5hd3b",
+  "metal_price",
+  "findings_tab",
+  "findings_list",
+  "column_break_wmbjr",
+  "total_findings_weight",
+  "column_break_2ya4i",
+  "total_findings_in_inr",
+  "findings_in_dollar",
+  "labour_tab",
+  "labour_detail",
+  "section_break_sibzc",
+  "total_labour_cost",
+  "labourone_time_section",
+  "co_labour_constin_not_inc",
+  "section_break_vmodk",
+  "total_labour_constin_not_inc",
+  "stone_costing_tab",
+  "stone_costing_section",
+  "stone_child",
+  "section_break_i3xgz",
+  "total_stone_cost_in_rs",
+  "total_stone_cost_in_dollar",
+  "column_break_cinn3",
+  "total_weight",
+  "column_break_d3e3l",
+  "total_quantity",
+  "diamond_costing_tab",
+  "diamond_section",
+  "diamond_costing",
+  "section_break_1mxzm",
+  "diamond_total_cost",
+  "total_diamondcost_in_dollar",
+  "column_break_ppcap",
+  "total_diamond_weight",
+  "setting_tab",
+  "stone_setting_section",
+  "setting_child",
+  "section_break_a5hup",
+  "total_stone_setting_cost",
+  "column_break_fbw39",
+  "column_break_x3qri",
+  "section_break_p4gkr",
+  "column_break_idjsc",
+  "diamond_setting_child",
+  "section_break_rqnbj",
+  "total_setting_cost_per_pcs_master",
+  "column_break_d5r7d",
+  "total_setting_per_pcs_in_dolllar_master",
+  "column_break_xjtkw",
+  "total_diamond_setting_cost",
+  "column_break_du6do",
+  "plating_tab",
+  "plating_cost_section",
+  "plating",
+  "column_break_ugfio",
+  "micron",
+  "column_break_9whpj",
+  "gold_kt",
+  "column_break_g5ft7",
+  "color",
+  "column_break_zibqz",
+  "gold",
+  "column_break_hfua8",
+  "anti_tarnish",
+  "section_break_su8dx",
+  "code",
+  "column_break_w192d",
+  "surface_area",
+  "column_break_nrb05",
+  "design_weightplating",
+  "column_break_qmkgx",
+  "micron_plating_ounce_rate",
+  "column_break_sxm5m",
+  "plating_charges_per_gram_of_non_chain_product",
+  "plating_charges_per_gram_of_chain_product",
+  "plating_price_non_chain_products",
+  "section_break_jasa1",
+  "plating_charge",
+  "column_break_vqyr9",
+  "product_type",
+  "column_break_fy1xs",
+  "uom_in_plating",
+  "column_break_l0pqc",
+  "amount_in_dollar_in_plating",
+  "designs_weights",
+  "plating_thickness",
+  "final_plating_price",
+  "section_break_10p31",
+  "amount_in_inr",
+  "second_plating_section",
+  "plating_types",
+  "anti_tarnishs",
+  "plating_charg",
+  "column_break_kr0qb",
+  "microns",
+  "plating_codes",
+  "product_types",
+  "column_break_3qfjz",
+  "gold_kts",
+  "surface",
+  "pric_uom",
+  "column_break_y7wv2",
+  "colors",
+  "design_weightss",
+  "plating_price_nn_chain_product",
+  "plating_charge_per_gram_of_non_chain_product",
+  "plating_charge_per_gram_of_chain_product",
+  "column_break_fln4z",
+  "golds",
+  "micron_plating_ounce_rate_second_plating",
+  "amounts",
+  "plating_thicknes",
+  "section_break_kr1ol",
+  "other_platings",
+  "section_break_lsgt8",
+  "other_plating_cost",
+  "column_break_fyqox",
+  "total_plating_cost",
+  "other_cost_tab",
+  "co_other_charges",
+  "section_break_5dbkd",
+  "total_charges",
+  "value_addition_tab",
+  "value_additions",
+  "section_break_erqmq",
+  "update_value_additions",
+  "column_break_qtjib",
+  "total_value_addition",
+  "column_break_3t9hj",
+  "value_addition_percent",
+  "update_all_value_addition_on_twenty",
+  "section_break_nea2p",
+  "column_break_rtszy",
+  "total_value_addition_amount_gp",
+  "column_break_pejvb",
+  "total_value_addition_amount_ss",
+  "metal_value_add_deleted",
+  "setting_value_add_deleted",
+  "labour_value_add_deleted",
+  "finding_value_add_deleted",
+  "plating_value_add_deleted",
+  "total_cost_tab",
+  "total_cost_ss",
+  "total_cost_ss_section",
+  "metal_cost_amount",
+  "diamond_cost_amount",
+  "setting_cost_amount",
+  "labour_cost_amount",
+  "miscellaneous_cost_amt",
+  "findings_cost",
+  "plating_cost_in_ss",
+  "other_cost_not_inc_va",
+  "total_cost_for_ss",
+  "labour_cost_not_inc",
+  "value_addition_for_ss",
+  "revise_cost_for_ss",
+  "stone_cost_amount",
+  "total_ss_cost",
+  "silver_increment",
+  "gold_increment",
+  "revise_price_for_mv",
+  "total_cost_gp_section",
+  "metal_cost_in_gp",
+  "diamond_cost_in_gp",
+  "setting_cost_in_gp",
+  "labour_cost_in_gp",
+  "misc_cost_in_gp",
+  "plating_cost_in_gp",
+  "rhod_rate",
+  "finding_rate",
+  "total_cost_in_gp",
+  "value_addition_for_gp",
+  "revise_cost_for_gp",
+  "stone_cost_in_gp",
+  "total_gp_cost",
+  "creation_date",
+  "costing_duplicate_id",
+  "amended_from",
+  "draft_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "base_formula_tab",
+   "fieldtype": "Tab Break",
+   "label": "Metal Base"
+  },
+  {
+   "fieldname": "client_details",
+   "fieldtype": "Section Break",
+   "label": "Client Details"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Customer Name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_d4moq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.client_code",
+   "fetch_if_empty": 1,
+   "fieldname": "clients_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Code"
+  },
+  {
+   "fieldname": "column_break_hsiai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quotation_no__project_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Quotation No. / Project Id"
+  },
+  {
+   "fieldname": "section_break_tepvk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Offer Price",
+   "fieldname": "costing_type",
+   "fieldtype": "Select",
+   "label": " Costing Type",
+   "options": "\nOffer Price\nPO Price\nInvoice Price",
+   "read_only_depends_on": "eval:doc.draft_type == \"Duplicate Draft\""
+  },
+  {
+   "fieldname": "column_break_7ewzs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.costing_type==\"PO Price\" ||  doc.costing_type==\"Invoice Price\"",
+   "fieldname": "purchase_order",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Purchase Order",
+   "mandatory_depends_on": "eval: doc.costing_type==\"PO Price\" ",
+   "read_only_depends_on": "eval:doc.workflow_state == \"PO Recieved\" ||  doc.costing_type==\"Invoice Price\""
+  },
+  {
+   "fieldname": "column_break_25ley",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.customer==\"Monica Vinader Ltd\"",
+   "fieldname": "purchase",
+   "fieldtype": "Select",
+   "label": "Costing Stage",
+   "options": "\nGreen\nYellow\nRed"
+  },
+  {
+   "fieldname": "base_data_section",
+   "fieldtype": "Section Break",
+   "label": "Base Data"
+  },
+  {
+   "fieldname": "metal_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Metal Type",
+   "options": "Metal Type"
+  },
+  {
+   "depends_on": "eval: doc.metal_type!=\"Mix Metal\"",
+   "fieldname": "loss_percent",
+   "fieldtype": "Float",
+   "label": "Metal Loss %"
+  },
+  {
+   "depends_on": "eval: doc.metal_type==\"Gold\"",
+   "fieldname": "column_break_ieu0d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval: doc.metal_type!=\"Mix Metal\"",
+   "fieldname": "ounce_rate",
+   "fieldtype": "Currency",
+   "label": "Ounce Rate ",
+   "options": "currency"
+  },
+  {
+   "default": "0",
+   "fieldname": "final_cost",
+   "fieldtype": "Currency",
+   "label": "Final Metal Cost Per Gram ",
+   "options": "currency",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mix_metal_weight",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Mix Metal Weight"
+  },
+  {
+   "fieldname": "column_break_syuny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.metal_type!=\"Mix Metal\"",
+   "fieldname": "conversion_per_grams",
+   "fieldtype": "Currency",
+   "label": "Conversion Per Gram ",
+   "options": "currency"
+  },
+  {
+   "default": "Dollar",
+   "fieldname": "costing_currency",
+   "fieldtype": "Select",
+   "label": "Costing Currency",
+   "options": "Dollar\nINR",
+   "read_only": 1
+  },
+  {
+   "default": "USD",
+   "depends_on": "eval:frappe.user.has_role(\"MIS Rights\")\n",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_8vcc0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "depends_on": "eval: doc.metal_type!=\"Mix Metal\"",
+   "fieldname": "us_dollar_per_gram",
+   "fieldtype": "Currency",
+   "label": "Metal Cost Per Gram ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "75",
+   "fieldname": "usd_converstion_rate",
+   "fieldtype": "Currency",
+   "label": "USD Converstion Rate ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_v5wmo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.metal_type==\"Mix Metal\"",
+   "fieldname": "mix_metal",
+   "fieldtype": "Table",
+   "label": "Mix Metal",
+   "options": "CO Metal Type"
+  },
+  {
+   "fieldname": "tab_break_axlrp",
+   "fieldtype": "Tab Break",
+   "label": "Design"
+  },
+  {
+   "fieldname": "design_details_section",
+   "fieldtype": "Section Break",
+   "label": "Design Details"
+  },
+  {
+   "fieldname": "design__type",
+   "fieldtype": "Select",
+   "label": "Design Types",
+   "options": "\n2D Design\n3D Design"
+  },
+  {
+   "fieldname": "main_design_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_standard_filter": 1,
+   "label": "Design Codes"
+  },
+  {
+   "depends_on": "eval:doc.design__type == \"2D Design\"",
+   "fieldname": "design_code_2d",
+   "fieldtype": "Data",
+   "label": "Design Code 2D"
+  },
+  {
+   "depends_on": "eval:doc.design__type == \"3D Design\"",
+   "fieldname": "design_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Design Code",
+   "options": "EMR Design 3D Library"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "customer_design_code",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Customer Design Code"
+  },
+  {
+   "fetch_from": "design_code.design_3d_code_description",
+   "fetch_if_empty": 1,
+   "fieldname": "design_description",
+   "fieldtype": "Data",
+   "label": "Design Description"
+  },
+  {
+   "fetch_from": "design_code.design_category",
+   "fetch_if_empty": 1,
+   "fieldname": "design_category",
+   "fieldtype": "Link",
+   "label": "Design Category",
+   "options": "Design Category"
+  },
+  {
+   "fieldname": "column_break_thvdo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "stone_weights",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Stone Weight",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "metal_weights",
+   "fieldtype": "Float",
+   "label": "Metal Weight (For Pricing)"
+  },
+  {
+   "default": "0",
+   "fieldname": "dimnd_weight",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Diamond Weight",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_design_weights",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total Design Weight",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "design_code.image",
+   "fetch_if_empty": 1,
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_o2gn9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "design_code.image",
+   "fieldname": "stone_image",
+   "fieldtype": "Image",
+   "in_preview": 1,
+   "label": "Stone Image",
+   "options": "image"
+  },
+  {
+   "fieldname": "section_break_qdooj",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "bom_details",
+   "fieldtype": "Table",
+   "is_virtual": 1,
+   "label": "Bom Details",
+   "options": "EMR Design BOM Details"
+  },
+  {
+   "fieldname": "metal_tab",
+   "fieldtype": "Tab Break",
+   "label": "Metal "
+  },
+  {
+   "fieldname": "design_weight_section",
+   "fieldtype": "Section Break",
+   "label": "Metal Price"
+  },
+  {
+   "default": "0",
+   "fetch_from": "amended_from.metal_weights",
+   "fieldname": "design_weight",
+   "fieldtype": "Float",
+   "label": "Design Weight (For Pricing)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gcm93",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight_addition",
+   "fieldtype": "Percent",
+   "label": "Weight Addition %"
+  },
+  {
+   "fieldname": "column_break_b4kos",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "value_added_weight",
+   "fieldtype": "Float",
+   "label": "Addition Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vj09k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "revise_weight",
+   "fieldtype": "Float",
+   "label": "Metal Weight For Costing",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_price_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'Dollar'",
+   "fieldname": "amount_in_dollar_in_metal",
+   "fieldtype": "Currency",
+   "label": "Final Metal Cost ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'INR'",
+   "fieldname": "amount_in_inr_in_metal",
+   "fieldtype": "Currency",
+   "label": "Final Metal Cost ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_unn6c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sttnf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_5hd3b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metal_price",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Metal Cost Per Gram",
+   "options": "currency"
+  },
+  {
+   "fieldname": "findings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Finding"
+  },
+  {
+   "fieldname": "findings_list",
+   "fieldtype": "Table",
+   "label": "Finding",
+   "options": "CO Finding"
+  },
+  {
+   "fieldname": "column_break_wmbjr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_findings_weight",
+   "fieldtype": "Float",
+   "label": "Total Findings Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2ya4i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'INR'",
+   "fieldname": "total_findings_in_inr",
+   "fieldtype": "Currency",
+   "label": "Total Findings Cost INR",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'Dollar'",
+   "fieldname": "findings_in_dollar",
+   "fieldtype": "Currency",
+   "label": "Total Findings Cost ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "labour_tab",
+   "fieldtype": "Tab Break",
+   "label": "Labour"
+  },
+  {
+   "fieldname": "labour_detail",
+   "fieldtype": "Table",
+   "label": "Labour Detail",
+   "options": "CO Labour Costin"
+  },
+  {
+   "fieldname": "section_break_sibzc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_labour_cost",
+   "fieldtype": "Float",
+   "label": "Total Labour Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "labourone_time_section",
+   "fieldtype": "Section Break",
+   "label": "Labour(One Time)"
+  },
+  {
+   "fieldname": "co_labour_constin_not_inc",
+   "fieldtype": "Table",
+   "options": "Co Labour Constin Not Inc"
+  },
+  {
+   "fieldname": "section_break_vmodk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_labour_constin_not_inc",
+   "fieldtype": "Currency",
+   "label": "PD Charges",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_costing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stone "
+  },
+  {
+   "fieldname": "stone_costing_section",
+   "fieldtype": "Section Break",
+   "label": "Stone Costing"
+  },
+  {
+   "fieldname": "stone_child",
+   "fieldtype": "Table",
+   "label": "Stone Child ",
+   "options": "CO Stone Child Costing"
+  },
+  {
+   "fieldname": "section_break_i3xgz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'INR'",
+   "fieldname": "total_stone_cost_in_rs",
+   "fieldtype": "Currency",
+   "label": "Total Stone Cost ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'Dollar'",
+   "fieldname": "total_stone_cost_in_dollar",
+   "fieldtype": "Currency",
+   "label": "Total Stone Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cinn3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_weight",
+   "fieldtype": "Float",
+   "label": "Total Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_d3e3l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_quantity",
+   "fieldtype": "Int",
+   "label": "Total Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_costing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Diamond "
+  },
+  {
+   "fieldname": "diamond_section",
+   "fieldtype": "Section Break",
+   "label": "Diamond Costing"
+  },
+  {
+   "fieldname": "diamond_costing",
+   "fieldtype": "Table",
+   "label": "Diamond Costing",
+   "options": "CO Diamond Costin"
+  },
+  {
+   "fieldname": "section_break_1mxzm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'INR'",
+   "fieldname": "diamond_total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Diamond Cost ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'Dollar'",
+   "fieldname": "total_diamondcost_in_dollar",
+   "fieldtype": "Currency",
+   "label": "Total Diamond Cost ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ppcap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_diamond_weight",
+   "fieldtype": "Float",
+   "label": "Total Diamond Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "setting_tab",
+   "fieldtype": "Tab Break",
+   "label": "Setting"
+  },
+  {
+   "fieldname": "stone_setting_section",
+   "fieldtype": "Section Break",
+   "label": "Stone Setting"
+  },
+  {
+   "fieldname": "setting_child",
+   "fieldtype": "Table",
+   "options": "CO Setting Child"
+  },
+  {
+   "fieldname": "section_break_a5hup",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_stone_setting_cost",
+   "fieldtype": "Currency",
+   "label": "Total Stone Setting Cost ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fbw39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_x3qri",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_p4gkr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_idjsc",
+   "fieldtype": "Section Break",
+   "label": "Diamond Setting "
+  },
+  {
+   "fieldname": "diamond_setting_child",
+   "fieldtype": "Table",
+   "options": "CO Diamond Setting Child"
+  },
+  {
+   "fieldname": "section_break_rqnbj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'INR'",
+   "fieldname": "total_setting_cost_per_pcs_master",
+   "fieldtype": "Currency",
+   "label": "Total Setting Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_d5r7d",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'Dollar'",
+   "fieldname": "total_setting_per_pcs_in_dolllar_master",
+   "fieldtype": "Currency",
+   "label": "Total Setting Cost ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xjtkw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_diamond_setting_cost",
+   "fieldtype": "Currency",
+   "label": "Total Diamond Setting Cost ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_du6do",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plating_tab",
+   "fieldtype": "Tab Break",
+   "label": "Plating"
+  },
+  {
+   "fieldname": "plating_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Micron Plating - 1"
+  },
+  {
+   "fieldname": "plating",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Plating Type",
+   "options": "\nFlash Gold Plating\nMicron Plating\nFlash Rhodium"
+  },
+  {
+   "fieldname": "column_break_ugfio",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "micron",
+   "fieldtype": "Select",
+   "label": "Micron",
+   "options": "\n0.25 Micron\n0.50 Micron\n0.75 Micron\n1.00 Micron\n1.50 Micron\n2.00 Micron\n2.50 Micron\n3.00 Micron\nFlash Rhodium\n3 to 5 miles\nN/A\n0.25 (2600 - 3000)\n0.50 (2600 - 3000)\n1.00 (2600 - 3000)\n1.50 (2600 - 3000)\n2.00 (2600 - 3000)\n2.50 (2600 - 3000)\n3.00 (2600 - 3000)\nFlash Rhodium (2600 - 3000)\n3 to 5 miles (2600 - 3000)"
+  },
+  {
+   "fieldname": "column_break_9whpj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gold_kt",
+   "fieldtype": "Select",
+   "label": "Gold KT",
+   "options": "\n18KT\n24KT\nN/A"
+  },
+  {
+   "fieldname": "column_break_g5ft7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Select",
+   "label": "Color ",
+   "options": "\n9 kt\n10 kt\n12 kt\n14 kt\n18 kt\n22 kt\n24 kt\nVintage\nHamilton\nN/A"
+  },
+  {
+   "fieldname": "column_break_zibqz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gold",
+   "fieldtype": "Select",
+   "label": "Gold",
+   "options": "\nYellow Gold\nRose Gold\nN/A"
+  },
+  {
+   "fieldname": "column_break_hfua8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "anti_tarnish",
+   "fieldtype": "Select",
+   "label": "Anti Tarnish",
+   "options": "\nAT\nN/A"
+  },
+  {
+   "fieldname": "section_break_su8dx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "XXXX",
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "Plating Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_w192d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surface_area",
+   "fieldtype": "Float",
+   "label": "Surface Area"
+  },
+  {
+   "fieldname": "column_break_nrb05",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "design_weightplating",
+   "fieldtype": "Float",
+   "label": "Design Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qmkgx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2500",
+   "depends_on": "eval: doc.customer==\"Monica Vinader Ltd\"",
+   "fieldname": "micron_plating_ounce_rate",
+   "fieldtype": "Float",
+   "label": "Micron Ounce Rate"
+  },
+  {
+   "fieldname": "column_break_sxm5m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "plating_charges_per_gram_of_non_chain_product",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Plating Price",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "plating_charges_per_gram_of_chain_product",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Plating Price",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "plating_price_non_chain_products",
+   "fieldtype": "Currency",
+   "label": "Plating Price ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_jasa1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "plating_charge",
+   "fieldtype": "Currency",
+   "label": "+ / - Plating Charge",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_vqyr9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Select",
+   "label": "Product Type",
+   "options": "\nChain Product\nNON - Chain Product\n18K Gold For Chains\n24K Gold Plating For Non chain Products\n18KT with .5 um 23KT Gold For Chains"
+  },
+  {
+   "fieldname": "column_break_fy1xs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom_in_plating",
+   "fieldtype": "Select",
+   "label": "Price UOM",
+   "options": "\nPer Pcs (On The Basis Of Surface Area)\nPer Gram"
+  },
+  {
+   "fieldname": "column_break_l0pqc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.costing_currency == 'Dollar'",
+   "fieldname": "amount_in_dollar_in_plating",
+   "fieldtype": "Currency",
+   "label": "Amount ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "designs_weights",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Designs Weights",
+   "read_only": 1
+  },
+  {
+   "fieldname": "plating_thickness",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Plating Thickness",
+   "options": "\nFlash\nFlash Rhodium\n0.25 Micron\n0.50 Micron\n0.75 Micron\n1.00 Micron\n1.50 Micron\n2.00 Micron\n2.50 Micron\n3.00 Micron\n3 to 5 miles"
+  },
+  {
+   "fieldname": "final_plating_price",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Final Plating Price",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10p31",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "depends_on": "eval:doc.costing_currency == 'INR'",
+   "fieldname": "amount_in_inr",
+   "fieldtype": "Currency",
+   "label": "Amount ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "second_plating_section",
+   "fieldtype": "Section Break",
+   "label": "Micron Plating - 2"
+  },
+  {
+   "fieldname": "plating_types",
+   "fieldtype": "Select",
+   "label": "Plating Type",
+   "options": "\nFlash Gold Plating\nMicron Plating\nFlash Rhodium"
+  },
+  {
+   "fieldname": "anti_tarnishs",
+   "fieldtype": "Select",
+   "label": "Anti Tarnish",
+   "options": "\nAT\nN/A"
+  },
+  {
+   "fieldname": "plating_charg",
+   "fieldtype": "Currency",
+   "label": "+ / - Plating Charge",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_kr0qb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "microns",
+   "fieldtype": "Select",
+   "label": "Micron",
+   "options": "\n0.25 Micron\n0.50 Micron\n0.75 Micron\n1.00 Micron\n1.50 Micron\n2.00 Micron\n2.50 Micron\n3.00 Micron\nFlash Rhodium\n3 to 5 miles\nN/A\n0.25 (2600 - 3000)\n0.50 (2600 - 3000)\n1.00 (2600 - 3000)\n1.50 (2600 - 3000)\n2.00 (2600 - 3000)\n2.50 (2600 - 3000)\n3.00 (2600 - 3000)\nFlash Rhodium (2600 - 3000)\n3 to 5 miles (2600 - 3000)"
+  },
+  {
+   "default": "XXXX",
+   "fieldname": "plating_codes",
+   "fieldtype": "Data",
+   "label": "Plating Codes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "product_types",
+   "fieldtype": "Select",
+   "label": "Product Type",
+   "options": "\nChain Product\nNON - Chain Product\n18K Gold For Chains\n24K Gold Plating For Non chain Products\n18KT with .5 um 23KT Gold For Chains"
+  },
+  {
+   "fieldname": "column_break_3qfjz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gold_kts",
+   "fieldtype": "Select",
+   "label": "Gold KT",
+   "options": "\n18KT\n24KT\nN/A"
+  },
+  {
+   "fieldname": "surface",
+   "fieldtype": "Float",
+   "label": "Plating Surface "
+  },
+  {
+   "fieldname": "pric_uom",
+   "fieldtype": "Select",
+   "label": "Price UOM",
+   "options": "\nPer Pcs (On The Basis Of Surface Area)\nPer Gram"
+  },
+  {
+   "fieldname": "column_break_y7wv2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "colors",
+   "fieldtype": "Select",
+   "label": "Color",
+   "options": "\n9 kt\n10 kt\n12 kt\n14 kt\n18 kt\n22 kt\n24 kt\nVintage\nHamilton\nN/A"
+  },
+  {
+   "fieldname": "design_weightss",
+   "fieldtype": "Float",
+   "label": "Design Weight S"
+  },
+  {
+   "default": "0",
+   "fieldname": "plating_price_nn_chain_product",
+   "fieldtype": "Currency",
+   "label": "Plating Price",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "plating_charge_per_gram_of_non_chain_product",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Plating Price"
+  },
+  {
+   "fieldname": "plating_charge_per_gram_of_chain_product",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Plating Price"
+  },
+  {
+   "fieldname": "column_break_fln4z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "golds",
+   "fieldtype": "Select",
+   "label": "Gold",
+   "options": "\nYellow Gold\nRose Gold\nN/A"
+  },
+  {
+   "default": "2500",
+   "depends_on": "eval: doc.customer==\"Monica Vinader Ltd\"",
+   "fieldname": "micron_plating_ounce_rate_second_plating",
+   "fieldtype": "Float",
+   "label": "Ounce Rate"
+  },
+  {
+   "default": "0",
+   "fieldname": "amounts",
+   "fieldtype": "Currency",
+   "label": "Amount S",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "plating_thicknes",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Plating Thicknes",
+   "options": "\nFlash\nFlash Rhodium\n0.25 Micron\n0.50 Micron\n0.75 Micron\n1.00 Micron\n1.50 Micron\n2.00 Micron\n2.50 Micron\n3.00 Micron\n3 to 5 miles"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_kr1ol",
+   "fieldtype": "Section Break",
+   "label": "Other Platings"
+  },
+  {
+   "fieldname": "other_platings",
+   "fieldtype": "Table",
+   "options": "CO Platings"
+  },
+  {
+   "fieldname": "section_break_lsgt8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "other_plating_cost",
+   "fieldtype": "Currency",
+   "label": "Other Plating Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fyqox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_plating_cost",
+   "fieldtype": "Currency",
+   "label": "Total Plating Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "other_cost_tab",
+   "fieldtype": "Tab Break",
+   "label": "Other Cost"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "co_other_charges",
+   "fieldtype": "Table",
+   "label": "Other Charges (Value Addition Not Included)",
+   "options": "CO Other Charges",
+   "read_only_depends_on": "eval:doc.docstatus == 1 "
+  },
+  {
+   "fieldname": "section_break_5dbkd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_charges",
+   "fieldtype": "Currency",
+   "label": "Total Charges",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "value_addition_tab",
+   "fieldtype": "Tab Break",
+   "label": "Value Addition"
+  },
+  {
+   "fieldname": "value_additions",
+   "fieldtype": "Table",
+   "label": "Value Additions",
+   "options": "CO Value Addition"
+  },
+  {
+   "fieldname": "section_break_erqmq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "update_value_additions",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Update Value Additions"
+  },
+  {
+   "fieldname": "column_break_qtjib",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_value_addition",
+   "fieldtype": "Currency",
+   "label": "Total Value Addition ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3t9hj",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "value_addition_percent",
+   "fieldtype": "Int",
+   "label": "Value Addition Percent"
+  },
+  {
+   "fieldname": "update_all_value_addition_on_twenty",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Update %"
+  },
+  {
+   "fieldname": "section_break_nea2p",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rtszy",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "total_value_addition_amount_gp",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Amount GP  ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pejvb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_value_addition_amount_ss",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Amount SS ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "metal_value_add_deleted",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Metal Value Addition Deleted"
+  },
+  {
+   "default": "0",
+   "fieldname": "setting_value_add_deleted",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Setting Value Addition Deleted"
+  },
+  {
+   "default": "0",
+   "fieldname": "labour_value_add_deleted",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Labour Value Addition Deleted"
+  },
+  {
+   "default": "0",
+   "fieldname": "finding_value_add_deleted",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Findings Value Addition Deleted"
+  },
+  {
+   "default": "0",
+   "fieldname": "plating_value_add_deleted",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Plating Value Addition Deleted"
+  },
+  {
+   "fieldname": "total_cost_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sale Price"
+  },
+  {
+   "fieldname": "total_cost_ss",
+   "fieldtype": "HTML",
+   "label": "Total Cost SS",
+   "options": "\n<div class=\"tabs-container\">\n    <div class=\"tabs\">\n\n        <input checked id=\"tab1\" name=\"tab-control\" type=\"radio\">\n        <label class=\"tab-label\" for=\"tab1\">Cost Head  </label>\n\n        <div>\n            </div>\n\n        <div class=\"tab-content\">\n            <div class=\"tab-pane\" id=\"content1\">\n                <form id=\"cost-ss-form\">\n                    <fieldset>\n                        <legend>Total Cost </legend>\n                        <div class=\"form-group\">\n                            <div>\n                                <label for=\"metal_cost_ss\">Metal</label>\n                                <input id=\"metal_cost_ss\" name=\"metal_cost_ss\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div>\n                                <label for=\"diamond_cost_ss\">Diamond</label>\n                                <input id=\"diamond_cost_ss\" name=\"diamond_cost_ss\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div>\n                                <label for=\"setting_cost_ss\">Setting</label>\n                                <input id=\"setting_cost_ss\" name=\"setting_cost_ss\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div>\n                                <label for=\"labour_cost_ss\">Labour</label>\n                                <input id=\"labour_cost_ss\" name=\"labour_cost_ss\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                        </div>\n                        <div class=\"form-group\">\n\n\n                            <div>\n                                <label for=\"findings_costs\">Finding</label>\n                                <input id=\"findings_costs\" name=\"findings_costs\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div>\n                                <label for=\"plating_cost_ss\">Plating</label>\n                                <input id=\"plating_cost_ss\" name=\"plating_cost_ss\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div>\n                                <label for=\"total_cost_ss\">Total Cost </label>\n                                <input id=\"total_cost_ss\" name=\"total_cost_ss\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n\n                            <div>\n                                <label for=\"value_addition_for_ss\">Value Addition</label>\n                                <input id=\"value_addition_for_ss\" name=\"value_addition_for_ss\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                        </div>\n                        <div class=\"form-group\">\n\n                            <div>\n                                <label for=\"revise_cost_ss\">Cost With Value Addition</label>\n                                <input id=\"revise_cost_ss\" name=\"revise_cost_ss\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div>\n                                <label for=\"stone_cost_ss\">Stone With Value Addition</label>\n                                <input id=\"stone_cost_ss\" name=\"stone_cost_ss\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div>\n                                <label for=\"other_cost_not_inc_va\">Other Charges</label>\n                                <input id=\"other_cost_not_inc_va\" name=\"other_cost_not_inc_va\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div>\n                                <label for=\"total_cost_in_ss\">Sales Price</label>\n                                <input id=\"total_cost_in_ss\" name=\"total_cost_in_ss\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                        </div>\n                        <div class=\"form-group\">\n\n                            <div>\n                                <label for=\"labour_cost_not_inc\">PD Charges</label>\n                                <input id=\"labour_cost_not_inc\" name=\"labour_cost_not_inc\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div style=\"visibility: hidden;\">\n                                <label for=\"\"></label>\n                                <input id=\"\" name=\"\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div style=\"visibility: hidden;\">\n                                <label for=\"\"></label>\n                                <input id=\"\" name=\"\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div style=\"visibility: hidden;\">\n                                <label for=\"\"></label>\n                                <input id=\"\" name=\"\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                        </div>\n<hr>\n                        <div class=\"form-group\" id=\"mv-feilds\">\n\n                            <div>\n                                <label for=\"silver_increment\">Silver Increment</label>\n                                <input id=\"silver_increment\" name=\"silver_increment\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div>\n                                <label for=\"gold_increment\">Gold Increment</label>\n                                <input id=\"gold_increment\" name=\"gold_increment\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div>\n                                <label for=\"revise_price_for_mv\">Revise Price</label>\n                                <input id=\"revise_price_for_mv\" name=\"revise_price_for_mv\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                            <div style=\"visibility: hidden;\">\n                                <label for=\"\"></label>\n                                <input id=\"\" name=\"\" readonly step=\"0.01\" type=\"text\" value=\"0\">\n                            </div>\n                        </div>\n\n                    </fieldset>\n                </form>\n            </div>\n        </div>\n    </div>\n    </div>\n\n\n    <style>\n    /* styles.css */\n\n    /* General styles */\n    body {\n    font-family: Arial, sans-serif;\n    margin: 0;\n    padding: 0;\n    }\n    /* #cost-ss-form .in {\n\n\n    height: calc(1.5em + 0.75rem + 2px);\n    } */\n    .tab{\n    display:flex;\n    justify-content: space-between;\n    }\n    /* Container for tabs */\n    .tabs-container {\n    width: 100%;\n    margin: auto;\n    padding: 0px;\n    }\n\n    /* Tab header styles */\n    .tabs {\n    display: flex;\n    flex-direction: column;\n    border: 1px solid #ddd;\n    border-radius: 4px 4px 0 0;\n    }\n\n    .tab-label {\n    display: block;\n    padding: 8px 20px;\n    cursor: pointer;\n    /* background-color: rgba(255, 255, 255, 0.8); */\n    background-color: #a5c7e38a;\n    border: 1px solid #ddd;\n    border-bottom: none;\n    margin-right: -1px;\n    text-align: center;\n    transition: background-color 0.3s;\n    }\n\n    .tab-label:hover {\n    background-color: rgb(247 233 233 / 90%);\n    }\n\n    /* Tab content area */\n    .tab-content {\n    border: 1px solid #d5c2c2;\n    border-radius: 0 0 4px 4px;\n    padding: 5px;\n    background-color: #fff;\n    }\n\n    /* Hide all tab panes initially */\n    .tab-pane {\n    display: none;\n    }\n\n    /* Display the selected tab content */\n    input[type=\"radio\"] {\n    display: none;\n    }\n\n    input[type=\"radio\"]:checked + .tab-label {\n    background-color: #c5bdff;\n    border-bottom: 1px solid transparent;\n    color: #000;\n    }\n\n    input[type=\"radio\"]#tab1:checked ~ .tab-content #content1 {\n    display: block;\n    }\n\n    input[type=\"radio\"]#tab2:checked ~ .tab-content #content2 {\n    display: block;\n    }\n\n    /* Specific styling for Sterling Silver form fields */\n    #cost-ss-form fieldset {\n    border: 1px solid #ddd;\n    border-radius: 6px;\n    padding: 20px;\n    background-color: #fafafa;\n    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\n    }\n\n    #cost-ss-form legend {\n    font-size: 1.4em;\n    font-weight: bold;\n    color: #000000;\n    margin-bottom: 15px;\n    }\n\n    #cost-ss-form .form-group {\n\n    display: flex;\n    /* gap: 10px; */\n    /* margin-bottom: 20px;\n    display: flex;\n    gap: 10px;\n    justify-content: space-between;\n    align-items: baseline;\n    flex-direction: row-reverse;\n    align-content: flex-start; */\n    }\n\n    #cost-ss-form .form-group label {\n    width: 250px;\n    font-weight: bold;\n    color: #000000;\n    margin-bottom: 5px;\n    }\n\n    #cost-ss-form .form-group input[type=\"text\"] {\n    flex: 1;\n    padding: 10px;\n    border: 1px solid #ccc;\n    border-radius: 6px;\n    font-size: 1em;\n    box-sizing: border-box;\n    height: calc(1.5em + 0.75rem + 2px);\n    width: 200px;\n\n    }\n\n    #value_addition_for_ss {\n      color: blue;\n    }\n\n    #total_cost_ss {\n      background: #bfa4ff;\n      background: linear-gradient(45deg, #fca4ff, #a4aaff, #bfa4ff);\n      cursor: not-allowed;\n      font-weight: bold;\n      color: #ffffff;\n      height: calc(1.5em + 0.75rem + 2px);\n    }\n\n    #total_cost_in_ss {\n      background: #bfa4ff;\n      background: linear-gradient(45deg, #fca4ff, #a4aaff, #bfa4ff);\n      cursor: not-allowed;\n      font-weight: bold;\n      color: #ffffff;\n      height: calc(1.5em + 0.75rem + 2px);\n    }\n\n\n\n    #cost-ss-form .form-group input[type=\"text\"]::placeholder {\n    color: #aaa;\n    height: calc(1.5em + 0.75rem + 2px);\n    }\n\n\n\n\n    /* margin-bottom: 20px;\n    display: flex;\n    gap: 10px;\n    justify-content: space-between;\n    align-items: center;\n    align-content: space-between;\n    flex-wrap: wrap;\n    flex-direction: column; */\n\n\n\n\n\n\n\n\n\n    #cost-gp-form fieldset {\n    border: 1px solid #ddd;\n    border-radius: 6px;\n    padding: 20px;\n    background-color: #fafafa;\n    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\n    }\n\n    #cost-gp-form legend {\n    font-size: 1.4em;\n    font-weight: bold;\n    color: #000000;\n    margin-bottom: 15px;\n    }\n\n    #cost-gp-form .form-group {\n    display: flex;\n    /* gap: 10px; */\n    /* margin-bottom: 20px;\n    display: flex;\n    gap: 10px;\n    justify-content: space-between;\n    align-items: baseline;\n    flex-direction: row-reverse;\n    align-content: flex-start; */\n    }\n\n    #cost-gp-form .form-group label {\n    width: 250px;\n    font-weight: bold;\n    color: #000000;\n    margin-bottom: 5px;\n    }\n\n    #cost-gp-form .form-group input[type=\"text\"] {\n    flex: 1;\n    padding: 10px;\n    border: 1px solid #ccc;\n    border-radius: 6px;\n    font-size: 1em;\n    box-sizing: border-box;\n    height: calc(1.5em + 0.75rem + 2px);\n    width: 200px;\n\n    }\n\n    #value_addition_for_gp {\n    color: blue;\n    }\n\n    #total_cost_in_gp {\n      background: #bfa4ff;\n      background: linear-gradient(45deg, #fca4ff, #a4aaff, #bfa4ff);\n      cursor: not-allowed;\n      font-weight: bold;\n      color: #ffffff;\n      height: calc(1.5em + 0.75rem + 2px);\n    }\n\n    #total_cost_gp {\n      background: #bfa4ff;\n      background: linear-gradient(45deg, #fca4ff, #a4aaff, #bfa4ff);\n      cursor: not-allowed;\n      font-weight: bold;\n      color: #ffffff;\n      height: calc(1.5em + 0.75rem + 2px);\n    }\n\n    #cost-gp-form .form-group input[type=\"text\"]::placeholder {\n    color: #aaa;\n    height: calc(1.5em + 0.75rem + 2px);\n\n    }\n\n    </style>\n"
+  },
+  {
+   "fieldname": "total_cost_ss_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Total Cost SS "
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "metal_cost_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Metal",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "diamond_cost_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Diamond",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "setting_cost_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Setting",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "labour_cost_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Labour",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "miscellaneous_cost_amt",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Misc .",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "findings_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Findings",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "plating_cost_in_ss",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Rhodium",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "other_cost_not_inc_va",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Other Cost Not Inc VA",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "total_cost_for_ss",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Total Cost for SS",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "labour_cost_not_inc",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Labour Cost Not Inc",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "value_addition_for_ss",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Value Addition for SS ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "revise_cost_for_ss",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Revise Cost for SS",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "stone_cost_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Stone",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "total_ss_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Sale Price",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "silver_increment",
+   "fieldtype": "Currency",
+   "label": "Silver Increment",
+   "options": "currency"
+  },
+  {
+   "fieldname": "gold_increment",
+   "fieldtype": "Currency",
+   "label": "Gold Increment",
+   "options": "currency"
+  },
+  {
+   "fieldname": "revise_price_for_mv",
+   "fieldtype": "Currency",
+   "label": "Revise Price",
+   "options": "currency"
+  },
+  {
+   "fieldname": "total_cost_gp_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Total Cost GP($)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "metal_cost_in_gp",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Metal",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "diamond_cost_in_gp",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Diamond",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "setting_cost_in_gp",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Setting ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "labour_cost_in_gp",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Labour ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "misc_cost_in_gp",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Misc . ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "plating_cost_in_gp",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Plating ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rhod_rate",
+   "fieldtype": "Currency",
+   "label": "Rhod ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "finding_rate",
+   "fieldtype": "Currency",
+   "label": "Finding ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_cost_in_gp",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Total Cost In GP",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "value_addition_for_gp",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Value Addition for GP",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "revise_cost_for_gp",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Revise Cost for GP",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "stone_cost_in_gp",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Stone ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_gp_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Sales Price",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "creation_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Creation Date"
+  },
+  {
+   "fieldname": "costing_duplicate_id",
+   "fieldtype": "Data",
+   "label": "Costing Duplicate id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Test Costing",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "draft_type",
+   "fieldtype": "Select",
+   "label": "Draft Type",
+   "options": "Initial\nDuplicate Draft"
+  },
+  {
+   "fieldname": "clear_image",
+   "fieldtype": "Button",
+   "label": "Clear Image"
+  },
+  {
+   "bold": 1,
+   "fieldname": "opportunity__id",
+   "fieldtype": "Link",
+   "label": "Opportunity ID",
+   "options": "Opportunity New",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lcmkx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_c1ls1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Assigner",
+   "read_only": 1
+  },
+  {
+   "fieldname": "product_development",
+   "fieldtype": "Link",
+   "label": "NPD ID",
+   "options": "Product Development",
+   "read_only": 1
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2025-07-03 12:46:10.275923",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Costing",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,165 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": "name",
+   "fieldtype": "Link",
+   "label": "Salary Slip",
+   "options": "Salary Slip",
+   "width": 0
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "label": "Approval Status",
+   "width": 0
+  },
+  {
+   "fieldname": "document_status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "width": 0
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee ID",
+   "options": "Employee",
+   "width": 0
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "width": 0
+  },
+  {
+   "fieldname": "attendance_device_id",
+   "fieldtype": "Data",
+   "label": "Attendance Device Id",
+   "width": 0
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "width": 0
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "width": 0
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "width": 0
+  },
+  {
+   "fieldname": "gross_monthly_salary",
+   "fieldtype": "Currency",
+   "label": "Gross Monthly Salary",
+   "width": 0
+  },
+  {
+   "fieldname": "basic",
+   "fieldtype": "Currency",
+   "label": "Basic (Default)",
+   "width": 0
+  },
+  {
+   "fieldname": "hra",
+   "fieldtype": "Currency",
+   "label": "HRA (Default)",
+   "width": 0
+  },
+  {
+   "fieldname": "cca",
+   "fieldtype": "Currency",
+   "label": "CCA (Default)",
+   "width": 0
+  },
+  {
+   "fieldname": "ta",
+   "fieldtype": "Currency",
+   "label": "TA (Default)",
+   "width": 0
+  },
+  {
+   "fieldname": "wa",
+   "fieldtype": "Currency",
+   "label": "WA (Default)",
+   "width": 0
+  },
+  {
+   "fieldname": "pf",
+   "fieldtype": "Currency",
+   "label": "PF (Default)",
+   "width": 0
+  },
+  {
+   "fieldname": "ESI",
+   "fieldtype": "Currency",
+   "label": "ESI (Default)",
+   "width": 0
+  }
+ ],
+ "creation": "2024-09-14 15:40:12.882336",
+ "disable_prepared_report": 1,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Pinkcity Jewelhouse Pvt. Ltd. Mahapura",
+ "modified": "2025-07-01 11:25:09.307786",
+ "modified_by": "Administrator",
+ "module": "Pinkcity HR",
+ "name": "Salary Component Classification",
+ "owner": "shyam.sunder@pinkcityindia.com",
+ "prepared_report": 1,
+ "query": "SELECT \r\n    tss.name, \r\n    tss.workflow_state, \r\n    CASE  \r\n\t\tWHEN docstatus = 0 THEN 'Draft'\r\n\t\tWHEN parentfield = 2 THEN 'Cancelled'\t\r\n\t\tELSE 'Submitted'\r\n\tEND AS document_status, \r\n    tss.employee, \r\n    tss.employee_name, \r\n    tss.attendance_device_id, \r\n    tss.branch, \r\n    tss.company, \r\n    tss.end_date, \r\n    tss.gross_monthly_salary,\r\n    (SELECT tsd.default_amount FROM `tabSalary Detail` tsd WHERE tsd.parent = tss.name AND tsd.abbr = 'B') AS basic,\r\n    (SELECT tsd.default_amount FROM `tabSalary Detail` tsd WHERE tsd.parent = tss.name AND tsd.abbr = 'HRA') AS hra,\r\n    (SELECT tsd.default_amount FROM `tabSalary Detail` tsd WHERE tsd.parent = tss.name AND tsd.abbr = 'CCA') AS cca,\r\n    (SELECT tsd.default_amount FROM `tabSalary Detail` tsd WHERE tsd.parent = tss.name AND tsd.abbr = 'TA') AS ta,\r\n    (SELECT tsd.default_amount FROM `tabSalary Detail` tsd WHERE tsd.parent = tss.name AND tsd.abbr = 'WA') AS wa,\r\n    (SELECT tsd.default_amount FROM `tabSalary Detail` tsd WHERE tsd.parent = tss.name AND tsd.abbr = 'PF') AS pf,\r\n    (SELECT tsd.default_amount FROM `tabSalary Detail` tsd WHERE tsd.parent = tss.name AND tsd.abbr = 'ESI') AS esi\r\nFROM `tabSalary Slip` tss \r\nWHERE \r\n     DATE(tss.end_date) = %(end_date)s\r\n    \r\n    \r\n",
+ "ref_doctype": "Salary Slip",
+ "report_name": "Salary Component Classification",
+ "report_script": "conditions = \"\"\n\nif filters.get(\"employee\"):\n    conditions += \" and tss.employee = '%s'\" % filters[\"employee\"]\nif filters.get(\"end_date\"):\n    conditions += \" and DATE(tss.end_date) = '%s'\" % filters[\"end_date\"]\nif filters.get(\"company\"):\n\tconditions += \" and tss.company = '%s'\" % filters[\"company\"].replace(\"'\", \"\\\\'\")\n return conditions",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "Salary Approver"
+  },
+  {
+   "role": "HR Operator"
+  },
+  {
+   "role": "HR HOD"
+  },
+  {
+   "role": "Payroll"
+  },
+  {
+   "role": "Management"
+  },
+  {
+   "role": "General Manager"
+  }
+ ]
+}

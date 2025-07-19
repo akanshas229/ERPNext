@@ -1,0 +1,228 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-06-07 10:38:05.399124",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "certificate_no",
+  "certificate_issue_date",
+  "column_break_nyo0l",
+  "certificate_expiry_date",
+  "file",
+  "company",
+  "identification_section",
+  "stone_name",
+  "column_break_zljv1",
+  "group__species",
+  "description_section",
+  "item_name",
+  "weight",
+  "color",
+  "cut",
+  "column_break_tea7v",
+  "shape",
+  "measurements",
+  "remarks_section",
+  "remarks",
+  "column_break_fntgb",
+  "treatment_remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "GTC-.YYYY.-"
+  },
+  {
+   "fieldname": "certificate_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Certificate No.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "certificate_issue_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Certificate Issue Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nyo0l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certificate_expiry_date",
+   "fieldtype": "Date",
+   "label": "Certificate Expiry Date"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "label": "File",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "identification_section",
+   "fieldtype": "Section Break",
+   "label": "Identification"
+  },
+  {
+   "description": "Stone Name (Variety)",
+   "fieldname": "stone_name",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Stone Name ",
+   "options": "Gemstone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zljv1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "group__species",
+   "fieldtype": "Link",
+   "label": "Group / Species",
+   "options": "Gemstone"
+  },
+  {
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description "
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight (cts)"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Link",
+   "label": "Color",
+   "options": "Stone Color"
+  },
+  {
+   "fieldname": "cut",
+   "fieldtype": "Link",
+   "label": "Cut",
+   "options": "Stone Cut"
+  },
+  {
+   "fieldname": "column_break_tea7v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shape",
+   "fieldtype": "Link",
+   "label": "Shape",
+   "options": "Stone Shape"
+  },
+  {
+   "description": "Measurements (Size)",
+   "fieldname": "measurements",
+   "fieldtype": "Data",
+   "label": "Measurements"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_fntgb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "treatment_remarks",
+   "fieldtype": "Small Text",
+   "label": "Treatment Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "GTC Certificates",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2025-06-26 11:41:45.992676",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "GTC Certificates",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,283 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-05-02 11:25:10.800590",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "employee_name",
+  "essl_code",
+  "company",
+  "gross_salary",
+  "column_break_xfidd",
+  "date",
+  "in_time",
+  "out_time",
+  "status",
+  "check_in_out_data_time_format_section",
+  "working_time",
+  "total_time",
+  "column_break_omdpl",
+  "less_time",
+  "excess_time",
+  "over_time",
+  "section_break_ajtgm",
+  "gate_pass_type",
+  "column_break_wfl7n",
+  "gate_pass_hour",
+  "section_break_38z4y",
+  "remarks",
+  "section_break_orzcf",
+  "working_hours",
+  "total_hour",
+  "column_break_2nql2",
+  "excess_hour",
+  "less_hour",
+  "over_time_hour"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "CH-.YY.-.####"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.attendance_device_id",
+   "fieldname": "essl_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "ESSL Code",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company ",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gross_salary",
+   "fieldtype": "Currency",
+   "label": "Gross Salary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xfidd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "in_time",
+   "fieldtype": "Datetime",
+   "label": "In Time"
+  },
+  {
+   "fieldname": "out_time",
+   "fieldtype": "Datetime",
+   "label": "Out Time"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPresent\nHalf Day\nAbsent\nHoliday\nWeek Off"
+  },
+  {
+   "fieldname": "check_in_out_data_time_format_section",
+   "fieldtype": "Section Break",
+   "label": "Check In - Out Data (Time Format)"
+  },
+  {
+   "fieldname": "working_time",
+   "fieldtype": "Time",
+   "label": "Working Time"
+  },
+  {
+   "fieldname": "total_time",
+   "fieldtype": "Time",
+   "label": "Total Time"
+  },
+  {
+   "fieldname": "column_break_omdpl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "less_time",
+   "fieldtype": "Time",
+   "label": "Less Time"
+  },
+  {
+   "fieldname": "excess_time",
+   "fieldtype": "Time",
+   "label": "Excess Time"
+  },
+  {
+   "fieldname": "over_time",
+   "fieldtype": "Time",
+   "label": "Over Time "
+  },
+  {
+   "fieldname": "section_break_ajtgm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gate_pass_type",
+   "fieldtype": "Select",
+   "label": "Gate Pass Type",
+   "options": "\nPersonal\nOfficial"
+  },
+  {
+   "fieldname": "column_break_wfl7n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gate_pass_hour",
+   "fieldtype": "Float",
+   "label": "Gate Pass Hour"
+  },
+  {
+   "fieldname": "section_break_38z4y",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_orzcf",
+   "fieldtype": "Section Break",
+   "label": "Check In - Out Data (Hour Format)"
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Float",
+   "label": "Working Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_hour",
+   "fieldtype": "Float",
+   "label": "Total Hour",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2nql2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "excess_hour",
+   "fieldtype": "Float",
+   "label": "Excess Hour",
+   "read_only": 1
+  },
+  {
+   "fieldname": "less_hour",
+   "fieldtype": "Float",
+   "label": "Less Hour",
+   "read_only": 1
+  },
+  {
+   "fieldname": "over_time_hour",
+   "fieldtype": "Float",
+   "label": "Over Time Hour",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-24 11:00:31.603972",
+ "modified_by": "Administrator",
+ "module": "Pinkcity HR",
+ "name": "Custom Employee Check In",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Payroll",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "General Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "employee_name,employee,essl_code",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

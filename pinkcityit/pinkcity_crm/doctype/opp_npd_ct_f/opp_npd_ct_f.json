@@ -1,0 +1,246 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-03 12:04:22.996454",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_b6je3",
+  "req_quotation",
+  "attachment_detail",
+  "attachment",
+  "primary_assigner",
+  "assigned_to",
+  "remark",
+  "section_break_2spdk",
+  "preview",
+  "pd_details_section",
+  "npd_description",
+  "create_pd",
+  "_break_h",
+  "npd_assigned",
+  "npd_costing_id",
+  "column_br",
+  "npd_attachment",
+  "npd_sheet_status",
+  "column",
+  "product_development",
+  "npd_client_status",
+  "costing_details_section",
+  "costing_npd_id",
+  "create_cost",
+  "column_break_apxv0",
+  "cost_assigned",
+  "costing",
+  "column_break_gdhit",
+  "cost_description",
+  "cost_status",
+  "column_break_9w12o",
+  "cost_attachment",
+  "cost_client_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_b6je3",
+   "fieldtype": "Section Break",
+   "label": "Process Request"
+  },
+  {
+   "columns": 2,
+   "fieldname": "req_quotation",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Request For",
+   "options": "\nCUST2D-Costing-3D\nCUST3D-Costing-PD\nCUST2D-3D-Costing\nPC-2D-3D-Costing\nCUST-2D-3D-Costing\nCUST-2D-Costing-3D"
+  },
+  {
+   "columns": 2,
+   "fieldname": "attachment_detail",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach Image",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "primary_assigner",
+   "fieldtype": "Data",
+   "label": "Primary Assigner",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Assigned to",
+   "options": "Designers"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Remark"
+  },
+  {
+   "fieldname": "section_break_2spdk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "preview",
+   "fieldtype": "Image",
+   "label": "Preview",
+   "options": "attachment"
+  },
+  {
+   "fieldname": "pd_details_section",
+   "fieldtype": "Section Break",
+   "label": "NPD Details"
+  },
+  {
+   "fieldname": "npd_description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "columns": 2,
+   "fieldname": "create_pd",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Create Sheet"
+  },
+  {
+   "fieldname": "_break_h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "npd_assigned",
+   "fieldtype": "Data",
+   "label": "Assigned To"
+  },
+  {
+   "depends_on": "eval: doc.cost_client_status == \"Accepted\"",
+   "fieldname": "npd_costing_id",
+   "fieldtype": "Data",
+   "label": "Costing ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_br",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "npd_attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "npd_sheet_status",
+   "fieldtype": "Data",
+   "label": "Sheet Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.npd_sheet_status == \"Completed\"\n",
+   "fieldname": "npd_client_status",
+   "fieldtype": "Select",
+   "label": "Client Status",
+   "options": "\nAccepted\nRejected"
+  },
+  {
+   "depends_on": "eval:(doc.req_quotation == 'CUST2D-Costing-3D' || \ndoc.req_quotation == 'CUST3D-Costing-PD') ||\n(doc.npd_client_status == 'Accepted')",
+   "fieldname": "costing_details_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Costing Details"
+  },
+  {
+   "depends_on": "eval:doc.npd_client_status == 'Accepted'",
+   "fieldname": "costing_npd_id",
+   "fieldtype": "Data",
+   "label": "NPD ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "create_cost",
+   "fieldtype": "Button",
+   "label": "Create Costing"
+  },
+  {
+   "fieldname": "column_break_apxv0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_assigned",
+   "fieldtype": "Data",
+   "label": "Assigned To"
+  },
+  {
+   "fieldname": "costing",
+   "fieldtype": "Link",
+   "label": "Costing ID",
+   "options": "Costing",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gdhit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "cost_status",
+   "fieldtype": "Data",
+   "label": "Costing Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9w12o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "depends_on": "eval: doc.cost_status == \"PO Recieved\"",
+   "fieldname": "cost_client_status",
+   "fieldtype": "Select",
+   "label": "Client Status",
+   "options": "\nAccepted\nRejected"
+  },
+  {
+   "columns": 2,
+   "fieldname": "product_development",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PD ID",
+   "options": "Product Development"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-11 15:18:32.564115",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Opp NPD CT F",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

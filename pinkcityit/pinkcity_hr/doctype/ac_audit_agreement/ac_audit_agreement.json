@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "creation": "2024-10-16 15:42:23.443188",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "agreement",
+  "owner_name",
+  "ownername2",
+  "target_date",
+  "status",
+  "column_break_6omze",
+  "completion_date",
+  "review",
+  "company_documents_id",
+  "description",
+  "section",
+  "tab"
+ ],
+ "fields": [
+  {
+   "columns": 4,
+   "fieldname": "agreement",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task"
+  },
+  {
+   "columns": 1,
+   "fieldname": "owner_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Dept",
+   "options": "\nAdmin\nAccounts\nHR\nPayroll\nR&D"
+  },
+  {
+   "columns": 1,
+   "fieldname": "ownername2",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Owner Name",
+   "options": "\nIrshad Hussain\nPriya Choudhary\nSonal Akhtar\nRaj Kumar\nYogesh Jangid\nAkshita Pareek\nSatish Soni\nDinesh Kishnani\nPuneet Tak\nArun Sharma\nJoshy Johson\nVinod Tailor\nB.S. Chauhan\nNutan Jain"
+  },
+  {
+   "columns": 2,
+   "fieldname": "target_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Target Date",
+   "mandatory_depends_on": "// eval:doc.status == 'Pending' || doc.status == 'In Progress'"
+  },
+  {
+   "columns": 2,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Owner Status",
+   "options": "\nIn Progress\nCompleted\nPending\nUnder Review\nNA\nTBD - Managment\nTBD - Consultant"
+  },
+  {
+   "fieldname": "column_break_6omze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "completion_date",
+   "fieldtype": "Date",
+   "label": "Completion Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "review",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Audit Review",
+   "options": "\nOk\nNot Ok"
+  },
+  {
+   "fieldname": "company_documents_id",
+   "fieldtype": "Link",
+   "label": "Company Documents ID",
+   "options": "Company Documents"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Section"
+  },
+  {
+   "fieldname": "tab",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Tab"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:50:36.887370",
+ "modified_by": "Administrator",
+ "module": "Pinkcity HR",
+ "name": "AC Audit Agreement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

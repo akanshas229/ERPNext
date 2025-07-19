@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "autoname": "field:metal_name",
+ "creation": "2020-08-10 17:26:20.075848",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "metal_name",
+  "karat",
+  "metal_group",
+  "short_metal_name",
+  "metalkaratage",
+  "capping",
+  "formula"
+ ],
+ "fields": [
+  {
+   "fieldname": "metal_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Metal Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "karat",
+   "fieldtype": "Data",
+   "label": "Karat"
+  },
+  {
+   "fieldname": "metal_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Metal Group",
+   "options": "Metal Group"
+  },
+  {
+   "fieldname": "short_metal_name",
+   "fieldtype": "Data",
+   "label": "Short Metal Name",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "metalkaratage",
+   "fieldtype": "Data",
+   "label": "MetalKaratage"
+  },
+  {
+   "fieldname": "capping",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Capping",
+   "read_only": 1
+  },
+  {
+   "fieldname": "formula",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Formula",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-26 11:40:08.786627",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "Metal Name",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cad Designer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-11 16:36:19.579640",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bag_detail_tab",
+  "user",
+  "column_break_jb9ql",
+  "date",
+  "column_break_bxvtv",
+  "company",
+  "section_break_orntn",
+  "scan",
+  "barcode",
+  "current_bag_section",
+  "current_bag",
+  "column_break_8fjc1",
+  "mateler_bag_detail",
+  "bag_rework_tab",
+  "re_work_user",
+  "column_break_qkpni",
+  "re_work_date",
+  "column_break_wjfed",
+  "re_work_company",
+  "section_break_cmpwg",
+  "re_work_barcode",
+  "section_break_w5eqn",
+  "bag_re_work_detail",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "bag_detail_tab",
+   "fieldtype": "Tab Break",
+   "label": "Bag Detail"
+  },
+  {
+   "default": "__user",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jb9ql",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bxvtv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_orntn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "scan",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Scan"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Data",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "current_bag_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_bag",
+   "fieldtype": "Data",
+   "label": "Current Bag",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8fjc1",
+   "fieldtype": "Section Break",
+   "label": "Bag Transaction"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "mateler_bag_detail",
+   "fieldtype": "Table",
+   "options": "Plating Matler Bag Detail"
+  },
+  {
+   "fieldname": "bag_rework_tab",
+   "fieldtype": "Tab Break",
+   "label": "Bag Re-Work"
+  },
+  {
+   "default": "__user",
+   "fieldname": "re_work_user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qkpni",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "re_work_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wjfed",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "re_work_company",
+   "fieldtype": "Link",
+   "label": "ReWork Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_cmpwg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "re_work_barcode",
+   "fieldtype": "Data",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "section_break_w5eqn",
+   "fieldtype": "Section Break",
+   "label": "Bag Re-Work Detail"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "bag_re_work_detail",
+   "fieldtype": "Table",
+   "options": "Plating Matler Bag Detail"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Plating Transaction",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-04 17:30:52.976497",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Plating Transaction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

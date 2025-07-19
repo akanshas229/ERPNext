@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-07 11:51:04.831959",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "design_code",
+  "size",
+  "karat",
+  "color",
+  "create_photography_request",
+  "order_design_sr_no",
+  "photography_request"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Design Code"
+  },
+  {
+   "columns": 1,
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size"
+  },
+  {
+   "columns": 1,
+   "fieldname": "karat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Karat"
+  },
+  {
+   "columns": 1,
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Color"
+  },
+  {
+   "columns": 2,
+   "fieldname": "create_photography_request",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Create Photography Request"
+  },
+  {
+   "fieldname": "order_design_sr_no",
+   "fieldtype": "Data",
+   "label": "Order Design Sr No"
+  },
+  {
+   "columns": 2,
+   "fieldname": "photography_request",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Photography Request",
+   "options": "Photography Request"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-07 11:51:04.831959",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "EO Design Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

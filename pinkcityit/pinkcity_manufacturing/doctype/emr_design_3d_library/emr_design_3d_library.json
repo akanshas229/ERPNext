@@ -1,0 +1,232 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:design_3d_code",
+ "beta": 1,
+ "creation": "2023-12-11 14:23:41.202368",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "3d_design_description_detail_section",
+  "image_preview",
+  "image",
+  "design_3d_code_description",
+  "created_by",
+  "column_break_2",
+  "branch",
+  "design_category",
+  "metal",
+  "design_3d_code",
+  "client_code",
+  "uom",
+  "cad_designer_name",
+  "quality_done_by",
+  "design_date",
+  "design_bom_detail_section",
+  "design_bom_details"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "columns": 25,
+   "fieldname": "3d_design_description_detail_section",
+   "fieldtype": "Section Break",
+   "label": "3D Design Description Detail",
+   "width": "25"
+  },
+  {
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "in_preview": 1,
+   "label": "Image Preview",
+   "options": "image"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "3DImage",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "design_3d_code_description",
+   "fieldtype": "Small Text",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "3D Design Description",
+   "reqd": 1
+  },
+  {
+   "default": "__user",
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "design_category",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Design Category",
+   "options": "Design Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "metal",
+   "fieldtype": "Data",
+   "label": "Metal (carat)"
+  },
+  {
+   "fieldname": "design_3d_code",
+   "fieldtype": "Data",
+   "label": "3D Design Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "client_code",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Client Code"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "label": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cad_designer_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "3D Designer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quality_done_by",
+   "fieldtype": "Data",
+   "label": "Uploaded By and Team"
+  },
+  {
+   "fieldname": "design_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Design Date"
+  },
+  {
+   "fieldname": "design_bom_detail_section",
+   "fieldtype": "Section Break",
+   "label": "BOM Detail"
+  },
+  {
+   "fieldname": "design_bom_details",
+   "fieldtype": "Table",
+   "label": "Design BOM Details",
+   "options": "EMR Design BOM Details"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-26 12:04:17.599186",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "EMR Design 3D Library",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_design_code_detail",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "DM CAD Designer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Team Custom Rights",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "search_fields": "design_category",
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "design_3d_code",
+ "track_changes": 1
+}

@@ -1,0 +1,1102 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-09-25 10:16:40.155772",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_details_tab",
+  "production_unit_name",
+  "naming_series",
+  "column_break_zaqyl",
+  "customer_code",
+  "column_break_4dil7",
+  "buyers_name",
+  "column_break_vcfyp",
+  "sales_person_name",
+  "column_break_f6uoo",
+  "purchase_order_no",
+  "section_break_efr12",
+  "company_code",
+  "column_break_bjymy",
+  "order_no_prefix",
+  "column_break_petgl",
+  "order_year",
+  "column_break_ra80t",
+  "order_type",
+  "column_break_idk09",
+  "order_num",
+  "section_break_niq3j",
+  "purchase_order_attachment",
+  "order_id",
+  "column_break_0yftk",
+  "final_order_no",
+  "column_break_ejvqu",
+  "re_order",
+  "column_break_iqafk",
+  "priority",
+  "column_break_ttxxw",
+  "currency",
+  "production_schedule_tab",
+  "order_recieved_date",
+  "column_break_ngnid",
+  "open_order_in_erp",
+  "column_break_odjtz",
+  "production_due_date",
+  "column_break_nzmjf",
+  "actual_production_date",
+  "column_break_qombf",
+  "shipment_date",
+  "section_break_hh5n6",
+  "shipment_month",
+  "section_break_7nh5v",
+  "erp_planning_set",
+  "column_break_8rfpr",
+  "column_break_memqm",
+  "section_break_ijfni",
+  "order_designs_section",
+  "order_designs",
+  "section_break_71ysi",
+  "total_no_of_qty",
+  "section_break_dgytg",
+  "order_value",
+  "column_break_ipypa",
+  "section_break_iha9a",
+  "remark",
+  "order_design_detail",
+  "column_break_jsx6j",
+  "total_order_quantity",
+  "column_break_vi8fm",
+  "column_break_h48sp",
+  "what_is_where_tab",
+  "order_status",
+  "what_is_where_section",
+  "what_is_where",
+  "section_break_x0gvl",
+  "total_bag_qty",
+  "column_break_qavai",
+  "total_order_quantity_wiw",
+  "column_break_svsvh",
+  "section_break_2ltst",
+  "what_is_where_table",
+  "stone_detail_tab",
+  "stone_procurement_section",
+  "stone_detail",
+  "section_break_db5ys",
+  "req_total_stone_wt",
+  "column_break_qmtoh",
+  "req_total_stone_qty",
+  "column_break_h50ja",
+  "section_break_p3ne4",
+  "os_stone_proc",
+  "section_break_q0ar0",
+  "os_stone_bom_detail",
+  "section_break_yavfj",
+  "total_stone_bom_qty",
+  "column_break_2xijv",
+  "total_stone_quantity",
+  "column_break_hhdig",
+  "diamond_detail_tab",
+  "diamond_detail_section",
+  "diamond_detail",
+  "section_break_dkdzr",
+  "os_diamond_bom_detail",
+  "section_break_njr3p",
+  "total_diamond_weigh",
+  "column_break_vmmql",
+  "total_diamond_weight",
+  "column_break_w7crv",
+  "accessories_tab",
+  "accessories_section",
+  "accessories",
+  "section_break_wsbiu",
+  "total_weight",
+  "column_break_c10rh",
+  "column_break_ncir0",
+  "section_break_x86sy",
+  "accessories_by_weight",
+  "section_break_tpghf",
+  "total_accessories_by_weight",
+  "column_break_scyvz",
+  "column_break_8qaky",
+  "sales_invoice_tab",
+  "sale_invoives",
+  "section_break_gm06w",
+  "total_sales_invoice_qty",
+  "column_break_i5rwb",
+  "total_sales_qty_weight",
+  "column_break_ih31f",
+  "sales_invoice_section",
+  "sales_invoice",
+  "section_break_ydd0q",
+  "total_quantity",
+  "column_break_7b5fv",
+  "total_design_weight",
+  "column_break_tlow9",
+  "row_material_details_section",
+  "row_material_details",
+  "raw_material_weight_section",
+  "total_gold_weight",
+  "column_break_hqey8",
+  "total_silver_weight",
+  "column_break_mv3ri",
+  "total_rm__diamond_weight",
+  "section_break_hjlwo",
+  "total_stone_weight",
+  "column_break_9btd7",
+  "total_metal_weight",
+  "column_break_tvphe",
+  "total_other_weight",
+  "section_break_c7nsd",
+  "tab_break_t2jee",
+  "sale_invoice_price",
+  "section_break_mcyun",
+  "total_sales_invoice_price",
+  "column_break_7scob",
+  "total_sales_invoice_qty_sum",
+  "column_break_uvg9m",
+  "sales_invoice_price_detail_section",
+  "invoice_price",
+  "section_break_nc1le",
+  "total_invoice_qty",
+  "column_break_hgz7b",
+  "total_invoice_rate",
+  "column_break_862mc",
+  "attachments_section",
+  "sales_invoice_attachment",
+  "column_break_nxz6o",
+  "packing_list",
+  "column_break_fivtl",
+  "ups_details",
+  "section_break_dv15r",
+  "shipping_bill",
+  "column_break_tqrby",
+  "exim_invoice",
+  "column_break_jxblt",
+  "costing_tab",
+  "costing_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Order Details",
+   "options": "<style>\n        /* styles.css */\n        \n        /* General styles */\n        body {\n        font-family: Arial, sans-serif;\n        margin: 0;\n        padding: 0;\n        }\n        /* #cost-ss-form .in {\n        height: calc(1.5em + 0.75rem + 2px);\n        } */\n        .tab{\n        display:flex;\n        justify-content: space-between;\n        }\n        /* Container for tabs */\n        .tabs-container {\n        width: 100%;\n        margin: auto;\n        padding: 0px;\n        }\n        \n        /* Tab header styles */\n        .tabs {\n        display: flex;\n        flex-direction: column;\n        border: 1px solid #ddd;\n        border-radius: 4px 4px 0 0;\n        }\n        \n        .tab-label {\n        display: block;\n        padding: 8px 20px;\n        cursor: pointer;\n        /* background-color: rgba(255, 255, 255, 0.8); */\n        background-color: cornsilk;\n        border: 1px solid #ddd;\n        border-bottom: none;\n        margin-right: -1px;\n        text-align: center;\n        transition: background-color 0.3s;\n        }\n        \n        .tab-label:hover {\n        background-color: rgb(247 233 233 / 90%);\n        }\n        \n        /* Tab content area */\n        .tab-content {\n        border: 1px solid #d5c2c2;\n        border-radius: 0 0 4px 4px;\n        padding: 5px;\n        background-color: #fff;\n        }\n        \n        /* Hide all tab panes initially */\n        .tab-pane {\n        display: none;\n        }\n        \n        /* Display the selected tab content */\n        input[type=\"radio\"] {\n        display: none;\n        }\n        \n        input[type=\"radio\"]:checked + .tab-label {\n        background-color: #c5bdff;\n        border-bottom: 1px solid transparent;\n        color: #000;\n        }\n        \n        input[type=\"radio\"]#tab1:checked ~ .tab-content #content1 {\n        display: block;\n        }\n        \n        input[type=\"radio\"]#tab2:checked ~ .tab-content #content2 {\n        display: block;\n        }\n        \n        \n        \n        \n        </style> "
+  },
+  {
+   "fieldname": "production_unit_name",
+   "fieldtype": "Link",
+   "label": "Production Unit Name",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "column_break_zaqyl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_code",
+   "fieldtype": "Data",
+   "label": "Customer Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4dil7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "buyers_name",
+   "fieldtype": "Data",
+   "label": "Customer  Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vcfyp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_person_name",
+   "fieldtype": "Link",
+   "label": "Sales Person Name",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "section_break_efr12",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "company_code",
+   "fieldtype": "Select",
+   "label": "Company Code",
+   "options": "\nPC\nPJ\nPJ2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bjymy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "SO",
+   "fieldname": "order_no_prefix",
+   "fieldtype": "Data",
+   "label": "Order No. Prefix",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_petgl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_year",
+   "fieldtype": "Data",
+   "label": "Order Year"
+  },
+  {
+   "fieldname": "column_break_ra80t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Data",
+   "label": "Order Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_idk09",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_num",
+   "fieldtype": "Int",
+   "label": "Order No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_niq3j",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "purchase_order_no",
+   "fieldtype": "Data",
+   "label": " Purchase Order No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Order Id"
+  },
+  {
+   "fieldname": "column_break_0yftk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "final_order_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Emporer Order No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ejvqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "column_break_iqafk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "re_order",
+   "fieldtype": "Select",
+   "label": "Order Type",
+   "options": "\nDSM\nMOD\nPSM\nREG\nSMP\nREP\nEPM\nRe-Order\nYes\nNo"
+  },
+  {
+   "fieldname": "production_schedule_tab",
+   "fieldtype": "Section Break",
+   "label": "Production Schedule"
+  },
+  {
+   "fieldname": "order_recieved_date",
+   "fieldtype": "Date",
+   "label": "Order Recieved Date"
+  },
+  {
+   "fieldname": "column_break_ngnid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "open_order_in_erp",
+   "fieldtype": "Date",
+   "label": "Order Open in EMPR",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_odjtz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "production_due_date",
+   "fieldtype": "Date",
+   "label": "Production Due Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nzmjf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipment_date",
+   "fieldtype": "Date",
+   "label": "Actual Shipment Date"
+  },
+  {
+   "fieldname": "section_break_hh5n6",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "shipment_month",
+   "fieldtype": "Link",
+   "label": "Shipment Month",
+   "options": "Month"
+  },
+  {
+   "fieldname": "section_break_7nh5v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erp_planning_set",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "ERP Planning Sent",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_8rfpr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_memqm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ijfni",
+   "fieldtype": "Tab Break",
+   "label": "Order Designs"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "order_designs_section",
+   "fieldtype": "Section Break",
+   "label": "Order Designs"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "order_designs",
+   "fieldtype": "Table",
+   "options": "OS Order Designs"
+  },
+  {
+   "fieldname": "section_break_71ysi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_no_of_qty",
+   "fieldtype": "Int",
+   "label": "Total No of Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_dgytg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_value",
+   "fieldtype": "Currency",
+   "label": "Total Order Value ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_iha9a",
+   "fieldtype": "Section Break",
+   "label": "Order Design Summary"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Remark"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "order_design_detail",
+   "fieldtype": "Table",
+   "options": "OS Order Det"
+  },
+  {
+   "fieldname": "column_break_jsx6j",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_order_quantity",
+   "fieldtype": "Data",
+   "label": "Total Order Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "what_is_where_tab",
+   "fieldtype": "Tab Break",
+   "label": "What is Where"
+  },
+  {
+   "fieldname": "order_status",
+   "fieldtype": "Select",
+   "label": "Order Status",
+   "options": "\nOrder Completed\nOrder Inserting\nOrder in Production\nPartially Completed",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "what_is_where_section",
+   "fieldtype": "Section Break",
+   "label": "What Is Where"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "depends_on": "eval:doc.order_status != 'Order Completed'",
+   "fieldname": "what_is_where",
+   "fieldtype": "Table",
+   "options": "OS What Is Where"
+  },
+  {
+   "fieldname": "section_break_x0gvl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_bag_qty",
+   "fieldtype": "Float",
+   "label": "Total Bag Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_svsvh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_order_quantity_wiw",
+   "fieldtype": "Float",
+   "label": "Total Order Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_2ltst",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "What Is Where Summary"
+  },
+  {
+   "fieldname": "what_is_where_table",
+   "fieldtype": "Table",
+   "options": "OS What Is Where Tab"
+  },
+  {
+   "fieldname": "stone_detail_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stone Detail"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "stone_procurement_section",
+   "fieldtype": "Section Break",
+   "label": "Stone Procurement"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "stone_detail",
+   "fieldtype": "Table",
+   "options": "OS Stone Details"
+  },
+  {
+   "fieldname": "section_break_db5ys",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "req_total_stone_wt",
+   "fieldtype": "Float",
+   "label": "Req Stone Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qmtoh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "req_total_stone_qty",
+   "fieldtype": "Float",
+   "label": "Req Total Stone Qty",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_p3ne4",
+   "fieldtype": "Section Break",
+   "label": "Stone BOM Detail"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "os_stone_proc",
+   "fieldtype": "Table",
+   "options": "OS Stone Proc"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_q0ar0",
+   "fieldtype": "Section Break",
+   "label": "Stone RM Code Summary"
+  },
+  {
+   "fieldname": "os_stone_bom_detail",
+   "fieldtype": "Table",
+   "options": "OS Stone Bom Detail"
+  },
+  {
+   "fieldname": "section_break_yavfj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_stone_quantity",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total Stone Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_stone_bom_qty",
+   "fieldtype": "Float",
+   "label": "Total Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_detail_tab",
+   "fieldtype": "Tab Break",
+   "label": "Diamond Detail"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "diamond_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Diamond Detail"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "diamond_detail",
+   "fieldtype": "Table",
+   "options": "OS Diamond Detail"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_dkdzr",
+   "fieldtype": "Section Break",
+   "label": "Diamond Detail Summary"
+  },
+  {
+   "fieldname": "os_diamond_bom_detail",
+   "fieldtype": "Table",
+   "options": "OS Diamond Bom Detail"
+  },
+  {
+   "fieldname": "section_break_njr3p",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_diamond_weigh",
+   "fieldtype": "Float",
+   "label": "Total Diamond Weight",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_diamond_weight",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total Diamond Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "accessories_tab",
+   "fieldtype": "Tab Break",
+   "label": "Accessories"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "accessories_section",
+   "fieldtype": "Section Break",
+   "label": "Accessories "
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "accessories",
+   "fieldtype": "Table",
+   "options": "OS Accessories Doctype"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_x86sy",
+   "fieldtype": "Section Break",
+   "label": "Accessories By Weight"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "accessories_by_weight",
+   "fieldtype": "Table",
+   "options": "OS Accessoey Code By Weight"
+  },
+  {
+   "fieldname": "section_break_tpghf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_accessories_by_weight",
+   "fieldtype": "Float",
+   "label": "Total Accessories By Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_invoice_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sales Invoice"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "sale_invoives",
+   "fieldtype": "Table",
+   "label": "Sale Invoice Summary",
+   "options": "OS Sale Invoives"
+  },
+  {
+   "fieldname": "section_break_gm06w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_sales_invoice_qty",
+   "fieldtype": "Float",
+   "label": "Total Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_i5rwb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_sales_qty_weight",
+   "fieldtype": "Float",
+   "label": "Total Gross Weight (gms)",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sales_invoice_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Invoice"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "sales_invoice",
+   "fieldtype": "Table",
+   "options": "OS Sales Invoice"
+  },
+  {
+   "fieldname": "section_break_ydd0q",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_quantity",
+   "fieldtype": "Float",
+   "label": "Total Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7b5fv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_design_weight",
+   "fieldtype": "Float",
+   "label": "Total Design Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "raw_material_weight_section",
+   "fieldtype": "Section Break",
+   "label": "Raw Material Weight"
+  },
+  {
+   "fieldname": "total_gold_weight",
+   "fieldtype": "Float",
+   "label": "Total Gold Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hqey8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_silver_weight",
+   "fieldtype": "Float",
+   "label": "Total Silver Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mv3ri",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_rm__diamond_weight",
+   "fieldtype": "Float",
+   "label": "Total  Diamond Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_hjlwo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_stone_weight",
+   "fieldtype": "Float",
+   "label": "Total Stone Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9btd7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_metal_weight",
+   "fieldtype": "Float",
+   "label": "Total Metal Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tvphe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_other_weight",
+   "fieldtype": "Float",
+   "label": "Total Other Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_c7nsd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tab_break_t2jee",
+   "fieldtype": "Tab Break",
+   "label": "Invoice Price"
+  },
+  {
+   "fieldname": "sale_invoice_price",
+   "fieldtype": "Table",
+   "label": "Sale Invoice Price",
+   "options": "OS Sale Invoic Price"
+  },
+  {
+   "fieldname": "section_break_mcyun",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_sales_invoice_price",
+   "fieldtype": "Currency",
+   "label": "Total Invoice Price",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7scob",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_sales_invoice_qty_sum",
+   "fieldtype": "Float",
+   "label": "Total Invoice Qty",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sales_invoice_price_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Invoice Price Detail"
+  },
+  {
+   "fieldname": "invoice_price",
+   "fieldtype": "Table",
+   "options": "OS Sales Invoice Price"
+  },
+  {
+   "fieldname": "section_break_nc1le",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_invoice_qty",
+   "fieldtype": "Float",
+   "label": "Total Invoice Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hgz7b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_invoice_rate",
+   "fieldtype": "Currency",
+   "label": "Total Invoice Amount",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Order Status",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "purchase_order_attachment",
+   "fieldtype": "Attach",
+   "label": "Purchase Order Attachment"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "sales_invoice_attachment",
+   "fieldtype": "Attach",
+   "label": "Packing Invoice"
+  },
+  {
+   "fieldname": "column_break_nxz6o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exim_invoice",
+   "fieldtype": "Attach",
+   "label": "Exim Invoice"
+  },
+  {
+   "fieldname": "column_break_fivtl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ups_details",
+   "fieldtype": "Attach",
+   "label": "Tracking Details"
+  },
+  {
+   "fieldname": "costing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Costing"
+  },
+  {
+   "fieldname": "costing_details",
+   "fieldtype": "Table",
+   "label": "Costing Details",
+   "options": "OS Costing"
+  },
+  {
+   "fieldname": "row_material_details_section",
+   "fieldtype": "Section Break",
+   "label": "Raw Material Details"
+  },
+  {
+   "fieldname": "row_material_details",
+   "fieldtype": "Table",
+   "options": "OS Sales Invoice RM Wise"
+  },
+  {
+   "fieldname": "column_break_ih31f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tlow9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_tqrby",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_bill",
+   "fieldtype": "Attach",
+   "label": "Shipping Bill"
+  },
+  {
+   "fieldname": "packing_list",
+   "fieldtype": "Attach",
+   "label": "Packing List"
+  },
+  {
+   "fieldname": "section_break_dv15r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jxblt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_f6uoo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ttxxw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_production_date",
+   "fieldtype": "Date",
+   "label": "Actual Production Date"
+  },
+  {
+   "fieldname": "column_break_qombf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ipypa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vi8fm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_h48sp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qavai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_h50ja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_2xijv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hhdig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vmmql",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_w7crv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_scyvz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8qaky",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uvg9m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_862mc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wsbiu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_weight",
+   "fieldtype": "Float",
+   "label": "Total Accessory Weight"
+  },
+  {
+   "fieldname": "column_break_c10rh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ncir0",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-14 16:36:22.322971",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Order Status",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

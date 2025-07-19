@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-11 15:41:36.457169",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "head",
+  "report_name",
+  "creator_name",
+  "group",
+  "status",
+  "attachment",
+  "column_break_g0vl7",
+  "report_sent_date",
+  "meeting_date",
+  "primary_person",
+  "2nd_person_name",
+  "remark",
+  "report_discusion_point"
+ ],
+ "fields": [
+  {
+   "fieldname": "head",
+   "fieldtype": "Select",
+   "label": "Head",
+   "options": "\nAccounts\nCosting\nExim\nHR\nMaintenance\nStock\nStone\nSales\nProduction\nPurchase\nIT"
+  },
+  {
+   "columns": 2,
+   "fieldname": "report_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Report Name"
+  },
+  {
+   "columns": 2,
+   "fieldname": "creator_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Creator Name",
+   "options": "\nNutan Jain\nAshutosh Bhati\nPankaj Sharma\nSatish Soni\nDinesh\nBirdi Jain"
+  },
+  {
+   "columns": 1,
+   "fieldname": "group",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Group",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13"
+  },
+  {
+   "columns": 2,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nPending\nUnder Review\nCompleted\nR-Send\nNA\nWIP"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "column_break_g0vl7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "report_sent_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Report Sent Date"
+  },
+  {
+   "columns": 2,
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Meeting Date"
+  },
+  {
+   "fieldname": "primary_person",
+   "fieldtype": "Select",
+   "label": "Primary Person",
+   "options": "\nArun Sharma\nArun Sharma(EL)\nB.S Chouhan\nBhanu Sharma\nBunti Soni\nGiriraj\nHanuman Sharma\nHemraj Verma\nIrshad\nKamlesh Jain\nKhem Chand Sharma\nManoj Sharma\nRam Sharma\nRanjeet Singh\nRaj Kumar Sharma\nRajesh Bansal\nRewad Mal\nSuresh Yadav\nSuresh Choudhary\nSima Shukla\nSales Person\nSunil Soni\nVinod Tailor\nUma Shankar\nVijendra Jain\nPankaj Azaz\nNutan Jain\nAshok Singhi"
+  },
+  {
+   "fieldname": "2nd_person_name",
+   "fieldtype": "Select",
+   "label": "2nd Person Name",
+   "options": "\nRajiv Gupta\nRam Sharma\nB.S.Chouhan\nSuresh Yadav\nB.S Chouhan\nArun Sharma"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "report_discusion_point",
+   "fieldtype": "Small Text",
+   "label": "Report Discusion Point"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:49:56.925223",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "MIS Reporting Child table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

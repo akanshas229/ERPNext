@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-30 15:26:59.392478",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "diamond_code",
+  "column_break_vhobs",
+  "description",
+  "column_break_32y51",
+  "design_code",
+  "column_break_2th0s",
+  "status",
+  "diamond_details_section",
+  "length",
+  "column_break_u8ruc",
+  "width",
+  "column_break_yzuyc",
+  "weight",
+  "section_break_te3rg",
+  "quantity",
+  "diamond_cost",
+  "uom",
+  "column_break_aq9vi",
+  "design_quantity",
+  "column_break_9puxl",
+  "total_required_qty_pcs",
+  "column_break_jtdic",
+  "total_diamond_weight_cost_per_cts",
+  "order_design_id",
+  "order_design_rm_id"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "diamond_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Diamond Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vhobs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_32y51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Design Code"
+  },
+  {
+   "fieldname": "column_break_2th0s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "diamond_details_section",
+   "fieldtype": "Section Break",
+   "label": "Diamond Details"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Float",
+   "label": "Length"
+  },
+  {
+   "fieldname": "column_break_u8ruc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "label": "Width"
+  },
+  {
+   "fieldname": "column_break_yzuyc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "section_break_te3rg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "diamond_cost",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "Cts",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_aq9vi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_quantity",
+   "fieldtype": "Int",
+   "label": "Design Quantity"
+  },
+  {
+   "fieldname": "column_break_9puxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_required_qty_pcs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Required Qty (Pcs)"
+  },
+  {
+   "fieldname": "column_break_jtdic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "total_diamond_weight_cost_per_cts",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Diamond Weight "
+  },
+  {
+   "fieldname": "order_design_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Order Design ID"
+  },
+  {
+   "fieldname": "order_design_rm_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Order Design RM ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:35:04.195333",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "OS Diamond Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

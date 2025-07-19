@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-19 11:06:17.972893",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "diamond_code",
+  "column_break_vhobs",
+  "description",
+  "column_break_32y51",
+  "design_code",
+  "column_break_2th0s",
+  "status",
+  "diamond_details_section",
+  "length",
+  "column_break_u8ruc",
+  "width",
+  "column_break_yzuyc",
+  "weight",
+  "section_break_te3rg",
+  "quantity",
+  "diamond_cost",
+  "uom",
+  "column_break_aq9vi",
+  "design_quantity",
+  "column_break_9puxl",
+  "total_required_qty_pcs",
+  "column_break_jtdic",
+  "total_diamond_weight_cost_per_cts",
+  "column_break_gx1y3",
+  "targetdue_date",
+  "order_design_id",
+  "order_design_rm_id"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "default": "XXXXXXXXXXXXXXXX",
+   "fieldname": "diamond_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Diamond Code",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vhobs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_32y51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "label": "Design Code",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2th0s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "diamond_details_section",
+   "fieldtype": "Section Break",
+   "label": "Diamond Details"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Float",
+   "label": "Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_u8ruc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "label": "Width",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_yzuyc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_te3rg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_cost",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "Cts"
+  },
+  {
+   "fieldname": "column_break_aq9vi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_quantity",
+   "fieldtype": "Int",
+   "label": "Design Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9puxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "total_required_qty_pcs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Required Qty (Pcs)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jtdic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_diamond_weight_cost_per_cts",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Diamond Weight ",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gx1y3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "targetdue_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Target Due Date"
+  },
+  {
+   "fieldname": "order_design_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Order Design ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "order_design_rm_id",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Order Design RM ID",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:35:36.390643",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "OS Diamond Bom Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "creation": "2023-01-19 17:37:51.180531",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_team",
+  "email_id",
+  "user_name",
+  "company",
+  "status",
+  "email_type",
+  "sec_break",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "__user",
+   "fieldname": "sales_team",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Team",
+   "options": "User",
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email ID",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "cust.client_code",
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "User Name"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1,
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nInactive",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_type",
+   "fieldtype": "Select",
+   "label": "Email Type",
+   "options": "To\nCC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec_break",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "icon": "fa fa-user",
+ "links": [],
+ "modified": "2025-04-28 11:09:24.969179",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Planning Emails",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "sales_team",
+ "sender_field": "email_id",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "sales_team",
+ "track_seen": 1,
+ "track_views": 1
+}

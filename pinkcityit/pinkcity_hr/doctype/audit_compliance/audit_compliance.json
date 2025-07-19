@@ -1,0 +1,805 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-10-16 15:49:25.957931",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "unit_name",
+  "column_break_nqwmb",
+  "audit_name",
+  "audit_window",
+  "start_date",
+  "column_break_ifbmb",
+  "end_date",
+  "column_break_omhoi",
+  "audit_date",
+  "section_break_okxri",
+  "attachments",
+  "amended_from",
+  "legal_compliance_tab",
+  "legal_compliances_section",
+  "legal_compliances",
+  "legal_other",
+  "table_2",
+  "government_return_section",
+  "table_1",
+  "electrical_section",
+  "tables",
+  "agreement_tab",
+  "notice_board_section",
+  "table",
+  "audit_agreement_section",
+  "audit_agreement",
+  "scheduleprog",
+  "table_11",
+  "appointment_letter_section",
+  "table_12",
+  "register_section",
+  "table_13",
+  "committee_section",
+  "table_14",
+  "training_section",
+  "table_15",
+  "policy_section",
+  "table_16",
+  "payroll_tab",
+  "payroll_section",
+  "table_17",
+  "healthsafety",
+  "record_section",
+  "record_table",
+  "risk_assessment_section",
+  "risk_assessment_table",
+  "security_section",
+  "security_table",
+  "industrials_test_section",
+  "industrials_test",
+  "maintaince_section",
+  "maintaince_table",
+  "water_section",
+  "water_table",
+  "canteen_section",
+  "canteen_table",
+  "firstaidbox",
+  "first_aid_box_table",
+  "contractor_tab",
+  "legal_licences_section",
+  "legal_licences_table",
+  "hrhr",
+  "hrhrtable",
+  "fire",
+  "legallicense",
+  "dfd",
+  "records_section",
+  "recotrd",
+  "trainings",
+  "trai",
+  "hazardous_tab",
+  "legal_license_section",
+  "legal_license_table",
+  "legal_requirementss_section",
+  "legal_requirements_table",
+  "etpdesign",
+  "etpdesigntable",
+  "etpprocess",
+  "etpprocesstable",
+  "etprecords",
+  "etprecordstable",
+  "competences_section",
+  "competence_tables",
+  "wastages_section",
+  "wastage_tables",
+  "chemical_tab",
+  "chemical_records_section",
+  "records_table",
+  "sd",
+  "hr_tables",
+  "process_and_flow_chart_tab",
+  "hr23",
+  "hr45",
+  "production_section",
+  "production_table",
+  "mis_tab",
+  "management_system_records_section",
+  "management_system_records_table",
+  "bills_of_energy_consumption_section",
+  "bills_of_energy_consumption_table",
+  "weighing_scale_machine_section",
+  "weighing_scale_machine_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "AC-.YYYY.-"
+  },
+  {
+   "fieldname": "unit_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Unit Name",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_nqwmb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "audit_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Audit Name"
+  },
+  {
+   "fieldname": "audit_window",
+   "fieldtype": "Section Break",
+   "label": "Audit Window"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_ifbmb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "column_break_omhoi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "audit_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Audit Date"
+  },
+  {
+   "fieldname": "section_break_okxri",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "File attachment",
+   "options": "AC Audit Compliance 2"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Audit Compliance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "legal_compliance_tab",
+   "fieldtype": "Tab Break",
+   "label": "Legal "
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "legal_compliances_section",
+   "fieldtype": "Section Break",
+   "label": "Factory Compliances"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "legal_compliances",
+   "fieldtype": "Table",
+   "label": "Table 1",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "legal_other",
+   "fieldtype": "Section Break",
+   "label": "Legal Other"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_2",
+   "fieldtype": "Table",
+   "label": "Table 2",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "government_return_section",
+   "fieldtype": "Section Break",
+   "label": "Government Return"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_1",
+   "fieldtype": "Table",
+   "label": "Table 3",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "electrical_section",
+   "fieldtype": "Section Break",
+   "label": "Electrical"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "tables",
+   "fieldtype": "Table",
+   "label": "Table 4",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "fieldname": "agreement_tab",
+   "fieldtype": "Tab Break",
+   "label": "HR"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "notice_board_section",
+   "fieldtype": "Section Break",
+   "label": "Notice Board"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table",
+   "fieldtype": "Table",
+   "label": "Table 5",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "audit_agreement_section",
+   "fieldtype": "Section Break",
+   "label": "Agreement"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "audit_agreement",
+   "fieldtype": "Table",
+   "label": "Table 6",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "scheduleprog",
+   "fieldtype": "Section Break",
+   "label": "Schedule Prog. "
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_11",
+   "fieldtype": "Table",
+   "label": "Table 7",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "appointment_letter_section",
+   "fieldtype": "Section Break",
+   "label": "Appointment Letter"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_12",
+   "fieldtype": "Table",
+   "label": "Table 8",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "register_section",
+   "fieldtype": "Section Break",
+   "label": "Register"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_13",
+   "fieldtype": "Table",
+   "label": "Table 9",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "committee_section",
+   "fieldtype": "Section Break",
+   "label": "Committee"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_14",
+   "fieldtype": "Table",
+   "label": "Table 10",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "training_section",
+   "fieldtype": "Section Break",
+   "label": "Training"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_15",
+   "fieldtype": "Table",
+   "label": "Table 11",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "policy_section",
+   "fieldtype": "Section Break",
+   "label": "Policy"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_16",
+   "fieldtype": "Table",
+   "label": "Table 12",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "fieldname": "payroll_tab",
+   "fieldtype": "Tab Break",
+   "label": "Payroll"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "payroll_section",
+   "fieldtype": "Section Break",
+   "label": "Payroll"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_17",
+   "fieldtype": "Table",
+   "label": "Table 13",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "fieldname": "healthsafety",
+   "fieldtype": "Tab Break",
+   "label": "Health and Safety"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "record_section",
+   "fieldtype": "Section Break",
+   "label": "Record"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "record_table",
+   "fieldtype": "Table",
+   "label": "Table 14",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "risk_assessment_section",
+   "fieldtype": "Section Break",
+   "label": "Risk Assessment"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "risk_assessment_table",
+   "fieldtype": "Table",
+   "label": "Table 15",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "security_section",
+   "fieldtype": "Section Break",
+   "label": "Security"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "security_table",
+   "fieldtype": "Table",
+   "label": "Table 16",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "industrials_test_section",
+   "fieldtype": "Section Break",
+   "label": "Industrials Test"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "industrials_test",
+   "fieldtype": "Table",
+   "label": "Table 17",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "maintaince_section",
+   "fieldtype": "Section Break",
+   "label": "Maintaince"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "maintaince_table",
+   "fieldtype": "Table",
+   "label": "Table 18",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "water_section",
+   "fieldtype": "Section Break",
+   "label": "Water"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "water_table",
+   "fieldtype": "Table",
+   "label": "Table 19",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "canteen_section",
+   "fieldtype": "Section Break",
+   "label": "Canteen"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "canteen_table",
+   "fieldtype": "Table",
+   "label": "Table 20",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "firstaidbox",
+   "fieldtype": "Section Break",
+   "label": "First-Aid Box"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "first_aid_box_table",
+   "fieldtype": "Table",
+   "label": "Table 21",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "fieldname": "contractor_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contractor"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "legal_licences_section",
+   "fieldtype": "Section Break",
+   "label": "Legal Licences"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "legal_licences_table",
+   "fieldtype": "Table",
+   "label": "Table 22",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "hrhr",
+   "fieldtype": "Section Break",
+   "label": "Records"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "hrhrtable",
+   "fieldtype": "Table",
+   "label": "Table 23",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "fieldname": "fire",
+   "fieldtype": "Tab Break",
+   "label": "Fire"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "legallicense",
+   "fieldtype": "Section Break",
+   "label": "Legal License"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "dfd",
+   "fieldtype": "Table",
+   "label": "Table 24",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "records_section",
+   "fieldtype": "Section Break",
+   "label": "Records"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "recotrd",
+   "fieldtype": "Table",
+   "label": "Table 25",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "trainings",
+   "fieldtype": "Section Break",
+   "label": "Training Records"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "trai",
+   "fieldtype": "Table",
+   "label": "Table 26",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "fieldname": "hazardous_tab",
+   "fieldtype": "Tab Break",
+   "label": "Hazardous"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "legal_license_section",
+   "fieldtype": "Section Break",
+   "label": "Legal License"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "legal_license_table",
+   "fieldtype": "Table",
+   "label": "Table 27",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "legal_requirementss_section",
+   "fieldtype": "Section Break",
+   "label": "Legal Requirementss"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "legal_requirements_table",
+   "fieldtype": "Table",
+   "label": "Table 28",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "etpdesign",
+   "fieldtype": "Section Break",
+   "label": "ETP-Design Requirement"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "etpdesigntable",
+   "fieldtype": "Table",
+   "label": "Table 29",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "etpprocess",
+   "fieldtype": "Section Break",
+   "label": "ETP-Process Control"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "etpprocesstable",
+   "fieldtype": "Table",
+   "label": "Table 30",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "etprecords",
+   "fieldtype": "Section Break",
+   "label": "ETP-Records "
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "etprecordstable",
+   "fieldtype": "Table",
+   "label": "Table 31",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "competences_section",
+   "fieldtype": "Section Break",
+   "label": "Competences"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "competence_tables",
+   "fieldtype": "Table",
+   "label": "Table 32",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "wastages_section",
+   "fieldtype": "Section Break",
+   "label": "Wastages"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "wastage_tables",
+   "fieldtype": "Table",
+   "label": "Table 33",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "fieldname": "chemical_tab",
+   "fieldtype": "Tab Break",
+   "label": "Chemical"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "chemical_records_section",
+   "fieldtype": "Section Break",
+   "label": "Chemical Records"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "records_table",
+   "fieldtype": "Table",
+   "label": "Table 34",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sd",
+   "fieldtype": "Section Break",
+   "label": "Training"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "hr_tables",
+   "fieldtype": "Table",
+   "label": "Table 35",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "fieldname": "process_and_flow_chart_tab",
+   "fieldtype": "Tab Break",
+   "label": "Process"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "hr23",
+   "fieldtype": "Section Break",
+   "label": "HR"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "hr45",
+   "fieldtype": "Table",
+   "label": "Table 36",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "production_section",
+   "fieldtype": "Section Break",
+   "label": "Production"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "production_table",
+   "fieldtype": "Table",
+   "label": "Table 37",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "fieldname": "mis_tab",
+   "fieldtype": "Tab Break",
+   "label": "MIS"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "management_system_records_section",
+   "fieldtype": "Section Break",
+   "label": "Management System Records"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "management_system_records_table",
+   "fieldtype": "Table",
+   "label": "Table 38",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "bills_of_energy_consumption_section",
+   "fieldtype": "Section Break",
+   "label": "Bills of Energy Consumption"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "bills_of_energy_consumption_table",
+   "fieldtype": "Table",
+   "label": "Table 39",
+   "options": "AC Audit Agreement"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "weighing_scale_machine_section",
+   "fieldtype": "Section Break",
+   "label": "Weighing Scale Machine"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "weighing_scale_machine_table",
+   "fieldtype": "Table",
+   "label": "Table 40",
+   "options": "AC Audit Agreement"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:50:29.104545",
+ "modified_by": "Administrator",
+ "module": "Pinkcity HR",
+ "name": "Audit Compliance",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Draft"
+  },
+  {
+   "color": "Green",
+   "title": "Submitted"
+  },
+  {
+   "color": "Green",
+   "title": "Cancelled"
+  }
+ ],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-18 10:48:03.909007",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_info_section",
+  "employee_name",
+  "department",
+  "sub_department",
+  "grade",
+  "location",
+  "category",
+  "doj",
+  "status",
+  "gender",
+  "column_break_tv0sp",
+  "employee_code",
+  "company",
+  "designation",
+  "division",
+  "team",
+  "employment_type",
+  "doc",
+  "aadhar_card",
+  "employee_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "column_break_tv0sp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Code"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "doj",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Data",
+   "label": "Employment Type"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "doc",
+   "fieldtype": "Date",
+   "label": "Date of Confirmaction"
+  },
+  {
+   "fieldname": "employee_info_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Info"
+  },
+  {
+   "fieldname": "sub_department",
+   "fieldtype": "Data",
+   "label": "Sub Department"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Data",
+   "label": "Division"
+  },
+  {
+   "fieldname": "team",
+   "fieldtype": "Data",
+   "label": "Team"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "aadhar_card",
+   "fieldtype": "Data",
+   "label": "Aadhar Card"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "Employee Table Id",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2025-05-02 10:37:41.572622",
+ "modified_by": "Administrator",
+ "module": "Pinkcity HR",
+ "name": "ESSL Employee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "employee_code,employee_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_code"
+}

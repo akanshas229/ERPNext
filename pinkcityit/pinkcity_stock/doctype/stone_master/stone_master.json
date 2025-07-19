@@ -1,0 +1,241 @@
+{
+ "actions": [],
+ "autoname": "field:stone_code",
+ "creation": "2022-07-26 16:10:32.299363",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stone_details_tab",
+  "stone_code",
+  "stone",
+  "cut",
+  "shape",
+  "quality",
+  "stone_color_name",
+  "column_break_6",
+  "length",
+  "width",
+  "uom",
+  "weight_per_pcs",
+  "thickness",
+  "reference_section",
+  "reference",
+  "stone_price_tab",
+  "price",
+  "column_break_hax1r",
+  "price_gold",
+  "stone_last_purchase_details_section",
+  "stone_last_purchase_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "stone_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stone Details"
+  },
+  {
+   "fieldname": "stone_code",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Stone Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "stone",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Stone Name",
+   "options": "Gemstone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cut",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Cut",
+   "options": "Stone Cut",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shape",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shape",
+   "options": "Stone Shape",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Quality",
+   "options": "Stone Quality",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stone_color_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Stone Color",
+   "options": "Stone Color",
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Length",
+   "reqd": 1
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Width",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "UOM",
+   "options": "\nPcs\nCts"
+  },
+  {
+   "fieldname": "weight_per_pcs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Weight Per Pcs",
+   "precision": "4"
+  },
+  {
+   "fieldname": "thickness",
+   "fieldtype": "Float",
+   "label": "Thickness"
+  },
+  {
+   "fieldname": "reference_section",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "stone_price_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stone Price"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Price For Silver"
+  },
+  {
+   "fieldname": "column_break_hax1r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price_gold",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Price For Gold",
+   "search_index": 1
+  },
+  {
+   "fieldname": "stone_last_purchase_details_section",
+   "fieldtype": "Tab Break",
+   "label": "Stone Last Purchase Details"
+  },
+  {
+   "fieldname": "stone_last_purchase_details",
+   "fieldtype": "Text Editor",
+   "label": "Stone Last Purchase Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-26 11:41:54.013609",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "Stone Master",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cad Designer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "stone",
+ "sort_field": "stone",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1
+}

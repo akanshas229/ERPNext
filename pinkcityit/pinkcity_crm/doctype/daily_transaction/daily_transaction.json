@@ -1,0 +1,387 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-06 10:19:34.327387",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "column_break_e0fe7",
+  "date",
+  "column_break_her09",
+  "company",
+  "section_break_hx8zk",
+  "cell",
+  "column_break_qviqg",
+  "scan",
+  "section_break_d6bfq",
+  "barcode",
+  "column_break_lmel6",
+  "employee_details_section",
+  "employee_code",
+  "column_break_89ben",
+  "employee_name",
+  "column_break_yio14",
+  "sub_department",
+  "bag_transaction_section",
+  "bag_transaction",
+  "re_work",
+  "re_work_user",
+  "column_break_vg8ib",
+  "re_work_date",
+  "column_break_rqdgt",
+  "re_work_company",
+  "section_break_zgknx",
+  "re_work_barcode",
+  "re_work_emp_det",
+  "re_work_emp_code",
+  "column_break_b6zbw",
+  "re_work_emp_name",
+  "column_break_lvpd7",
+  "re_work_sub_dpt",
+  "re_work_sec",
+  "re_work_daily",
+  "mix_work_tab",
+  "mix_work_user",
+  "column_break_g3m4w",
+  "mix_work_date",
+  "column_break_6esp8",
+  "mix_work_company",
+  "column_break_yvdy2",
+  "mix_work_barcode",
+  "mix_emp_det",
+  "mix_work_emp_code",
+  "column_break_udrns",
+  "mix_work_emp_name",
+  "column_break_v111m",
+  "mix_work_sub_dpt",
+  "section_break_ayesr",
+  "mix_work_daily",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "__user",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User ",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_e0fe7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_her09",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_hx8zk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cell",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Cell",
+   "options": "\nCell-2"
+  },
+  {
+   "fieldname": "column_break_qviqg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scan",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Scan"
+  },
+  {
+   "fieldname": "section_break_d6bfq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Data",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "column_break_lmel6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.docstatus == 0",
+   "fieldname": "employee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Employee Code",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_89ben",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_yio14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_department",
+   "fieldtype": "Link",
+   "label": "Sub Department",
+   "options": "Sub Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bag_transaction_section",
+   "fieldtype": "Section Break",
+   "label": "Bag Transaction"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "bold": 1,
+   "fieldname": "bag_transaction",
+   "fieldtype": "Table",
+   "options": "DT Bag Transaction"
+  },
+  {
+   "fieldname": "re_work",
+   "fieldtype": "Tab Break",
+   "label": "Re-Work"
+  },
+  {
+   "default": "__user",
+   "fieldname": "re_work_user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vg8ib",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "re_work_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rqdgt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "amended_from.company",
+   "fieldname": "re_work_company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_zgknx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "re_work_barcode",
+   "fieldtype": "Data",
+   "label": "Barcode"
+  },
+  {
+   "depends_on": "eval:doc.docstatus == 0",
+   "fieldname": "re_work_emp_det",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "re_work_emp_code",
+   "fieldtype": "Link",
+   "label": "Employee Code",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_b6zbw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "re_work_emp_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lvpd7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "amended_from.sub_department",
+   "fieldname": "re_work_sub_dpt",
+   "fieldtype": "Link",
+   "label": "Sub Department",
+   "options": "Sub Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "re_work_sec",
+   "fieldtype": "Section Break",
+   "label": "Re-work"
+  },
+  {
+   "fieldname": "re_work_daily",
+   "fieldtype": "Table",
+   "options": "DT Bag Transaction"
+  },
+  {
+   "fieldname": "mix_work_tab",
+   "fieldtype": "Tab Break",
+   "label": "Mix Work"
+  },
+  {
+   "default": "__user",
+   "fieldname": "mix_work_user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_g3m4w",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "mix_work_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_6esp8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mix_work_company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_yvdy2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mix_work_barcode",
+   "fieldtype": "Data",
+   "label": "Barcode"
+  },
+  {
+   "depends_on": "eval:doc.docstatus == 0",
+   "fieldname": "mix_emp_det",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "mix_work_emp_code",
+   "fieldtype": "Link",
+   "label": "Employee Code",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_udrns",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mix_work_emp_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_v111m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mix_work_sub_dpt",
+   "fieldtype": "Link",
+   "label": "Sub Department",
+   "options": "Sub Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ayesr",
+   "fieldtype": "Section Break",
+   "label": "Mix-work"
+  },
+  {
+   "fieldname": "mix_work_daily",
+   "fieldtype": "Table",
+   "options": "DT Bag Transaction"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Daily Transaction",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-19 17:14:25.168896",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Daily Transaction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,633 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "2D-.YYYY.-.{naming}.-.##",
+ "creation": "2025-07-03 12:02:10.601379",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "npd_details",
+  "customer_details_section",
+  "company",
+  "opportunity_owner",
+  "naming",
+  "column_break_6iisb",
+  "date",
+  "description",
+  "primary_assigned",
+  "column_break_c9qus",
+  "customer_name",
+  "column_break_swhpy",
+  "customer_code",
+  "opportunity_no",
+  "section_break_ffyqo",
+  "product_specification",
+  "2d_designer_tab",
+  "designer",
+  "status",
+  "column_break_w0zb1",
+  "design_code",
+  "required_modifications",
+  "rejected_reason",
+  "column_break_25v1i",
+  "metal_type",
+  "section_break_ggzoe",
+  "stone_details",
+  "dia_sec_break",
+  "diamond_details",
+  "finding_sec_break",
+  "finding_details",
+  "section_break_loqgt",
+  "2d_drawing",
+  "imgdrw",
+  "column_break_8dbh9",
+  "2d_drawing_2",
+  "imgdrw2",
+  "amended_from",
+  "pd_sheet_tab",
+  "costing_id",
+  "fetch_costing",
+  "column_break_pbd6x",
+  "column_break_zpjke",
+  "product_details_section",
+  "2d_design_no",
+  "column_break_fg4yz",
+  "customer_item_code",
+  "column_break_2q6sg",
+  "itemproduct_category",
+  "column_break_hohq9",
+  "assigner_name",
+  "production_details_section",
+  "manufacturing_type",
+  "finishing_type",
+  "column_break_ejrob",
+  "metal_type1",
+  "stamping_location",
+  "column_break_328e5",
+  "target_metal_weight",
+  "stamping_instructions",
+  "column_break_hcdlb",
+  "dimensions",
+  "pd_stone",
+  "pd_stoned",
+  "pd_diamond",
+  "pd_diamondd",
+  "pd_finding",
+  "finding_details_pd",
+  "plating_section",
+  "plating_details",
+  "3d_attachment_tab",
+  "designer_name",
+  "column_break_ig0bj",
+  "3d_creation_date",
+  "column_break_18j9d",
+  "ddue_date",
+  "approved_cad_images_section",
+  "top_view",
+  "img1",
+  "side_view",
+  "img2",
+  "front_view",
+  "img3",
+  "column_break_acycf",
+  "back_view",
+  "img4",
+  "perspective_view",
+  "img5",
+  "stamping_location_view",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "npd_details",
+   "fieldtype": "Tab Break",
+   "label": "Product Brief"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fetch_from": "opportunity_no.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "opportunity_owner",
+   "fieldtype": "Data",
+   "label": "Opportunity Owner"
+  },
+  {
+   "fieldname": "naming",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming"
+  },
+  {
+   "fieldname": "column_break_6iisb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "NPD Creation Date"
+  },
+  {
+   "fieldname": "primary_assigned",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Primary Assigned"
+  },
+  {
+   "fieldname": "column_break_c9qus",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "opportunity_no.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_swhpy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer_name.client_code",
+   "fieldname": "customer_code",
+   "fieldtype": "Data",
+   "label": "Customer Code"
+  },
+  {
+   "fieldname": "opportunity_no",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Opportunity No",
+   "options": "Opportunity F",
+   "read_only": 1
+  },
+  {
+   "fieldname": "2d_designer_tab",
+   "fieldtype": "Tab Break",
+   "label": "2D Design"
+  },
+  {
+   "fieldname": "designer",
+   "fieldtype": "Link",
+   "label": "2D Designer",
+   "options": "Designers"
+  },
+  {
+   "bold": 1,
+   "depends_on": "eval:doc.workflow_state == 'Pending for Modifications' ||\n    doc.workflow_state == 'Rejected'",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "column_break_w0zb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "label": "2D Design Code"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state == 'Pending for Modifications'",
+   "fieldname": "required_modifications",
+   "fieldtype": "Small Text",
+   "label": "Required Modifications"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state == 'Rejected'",
+   "fieldname": "rejected_reason",
+   "fieldtype": "Small Text",
+   "label": "Rejected Reason"
+  },
+  {
+   "fieldname": "column_break_25v1i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metal_type",
+   "fieldtype": "Link",
+   "label": "Metal Type",
+   "options": "Metal Type"
+  },
+  {
+   "fieldname": "section_break_ggzoe",
+   "fieldtype": "Section Break",
+   "label": "Stone"
+  },
+  {
+   "fieldname": "stone_details",
+   "fieldtype": "Table",
+   "label": "Stone Details",
+   "options": "Opportunity Stone CT"
+  },
+  {
+   "fieldname": "dia_sec_break",
+   "fieldtype": "Section Break",
+   "label": "Diamond"
+  },
+  {
+   "fieldname": "diamond_details",
+   "fieldtype": "Table",
+   "label": "Diamond details",
+   "options": "Opportunity Diamond CT"
+  },
+  {
+   "fieldname": "finding_sec_break",
+   "fieldtype": "Section Break",
+   "label": "Finding"
+  },
+  {
+   "fieldname": "finding_details",
+   "fieldtype": "Table",
+   "label": "Finding Details",
+   "options": "NPD Test Finding CT"
+  },
+  {
+   "fieldname": "section_break_loqgt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "2d_drawing",
+   "fieldtype": "Attach Image",
+   "label": "2D Drawing 1"
+  },
+  {
+   "fieldname": "imgdrw",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "2d_drawing"
+  },
+  {
+   "fieldname": "column_break_8dbh9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "2d_drawing_2",
+   "fieldtype": "Attach Image",
+   "label": "2D Drawing 2"
+  },
+  {
+   "fieldname": "imgdrw2",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "2d_drawing_2"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Product Development",
+   "print_hide": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "pd_sheet_tab",
+   "fieldtype": "Tab Break",
+   "label": "NPD Sheet"
+  },
+  {
+   "fieldname": "costing_id",
+   "fieldtype": "Link",
+   "label": "Costing ID",
+   "options": "Costing"
+  },
+  {
+   "fieldname": "fetch_costing",
+   "fieldtype": "Button",
+   "label": "Fetch Costing Details"
+  },
+  {
+   "fieldname": "column_break_pbd6x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zpjke",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_details_section",
+   "fieldtype": "Section Break",
+   "label": "Product Details"
+  },
+  {
+   "fieldname": "2d_design_no",
+   "fieldtype": "Data",
+   "label": "2D Design No"
+  },
+  {
+   "fieldname": "column_break_fg4yz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_item_code",
+   "fieldtype": "Data",
+   "label": "Customer Item Code"
+  },
+  {
+   "fieldname": "column_break_2q6sg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "itemproduct_category",
+   "fieldtype": "Link",
+   "label": "Item/Product Category",
+   "options": "Design Category"
+  },
+  {
+   "fieldname": "column_break_hohq9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigner_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "PD Assigner Name"
+  },
+  {
+   "fieldname": "production_details_section",
+   "fieldtype": "Section Break",
+   "label": "Production Details"
+  },
+  {
+   "fieldname": "manufacturing_type",
+   "fieldtype": "Select",
+   "label": "Manufacturing Type",
+   "options": "\nCasting\nHollow Casting\nE-Form\nHandmade"
+  },
+  {
+   "fieldname": "finishing_type",
+   "fieldtype": "Select",
+   "label": "Finishing Type",
+   "options": "\nHigh Polish\nBrush Polish\nMatt Finish"
+  },
+  {
+   "fieldname": "column_break_ejrob",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metal_type1",
+   "fieldtype": "Link",
+   "label": "PD Metal Type",
+   "options": "Metal Type"
+  },
+  {
+   "fieldname": "stamping_location",
+   "fieldtype": "Data",
+   "label": "Stamping Location"
+  },
+  {
+   "fieldname": "column_break_328e5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_metal_weight",
+   "fieldtype": "Float",
+   "label": "Target Metal Weight"
+  },
+  {
+   "fieldname": "stamping_instructions",
+   "fieldtype": "Data",
+   "label": "Stamping Instructions"
+  },
+  {
+   "fieldname": "column_break_hcdlb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dimensions",
+   "fieldtype": "Data",
+   "label": "Dimensions"
+  },
+  {
+   "fieldname": "pd_stone",
+   "fieldtype": "Section Break",
+   "label": "Stone"
+  },
+  {
+   "fieldname": "pd_stoned",
+   "fieldtype": "Table",
+   "label": "Stone Details",
+   "options": "Opportunity Stone CT"
+  },
+  {
+   "fieldname": "pd_diamond",
+   "fieldtype": "Section Break",
+   "label": "Diamond"
+  },
+  {
+   "fieldname": "pd_diamondd",
+   "fieldtype": "Table",
+   "label": "Diamond Details",
+   "options": "Opportunity Diamond CT"
+  },
+  {
+   "fieldname": "pd_finding",
+   "fieldtype": "Section Break",
+   "label": "Finding"
+  },
+  {
+   "fieldname": "finding_details_pd",
+   "fieldtype": "Table",
+   "label": "Finding Details",
+   "options": "NPD Test Finding CT"
+  },
+  {
+   "fieldname": "plating_section",
+   "fieldtype": "Section Break",
+   "label": "Plating"
+  },
+  {
+   "fieldname": "plating_details",
+   "fieldtype": "Table",
+   "label": "Plating Details",
+   "options": "NPD Plating CT"
+  },
+  {
+   "fieldname": "3d_attachment_tab",
+   "fieldtype": "Tab Break",
+   "label": "3D Design Creation"
+  },
+  {
+   "fieldname": "designer_name",
+   "fieldtype": "Link",
+   "label": "3D Designer ",
+   "options": "Designers"
+  },
+  {
+   "fieldname": "column_break_ig0bj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "3d_creation_date",
+   "fieldtype": "Date",
+   "label": "3D Creation Date"
+  },
+  {
+   "fieldname": "column_break_18j9d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ddue_date",
+   "fieldtype": "Date",
+   "label": "3D Due Date"
+  },
+  {
+   "fieldname": "approved_cad_images_section",
+   "fieldtype": "Section Break",
+   "label": "Approved CAD Images"
+  },
+  {
+   "fieldname": "top_view",
+   "fieldtype": "Attach Image",
+   "label": "Top View"
+  },
+  {
+   "fieldname": "img1",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "top_view"
+  },
+  {
+   "fieldname": "side_view",
+   "fieldtype": "Attach Image",
+   "label": "Side View"
+  },
+  {
+   "fieldname": "img2",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "side_view"
+  },
+  {
+   "fieldname": "front_view",
+   "fieldtype": "Attach Image",
+   "label": "Front View"
+  },
+  {
+   "fieldname": "img3",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "front_view"
+  },
+  {
+   "fieldname": "column_break_acycf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "back_view",
+   "fieldtype": "Attach Image",
+   "label": "Back View"
+  },
+  {
+   "fieldname": "img4",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "back_view"
+  },
+  {
+   "fieldname": "perspective_view",
+   "fieldtype": "Attach Image",
+   "label": "Perspective View"
+  },
+  {
+   "fieldname": "img5",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "perspective_view"
+  },
+  {
+   "fieldname": "stamping_location_view",
+   "fieldtype": "Attach Image",
+   "label": "Stamping Location View"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "stamping_location_view"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Product Development",
+   "print_hide": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_ffyqo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_specification",
+   "fieldtype": "Small Text",
+   "label": "Product Specification"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "NPD Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "group": "Pinkcity CRM",
+   "link_doctype": "Opportunity F",
+   "link_fieldname": "name"
+  },
+  {
+   "group": "Pinkcity CRM",
+   "link_doctype": "Costing",
+   "link_fieldname": "name"
+  }
+ ],
+ "modified": "2025-07-11 15:34:45.207097",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Product Development",
+ "name_case": "Title Case",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

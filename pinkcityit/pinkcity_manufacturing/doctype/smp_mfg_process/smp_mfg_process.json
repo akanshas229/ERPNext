@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-26 17:49:57.444683",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "operations",
+  "column_break_lllih",
+  "uom",
+  "column_break_kutgp",
+  "in_time",
+  "column_break_tln2d",
+  "out_time",
+  "column_break_ijuic",
+  "worker_name",
+  "section_break_nt7ln",
+  "receive_wt",
+  "column_break_qb2qo",
+  "low_wt",
+  "column_break_yugwy",
+  "broken_wt",
+  "section_break_je0ed",
+  "balance_in_wt",
+  "section_break_nlh97",
+  "receive_qty",
+  "column_break_80zyq",
+  "loss_qty",
+  "column_break_ubkri",
+  "broken_qty",
+  "section_break_m0bz2",
+  "balance_in_qty"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "operations",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Operations Location",
+   "options": "\nInventory\nGood Received\nRough Cutting\nDoll Process\nMM Process\nFaceting\nFG Goods"
+  },
+  {
+   "fieldname": "column_break_lllih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_kutgp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "in_time",
+   "fieldtype": "Datetime",
+   "label": "In Time"
+  },
+  {
+   "fieldname": "column_break_tln2d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "out_time",
+   "fieldtype": "Datetime",
+   "label": "Out Time"
+  },
+  {
+   "fieldname": "column_break_ijuic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "worker_name",
+   "fieldtype": "Link",
+   "label": "Worker Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_nt7ln",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "receive_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rec- WT"
+  },
+  {
+   "fieldname": "column_break_qb2qo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "low_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ls- WT"
+  },
+  {
+   "fieldname": "column_break_yugwy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "broken_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Br- WT"
+  },
+  {
+   "fieldname": "section_break_je0ed",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "balance_in_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bal- WT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_nlh97",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "receive_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rec- Qty"
+  },
+  {
+   "fieldname": "column_break_80zyq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "loss_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ls- Qty"
+  },
+  {
+   "fieldname": "column_break_ubkri",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "broken_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Br- Qty"
+  },
+  {
+   "fieldname": "section_break_m0bz2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "balance_in_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bal- Qty",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 17:49:57.444683",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "SMP MFG Process",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

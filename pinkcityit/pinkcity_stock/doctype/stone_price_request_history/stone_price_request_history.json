@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-27 10:04:07.903959",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "supplier_code",
+  "supplier_name",
+  "rm_code_description",
+  "column_break_ptb5k",
+  "bill_no",
+  "bill_date",
+  "rm_code",
+  "lot_no",
+  "size",
+  "column_break_zh8ua",
+  "stock_rate",
+  "rm_qty",
+  "rm_weight",
+  "purchase_rate",
+  "purchase_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "supplier_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Supplier Code"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "bill_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bill No"
+  },
+  {
+   "fieldname": "column_break_ptb5k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bill_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Bill Date"
+  },
+  {
+   "fieldname": "rm_code",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Rm Code"
+  },
+  {
+   "fieldname": "rm_code_description",
+   "fieldtype": "Small Text",
+   "label": "Rm Code Description"
+  },
+  {
+   "fieldname": "lot_no",
+   "fieldtype": "Data",
+   "label": "Lot No"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "column_break_zh8ua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock_rate",
+   "fieldtype": "Float",
+   "label": "Stock Rate"
+  },
+  {
+   "fieldname": "rm_qty",
+   "fieldtype": "Float",
+   "label": "Rm Qty"
+  },
+  {
+   "fieldname": "rm_weight",
+   "fieldtype": "Float",
+   "label": "Rm Weight"
+  },
+  {
+   "fieldname": "purchase_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Purchase Rate"
+  },
+  {
+   "fieldname": "purchase_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Purchase Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2025-03-27 11:21:05.180525",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "Stone Price Request History",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,326 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-07-17 15:26:58.006731",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_information_section",
+  "naming_series",
+  "company_name",
+  "country",
+  "business_id_no",
+  "column_break_2fupn",
+  "ceo",
+  "owner_contact_number",
+  "email_ids",
+  "column_break_tygp0",
+  "registered_office_address",
+  "customer_representative_information_section",
+  "representative_name",
+  "designation",
+  "column_break_h6fgt",
+  "email_id",
+  "representative_contact_number",
+  "bank_detailspayment_information_section",
+  "bank_name",
+  "customer_company_name",
+  "swift_code",
+  "bank_address",
+  "column_break_dj4jb",
+  "bank_account_no",
+  "iban_no",
+  "routing_no",
+  "documents_required_section",
+  "bank_details",
+  "bank_certificate",
+  "passport_or_id_copy_of_authorized_owners",
+  "column_break_efg8f",
+  "company_registered_certificate",
+  "other_documents",
+  "cancel_cheque",
+  "section_break_7lft6",
+  "tnc_description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_information_section",
+   "fieldtype": "Section Break",
+   "label": "Company Information"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "CR-.YYYY.-"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "reqd": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "business_id_no",
+   "fieldtype": "Data",
+   "label": "Business ID No"
+  },
+  {
+   "fieldname": "column_break_2fupn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "ceo",
+   "fieldtype": "Data",
+   "label": "Owner's Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "owner_contact_number",
+   "fieldtype": "Data",
+   "label": "Owner's  Contact Number"
+  },
+  {
+   "fieldname": "email_ids",
+   "fieldtype": "Data",
+   "label": "Owner's  Email ID"
+  },
+  {
+   "fieldname": "column_break_tygp0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "registered_office_address",
+   "fieldtype": "Small Text",
+   "label": "Registered Office Address"
+  },
+  {
+   "fieldname": "customer_representative_information_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Representative Information"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "representative_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_h6fgt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "representative_contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bank_detailspayment_information_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details/Payment Information"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "customer_company_name",
+   "fieldtype": "Data",
+   "label": "Account Holder Name"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "swift_code",
+   "fieldtype": "Data",
+   "label": "SWIFT Code"
+  },
+  {
+   "fieldname": "bank_address",
+   "fieldtype": "Small Text",
+   "label": "Bank Address"
+  },
+  {
+   "fieldname": "column_break_dj4jb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Bank Account NO"
+  },
+  {
+   "fieldname": "iban_no",
+   "fieldtype": "Data",
+   "label": "IBAN NO"
+  },
+  {
+   "fieldname": "routing_no",
+   "fieldtype": "Data",
+   "label": "Routing No"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "documents_required_section",
+   "fieldtype": "Section Break",
+   "label": "Documents Required"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "bank_details",
+   "fieldtype": "Attach",
+   "label": "Bank Details (Cheque)"
+  },
+  {
+   "fieldname": "bank_certificate",
+   "fieldtype": "Attach",
+   "label": "Bank Certificate"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "passport_or_id_copy_of_authorized_owners",
+   "fieldtype": "Attach",
+   "label": "Company Owner ID Proof"
+  },
+  {
+   "fieldname": "column_break_efg8f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "company_registered_certificate",
+   "fieldtype": "Attach",
+   "label": "Company Registered Certificate"
+  },
+  {
+   "fieldname": "other_documents",
+   "fieldtype": "Attach",
+   "label": "Other Documents 1"
+  },
+  {
+   "description": "(If Required)",
+   "fetch_if_empty": 1,
+   "fieldname": "cancel_cheque",
+   "fieldtype": "Attach",
+   "label": "Other Documents 2"
+  },
+  {
+   "fieldname": "section_break_7lft6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "description": "I hereby declare that the information given above and in the enclosed documents is true to the best of my knowledge and belief and nothing has been concealed therein. ",
+   "fetch_if_empty": 1,
+   "fieldname": "tnc_description",
+   "fieldtype": "Check",
+   "label": "Terms & Condiction"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Customer Registration",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:51:23.532491",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Customer Registration",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Master Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Team Custom Rights",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

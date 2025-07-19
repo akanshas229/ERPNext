@@ -1,0 +1,640 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-17 18:02:20.673903",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "lead_owner",
+  "issue_date",
+  "client_code",
+  "reg_no",
+  "metal",
+  "qty",
+  "value_of_order",
+  "opportunity_id",
+  "col_break123",
+  "company",
+  "sta",
+  "cust",
+  "emper_code",
+  "order_no",
+  "title",
+  "sku",
+  "order_type",
+  "image",
+  "order_d_section",
+  "planning_order",
+  "from_section",
+  "cad_com",
+  "check_cad_completion_request_date",
+  "sto_date",
+  "check_stone_completion_request_date",
+  "com_date",
+  "check_diamond_completion_request_date",
+  "finding_req_date",
+  "check_finding_completion_request_date",
+  "req_date",
+  "check_production_completion_request_date",
+  "packing_list_receive_date",
+  "check_packing_list_receive_date",
+  "column_break_26",
+  "cad_p_date",
+  "check_cad_completion_promise_date",
+  "sto_p_date",
+  "check_stone_completion_promise_date",
+  "dc_date",
+  "check_diamond_completion_promise_date",
+  "finding_com_date",
+  "check_finding_completion_promise_date",
+  "pc_date",
+  "check_production_completion_promise_date",
+  "shipment_date",
+  "check_confirm_shipment_date",
+  "col_break",
+  "cad_completion_actual_date",
+  "check_cad_completion_actual_date",
+  "stone_completion_actual_date",
+  "check_stone_completion_actual_date",
+  "diamond_completion_actual_date",
+  "check_diamond_completion_actual_date",
+  "findin_completion_actual_date",
+  "check_finding_completion_actual_date",
+  "production_completion_actual_date",
+  "check_production_completion_actual_date",
+  "ac_s_date",
+  "check_actual_shipment_date",
+  "invoice_no",
+  "attachment",
+  "sec_break",
+  "attach",
+  "notes",
+  "month",
+  "year"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "no_copy": 1,
+   "options": "CRM-PLAN-.YYYY.-",
+   "set_only_once": 1
+  },
+  {
+   "default": "__user",
+   "fieldname": "lead_owner",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Sales Team",
+   "options": "User",
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "default": "Today",
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Order Issue Date",
+   "no_copy": 1,
+   "read_only": 1,
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "cust.client_code",
+   "fieldname": "client_code",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Client Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reg_no",
+   "fieldtype": "Data",
+   "label": "Reg No"
+  },
+  {
+   "fieldname": "metal",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Metal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Total Qty",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "value_of_order",
+   "fieldtype": "Float",
+   "label": "Total Value of Order",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "opportunity_id",
+   "fieldtype": "Link",
+   "label": "Opportunity ID",
+   "options": "Opportunity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_break123",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1,
+   "remember_last_selected_value": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "sta",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nOpen\nClose",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cust",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emper_code",
+   "fieldtype": "Data",
+   "label": "Emperor Client Code"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Order Number"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Int",
+   "label": "Total No of Sku",
+   "read_only": 1
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "label": "Order Type",
+   "options": "\nBulk Order\nSample Order\nReorder"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "order_d_section",
+   "fieldtype": "Section Break",
+   "label": "Order Type"
+  },
+  {
+   "fieldname": "planning_order",
+   "fieldtype": "Table",
+   "in_standard_filter": 1,
+   "label": "Planning Order",
+   "options": "Planning Order"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "from_section",
+   "fieldtype": "Section Break",
+   "label": "Follow up Date "
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('DM CAD Designer')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager') \n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "cad_com",
+   "fieldtype": "Date",
+   "label": "CAD Completion Request Date (Sales)",
+   "read_only_depends_on": "eval:doc.check_cad_completion_request_date == 1"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('DM CAD Designer')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager') \n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_cad_completion_request_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Item Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "sto_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Stone Completion Request Date (Sales)",
+   "read_only_depends_on": "eval:doc.check_stone_completion_request_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Item Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_stone_completion_request_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Manufacturing User')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "com_date",
+   "fieldtype": "Date",
+   "label": "Diamond Completion Request Date (Sales)",
+   "read_only_depends_on": "eval:doc.check_diamond_completion_request_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Manufacturing User')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_diamond_completion_request_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Sales Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Stock User')\n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "finding_req_date",
+   "fieldtype": "Date",
+   "label": "Finding Completion Request Date (Production)",
+   "read_only_depends_on": "eval:doc.check_finding_completion_request_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Sales Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Stock User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_finding_completion_request_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Manufacturing Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "req_date",
+   "fieldtype": "Date",
+   "label": "Production Completion Request Date (Sales)",
+   "read_only_depends_on": "eval:doc.check_production_completion_request_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Manufacturing Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_production_completion_request_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "packing_list_receive_date",
+   "fieldtype": "Date",
+   "label": "Packing List Receive Date (Sales)",
+   "read_only_depends_on": "eval:doc.check_packing_list_receive_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_packing_list_receive_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('DM CAD Designer')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "cad_p_date",
+   "fieldtype": "Date",
+   "label": "CAD Completion Promise Date (CAD Team)",
+   "read_only_depends_on": "eval:doc.check_cad_completion_promise_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('DM CAD Designer')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_cad_completion_promise_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Item Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "sto_p_date",
+   "fieldtype": "Date",
+   "label": "Stone Completion Promise Date (Stone Dept)",
+   "read_only_depends_on": "eval:doc.check_stone_completion_promise_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Item Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_stone_completion_promise_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Manufacturing User')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "dc_date",
+   "fieldtype": "Date",
+   "label": "Diamond Completion Promise Date (Dia. Dep)",
+   "read_only_depends_on": "eval:doc.check_diamond_completion_promise_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Manufacturing User')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_diamond_completion_promise_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Sales Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Stock User')\n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "finding_com_date",
+   "fieldtype": "Date",
+   "label": "Finding Completion Promise Date (Inventory)",
+   "read_only_depends_on": "eval:doc.check_finding_completion_promise_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Sales Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Stock User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_finding_completion_promise_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Manufacturing Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "pc_date",
+   "fieldtype": "Date",
+   "label": "Production Completion Promise Date (Production)",
+   "read_only_depends_on": "eval:doc.check_production_completion_promise_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Manufacturing Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_production_completion_promise_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "shipment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Confirm Shipment Date (Sales)",
+   "read_only_depends_on": "eval:doc.check_confirm_shipment_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_confirm_shipment_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "fieldname": "col_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('DM CAD Designer')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager') \n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "cad_completion_actual_date",
+   "fieldtype": "Date",
+   "label": "CAD Completion Actual Date (Sales)",
+   "read_only_depends_on": "eval:doc.check_cad_completion_actual_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('DM CAD Designer')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager') \n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_cad_completion_actual_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Item Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "stone_completion_actual_date",
+   "fieldtype": "Date",
+   "label": "Stone Completion Actual Date (Prd Stone)",
+   "read_only_depends_on": "eval:doc.check_stone_completion_actual_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Item Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_stone_completion_actual_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Manufacturing User')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "diamond_completion_actual_date",
+   "fieldtype": "Date",
+   "label": "Diamond Completion Actual Date (Prd Diamond)",
+   "read_only_depends_on": "eval:doc.check_diamond_completion_actual_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Manufacturing User')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_diamond_completion_actual_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Sales Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Stock User')\n|| frappe.user.has_role('Manufacturing User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "findin_completion_actual_date",
+   "fieldtype": "Date",
+   "label": "Finding Completion Actual Date (Production)",
+   "read_only_depends_on": "eval:doc.check_finding_completion_actual_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Sales Manager')\n|| frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Stock User')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_finding_completion_actual_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "production_completion_actual_date",
+   "fieldtype": "Date",
+   "label": "Production Completion Actual Date (Sales)",
+   "read_only_depends_on": "eval:doc.check_production_completion_actual_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_production_completion_actual_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "ac_s_date",
+   "fieldtype": "Date",
+   "label": "Actual Shipment Date (Logistics)",
+   "read_only_depends_on": "eval:doc.check_actual_shipment_date == 1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "check_actual_shipment_date",
+   "fieldtype": "Check",
+   "label": "N/A"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Sales Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "label": "Invoice No"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| frappe.user.has_role('Sales Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Sales Attachment"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sec_break",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('Sales Master Manager')\n|| frappe.user.has_role('General Manager')\n|| (frappe.session.user == doc.owner ) ;",
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attach File"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Month",
+   "options": "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Year",
+   "options": "\n2020\n2021\n2022\n2023\n2024\n2025"
+  }
+ ],
+ "icon": "fa fa-user",
+ "links": [],
+ "modified": "2025-04-24 11:02:44.174906",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Planning",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "order_no",
+ "sender_field": "email_id",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

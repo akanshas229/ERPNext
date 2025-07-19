@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-01 12:57:06.356823",
+ "default_view": "Image",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "design_code",
+  "image",
+  "image_view",
+  "column_break_dd2og",
+  "photography_request",
+  "design_category",
+  "description",
+  "customer_name",
+  "collection_name",
+  "metal_name",
+  "stone_name",
+  "diamond_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "label": "Image View",
+   "options": "image"
+  },
+  {
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Design Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "photography_request",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Photography Request",
+   "options": "Photography Request"
+  },
+  {
+   "fieldname": "design_category",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Design Category",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Metal Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Stone Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Diamond Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "collection_name",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Collection Name",
+   "options": "Photography Collection",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dd2og",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2025-05-15 13:04:24.167738",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Photography Request Image-View",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "design_code"
+}

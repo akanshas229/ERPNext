@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "autoname": "field:collection_name",
+ "creation": "2020-08-10 16:11:23.113460",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "collection_name",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_collection"
+ ],
+ "fields": [
+  {
+   "fieldname": "collection_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Collection Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Collection"
+  },
+  {
+   "fieldname": "parent_collection",
+   "fieldtype": "Link",
+   "label": "Parent Collection",
+   "options": "Collection"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2025-06-26 11:40:21.592293",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "Collection",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_collection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cad Designer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1
+}

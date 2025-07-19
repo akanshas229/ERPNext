@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-15 15:01:29.773787",
+ "default_view": "Image",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "design_code",
+  "photography_request",
+  "image",
+  "image_view"
+ ],
+ "fields": [
+  {
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "label": "Design Code"
+  },
+  {
+   "fieldname": "photography_request",
+   "fieldtype": "Link",
+   "label": "Photography Request",
+   "options": "Photography Request"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "label": "Image View",
+   "options": "image"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "links": [],
+ "modified": "2025-04-15 15:04:48.474201",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Photography Request Images",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "MIS Rights",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Photography",
+   "select": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "design_code"
+}

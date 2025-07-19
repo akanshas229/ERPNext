@@ -1,0 +1,248 @@
+{
+ "add_total_row": 1,
+ "columns": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "width": 0
+  },
+  {
+   "fieldname": "create_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "width": 100
+  },
+  {
+   "fieldname": "parent",
+   "fieldtype": "Link",
+   "label": "Daily Transaction",
+   "options": "Daily Transaction",
+   "width": 0
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Link",
+   "label": "Employee Code",
+   "options": "Employee",
+   "width": 150
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee",
+   "width": 150
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "width": 0
+  },
+  {
+   "fieldname": "sub_department",
+   "fieldtype": "Data",
+   "label": "Cell No",
+   "width": 80
+  },
+  {
+   "fieldname": "tran_type",
+   "fieldtype": "Data",
+   "label": "Transaction",
+   "width": 0
+  },
+  {
+   "fieldname": "bag_no",
+   "fieldtype": "Data",
+   "label": "Bag No",
+   "options": "",
+   "width": 250
+  },
+  {
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "label": "Design No",
+   "options": "",
+   "width": 250
+  },
+  {
+   "fieldname": "design_per_pc_wt",
+   "fieldtype": "Data",
+   "label": "Design Metal Weight Per Pc",
+   "width": 200
+  },
+  {
+   "fieldname": "bag_qty",
+   "fieldtype": "Data",
+   "label": "Bag Quantity - Bag Wise",
+   "width": 200
+  },
+  {
+   "fieldname": "daily_in_qty",
+   "fieldtype": "Data",
+   "label": "Total In Qty - Bag Wise",
+   "width": 200
+  },
+  {
+   "fieldname": "daily_out_qty",
+   "fieldtype": "Data",
+   "label": "Total Out Qty - Bag Wise",
+   "width": 200
+  },
+  {
+   "fieldname": "design_diff_qty",
+   "fieldtype": "Data",
+   "label": "Difference (Quantity) - Bag Wise",
+   "width": 200
+  },
+  {
+   "fieldname": "stone_qty_bags",
+   "fieldtype": "Data",
+   "label": "Stone Quantity Bag Wise",
+   "width": 0
+  },
+  {
+   "fieldname": "total_bag_qty",
+   "fieldtype": "Float",
+   "label": "Total Bag Quantity",
+   "width": 0
+  },
+  {
+   "fieldname": "total_daily_in_qty",
+   "fieldtype": "Float",
+   "label": "Total In Qty",
+   "width": 0
+  },
+  {
+   "fieldname": "total_daily_out_qty",
+   "fieldtype": "Float",
+   "label": "Total Out Qty",
+   "width": 0
+  },
+  {
+   "fieldname": "total_design_diff_qty",
+   "fieldtype": "Float",
+   "label": "Total Difference (Quantity) ",
+   "width": 0
+  },
+  {
+   "fieldname": "total_stone_qty",
+   "fieldtype": "Float",
+   "label": "Total Stone Quantity",
+   "width": 200
+  },
+  {
+   "fieldname": "total_design_wt",
+   "fieldtype": "Float",
+   "label": "Total Design Wt",
+   "width": 0
+  },
+  {
+   "fieldname": "daily_diff_minute",
+   "fieldtype": "Float",
+   "label": "Total Working Time",
+   "width": 0
+  },
+  {
+   "fieldname": "gross_monthly_salary",
+   "fieldtype": "Currency",
+   "label": "Salary",
+   "width": 0
+  },
+  {
+   "fieldname": "daily_earning_with_per",
+   "fieldtype": "Currency",
+   "label": "Daily Salary",
+   "width": 0
+  },
+  {
+   "fieldname": "price_per_gram",
+   "fieldtype": "Currency",
+   "label": "Labour Cost per gram",
+   "width": 0
+  },
+  {
+   "fieldname": "price_per_cts",
+   "fieldtype": "Currency",
+   "label": "Setting Cost per pcs",
+   "width": 0
+  }
+ ],
+ "creation": "2025-02-26 15:45:33.766790",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "mandatory": 1,
+   "options": "Company",
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "create_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "mandatory": 0,
+   "options": "Designation",
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "cell",
+   "fieldtype": "Data",
+   "label": "Cell",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "",
+ "modified": "2025-04-11 09:54:54.955966",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "Daily Transaction - Employee Wise",
+ "owner": "shyam.sunder@pinkcityindia.com",
+ "prepared_report": 0,
+ "query": "SELECT\n\tCase\n    \tWhen tdt.company = 'Pinkcity Jewelhouse Private Ltd-Mahapura' THEN 'Mahapura'\n    \tWhen tdt.company = 'Pinkcity Jewelhouse Private Limited- Unit 1' THEN 'Unit-1'\n    \tWhen tdt.company = 'Pinkcity Jewelhouse Private Limited-Unit 2' THEN 'Unit-2'\n    \tELSE ''\n    END AS company,\n    DATE(tdbt.creation) AS create_date,\n    tdbt.parent,\n    tdbt.employee_code,\n    tdbt.employee_name,\n    tdbt.designation,\n    tdbt.sub_department,\n    Case\n    \tWhen tdbt.parentfield = 're_work_daily' THEN 'Re Work'\n    \tWhen tdbt.parentfield = 'mix_work_daily' THEN 'Mix Work'\n    \tELSE 'Regular'\n    END AS tran_type,\n    GROUP_CONCAT(tdbt.bag_no) AS bag_no,\n    GROUP_CONCAT(tdbt.design_code) AS design_code,\n    GROUP_CONCAT(round(tdbt.design_bom_weight, 2)) AS design_per_pc_wt,\n    GROUP_CONCAT(round(tdbt.bag_quantity, 1)) AS bag_qty,\n    GROUP_CONCAT(round(tdbt.in_quantity, 1)) AS daily_in_qty,\n    GROUP_CONCAT(round(tdbt.out_quantity, 1)) AS daily_out_qty,\n    GROUP_CONCAT(round(tdbt.diff_qty, 1)) AS design_diff_qty,\n    Case\n    \tWhen tdbt.designation = 'Setter' THEN GROUP_CONCAT(round(tdbt.total_stone_quantity,1))\n    \tELSE 0\n    END AS stone_qty_bags,\n    SUM(round(tdbt.bag_quantity,1)) AS total_bag_qty,\n    SUM(round(tdbt.in_quantity,1)) AS total_daily_in_qty,\n    SUM(round(tdbt.out_quantity,1)) AS total_daily_out_qty,\n    SUM(round(tdbt.diff_qty,1)) AS total_design_diff_qty,\n    Case\n    \tWhen tdbt.designation = 'Setter' THEN SUM(tdbt.stone_quantity * tdbt.out_quantity)\n    \tELSE 0\n    END AS total_stone_qty,\n\t\tSUM(tdbt.design_bom_weight * tdbt.out_quantity) AS total_design_wt,\n    SUM(round(tdbt.difference_minute,1)) AS daily_diff_minute,\n\t\tte.gross_monthly_salary,\n\t\t(\n\t\t\t( te.gross_monthly_salary / DAYOFMONTH(LAST_DAY(tdbt.creation) -\n\t    \t(SELECT COUNT(th.name) FROM tabHoliday th\n\t    \t\t\tWHERE MONTH(th.holiday_date) = MONTH(tdbt.creation) AND  YEAR(th.holiday_date) = YEAR(tdbt.creation)  )\n\t    ) )\n    \t+\n\t    ( ( te.gross_monthly_salary / DAYOFMONTH(LAST_DAY(tdbt.creation) -\n\t    \t(SELECT COUNT(th.name) FROM tabHoliday th\n\t    \t\t\tWHERE MONTH(th.holiday_date) = MONTH(tdbt.creation) AND  YEAR(th.holiday_date) = YEAR(tdbt.creation)  )\n\t    ) ) * 0.15 )\n\t\t) AS daily_earning_with_per,\n\t\tCase\n    \tWhen tdbt.designation != 'Setter' THEN\n\t\t\t(\n\t\t\t\t(\n\t\t\t\t\t( te.gross_monthly_salary / DAYOFMONTH(LAST_DAY(tdbt.creation) -\n\t\t\t\t\t\t(SELECT COUNT(th.name) FROM tabHoliday th\n\t\t\t\t\t\t\t\tWHERE MONTH(th.holiday_date) = MONTH(tdbt.creation) AND  YEAR(th.holiday_date) = YEAR(tdbt.creation)  )\n\t\t\t\t\t) )\n\t\t\t\t\t+\n\t\t\t\t\t( ( te.gross_monthly_salary / DAYOFMONTH(LAST_DAY(tdbt.creation) -\n\t\t\t\t\t\t(SELECT COUNT(th.name) FROM tabHoliday th\n\t\t\t\t\t\t\t\tWHERE MONTH(th.holiday_date) = MONTH(tdbt.creation) AND  YEAR(th.holiday_date) = YEAR(tdbt.creation)  )\n\t\t\t\t\t) ) * 0.15 )\n\t\t\t\t) / SUM(tdbt.design_bom_weight * tdbt.out_quantity)\n\t\t\t)\n    \tELSE 0\n    END AS price_per_gram,\n\t\tCase\n    \tWhen tdbt.designation = 'Setter' THEN\n\t\t\t\t\t(\n\t\t\t\t\t\t(\n\t\t\t\t\t\t\t( te.gross_monthly_salary / DAYOFMONTH(LAST_DAY(tdbt.creation) -\n\t\t\t\t\t\t\t\t(SELECT COUNT(th.name) FROM tabHoliday th\n\t\t\t\t\t\t\t\t\t\tWHERE MONTH(th.holiday_date) = MONTH(tdbt.creation) AND  YEAR(th.holiday_date) = YEAR(tdbt.creation)  )\n\t\t\t\t\t\t\t) )\n\t\t\t\t\t\t\t+\n\t\t\t\t\t\t\t( ( te.gross_monthly_salary / DAYOFMONTH(LAST_DAY(tdbt.creation) -\n\t\t\t\t\t\t\t\t(SELECT COUNT(th.name) FROM tabHoliday th\n\t\t\t\t\t\t\t\t\t\tWHERE MONTH(th.holiday_date) = MONTH(tdbt.creation) AND  YEAR(th.holiday_date) = YEAR(tdbt.creation)  )\n\t\t\t\t\t\t\t) ) * 0.15 )\n\t\t\t\t\t\t) / SUM(tdbt.stone_quantity * tdbt.out_quantity)\n\t\t\t\t\t)\n    \tELSE 0\n    END AS price_per_cts\n--     te.gross_monthly_salary,\n--     ( te.gross_monthly_salary / DAYOFMONTH(LAST_DAY(tdbt.creation) -\n--     \t(SELECT COUNT(th.name) FROM tabHoliday th\n--     \t\t\tWHERE MONTH(th.holiday_date) = MONTH(tdbt.creation) AND  YEAR(th.holiday_date) = YEAR(tdbt.creation)  )\n--     ) ) AS daily_earning\nFROM `tabDT Bag Transaction` tdbt\nJOIN `tabDaily Transaction` tdt on tdt.name = tdbt.parent\nLEFT JOIN tabEmployee te ON te.employee = tdbt.employee_code\nWHERE tdt.company = %(company)s\nGROUP BY tdbt.employee_code, DATE(tdbt.creation)\nORDER BY DATE(tdbt.creation) DESC\n",
+ "ref_doctype": "Daily Transaction",
+ "report_name": "Daily Transaction - Employee Wise",
+ "report_script": "",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "MIS Rights"
+  },
+  {
+   "role": "Manufacturing Manager"
+  },
+  {
+   "role": "Management"
+  },
+  {
+   "role": "General Manager"
+  }
+ ]
+}

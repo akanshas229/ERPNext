@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "creation": "2023-05-10 15:38:09.155996",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "design_details_tab",
+  "emporer_bag_no",
+  "date",
+  "column_break_iji3p",
+  "emporer_bag_no_manual",
+  "get_bag_data",
+  "section_break_1",
+  "emp_bag_data_child",
+  "design_images_tab",
+  "design_image",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "design_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Design Details"
+  },
+  {
+   "fieldname": "emporer_bag_no",
+   "fieldtype": "Data",
+   "label": "Emporer Bag No"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_iji3p",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emporer_bag_no_manual",
+   "fieldtype": "Data",
+   "label": "Emporer Bag No - Manual"
+  },
+  {
+   "fieldname": "get_bag_data",
+   "fieldtype": "Button",
+   "label": "Get Bag Details"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Empr Bag Data"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "emp_bag_data_child",
+   "fieldtype": "Table",
+   "options": "Emp Bag Data Child"
+  },
+  {
+   "fieldname": "design_images_tab",
+   "fieldtype": "Tab Break",
+   "label": "Design Images"
+  },
+  {
+   "fieldname": "design_image",
+   "fieldtype": "HTML",
+   "label": "Design Image"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Emporer Bag Data",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-26 11:35:58.868548",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "Emporer Bag Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MIS Rights",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

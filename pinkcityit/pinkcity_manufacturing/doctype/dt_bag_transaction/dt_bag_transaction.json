@@ -1,0 +1,355 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-06 13:25:28.827638",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_details_section",
+  "employee_name",
+  "out_time",
+  "column_break_0mgtq",
+  "employee_code",
+  "difference_minute",
+  "column_break_dbysc",
+  "sub_department",
+  "designation",
+  "column_break_napkd",
+  "work_type",
+  "column_break_vqw5g",
+  "in_time",
+  "update_out_time",
+  "bag_detail_section",
+  "customer_name",
+  "design_bom_weight",
+  "total_design_bom_weight",
+  "column_break_mh3sp",
+  "customer_code",
+  "bag_quantity",
+  "stone_qty",
+  "column_break_tgp3k",
+  "order_no",
+  "in_quantity",
+  "column_break_6uyc6",
+  "design_code",
+  "out_quantity",
+  "column_break_opokx",
+  "bag_no",
+  "diff_qty",
+  "bag_id",
+  "design_image",
+  "image_view",
+  "stone_details_section",
+  "stone_quantity",
+  "total_stone_quantity",
+  "total_stone_man",
+  "column_break_yrfam",
+  "diamond_quantity",
+  "total_diamond_quantity",
+  "column_break_gtrfz",
+  "wax_set_quantity",
+  "total_wax_set_quantity",
+  "column_break_qtt0b",
+  "hand_set_quantity",
+  "total_hand_set_quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Performance"
+  },
+  {
+   "columns": 2,
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "out_time",
+   "fieldtype": "Datetime",
+   "label": "OUT Time",
+   "read_only_depends_on": "eval: !frappe.user.has_role('MIS Rights')"
+  },
+  {
+   "fieldname": "column_break_0mgtq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Employee Code",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "difference_minute",
+   "fieldtype": "Float",
+   "label": "Difference (Minute)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dbysc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "sub_department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cell",
+   "options": "Sub Department",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_napkd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "work_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Work Type",
+   "options": "Work Type"
+  },
+  {
+   "fieldname": "column_break_vqw5g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "in_time",
+   "fieldtype": "Datetime",
+   "label": "IN Time",
+   "read_only": 1,
+   "read_only_depends_on": "eval: !frappe.user.has_role('MIS Rights')"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role('MIS Rights') || doc.docstatus == 0",
+   "fieldname": "update_out_time",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Update Out Time"
+  },
+  {
+   "fieldname": "bag_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Bag Details"
+  },
+  {
+   "bold": 1,
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "design_bom_weight",
+   "fieldtype": "Float",
+   "label": "Design Metal Weight Per Pc",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_design_bom_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Metal Weight"
+  },
+  {
+   "fieldname": "column_break_mh3sp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_code",
+   "fieldtype": "Data",
+   "label": "Customer Code",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "bag_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bag Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tgp3k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "label": "Order No",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "in_quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "In Qty"
+  },
+  {
+   "fieldname": "column_break_6uyc6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "label": "Design Code",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "out_quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Out Qty"
+  },
+  {
+   "fieldname": "column_break_opokx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "bag_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bag No",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "diff_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Balance (Quantity)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bag_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Bag ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "design_image",
+   "fieldtype": "Image",
+   "hidden": 1,
+   "label": "Design Image",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image View",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_details_section",
+   "fieldtype": "Section Break",
+   "label": "Stone Details"
+  },
+  {
+   "fieldname": "stone_quantity",
+   "fieldtype": "Float",
+   "label": "Stone Quantity Per Pc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_stone_quantity",
+   "fieldtype": "Float",
+   "label": "Total Stone Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_yrfam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_quantity",
+   "fieldtype": "Float",
+   "label": "Diamond Quantity Per Pc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_diamond_quantity",
+   "fieldtype": "Float",
+   "label": "Total Diamond Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gtrfz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wax_set_quantity",
+   "fieldtype": "Float",
+   "label": "Wax Set Quantity Per Pc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_wax_set_quantity",
+   "fieldtype": "Float",
+   "label": "Total Wax Set Quantity"
+  },
+  {
+   "fieldname": "column_break_qtt0b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hand_set_quantity",
+   "fieldtype": "Float",
+   "label": "Hand Set Quantity Per Pc",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_hand_set_quantity",
+   "fieldtype": "Float",
+   "label": "Total Hand Set Quantity"
+  },
+  {
+   "fieldname": "stone_qty",
+   "fieldtype": "Float",
+   "label": "Stone Quantity (Manual)"
+  },
+  {
+   "fieldname": "total_stone_man",
+   "fieldtype": "Float",
+   "label": "Total Stone Quantity (Manual)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-02 15:02:16.917257",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "DT Bag Transaction",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

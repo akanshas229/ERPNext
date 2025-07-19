@@ -6,7 +6,7 @@ app_email = "erpsupport@atelierpinkcity.com"
 app_license = "MIT"
 
 # Includes in <head>
-# ------------------
+# -------------------------------------------------------
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/pinkcityit/css/pinkcityit.css"
@@ -31,6 +31,7 @@ app_license = "MIT"
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+
 
 # Home Pages
 # ----------
@@ -127,23 +128,43 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"pinkcityit.tasks.all"
-#	],
-#	"daily": [
-#		"pinkcityit.tasks.daily"
-#	],
-#	"hourly": [
-#		"pinkcityit.tasks.hourly"
-#	],
-#	"weekly": [
-#		"pinkcityit.tasks.weekly"
-#	],
-#	"monthly": [
-#		"pinkcityit.tasks.monthly"
-#	],
-# }
+scheduler_events = {
+	"cron": {
+        "10 08 * * *": [
+            "pinkcityit.pinkcity_hr.doctype.essl_company.essl_company.CheckinMahapura"  
+        ],
+        "25 08 * * *": [
+            "pinkcityit.pinkcity_hr.doctype.essl_company.essl_company.CheckinUnit1"
+        ],
+        "40 08 * * *": [
+            "pinkcityit.pinkcity_hr.doctype.essl_company.essl_company.CheckinUnit2"
+        ],
+        "55 08 * * *": [
+            "pinkcityit.pinkcity_hr.doctype.essl_company.essl_company.CheckinColorstone"
+        ],
+        "30 13 * * *": ["pinkcityit.pinkcity_hr.doctype.essl_company.essl_company.applyAttendanceColorstone"],
+        "35 13 * * *": ["pinkcityit.pinkcity_hr.doctype.essl_company.essl_company.applyAttendanceMahapura"],
+        "40 13 * * *": ["pinkcityit.pinkcity_hr.doctype.essl_company.essl_company.applyAttendanceUnit1"],
+        "45 13 * * *": ["pinkcityit.pinkcity_hr.doctype.essl_company.essl_company.applyAttendanceUnit2"],
+    },
+	"all": [
+		# "pinkcityit.tasks.all"
+	],
+	"daily": [
+		# "pinkcityit.tasks.daily"
+        "pinkcityit.pinkcity_manufacturing.doctype.daily_transaction.daily_transaction.submit_daily_transaction",
+        "pinkcityit.pinkcity_manufacturing.doctype.plating_transaction.plating_transaction.submit_ptransaction"	
+	],
+	"hourly": [
+		# "pinkcityit.tasks.hourly"
+	],
+	"weekly": [
+		# "pinkcityit.tasks.weekly"
+	],
+	"monthly": [
+		# "pinkcityit.tasks.monthly"
+	],
+}
 
 # Testing
 # -------

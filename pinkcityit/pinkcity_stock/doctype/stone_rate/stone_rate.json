@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "autoname": "field:stone_code",
+ "creation": "2020-10-23 13:50:46.313446",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stone_code",
+  "stone",
+  "stone_description",
+  "shape",
+  "cut",
+  "length",
+  "width",
+  "max_of_rate",
+  "min_of_rate",
+  "average_of_weight_in_cts"
+ ],
+ "fields": [
+  {
+   "fieldname": "stone_code",
+   "fieldtype": "Data",
+   "label": "Stone Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "stone",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stone",
+   "options": "Gemstone"
+  },
+  {
+   "fieldname": "stone_description",
+   "fieldtype": "Data",
+   "label": "Stone Description"
+  },
+  {
+   "fieldname": "shape",
+   "fieldtype": "Link",
+   "label": "Shape",
+   "options": "Stone Shape"
+  },
+  {
+   "fieldname": "cut",
+   "fieldtype": "Link",
+   "label": "Cut",
+   "options": "Stone Cut"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Float",
+   "label": "Length"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "label": "Width"
+  },
+  {
+   "fieldname": "max_of_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Max of Rate"
+  },
+  {
+   "fieldname": "min_of_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Min of Rate"
+  },
+  {
+   "fieldname": "average_of_weight_in_cts",
+   "fieldtype": "Float",
+   "label": "Average of Weight in Cts"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-28 11:23:46.336740",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "Stone Rate",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Item Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cad Designer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "stone",
+ "sort_field": "stone",
+ "sort_order": "ASC",
+ "states": []
+}

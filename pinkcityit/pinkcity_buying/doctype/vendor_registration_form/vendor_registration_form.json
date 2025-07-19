@@ -1,0 +1,260 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-22 12:31:27.223780",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "supplier_group",
+  "column_break_5",
+  "status",
+  "company_details_and_general_information_column",
+  "name_of_company",
+  "company_representative_name",
+  "company_representative_designation",
+  "column_break_6",
+  "company_representative_mobile_no",
+  "company_representative_email",
+  "documents_to_be_uploade_section",
+  "cav_copy_of_cert",
+  "cav_copy_of_pan",
+  "cav_copy_of_gst",
+  "lut_certified",
+  "cav_lut_cert",
+  "column_break_16",
+  "cancel_cheque",
+  "id_addr_proof",
+  "msme_registered",
+  "cav_msme_cert",
+  "terms_and_conditions_section",
+  "terms_and_conditions",
+  "accept_terms",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "VREG-.YYYY.-.####.",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "supplier_group",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Supplier Group",
+   "options": "Supplier Group"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted\nCancelled",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "company_details_and_general_information_column",
+   "fieldtype": "Section Break",
+   "label": "Company Details and General Information"
+  },
+  {
+   "fieldname": "name_of_company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Company/Firm/Proprietorship",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_representative_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Representative Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_representative_designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Representative Designation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_representative_mobile_no",
+   "fieldtype": "Data",
+   "label": "Company Representative Mobile No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_representative_email",
+   "fieldtype": "Data",
+   "label": "Company Representative Email ID"
+  },
+  {
+   "fieldname": "documents_to_be_uploade_section",
+   "fieldtype": "Section Break",
+   "label": "DOCUMENTS TO BE UPLOADED"
+  },
+  {
+   "fieldname": "cav_copy_of_cert",
+   "fieldtype": "Attach",
+   "label": "Certificate of incorporation / Business certificate"
+  },
+  {
+   "fieldname": "cav_copy_of_pan",
+   "fieldtype": "Attach",
+   "label": " PAN Card"
+  },
+  {
+   "fieldname": "cav_copy_of_gst",
+   "fieldtype": "Attach",
+   "label": "GST certificate",
+   "reqd": 1
+  },
+  {
+   "default": "No",
+   "fieldname": "lut_certified",
+   "fieldtype": "Select",
+   "label": "LUT Certified",
+   "options": "No\nYes"
+  },
+  {
+   "depends_on": "eval: doc.lut_certified == \"Yes\"",
+   "fieldname": "cav_lut_cert",
+   "fieldtype": "Attach",
+   "label": "LUT Certificate",
+   "mandatory_depends_on": "eval: doc.lut_certified == \"Yes\""
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cancel_cheque",
+   "fieldtype": "Attach",
+   "label": "Cancel Cheque / Passbook / Certified bank statement Copy"
+  },
+  {
+   "fieldname": "id_addr_proof",
+   "fieldtype": "Attach",
+   "label": "ID & address proof of Partner / Director"
+  },
+  {
+   "default": "No",
+   "fieldname": "msme_registered",
+   "fieldtype": "Select",
+   "label": "MSME Registered",
+   "options": "No\nYes"
+  },
+  {
+   "depends_on": "eval: doc.msme_registered == \"Yes\"",
+   "fieldname": "cav_msme_cert",
+   "fieldtype": "Attach",
+   "label": "MSME Certificate",
+   "mandatory_depends_on": "eval: doc.msme_registered == \"Yes\""
+  },
+  {
+   "fieldname": "terms_and_conditions_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Terms & Conditions"
+  },
+  {
+   "fieldname": "terms_and_conditions",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "label": "Terms & Conditions",
+   "options": "<ol class=\"terms-and-conditions\">\n    <li>\n        The bank account to which any payment will be made must be the company's bank account.\n    </li>\n    <li>\n        Pinkcity reserve the right to request additional documents relating to your company to substantiate the registration request e.g. Letters of reference.\n    </li>\n    <li>\n        Material/Services will be supplied according to the purchase order terms &amp; conditions if not then treated as material/services not supplied to pinkcity jewelhouse.\n    </li>\n    <li>\n        All the disputes are subject to jaipur jurisdiction only.\n    </li>\n</ol>\n<style>\n    .terms-and-conditions li{\n        text-indent: 5px !important;\n        font-size: 12px !important;\n    }\n</style>"
+  },
+  {
+   "default": "1",
+   "fieldname": "accept_terms",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Accept all terms & conditions"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vendor Registration Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2025-04-28 11:07:00.265062",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Buying",
+ "name": "Vendor Registration Form",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager 1",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User 1",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

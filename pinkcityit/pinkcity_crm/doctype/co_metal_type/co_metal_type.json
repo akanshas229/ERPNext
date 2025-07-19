@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-20 11:15:45.667451",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "metal_type",
+  "column_break_aizfz",
+  "ounce_rate",
+  "column_break_v82tr",
+  "conversion_per_gram",
+  "column_break_vdsc5",
+  "metal_cost_per_gram",
+  "column_break_ore5n",
+  "metal_loss",
+  "column_break_hppff",
+  "metal_weight",
+  "column_break_nhhge",
+  "final_metal_cost_per_gram",
+  "column_break_vukzj",
+  "weight_addition",
+  "column_break_6z3kp",
+  "additional_weight",
+  "column_break_cjkr4",
+  "metal_weight_for_costin",
+  "column_break_pnakc",
+  "final_metal_cost"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "metal_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Metal Type",
+   "options": "Metal Type"
+  },
+  {
+   "fieldname": "column_break_aizfz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "ounce_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Ounce Rate ",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_v82tr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "conversion_per_gram",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Conversion Per Gram ",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_vdsc5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "metal_cost_per_gram",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Metal Cost Per Gram ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ore5n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "metal_loss",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Metal Loss "
+  },
+  {
+   "fieldname": "column_break_hppff",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "metal_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Metal Weight"
+  },
+  {
+   "fieldname": "column_break_nhhge",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "final_metal_cost_per_gram",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Final Metal Cost Per Gram ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vukzj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight_addition",
+   "fieldtype": "Percent",
+   "label": "Weight Addition"
+  },
+  {
+   "fieldname": "column_break_6z3kp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "additional_weight",
+   "fieldtype": "Float",
+   "label": "Additional Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cjkr4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "metal_weight_for_costin",
+   "fieldtype": "Float",
+   "label": "Metal Weight For Costing",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pnakc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "final_metal_cost",
+   "fieldtype": "Currency",
+   "label": "Final Metal Cost",
+   "options": "currency",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 10:40:42.587943",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "CO Metal Type",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

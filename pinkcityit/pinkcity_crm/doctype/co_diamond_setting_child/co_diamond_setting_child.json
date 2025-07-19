@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-26 14:11:03.607943",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "diamond_name",
+  "column_break_fri05",
+  "length",
+  "column_break_cw4hh",
+  "width",
+  "section_break_dg5ul",
+  "quantity_no_of_pcs",
+  "column_break_trphf",
+  "diamond_setting_ctegory",
+  "column_break_tkzjt",
+  "diamond_setting_type",
+  "section_break_yljtf",
+  "diamond_setting_price",
+  "diamond_setting_currency",
+  "column_break_57yyh",
+  "diamond_setting_price_rs",
+  "column_break_q2pnq",
+  "diamond_setting_price_dollar",
+  "diamond_total_setting_cost"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "diamond_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Diamond Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fri05",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "length",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Length",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cw4hh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Width",
+   "precision": "3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_dg5ul",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "quantity_no_of_pcs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_trphf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "diamond_setting_ctegory",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Setting Category",
+   "options": "\nWax Setting\nHand Setting",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tkzjt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_setting_type",
+   "fieldtype": "Data",
+   "label": "Setting Type"
+  },
+  {
+   "fieldname": "section_break_yljtf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Pcs",
+   "fieldname": "diamond_setting_price",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "\nPcs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_setting_currency",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Setting Currency",
+   "options": "\nUSD\nINR"
+  },
+  {
+   "fieldname": "column_break_57yyh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "diamond_setting_price_rs",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Setting Price Per Pcs ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_q2pnq",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "diamond_setting_price_dollar",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Setting Cost ",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "diamond_total_setting_cost",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Total Setting Cost ",
+   "options": "currency",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 10:54:01.124205",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "CO Diamond Setting Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

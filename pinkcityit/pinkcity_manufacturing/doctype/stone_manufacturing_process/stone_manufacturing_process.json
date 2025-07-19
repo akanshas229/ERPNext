@@ -1,0 +1,423 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-26 17:50:16.517096",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_kkdyr",
+  "challan",
+  "job_worker_name",
+  "column_break_yezb2",
+  "gst_no",
+  "column_break_ipbb4",
+  "emporer_job_worker_location",
+  "emporer_details_section",
+  "emporer_voucher_receipt_no",
+  "column_break_emapi",
+  "emporer_voucher_receipt_date",
+  "column_break_ccypd",
+  "from_dept",
+  "column_break_nf4uq",
+  "to_dept",
+  "totals_section",
+  "received_quantity",
+  "column_break_deu2i",
+  "balance_quantity",
+  "column_break_5pa72",
+  "received_percent",
+  "job_work_issue_detail_section",
+  "issue_date",
+  "item_code",
+  "item_name",
+  "type_of_goods",
+  "column_break_zhwfm",
+  "job_work_name",
+  "job_work_type",
+  "description_of_goods",
+  "mfg_item_codr",
+  "column_break_rgztg",
+  "hsn_code",
+  "pieces",
+  "weight",
+  "uom",
+  "quantity_and_rate_section",
+  "column_break_yf6tk",
+  "total_amount",
+  "section_break_lbci9",
+  "mfg_process",
+  "section_break_ukkx1",
+  "total_receive_wt",
+  "total_receive_qty",
+  "column_break_rwez0",
+  "total_loss_wt",
+  "total_loss_qty",
+  "column_break_ayf6d",
+  "total_broken_wt",
+  "total_broken_qty",
+  "column_break_0rujr",
+  "fg_goods_wt",
+  "fg_goods_qty",
+  "rough_yields_section",
+  "rough_yields",
+  "billing_job_work_section",
+  "fg_rate",
+  "column_break_ia2z9",
+  "amount",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Pinkcity Jewelhouse Private Ltd-Mahapura",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_kkdyr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "challan",
+   "fieldtype": "Data",
+   "label": "Challan No"
+  },
+  {
+   "fieldname": "job_worker_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Job Worker Name",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_yezb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "job_worker_name.tax_id",
+   "fieldname": "gst_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "GST No"
+  },
+  {
+   "fieldname": "column_break_ipbb4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emporer_job_worker_location",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Emporer Job Worker Location",
+   "options": "Job Worker Location"
+  },
+  {
+   "fieldname": "emporer_details_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Emporer Details"
+  },
+  {
+   "fieldname": "emporer_voucher_receipt_no",
+   "fieldtype": "Data",
+   "label": "Emporer Voucher Receipt No."
+  },
+  {
+   "fieldname": "column_break_emapi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emporer_voucher_receipt_date",
+   "fieldtype": "Date",
+   "label": "Emporer Voucher Receipt Date"
+  },
+  {
+   "fieldname": "column_break_ccypd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_dept",
+   "fieldtype": "Select",
+   "label": "From Dept",
+   "options": "\nPPLN\nPBOM\nPWAX\nPWXT\nPCAS\nPCAD\nPFIL\nPDIA\nPPOL\nPSET\nPFQC\nGCL2\nPPRP\nPFG\nPGOP\nPSTN\nPINV\nPMF\nPGMF\nGCL1\nCell1\nCell2\nCell3\nCell4\nCell5\nFAS"
+  },
+  {
+   "fieldname": "column_break_nf4uq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_dept",
+   "fieldtype": "Select",
+   "label": "To Dept",
+   "options": "\nPPLN\nPBOM\nPWAX\nPWXT\nPCAS\nPCAD\nPFIL\nPDIA\nPPOL\nPSET\nPPOL\nPFQC\nGCL2\nPPRP\nPFG\nPGOP\nPSTN\nPINV\nPMF\nPGMF\nGCL1\nCell1\nCell2\nCell3\nCell4\nCell5\nFAS"
+  },
+  {
+   "fieldname": "totals_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Totals"
+  },
+  {
+   "fieldname": "received_quantity",
+   "fieldtype": "Data",
+   "label": "Received Quantity"
+  },
+  {
+   "fieldname": "column_break_deu2i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "balance_quantity",
+   "fieldtype": "Data",
+   "label": "Balance Quantity"
+  },
+  {
+   "fieldname": "column_break_5pa72",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "received_percent",
+   "fieldtype": "Data",
+   "label": "Received Percent"
+  },
+  {
+   "fieldname": "job_work_issue_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Item Received Detail"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fetch_from": "item_name.item_code",
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "type_of_goods",
+   "fieldtype": "Select",
+   "label": "Type of Goods",
+   "options": "\nInput\nCapital Goods"
+  },
+  {
+   "fieldname": "column_break_zhwfm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_work_name",
+   "fieldtype": "Data",
+   "label": "Job Work Name"
+  },
+  {
+   "fieldname": "job_work_type",
+   "fieldtype": "Select",
+   "label": "Job Work Type",
+   "options": "\nBRASS TO MOGRA WIRE\nBRASS TO NECKLACE\nCARVING\nDIPPING\nDOLL ISSUE\nDOLL TO FINISH\nDOLL TO MM\nFILING & PRE POLISH\nFINISH TO COATED\nFINISH TO DRILL\nFINISH TO GP POLISH\nFINISH TO RECUT\nGOLD TO GPC\nLEATHER SETTING\nMM TO FINISH\nROUGH ISSUE\nROUGH TO  MM\nROUGH TO DOLL\nROUGH TO FINISH\nRULAI WORK\nRULAYA TO DRILL\nSTONE SETTING"
+  },
+  {
+   "fetch_from": "item_code.description",
+   "fieldname": "description_of_goods",
+   "fieldtype": "Data",
+   "label": "Description of Goods"
+  },
+  {
+   "fieldname": "mfg_item_codr",
+   "fieldtype": "Data",
+   "label": "Mfg Item Code"
+  },
+  {
+   "fieldname": "column_break_rgztg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hsn_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "HSN Code"
+  },
+  {
+   "fieldname": "pieces",
+   "fieldtype": "Float",
+   "label": "Pieces"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight"
+  },
+  {
+   "default": "cts",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "quantity_and_rate_section",
+   "fieldtype": "Section Break",
+   "label": "Quantity and Rate"
+  },
+  {
+   "fieldname": "column_break_yf6tk",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "section_break_lbci9",
+   "fieldtype": "Section Break",
+   "label": "Manufacturing Process"
+  },
+  {
+   "fieldname": "mfg_process",
+   "fieldtype": "Table",
+   "options": "SMP MFG Process"
+  },
+  {
+   "fieldname": "section_break_ukkx1",
+   "fieldtype": "Section Break",
+   "label": "Processing Summary"
+  },
+  {
+   "fieldname": "total_receive_wt",
+   "fieldtype": "Float",
+   "label": "Receive Wt"
+  },
+  {
+   "fieldname": "total_receive_qty",
+   "fieldtype": "Float",
+   "label": "Receive Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rwez0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_loss_wt",
+   "fieldtype": "Float",
+   "label": "Total Loss Wt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_loss_qty",
+   "fieldtype": "Data",
+   "label": "Total Loss Qty"
+  },
+  {
+   "fieldname": "column_break_ayf6d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_broken_wt",
+   "fieldtype": "Float",
+   "label": "Total Broken Wt"
+  },
+  {
+   "fieldname": "total_broken_qty",
+   "fieldtype": "Float",
+   "label": "Total Broken Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_0rujr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fg_goods_wt",
+   "fieldtype": "Float",
+   "label": "FG Goods Wt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fg_goods_qty",
+   "fieldtype": "Float",
+   "label": "FG Goods Qty"
+  },
+  {
+   "fieldname": "rough_yields_section",
+   "fieldtype": "Section Break",
+   "label": "Rough Yields"
+  },
+  {
+   "fieldname": "rough_yields",
+   "fieldtype": "Float",
+   "label": "Rough Yields %"
+  },
+  {
+   "fieldname": "billing_job_work_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Job Work"
+  },
+  {
+   "fieldname": "fg_rate",
+   "fieldtype": "Float",
+   "label": "Fg Rate "
+  },
+  {
+   "fieldname": "column_break_ia2z9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Fg Amount"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stone MAnufacturing Process",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-26 17:50:16.517096",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "Stone MAnufacturing Process",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

@@ -1,0 +1,418 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-11 16:31:58.895092",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bag_detail_section",
+  "customer_name",
+  "bag_quantitys",
+  "column_break_ys3vr",
+  "customer_code",
+  "bag_quantity",
+  "column_break_qhhky",
+  "order_no",
+  "purchase_order_no",
+  "column_break_hrak7",
+  "bag_no",
+  "bag_id",
+  "column_break_cihhc",
+  "design_code",
+  "design_category",
+  "column_break_acrw4",
+  "design_bom_weight",
+  "stone_weight_per_pc",
+  "column_break_ir39u",
+  "total_design_bom_weight",
+  "diamond_weight_per_pc",
+  "column_break_wa4wj",
+  "total_design_metal_weight",
+  "total_stone_weight",
+  "column_break_6jeve",
+  "total_diamond_weight",
+  "plating_detail_section",
+  "cell_no",
+  "plating_code",
+  "column_break_kbm4u",
+  "plating_micron",
+  "plating_bath",
+  "column_break_uhugu",
+  "plating_in_weight",
+  "design_metal_in_weight",
+  "column_break_gyjzp",
+  "plating_out_weight",
+  "design_metal_out_weight",
+  "column_break_zrkty",
+  "difference_weight",
+  "xrf_detail_section",
+  "block_no",
+  "column_break_1pzmn",
+  "micron_reading",
+  "column_break_4vrml",
+  "micron_reading_2",
+  "column_break_nnmws",
+  "micron_reading_3",
+  "column_break_wnzps",
+  "micron_reading_4",
+  "column_break_cinyt",
+  "micron_reading_5",
+  "section_break_pwvuz",
+  "au",
+  "time_section",
+  "in_time",
+  "column_break_yi9g8",
+  "out_time",
+  "column_break_zkmdo",
+  "difference_minute"
+ ],
+ "fields": [
+  {
+   "fieldname": "bag_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Bag Detail"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "bag_quantitys",
+   "fieldtype": "Float",
+   "label": "Bag Quantity (As Per Bag)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ys3vr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_code",
+   "fieldtype": "Data",
+   "label": "Customer Code",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "columns": 1,
+   "fieldname": "bag_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Bag Quantity (Plating)"
+  },
+  {
+   "fieldname": "column_break_qhhky",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "label": "Order No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purchase_order_no",
+   "fieldtype": "Data",
+   "label": "Purchase Order No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hrak7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "bag_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bag No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bag_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Bag ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cihhc",
+   "fieldtype": "Section Break",
+   "label": "Design Detail (As Per BOM)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Design Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "design_category",
+   "fieldtype": "Data",
+   "label": "Design Category",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_acrw4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_bom_weight",
+   "fieldtype": "Float",
+   "label": "Design Metal Weight Per Pc (gram)",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_weight_per_pc",
+   "fieldtype": "Float",
+   "label": "Stone Weight Per Pc (gram)",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ir39u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_design_bom_weight",
+   "fieldtype": "Float",
+   "label": "Total Metal Weight",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_weight_per_pc",
+   "fieldtype": "Float",
+   "label": "Diamond Weight Per Pc (gram)",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_wa4wj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_design_metal_weight",
+   "fieldtype": "Float",
+   "label": "Total Design Weight",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_stone_weight",
+   "fieldtype": "Float",
+   "label": "Total Stone Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6jeve",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_diamond_weight",
+   "fieldtype": "Float",
+   "label": "Total Diamond Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "plating_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Plating Detail"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cell_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cell No",
+   "options": "Sub Department",
+   "print_width": "1"
+  },
+  {
+   "fieldname": "plating_code",
+   "fieldtype": "Data",
+   "label": "Plating Code"
+  },
+  {
+   "fieldname": "column_break_kbm4u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plating_micron",
+   "fieldtype": "Data",
+   "label": "Plating Micron"
+  },
+  {
+   "columns": 1,
+   "fieldname": "plating_bath",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tank",
+   "options": "\n18 Kt Bath - 1st\n18 Kt Bath - 2nd\n24 Kt Bath - 1st\n24 Kt Bath - 2nd\nAruna 215\nRose Plating - 1st\nSilver Plating\nFlash Plating"
+  },
+  {
+   "fieldname": "column_break_uhugu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "columns": 1,
+   "fieldname": "plating_in_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "In Weight - Mateler"
+  },
+  {
+   "fieldname": "design_metal_in_weight",
+   "fieldtype": "Float",
+   "label": "Design Metal In Weight"
+  },
+  {
+   "fieldname": "column_break_gyjzp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "columns": 1,
+   "fieldname": "plating_out_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Out Weight - Mateler"
+  },
+  {
+   "fieldname": "design_metal_out_weight",
+   "fieldtype": "Float",
+   "label": "Design Metal Out Weight"
+  },
+  {
+   "fieldname": "column_break_zrkty",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "columns": 1,
+   "fieldname": "difference_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Difference Weight - Mateler",
+   "read_only": 1
+  },
+  {
+   "fieldname": "xrf_detail_section",
+   "fieldtype": "Section Break",
+   "label": "XRF Detail"
+  },
+  {
+   "fieldname": "block_no",
+   "fieldtype": "Int",
+   "label": "Block No -1st"
+  },
+  {
+   "fieldname": "column_break_1pzmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "micron_reading",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Micron Reading -1st"
+  },
+  {
+   "fieldname": "column_break_4vrml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "micron_reading_2",
+   "fieldtype": "Float",
+   "label": "Micron Reading -2nd"
+  },
+  {
+   "fieldname": "column_break_nnmws",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "micron_reading_3",
+   "fieldtype": "Float",
+   "label": "Micron Reading -3rd"
+  },
+  {
+   "fieldname": "column_break_wnzps",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "micron_reading_4",
+   "fieldtype": "Float",
+   "label": "Micron Reading -4th"
+  },
+  {
+   "fieldname": "column_break_cinyt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "micron_reading_5",
+   "fieldtype": "Float",
+   "label": "Micron Reading - 5th"
+  },
+  {
+   "fieldname": "section_break_pwvuz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "au",
+   "fieldtype": "Percent",
+   "label": "AU% -1st"
+  },
+  {
+   "fieldname": "time_section",
+   "fieldtype": "Section Break",
+   "label": "Time"
+  },
+  {
+   "fieldname": "in_time",
+   "fieldtype": "Datetime",
+   "label": "In Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_yi9g8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "out_time",
+   "fieldtype": "Datetime",
+   "label": "Out Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zkmdo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "difference_minute",
+   "fieldtype": "Float",
+   "label": "Difference (Minute)",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:34:33.819735",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "Plating Matler Bag Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

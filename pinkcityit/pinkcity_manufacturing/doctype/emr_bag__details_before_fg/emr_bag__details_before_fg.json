@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-25 15:22:49.540682",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bag_no",
+  "order_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "bag_no",
+   "fieldtype": "Data",
+   "label": "Bag No"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Data",
+   "label": "Order No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-25 15:53:54.924154",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Manufacturing",
+ "name": "EMR Bag  Details Before FG",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

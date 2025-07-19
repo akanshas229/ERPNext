@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-11 15:50:11.990910",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "unit_1_tab",
+  "report_month",
+  "table",
+  "unit_2_tab",
+  "report_month_2",
+  "table_2",
+  "mahapura_tab",
+  "rep_month_3",
+  "table_3",
+  "head_office_tab",
+  "rep_month_4",
+  "table_4",
+  "amended_from",
+  "daily_report_tab",
+  "report_months",
+  "table_5"
+ ],
+ "fields": [
+  {
+   "fieldname": "unit_1_tab",
+   "fieldtype": "Tab Break",
+   "label": "Unit 1"
+  },
+  {
+   "fieldname": "report_month",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Report Month",
+   "options": "Month"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table",
+   "fieldtype": "Table",
+   "label": "Table",
+   "options": "MIS Reporting Child table"
+  },
+  {
+   "fieldname": "unit_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Unit 2"
+  },
+  {
+   "fetch_from": "report_month.month_full",
+   "fieldname": "report_month_2",
+   "fieldtype": "Data",
+   "label": "Report Month",
+   "read_only": 1
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_2",
+   "fieldtype": "Table",
+   "label": "Table 2",
+   "options": "MIS Reporting Child table"
+  },
+  {
+   "fieldname": "mahapura_tab",
+   "fieldtype": "Tab Break",
+   "label": "Mahapura"
+  },
+  {
+   "fetch_from": "report_month.month_full",
+   "fieldname": "rep_month_3",
+   "fieldtype": "Data",
+   "label": "Report Month",
+   "read_only": 1
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_3",
+   "fieldtype": "Table",
+   "label": "Table 3",
+   "options": "MIS Reporting Child table"
+  },
+  {
+   "fieldname": "head_office_tab",
+   "fieldtype": "Tab Break",
+   "label": "Head Office"
+  },
+  {
+   "fetch_from": "report_month.month_full",
+   "fieldname": "rep_month_4",
+   "fieldtype": "Data",
+   "label": "Report Month",
+   "read_only": 1
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_4",
+   "fieldtype": "Table",
+   "label": "Table 4",
+   "options": "MIS Reporting Child table"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "MIS Reporting",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "daily_report_tab",
+   "fieldtype": "Tab Break",
+   "label": "Daily Report"
+  },
+  {
+   "fetch_from": "report_month.month_full",
+   "fieldname": "report_months",
+   "fieldtype": "Data",
+   "label": "Report Month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "table_5",
+   "fieldtype": "Table",
+   "label": " Table 5",
+   "options": "MIS Reporting Child table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:49:50.792106",
+ "modified_by": "Administrator",
+ "module": "Pink City IT Team",
+ "name": "MIS Reporting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

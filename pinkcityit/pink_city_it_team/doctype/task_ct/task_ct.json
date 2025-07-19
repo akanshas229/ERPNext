@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-22 19:35:30.634322",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "status",
+  "column_break_altd2",
+  "start_date",
+  "end_date",
+  "section_break_48x4s",
+  "description"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "PinkCity Task"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "name1.workflow_state",
+   "fetch_if_empty": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_altd2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "name1.start_date",
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "name1.end_date",
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_48x4s",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 3,
+   "fetch_from": "name1.description",
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-03 11:40:42.795693",
+ "modified_by": "Administrator",
+ "module": "Pink City IT Team",
+ "name": "Task CT",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

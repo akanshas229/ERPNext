@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{metal_group} {metal_category}",
+ "creation": "2024-05-09 16:35:03.684385",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "metal_category",
+  "column_break_beafw",
+  "metal_group"
+ ],
+ "fields": [
+  {
+   "fieldname": "metal_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Metal Category",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_beafw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metal_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Metal Group",
+   "options": "Metal Group",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-26 11:41:30.170487",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "Metal Category",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "search_fields": "metal_category, metal_group",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "metal_category"
+}

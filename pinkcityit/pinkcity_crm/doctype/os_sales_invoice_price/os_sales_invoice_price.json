@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-22 12:32:16.357214",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_no",
+  "invoice_date",
+  "column_break_s2ep3",
+  "design_code",
+  "column_break_hymmo",
+  "quantity",
+  "weight",
+  "column_break_3lvuq",
+  "sales_price",
+  "invoice_price",
+  "invoice_design_id"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice No",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Invoice Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_s2ep3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "design_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Design Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hymmo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity ",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3lvuq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "sales_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sales Price ($)"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "invoice_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Invoice Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_design_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Invoice Design ID",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:35:42.187421",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "OS Sales Invoice Price",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

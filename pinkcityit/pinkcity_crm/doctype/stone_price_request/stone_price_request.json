@@ -1,0 +1,310 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-05 10:11:46.963356",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stone_details_tab",
+  "details_section",
+  "client",
+  "sales_person",
+  "column_break_q5nlz",
+  "costing",
+  "client_code",
+  "column_break_06h6f",
+  "design",
+  "metal_type",
+  "stone_code",
+  "column_break_qav64",
+  "request_date",
+  "stone_details_section",
+  "stone",
+  "length",
+  "column_break_jcju7",
+  "shape",
+  "width",
+  "column_break_qrcqz",
+  "cut",
+  "medium",
+  "column_break_mzso8",
+  "quality",
+  "height",
+  "reference_section",
+  "qty",
+  "weight_per_pcs_cts",
+  "uom",
+  "price",
+  "image_link",
+  "btn_price",
+  "column_break_xbulq",
+  "image",
+  "column_break_uadfr",
+  "price_history_section",
+  "price_history",
+  "section_break_qmanc",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "stone_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stone Details"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "default": "__name",
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "default": "__name",
+   "fieldname": "sales_person",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Person",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_q5nlz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "costing",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Costing Request Id",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "client.client_code",
+   "fieldname": "client_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client Code"
+  },
+  {
+   "fieldname": "column_break_06h6f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design",
+   "fieldtype": "Data",
+   "label": "Design "
+  },
+  {
+   "default": "__name",
+   "fieldname": "metal_type",
+   "fieldtype": "Data",
+   "label": "Metal Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_global_search": 1,
+   "in_preview": 1,
+   "label": "Stone Code"
+  },
+  {
+   "fieldname": "column_break_qav64",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stone_details_section",
+   "fieldtype": "Section Break",
+   "label": "Stone Details"
+  },
+  {
+   "fieldname": "stone",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Stone Name",
+   "options": "Gemstone"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Float",
+   "in_preview": 1,
+   "label": "Length"
+  },
+  {
+   "fieldname": "column_break_jcju7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shape",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "label": "Shape",
+   "options": "Stone Shape"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "in_preview": 1,
+   "label": "Width"
+  },
+  {
+   "fieldname": "column_break_qrcqz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cut",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_preview": 1,
+   "label": "Cut",
+   "options": "Stone Cut"
+  },
+  {
+   "fieldname": "medium",
+   "fieldtype": "Select",
+   "label": "Medium",
+   "options": "\nS\nM\nL"
+  },
+  {
+   "fieldname": "column_break_mzso8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_preview": 1,
+   "label": "Quality",
+   "options": "Stone Quality"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "reference_section",
+   "fieldtype": "Section Break",
+   "label": "Price Quotation"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "weight_per_pcs_cts",
+   "fieldtype": "Float",
+   "label": "Weight Per Pcs(Cts)"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "in_preview": 1,
+   "label": "UOM (Price Request)",
+   "options": "\nPcs\nCts"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_preview": 1,
+   "label": "Stone Quotation Price"
+  },
+  {
+   "fieldname": "image_link",
+   "fieldtype": "Attach",
+   "label": "Image Link"
+  },
+  {
+   "default": "Demanding Price",
+   "fieldname": "btn_price",
+   "fieldtype": "Select",
+   "label": "Price",
+   "options": "Demanding Price\nPrice Accepted\nPrice Rejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xbulq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "image_link"
+  },
+  {
+   "fieldname": "column_break_uadfr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "price_history_section",
+   "fieldtype": "Section Break",
+   "label": "Price History"
+  },
+  {
+   "fieldname": "price_history",
+   "fieldtype": "Table",
+   "label": "Price History",
+   "options": "SP Price History"
+  },
+  {
+   "fieldname": "section_break_qmanc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stone Price Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-25 17:12:11.310672",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Stone Price Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

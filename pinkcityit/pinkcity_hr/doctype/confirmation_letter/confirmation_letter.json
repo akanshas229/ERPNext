@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "HR-CNF-.YYYY.-.#####",
+ "creation": "2023-11-24 13:58:48.370102",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "attendance_device_id",
+  "company",
+  "occupation",
+  "column_break_3",
+  "date",
+  "date_of_joining",
+  "confirmation_date",
+  "department",
+  "confirmation_letter_section",
+  "confirmation_letter",
+  "confirmation_letter_updated",
+  "confirmation_letter_hindi_section",
+  "confirmation_letter_hindi",
+  "confirmation_letter_hindi_updated",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee ",
+   "options": "Employee",
+   "print_hide": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.attendance_device_id",
+   "fieldname": "attendance_device_id",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Attendance Device ID",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.occupation",
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fetch_from": "employee.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Date of Joining",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.empconfirm_month",
+   "fieldname": "confirmation_date",
+   "fieldtype": "Date",
+   "label": "Confirmation Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "confirmation_letter_section",
+   "fieldtype": "Section Break",
+   "label": "Confirmation Letter"
+  },
+  {
+   "default": "<p style=\"text-align: center;\">\n  <img src=\"/files/Pinkcity_logo.png\" style=\"text-align: center;\">\n</p>\n<h1 style=\"text-align: center; border-bottom: 2px solid black; padding-bottom: 1.2rem;\">\n  <strong>{{company}}</strong>\n</h1>\n<p>\n  <br>\n</p>\n<p>\n  <strong>Ref - {{name}}</strong>\n</p>\n<p>\n  <strong>Date : {{date}}</strong>\n</p>\n<p style=\"text-align: center;\">\n  <strong>\n    <u><span style=\"font-size: 18px;\">Letter of Confirmation</span> </u>\n  </strong>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>To,</p>\n<p>\n  <strong>Name - {{employee_name}} </strong>\n</p>\n<p>\n  <strong>Employee Code - {{attendance_device_id}} </strong>\n</p>\n<p>\n  <strong>Department - {{department}} </strong>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p style=\"text-align: justify;\">Consequent to the review of your performance during <strong>{{date_of_joining}}</strong> to <strong>{{confirmation_date}}</strong> your probation period, we have the pleasure in informing you that, your services are being confirmed with effect from <strong>{{confirmation_date}}.</strong>\n</p>\n<p>All the other terms and conditions as detailed in your Appointment Letter remind unchanged.</p>\n\n<p style=\"text-align: justify;\">We Look forward to your valuable contributions and wish you all the very best for a rewarding career with the organisation.</p>\n\n<p>Please sign the duplicate copy of this letter as a token of acceptance of the same.</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <strong>Employee Signature</strong>\n  <strong style=\"float: right;\">Authorised Signatory</strong>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<div style=\"bottom: 4%; border-top: 2px solid black;\">\n  <p>\n    <strong>FACTORY ADDRESS :-</strong>{{company_address}}\n  </p>\n  <p>\n    <strong>REG. OFFICE:</strong> 76, DHULESHWAR GARDEN, C-SCHEME, JAIPUR-302001\n  </p>\n  <p>\n    <strong>E-mail:</strong>\n    <u>{{email}}</u>\n    <strong>Website:</strong> www.pinkcityindia.com\n  </p>\n</div>\n",
+   "fieldname": "confirmation_letter",
+   "fieldtype": "Text Editor",
+   "label": "Confirmation Letter"
+  },
+  {
+   "fieldname": "confirmation_letter_updated",
+   "fieldtype": "Text Editor",
+   "hidden": 1,
+   "label": "Confirmation Letter Updated"
+  },
+  {
+   "fieldname": "confirmation_letter_hindi_section",
+   "fieldtype": "Section Break",
+   "label": "Confirmation Letter Hindi"
+  },
+  {
+   "default": "<p style=\"text-align: center;\">\n  <img src=\"/files/Pinkcity_logo.png\" style=\"text-align: center;\">\n</p>\n<h1 style=\"text-align: center; border-bottom: 2px solid black; padding-bottom: 1.2rem;\">\n  <strong>{{company}}</strong>\n</h1>\n<p>\n  <br>\n</p>\n<p>\n  <strong>Ref - {{name}}</strong>\n</p>\n<p>\n  <strong>\u0926\u093f\u0928\u093e\u0902\u0915 : {{date}}</strong>\n</p>\n<p style=\"text-align: center;\">\n  <span style=\"font-size: 18px;\">\n    <strong>\n    <span style=\"font-size: 18px;\">\u0938\u094d\u0925\u093e\u092f\u0940\u0915\u0930\u0923 - \u092a\u0924\u094d\u0930</span>\n    </strong>\n  </span>\n</p>\n\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <strong>\u0928\u093e\u092e : {{employee_name}} </strong>\n</p>\n<p>\n  <strong>\u0915\u0930\u094d\u092e\u091a\u093e\u0930\u0940 \u0915\u094b\u0921 : {{attendance_device_id}} </strong>\n</p>\n<p>\n  <strong>\u0935\u093f\u092d\u093e\u0917 : {{department}} </strong>\n</p>\n<p>\n  <br>\n</p>\n<p>\u0915\u0902\u092a\u0928\u0940 \u0926\u094d\u0935\u093e\u0930\u093e \u0906\u092a\u0915\u094b \u0926\u093f\u092f\u0947 \u0917\u092f\u0947 \u0928\u093f\u092f\u0941\u0915\u094d\u0924\u094d\u0924\u093f \u092a\u0924\u094d\u0930 \u0926\u093f\u0928\u093e\u0902\u0915 <strong>{{date_of_joining}}</strong> \u0915\u0947 \u0924\u0939\u0924 \u0906\u092a\u0915\u094b \u0926\u093f\u0928\u093e\u0902\u0915 <strong>{{date_of_joining}} </strong>\u0938\u0947 \u0935\u093f\u092d\u093e\u0917 \u092e\u0947\u0902 <strong>{{occupation}} </strong>\u0915\u0947 \u092a\u0926 \u092a\u0930 \u0928\u093f\u092f\u0941\u0915\u094d\u0924\u094d\u0924 \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u0925\u093e\u0964 &nbsp;\u091c\u093f\u0938\u092e\u0947 \u0906\u092a\u0915\u094b \u092a\u094d\u0930\u093e\u0930\u092e\u094d\u092d \u092e\u0947\u0902 6 \u092e\u093e\u0939 \u0915\u0940 \u092a\u0930\u093f\u0935\u0940\u0915\u094d\u0937\u093e \u0939\u0947\u0924\u0941 \u0928\u093f\u092f\u0941\u0915\u094d\u0924\u094d\u0924 \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u0925\u093e\u0964 &nbsp;\u091c\u094b \u0915\u0940 \u0906\u092a\u0928\u0947 \u0926\u093f\u0928\u093e\u0902\u0915 <strong>{{confirmation_date}} </strong>\u0915\u094b \u092a\u0942\u0930\u094d\u0923 \u0915\u0930 \u0932\u0940 \u0917\u092f\u0940 \u0939\u0948\u0964 &nbsp; </p>\n\n<p>\n  <span class=\"ui-provider ed azi azj azk azl azm azn azo azp azq azr azs azt azu azv azw azx azy azz baa bab bac bae baf bag bah bai baj bak bal bam ban bao bap baq\" dir=\"ltr\">\u0906\u092a\u0915\u0947 \u0915\u093e\u0930\u094d\u092f\u0935\u094d\u092f\u0935\u0939\u093e\u0930 \u0915\u094b \u092e\u0926\u0926\u0947\u0928\u091c\u0930 \u0930\u0916\u0924\u0947 \u0939\u0941\u092f\u0947 \u0915\u0902\u092a\u0928\u0940 \u092a\u094d\u0930\u092c\u0902\u0927\u0928 \u0906\u092a\u0915\u0940 \u0938\u0947\u0935\u093e \u0915\u094b \u0926\u093f\u0928\u093e\u0902\u0915 <strong>{{date_of_joining}} </strong>\u0938\u0947 \u0938\u094d\u0925\u093e\u0908 \u0915\u0930\u0924\u0940 \u0939\u0948 | \u0924\u0925\u093e \u0938\u093e\u0925 \u0939\u0940 \u0906\u092a\u0915\u094b \u092e\u093f\u0932\u0928\u0947 \u0935\u093e\u0932\u0947 \u0935\u0947\u0924\u0928 \u092d\u0924\u094d\u0924\u0947 \u0906\u0926\u093f \u092f\u0925\u093e\u0935\u0924 \u0930\u0939\u0947\u0902\u0917\u0947 | </span>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <strong>\u0939\u0938\u094d\u0924\u093e\u0915\u094d\u0937\u0930 \u0915\u0930\u094d\u092e\u091a\u093e\u0930\u0940</strong>\n  <strong style=\"float: right; display: inline !important;\">\u092e\u0948\u0928\u0947\u091c\u0930&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong>\n</p>\n<p>\n  <strong style=\"float: right;\">(\u092e\u093e\u0928\u0935 \u0938\u0902\u0938\u093e\u0927\u0928 \u0935\u093f\u092d\u093e\u0917)</strong>\n</p>\n\n\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<p>\n  <br>\n</p>\n<div style=\"bottom: 4%; border-top: 2px solid black;\">\n  <p>\n    <strong>FACTORY ADDRESS :-</strong> {{company_address}}\n  </p>\n  <p>\n    <strong>REG. OFFICE:</strong> 76, DHULESHWAR GARDEN, C-SCHEME, JAIPUR-302001\n  </p>\n  <p>\n    E-mail:\n    <u>{{email}}</u>\n    <strong>Website:</strong> www.pinkcityindia.com\n  </p>\n</div>\n",
+   "fieldname": "confirmation_letter_hindi",
+   "fieldtype": "Text Editor",
+   "label": "Confirmation Letter Hindi"
+  },
+  {
+   "fieldname": "confirmation_letter_hindi_updated",
+   "fieldtype": "Text Editor",
+   "hidden": 1,
+   "label": "Confirmation Letter Hindi Updated"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Confirmation Letter",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-26 11:56:26.812696",
+ "modified_by": "Administrator",
+ "module": "Pinkcity HR",
+ "name": "Confirmation Letter",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

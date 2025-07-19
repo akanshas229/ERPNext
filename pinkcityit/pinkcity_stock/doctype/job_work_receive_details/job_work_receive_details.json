@@ -1,0 +1,250 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-17 11:50:48.524371",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "issue_details_section",
+  "original_challan_date",
+  "challan_no_pinkcity",
+  "job_work_type",
+  "type_of_goods",
+  "column_break_9bd2e",
+  "item_code",
+  "uom",
+  "quantity",
+  "receive_details_section",
+  "challan_no",
+  "receive_date",
+  "item_code_receive",
+  "item_name_receive",
+  "received_as",
+  "good_received",
+  "column_break_bq9ht",
+  "broken",
+  "missing",
+  "rejection",
+  "loss",
+  "total_qty",
+  "pieces_section",
+  "pieces",
+  "column_break_1hgwj",
+  "missing_pcs",
+  "column_break_ji5ut",
+  "broken_pcs",
+  "emporer_details_section",
+  "emporer_voucher_no",
+  "emporer_date",
+  "job_work_issue_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "issue_details_section",
+   "fieldtype": "Section Break",
+   "label": "Issue Details"
+  },
+  {
+   "fieldname": "original_challan_date",
+   "fieldtype": "Date",
+   "label": "Original Challan Date",
+   "oldfieldname": "company_name",
+   "oldfieldtype": "Data",
+   "reqd": 1
+  },
+  {
+   "fieldname": "challan_no_pinkcity",
+   "fieldtype": "Data",
+   "label": "Challan No of Pinkcity",
+   "oldfieldname": "designation",
+   "oldfieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_work_type",
+   "fieldtype": "Data",
+   "label": "Job Work Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "type_of_goods",
+   "fieldtype": "Data",
+   "label": "Type of Goods",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9bd2e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code (Issue)",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "receive_details_section",
+   "fieldtype": "Section Break",
+   "label": "Receive Details"
+  },
+  {
+   "fieldname": "challan_no",
+   "fieldtype": "Data",
+   "label": "Challan No (Job Worker Challan)",
+   "oldfieldname": "salary",
+   "oldfieldtype": "Currency"
+  },
+  {
+   "fieldname": "receive_date",
+   "fieldtype": "Date",
+   "label": "Receive Date"
+  },
+  {
+   "columns": 2,
+   "fieldname": "item_code_receive",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code (Receive)",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code_receive.item_name",
+   "fieldname": "item_name_receive",
+   "fieldtype": "Data",
+   "label": "Item Name (Receive)"
+  },
+  {
+   "fieldname": "received_as",
+   "fieldtype": "Float",
+   "label": "Recieved as it is"
+  },
+  {
+   "columns": 1,
+   "fieldname": "good_received",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Good Received Quantity"
+  },
+  {
+   "fieldname": "column_break_bq9ht",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "broken",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Broken"
+  },
+  {
+   "columns": 1,
+   "fieldname": "missing",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Missing"
+  },
+  {
+   "columns": 1,
+   "fieldname": "rejection",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rejection"
+  },
+  {
+   "columns": 1,
+   "fieldname": "loss",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Loss"
+  },
+  {
+   "columns": 1,
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pieces_section",
+   "fieldtype": "Section Break",
+   "label": "Pieces"
+  },
+  {
+   "fieldname": "pieces",
+   "fieldtype": "Int",
+   "label": "Pieces"
+  },
+  {
+   "fieldname": "column_break_1hgwj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "missing_pcs",
+   "fieldtype": "Int",
+   "label": "Missing Pcs"
+  },
+  {
+   "fieldname": "column_break_ji5ut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "broken_pcs",
+   "fieldtype": "Int",
+   "label": "Broken Pcs"
+  },
+  {
+   "fieldname": "emporer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Emporer Details"
+  },
+  {
+   "fieldname": "emporer_voucher_no",
+   "fieldtype": "Data",
+   "label": "Emporer Voucher  Receipt No."
+  },
+  {
+   "fieldname": "emporer_date",
+   "fieldtype": "Date",
+   "label": "Emporer Date"
+  },
+  {
+   "fieldname": "job_work_issue_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Job Work Issue ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 14:37:32.857086",
+ "modified_by": "Administrator",
+ "module": "Pinkcity Stock",
+ "name": "Job Work Receive Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

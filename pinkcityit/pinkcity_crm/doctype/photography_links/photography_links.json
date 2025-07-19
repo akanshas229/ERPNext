@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-27 15:39:44.219828",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "file",
+  "image_preview"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "columns": 5,
+   "documentation_url": "https://reports.pinkcityindia.com/public/emr/photoever/ + \"file link\" with folder",
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "File"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "label": "Image Preview",
+   "options": "file"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-26 12:18:23.000079",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Photography Links",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
