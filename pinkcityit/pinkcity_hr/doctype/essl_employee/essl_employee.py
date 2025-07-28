@@ -277,3 +277,102 @@ def create_job_applicant() :
 
 
 
+@frappe.whitelist()
+def create_job_applicant_updated() :
+	
+	job_opening = frappe.form_dict.get("job_opening", "")
+	name = frappe.form_dict.get("name", "")
+	mobile = frappe.form_dict.get("mobile", "")
+	email = frappe.form_dict.get("email", "")
+	qualification = frappe.form_dict.get("qualification", "")
+	gender = frappe.form_dict.get("gender", "")
+	source = frappe.form_dict.get("source", "")
+	source_name = frappe.form_dict.get("source_name", "")
+	
+	current_gross = frappe.form_dict.get("current_gross", "")
+	expected_gross = frappe.form_dict.get("expected_gross", "")
+	notice_period = frappe.form_dict.get("notice_period", "")
+	experience = frappe.form_dict.get("experience", "")
+
+	company_1 = frappe.form_dict.get("company_1", "")
+	designation_1 = frappe.form_dict.get("designation_1", "")
+	salary_1 = frappe.form_dict.get("salary_1", "")
+	joining_date_1 = frappe.form_dict.get("joining_date_1", "")
+	exit_date_1 = frappe.form_dict.get("exit_date_1", "")
+
+	company_2 = frappe.form_dict.get("company_2", "")
+	designation_2 = frappe.form_dict.get("designation_2", "")
+	salary_2 = frappe.form_dict.get("salary_2", "")
+	joining_date_2 = frappe.form_dict.get("joining_date_2", "")
+	exit_date_2 = frappe.form_dict.get("exit_date_2", "")
+
+
+	# company_3 = frappe.form_dict.get("company_3", "")
+	# salary_3 = frappe.form_dict.get("salary_3", "")
+	# joining_date_3 = frappe.form_dict.get("joining_date_3", "")
+	# exit_date_3 = frappe.form_dict.get("exit_date_3", "")
+
+	total_exp = frappe.form_dict.get("total_exp", "")
+	reason = frappe.form_dict.get("reason", "")
+
+	user_resume = frappe.form_dict.get("user_resume", "")
+
+	data = {}
+
+	doc = frappe.new_doc('Job Applicant')
+	doc.job_title = job_opening
+	doc.applicant_name = name
+	doc.mobile_number = mobile
+	doc.email_id = email
+	doc.qualification = qualification
+	doc.gender = gender
+
+	doc.source = source
+	doc.source_name = source_name
+
+	doc.work_experience = experience
+	if company_1:
+		doc.append("work_history", {
+					"company_name": company_1,
+					"designation": designation_1,
+					"salary": salary_1,
+					"joining_date": joining_date_1,
+					"exit_date": exit_date_1
+				})
+	if company_2:
+		doc.append("work_history", {
+					"company_name": company_2,
+					"designation": designation_2,
+					"salary": salary_2,
+					"joining_date": joining_date_2,
+					"exit_date": exit_date_2
+				})
+		
+	# if company_3:
+	# 	doc.append("work_history", {
+	# 				"company_name": company_3,
+	# 				"salary": salary_3,
+	# 				"joining_date": joining_date_3,
+	# 				"exit_date": exit_date_3
+	# 			})
+		
+	doc.total_experience = total_exp
+	doc.notice_period = notice_period
+	doc.reason_of_job_change = reason
+
+	doc.resume_link = user_resume
+
+	doc.current_ctc_fixed = current_gross
+	doc.expected_ctc = expected_gross
+
+	doc.save()
+
+	doc.add_comment('Comment', text='This form is save through pinkcityindia website.')
+
+	data['status'] = True
+	data['data'] = doc
+	data['msg'] = "Your application is successfully submitted."
+	frappe.response["data"] = data
+
+
+

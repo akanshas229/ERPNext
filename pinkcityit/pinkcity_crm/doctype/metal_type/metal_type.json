@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:metal_name",
  "creation": "2023-07-28 16:21:25.457804",
@@ -21,7 +22,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-26 11:49:30.694380",
+ "modified": "2025-07-25 10:21:29.111120",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "Metal Type",
@@ -53,6 +54,7 @@
   }
  ],
  "quick_entry": 1,
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "ASC",
  "states": [],

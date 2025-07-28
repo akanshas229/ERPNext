@@ -63,7 +63,8 @@ app_license = "MIT"
 # ------------
 
 # before_install = "pinkcityit.install.before_install"
-# after_install = "pinkcityit.install.after_install"
+
+after_install = "pinkcityit.install.after_install"
 
 # Uninstallation
 # ------------

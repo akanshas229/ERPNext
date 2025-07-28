@@ -257,7 +257,7 @@
    "fieldname": "finding_details",
    "fieldtype": "Table",
    "label": "Finding Details",
-   "options": "NPD Test Finding CT"
+   "options": "NPD Finding"
   },
   {
    "fieldname": "section_break_loqgt",
@@ -422,7 +422,7 @@
    "fieldname": "finding_details_pd",
    "fieldtype": "Table",
    "label": "Finding Details",
-   "options": "NPD Test Finding CT"
+   "options": "NPD Finding"
   },
   {
    "fieldname": "plating_section",
@@ -587,11 +587,10 @@
    "link_fieldname": "name"
   }
  ],
- "modified": "2025-06-06 10:27:43.376690",
+ "modified": "2025-07-24 10:28:14.726200",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "NPD",
- "name_case": "Title Case",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
@@ -608,6 +607,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

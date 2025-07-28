@@ -110,7 +110,8 @@ frappe.ui.form.on('Product Development', {
 
 	fetch_costing: function (frm) {
 		fetch_costing_details(frm)
-	}
+	},
+	
 });
 
 
@@ -140,47 +141,51 @@ frappe.ui.form.on('Product Development Plating CT', {
 
 frappe.ui.form.on('Opportunity Stone CT', {
 	item_group_new: function (frm, cdt, cdn) {
-		update_pd_tab(frm);
+		update_pd_tab(frm, cdt, cdn);
 	},
 
 	stone_type: function (frm, cdt, cdn) {
-		update_pd_tab(frm);
+		update_pd_tab(frm, cdt, cdn);
 	},
 
 	stone_name: function (frm, cdt, cdn) {
-		update_pd_tab(frm);
+		update_pd_tab(frm, cdt, cdn);
 	},
 
 	cut_name: function (frm, cdt, cdn) {
-		update_pd_tab(frm);
+		update_pd_tab(frm, cdt, cdn);
 	},
 
 	shape_name: function (frm, cdt, cdn) {
-		update_pd_tab(frm);
+		update_pd_tab(frm, cdt, cdn);
 	},
 
 	size: function (frm, cdt, cdn) {
-		update_pd_tab(frm);
+		update_pd_tab(frm, cdt, cdn);
 	},
 
 	width: function (frm, cdt, cdn) {
-		update_pd_tab(frm);
+		update_pd_tab(frm, cdt, cdn);
 	},
 
 	qty: function (frm, cdt, cdn) {
-		update_pd_tab(frm);
+		update_pd_tab(frm, cdt, cdn);
 	},
 
 	setting_type: function (frm, cdt, cdn) {
-		update_pd_tab(frm);
+		update_pd_tab(frm, cdt, cdn);
 	},
 
 	medium: function (frm, cdt, cdn) {
-		update_pd_tab(frm);
+		update_pd_tab(frm, cdt, cdn);
 	},
 	description: function (frm, cdt, cdn) {
-		update_pd_tab(frm);
+		update_pd_tab(frm, cdt, cdn);
 	},
+
+	pd_stoned_remove: function (frm, cdt, cdn) {
+        update_pd_tab(frm, cdt, cdn);
+    },
 });
 
 
@@ -229,70 +234,77 @@ frappe.ui.form.on('Opportunity Diamond CT', {
 	},
 	description: function (frm, cdt, cdn) {
 		update_pd_diamond(frm, cdt, cdn);
-	}
+	},
+	pd_diamondd_remove: function (frm, cdt, cdn) {
+        update_pd_diamond(frm, cdt, cdn);
+    },
 });
 
 
 frappe.ui.form.on('Product Development Test Finding CT', {
 	metal_name: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	metal_type: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	kt: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	item_category: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	cut: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	depth: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	shape: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	size: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	length: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	color: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	width: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	brand: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	finding_code: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	finding_type: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
 
 	description: function (frm, cdt, cdn) {
-		update_pd_finding(frm);
+		update_pd_finding(frm, cdt, cdn);
 	},
+	finding_details_remove: function (frm, cdt, cdn) {
+        update_pd_finding(frm, cdt, cdn);
+    },
+	
 });
 
 
@@ -404,7 +416,7 @@ function generate_code(frm, cdt, cdn) {
 	frm.refresh_field(child.parentfield);
 }
 
-function update_pd_tab(frm) {
+function update_pd_tab(frm, cdt, cdn) {
 	if (frm.doc.stone_details) {
 		if (frm.doc.stone_details.length == 0) {
 			frm.doc.stone_details = [];
@@ -450,16 +462,18 @@ function update_pd_tab(frm) {
 					new_child.mine = frm.doc.stone_details[i].mine;
 					new_child.description = frm.doc.stone_details[i].description;
 				}
-			} else {
-				frm.doc.stone_details = [];
-				frm.doc.pd_stoned = [];
-			}
+			} 
 
 		}
-		frm.refresh_field("pd_stoned");
-		frm.refresh_field("stone_details");
+		
 	}
-
+	else {
+		frm.doc.stone_details = [];
+		frm.doc.pd_stoned = [];
+	}
+	
+	frm.refresh_field("pd_stoned");
+	frm.refresh_field("stone_details");
 
 }
 
@@ -568,8 +582,99 @@ function update_pd_diamond(frm, cdt, cdn) {
 	}
 }
 
+// function update_pd_finding(frm) {
+    
+//     if (frm.doc.finding_details) {
+//         if (frm.doc.finding_details.length == 0) {
+//             frm.doc.finding_details = [];
+//             frm.doc.finding_details_pd = [];
+//         }
+//         var check_data = 0;
+//         console.log("hi11#");
+//         for (let i = 0; i < frm.doc.finding_details.length; i++) {
+//             console.log("hi12#");
+//             check_data = 0;
+//             if (frm.doc.finding_details_pd) {
+//                 for (let j = 0; j < frm.doc.finding_details_pd.length; j++) {
+//                     console.log("hi13#");
+//                     if (frm.doc.finding_details[i].idx == frm.doc.finding_details_pd[j].idx) {
+//                         console.log("hi14#");
+//                         check_data = 1;
+//                         frm.doc.finding_details_pd[j].metal_name = frm.doc.finding_details[i].metal_name;
+//                         frm.doc.finding_details_pd[j].metal_type = frm.doc.finding_details[i].metal_type;
+//                         frm.doc.finding_details_pd[j].kt = frm.doc.finding_details[i].kt;
+//                         frm.doc.finding_details_pd[j].item_category = frm.doc.finding_details[i].item_category;
+//                         frm.doc.finding_details_pd[j].cut = frm.doc.finding_details[i].cut;
+//                         frm.doc.finding_details_pd[j].depth = frm.doc.finding_details[i].depth;
+//                         frm.doc.finding_details_pd[j].shape = frm.doc.finding_details[i].shape;
+//                         frm.doc.finding_details_pd[j].size = frm.doc.finding_details[i].size;
+//                         frm.doc.finding_details_pd[j].length = frm.doc.finding_details[i].length;
+//                         frm.doc.finding_details_pd[j].color = frm.doc.finding_details[i].color;
+//                         frm.doc.finding_details_pd[j].width = frm.doc.finding_details[i].width;
+//                         frm.doc.finding_details_pd[j].brand = frm.doc.finding_details[i].brand;
+//                         frm.doc.finding_details_pd[j].finding_code = frm.doc.finding_details[i].finding_code;
+//                         frm.doc.finding_details_pd[j].finding_type = frm.doc.finding_details[i].finding_type;
+//                         frm.doc.finding_details_pd[j].description = frm.doc.finding_details[i].description;
+//                         frm.doc.finding_details_pd[j].quantity = frm.doc.finding_details[i].quantity;
+//                     }
+//                 }
+//             }
+//             if (check_data == 0) {
+//                 // console.log("hi15#");
+//                 let new_child = frm.add_child('finding_details_pd');
+//                 new_child.metal_name = frm.doc.finding_details[i].metal_name;
+//                 new_child.metal_type = frm.doc.finding_details[i].metal_type;
+//                 new_child.kt = frm.doc.finding_details[i].kt;
+//                 new_child.item_category = frm.doc.finding_details[i].item_category;
+//                 new_child.cut = frm.doc.finding_details[i].cut;
+//                 new_child.depth = frm.doc.finding_details[i].depth;
+//                 new_child.shape = frm.doc.finding_details[i].shape;
+//                 new_child.size = frm.doc.finding_details[i].size;
+//                 new_child.length = frm.doc.finding_details[i].length;
+//                 new_child.color = frm.doc.finding_details[i].color;
+//                 new_child.width = frm.doc.finding_details[i].width;
+//                 new_child.brand = frm.doc.finding_details[i].brand;
+//                 new_child.finding_code = frm.doc.finding_details[i].finding_code;
+//                 new_child.finding_type = frm.doc.finding_details[i].finding_type;
+//                 new_child.description = frm.doc.finding_details[i].description;
+//                 new_child.quantity = frm.doc.finding_details[i].quantity;
+//             }
+//         }
+//     } else {
+//         frm.doc.finding_details = [];
+//         frm.doc.finding_details_pd = [];
+//     }
+// 	check_stone_and_pd_duplicacy(frm)
+// }
 
-function update_pd_finding(frm) {
+
+// function check_stone_and_pd_duplicacy(frm) {
+//     var check_data = 0;
+//     console.log("hi21#");
+//     for (let i = 0; i < frm.doc.finding_details_pd.length; i++) {
+//         console.log("hi22#");
+//         check_data = 0;
+//         for (let j = 0; j < frm.doc.finding_details.length; j++) {
+//             console.log("hi23#");
+//             if (frm.doc.finding_details_pd[i].idx == frm.doc.finding_details[j].idx) {
+//                 console.log("hi24#");
+//                 check_data = 1;
+//             }
+//         }
+//         if (check_data == 0) {
+//             console.log("hi25#");
+//             frm.doc.finding_details_pd.pop(i)
+//             check_stone_and_pd_duplicacy(frm)
+//         }
+//     }
+
+//     frm.refresh_field('finding_details_pd');
+
+
+// }
+
+
+function update_pd_finding(frm, cdt, cdn) {
 	if (frm.doc.finding_details) {
 		if (frm.doc.finding_details.length == 0) {
 			frm.doc.finding_details = [];
@@ -622,13 +727,14 @@ function update_pd_finding(frm) {
 					new_child.description = frm.doc.finding_details[i].description;
 					new_child.quantity = frm.doc.finding_details[i].quantity;
 				}
-			} else {
-				frm.doc.finding_details = [];
-				frm.doc.finding_details_pd = [];
-			}
+			} 
 		}
-		frm.refresh_field("finding_details_pd");
+	}else {
+		frm.doc.finding_details = [];
+		frm.doc.finding_details_pd = [];
 	}
+	frm.refresh_field("finding_details_pd");
+	frm.refresh_field("finding_details");
 }
 
 $("#npd-3d_attachment_tab-tab").on('click', function () {
