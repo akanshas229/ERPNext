@@ -1,0 +1,498 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-28 17:27:14.850618",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "crm_base_tab",
+  "details_section",
+  "company",
+  "project_name",
+  "column_break_lpio",
+  "customer_name",
+  "opportunity_owner",
+  "column_break_dvep",
+  "customer_code",
+  "column_break_lzsq",
+  "source",
+  "design_details_section",
+  "design_request",
+  "target_metal_weight",
+  "npd_status",
+  "column_break_rmmf",
+  "metal_type",
+  "finishing_type",
+  "column_break_lklb",
+  "product_category",
+  "stamping_location",
+  "column_break_lcoq",
+  "jewellery_category",
+  "stamping_instructions",
+  "value_section",
+  "currency",
+  "design_quantity",
+  "column_break_bjyy",
+  "exchange_rate",
+  "column_break_tqgk",
+  "opportunity_amount",
+  "column_break_eeiy",
+  "opportunity_value",
+  "design_brief_section",
+  "product_specification",
+  "attachment_detail",
+  "tab_2_tab",
+  "assignment_details",
+  "design_codes_section",
+  "two_d",
+  "column_break_vyjn",
+  "three_d",
+  "column_break_oynl",
+  "stonediamondfinding_section",
+  "stone_details",
+  "diamond_details",
+  "finding_details",
+  "section_break_taed",
+  "plating_details",
+  "section_break_tmmb",
+  "manufacturing_type",
+  "metal_weight",
+  "column_break_wbdq",
+  "surface_area",
+  "finding_weight",
+  "column_break_epbn",
+  "chain_length",
+  "cad_design_weight",
+  "attachment_tab",
+  "attached_twod",
+  "attachment_1",
+  "image_dkto",
+  "column_break_dxwr",
+  "attachment_2",
+  "image_jhaw",
+  "column_break_brbf",
+  "attachment_3",
+  "image_npyv",
+  "attached_threed",
+  "attached_1three",
+  "image_ncbu",
+  "column_break_kfqk",
+  "attached_2three",
+  "image_evzd",
+  "column_break_ldgm",
+  "attached_3three",
+  "image_ssdq"
+ ],
+ "fields": [
+  {
+   "fieldname": "crm_base_tab",
+   "fieldtype": "Tab Break",
+   "label": "CRM Base"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company ",
+   "options": "Company"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "NPD Data"
+  },
+  {
+   "fieldname": "column_break_lpio",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_dvep",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_code",
+   "fieldtype": "Data",
+   "label": "Customer Code"
+  },
+  {
+   "fieldname": "column_break_lzsq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "\nEmail\nExisting Customer\nWebsite"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project/Collection Name"
+  },
+  {
+   "default": "__user",
+   "fieldname": "opportunity_owner",
+   "fieldtype": "Data",
+   "label": "Opportunity Owner"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "design_details_section",
+   "fieldtype": "Section Break",
+   "label": "Design Details"
+  },
+  {
+   "fieldname": "design_request",
+   "fieldtype": "Select",
+   "label": "Design Request",
+   "options": "\nCustomer 2D-Costing-3D\nCustomer 3D-Costing-PD\nCustomer 2D-3D-Costing\nPC-2D-3D-Costing"
+  },
+  {
+   "fieldname": "metal_type",
+   "fieldtype": "Data",
+   "label": "Metal Type"
+  },
+  {
+   "fieldname": "column_break_rmmf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lklb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_category",
+   "fieldtype": "Data",
+   "label": "Product Category"
+  },
+  {
+   "fieldname": "jewellery_category",
+   "fieldtype": "Select",
+   "label": "Jewellery Category",
+   "options": "\nPlain\nStudded\nBeads\nDiamonds\nFashion"
+  },
+  {
+   "fieldname": "column_break_lcoq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_metal_weight",
+   "fieldtype": "Float",
+   "label": "Target Metal Weight"
+  },
+  {
+   "fieldname": "finishing_type",
+   "fieldtype": "Select",
+   "label": "Finishing Type",
+   "options": "\nHigh Polish\nBrush Polish"
+  },
+  {
+   "fieldname": "stamping_location",
+   "fieldtype": "Data",
+   "label": "Stamping Location"
+  },
+  {
+   "fieldname": "stamping_instructions",
+   "fieldtype": "Data",
+   "label": "Stamping Instructions"
+  },
+  {
+   "fieldname": "npd_status",
+   "fieldtype": "Select",
+   "label": "NPD Status",
+   "options": "\nOpen\nNPD WIP\nNPD Completed\nNon Converted\nConverted"
+  },
+  {
+   "depends_on": "eval:doc.npd_status == 'Converted'",
+   "fieldname": "value_section",
+   "fieldtype": "Section Break",
+   "label": "Value"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency"
+  },
+  {
+   "default": "85",
+   "fieldname": "exchange_rate",
+   "fieldtype": "Int",
+   "label": "Exchange Rate"
+  },
+  {
+   "fieldname": "opportunity_amount",
+   "fieldtype": "Float",
+   "label": "Opportunity Amount"
+  },
+  {
+   "fieldname": "column_break_bjyy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tqgk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_eeiy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "opportunity_value",
+   "fieldtype": "Float",
+   "label": "Opportunity Value"
+  },
+  {
+   "fieldname": "design_quantity",
+   "fieldtype": "Int",
+   "label": "Design Quantity"
+  },
+  {
+   "fieldname": "design_brief_section",
+   "fieldtype": "Section Break",
+   "label": "Design Brief"
+  },
+  {
+   "fieldname": "product_specification",
+   "fieldtype": "Small Text",
+   "label": "Product Specification"
+  },
+  {
+   "fieldname": "attachment_detail",
+   "fieldtype": "Table",
+   "label": "Attachment Detail",
+   "options": "CRM Base CT"
+  },
+  {
+   "fieldname": "assignment_details",
+   "fieldtype": "Table",
+   "label": "Assignment Details",
+   "options": "Design NPD Assign CT"
+  },
+  {
+   "fieldname": "design_codes_section",
+   "fieldtype": "Section Break",
+   "label": "Design Codes"
+  },
+  {
+   "fieldname": "two_d",
+   "fieldtype": "Data",
+   "label": "2D Design Code"
+  },
+  {
+   "fieldname": "column_break_vyjn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "three_d",
+   "fieldtype": "Data",
+   "label": "3D Design Code"
+  },
+  {
+   "fieldname": "column_break_oynl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "stonediamondfinding_section",
+   "fieldtype": "Section Break",
+   "label": "Stone/Diamond/Finding"
+  },
+  {
+   "fieldname": "stone_details",
+   "fieldtype": "Table",
+   "label": "Stone Details",
+   "options": "Design NPD Stone CT"
+  },
+  {
+   "fieldname": "diamond_details",
+   "fieldtype": "Table",
+   "label": "Diamond Details",
+   "options": "Design NPD Diamond CT"
+  },
+  {
+   "fieldname": "finding_details",
+   "fieldtype": "Table",
+   "label": "Finding Details",
+   "options": "Design NPD Finding CT"
+  },
+  {
+   "fieldname": "section_break_taed",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "plating_details",
+   "fieldtype": "Table",
+   "label": "Plating Details",
+   "options": "Design NPD Plating CT"
+  },
+  {
+   "fieldname": "section_break_tmmb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "manufacturing_type",
+   "fieldtype": "Select",
+   "label": "Manufacturing Type",
+   "options": "\nCasting\nHolo\nEfom\nHandmade"
+  },
+  {
+   "fieldname": "metal_weight",
+   "fieldtype": "Float",
+   "label": "Metal Weight"
+  },
+  {
+   "fieldname": "column_break_wbdq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surface_area",
+   "fieldtype": "Data",
+   "label": "Surface Area"
+  },
+  {
+   "fieldname": "finding_weight",
+   "fieldtype": "Float",
+   "label": "Finding Weight"
+  },
+  {
+   "fieldname": "column_break_epbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chain_length",
+   "fieldtype": "Float",
+   "label": "Chain Length"
+  },
+  {
+   "fieldname": "cad_design_weight",
+   "fieldtype": "Float",
+   "label": "CAD Design Weight"
+  },
+  {
+   "fieldname": "attachment_tab",
+   "fieldtype": "Tab Break",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "attached_twod",
+   "fieldtype": "Section Break",
+   "label": "Attachment-2D"
+  },
+  {
+   "fieldname": "attachment_1",
+   "fieldtype": "Attach",
+   "label": "Attachment 1"
+  },
+  {
+   "fieldname": "image_dkto",
+   "fieldtype": "Image",
+   "options": "attachment_1"
+  },
+  {
+   "fieldname": "attachment_2",
+   "fieldtype": "Attach",
+   "label": "Attachment 2"
+  },
+  {
+   "fieldname": "column_break_dxwr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_jhaw",
+   "fieldtype": "Image",
+   "options": "attachment_2"
+  },
+  {
+   "fieldname": "attachment_3",
+   "fieldtype": "Attach",
+   "label": "Attachment 3"
+  },
+  {
+   "fieldname": "image_npyv",
+   "fieldtype": "Image",
+   "options": "attachment_3"
+  },
+  {
+   "fieldname": "column_break_brbf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attached_threed",
+   "fieldtype": "Section Break",
+   "label": "Attachment-3D"
+  },
+  {
+   "fieldname": "attached_1three",
+   "fieldtype": "Attach",
+   "label": "Attachment 1"
+  },
+  {
+   "fieldname": "image_ncbu",
+   "fieldtype": "Image",
+   "options": "attached_1three"
+  },
+  {
+   "fieldname": "attached_2three",
+   "fieldtype": "Attach",
+   "label": "Attachment 2"
+  },
+  {
+   "fieldname": "image_evzd",
+   "fieldtype": "Image",
+   "options": "attached_2three"
+  },
+  {
+   "fieldname": "column_break_kfqk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attached_3three",
+   "fieldtype": "Attach",
+   "label": "Attachment 3"
+  },
+  {
+   "fieldname": "image_ssdq",
+   "fieldtype": "Image",
+   "options": "attached_3three"
+  },
+  {
+   "fieldname": "column_break_ldgm",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-29 09:54:14.081694",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Design NPD",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

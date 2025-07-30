@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-28 19:47:33.294906",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plating_type",
+  "micron",
+  "gold_kt",
+  "color",
+  "gold",
+  "anti_tarnish",
+  "column_break_evxy",
+  "plating_code"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "plating_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plating Type"
+  },
+  {
+   "fieldname": "micron",
+   "fieldtype": "Data",
+   "label": "Micron"
+  },
+  {
+   "fieldname": "gold_kt",
+   "fieldtype": "Data",
+   "label": "Gold KT"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "gold",
+   "fieldtype": "Data",
+   "label": "Gold"
+  },
+  {
+   "fieldname": "anti_tarnish",
+   "fieldtype": "Data",
+   "label": "Anti Tarnish"
+  },
+  {
+   "fieldname": "column_break_evxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plating_code",
+   "fieldtype": "Data",
+   "label": "Plating Code"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-28 19:52:27.946197",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Design NPD Plating CT",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-28 19:09:49.368719",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_sub_group",
+  "stone_shape",
+  "setting_type",
+  "column_break_jpwu",
+  "item_category",
+  "stone_length",
+  "stone_qty",
+  "column_break_fwvn",
+  "item_type",
+  "stone_width",
+  "column_break_auye",
+  "stone_cut",
+  "stone_quality"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_sub_group",
+   "fieldtype": "Data",
+   "label": "Item Sub Group"
+  },
+  {
+   "fieldname": "stone_shape",
+   "fieldtype": "Data",
+   "label": "Shape"
+  },
+  {
+   "fieldname": "setting_type",
+   "fieldtype": "Data",
+   "label": "Setting Type"
+  },
+  {
+   "fieldname": "column_break_jpwu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_category",
+   "fieldtype": "Data",
+   "label": "Item Category"
+  },
+  {
+   "fieldname": "stone_length",
+   "fieldtype": "Float",
+   "label": "Length"
+  },
+  {
+   "fieldname": "stone_qty",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "column_break_fwvn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_type",
+   "fieldtype": "Data",
+   "label": "Item Type"
+  },
+  {
+   "fieldname": "stone_width",
+   "fieldtype": "Float",
+   "label": "Width"
+  },
+  {
+   "fieldname": "column_break_auye",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stone_cut",
+   "fieldtype": "Data",
+   "label": "Cut"
+  },
+  {
+   "fieldname": "stone_quality",
+   "fieldtype": "Data",
+   "label": "Quality"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-28 19:13:42.462810",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Design NPD Stone CT",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

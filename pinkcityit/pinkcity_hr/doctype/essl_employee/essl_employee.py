@@ -177,21 +177,39 @@ class ESSLEmployee(Document):
 
 
 
-@frappe.whitelist()
-def create_job_applicant() :
+# @frappe.whitelist()
+def create_job_applicant_updated() :
+	# print("hello")
+	# return ""
 	
 	job_opening = frappe.form_dict.get("job_opening", "")
+
 	name = frappe.form_dict.get("name", "")
 	mobile = frappe.form_dict.get("mobile", "")
 	email = frappe.form_dict.get("email", "")
-	qualification = frappe.form_dict.get("qualification", "")
 	gender = frappe.form_dict.get("gender", "")
+
+	aadhar_card = frappe.form_dict.get("aadhar_card", "")
+	pan_no = frappe.form_dict.get("pan_no", "")
+	pic = frappe.form_dict.get("pic", "")
+	notice_period = frappe.form_dict.get("notice_period", "")
+
+	dob = frappe.form_dict.get("dob", "")
+	marital_status = frappe.form_dict.get("marital_status", "")
+	address = frappe.form_dict.get("address", "")
+	have_disability = frappe.form_dict.get("have_disability", "")
+	mention_disability = frappe.form_dict.get("mention_disability", "")
+	in_hand_salary = frappe.form_dict.get("in_hand_salary", "")
+	ctc_per_month = frappe.form_dict.get("ctc_per_month", "")
+	expected_salary = frappe.form_dict.get("expected_salary", "")
+
 	source = frappe.form_dict.get("source", "")
 	source_name = frappe.form_dict.get("source_name", "")
 	
-	current_gross = frappe.form_dict.get("current_gross", "")
-	expected_gross = frappe.form_dict.get("expected_gross", "")
-	notice_period = frappe.form_dict.get("notice_period", "")
+	school_1 = frappe.form_dict.get("school_1", "")
+	qualification_1 = frappe.form_dict.get("qualification_1", "")
+	year_1 = frappe.form_dict.get("year_1", "")
+
 	experience = frappe.form_dict.get("experience", "")
 
 	company_1 = frappe.form_dict.get("company_1", "")
@@ -199,86 +217,112 @@ def create_job_applicant() :
 	salary_1 = frappe.form_dict.get("salary_1", "")
 	joining_date_1 = frappe.form_dict.get("joining_date_1", "")
 	exit_date_1 = frappe.form_dict.get("exit_date_1", "")
+	contact_person_1 = frappe.form_dict.get("contact_person_1", "")
+	contact_person_mobile_1 = frappe.form_dict.get("contact_person_mobile_1", "")
 
 	company_2 = frappe.form_dict.get("company_2", "")
 	designation_2 = frappe.form_dict.get("designation_2", "")
 	salary_2 = frappe.form_dict.get("salary_2", "")
 	joining_date_2 = frappe.form_dict.get("joining_date_2", "")
 	exit_date_2 = frappe.form_dict.get("exit_date_2", "")
-
-
-	# company_3 = frappe.form_dict.get("company_3", "")
-	# salary_3 = frappe.form_dict.get("salary_3", "")
-	# joining_date_3 = frappe.form_dict.get("joining_date_3", "")
-	# exit_date_3 = frappe.form_dict.get("exit_date_3", "")
-
-	total_exp = frappe.form_dict.get("total_exp", "")
-	reason = frappe.form_dict.get("reason", "")
+	contact_person_2 = frappe.form_dict.get("contact_person_2", "")
+	contact_person_mobile_2 = frappe.form_dict.get("contact_person_mobile_2", "")
 
 	user_resume = frappe.form_dict.get("user_resume", "")
 
 	data = {}
+	data['job_opening'] = job_opening
+	data['name'] = name
+	data['mobile'] = mobile
 
-	doc = frappe.new_doc('Job Applicant')
-	doc.job_title = job_opening
-	doc.applicant_name = name
-	doc.mobile_number = mobile
-	doc.email_id = email
-	doc.qualification = qualification
-	doc.gender = gender
+	try :
+		doc = frappe.new_doc('Job Applicant')
+		doc.job_title = job_opening
 
-	doc.source = source
-	doc.source_name = source_name
+		doc.applicant_name = name
+		doc.phone_number = mobile
+		doc.email_id = email
+		doc.gender = gender
+		doc.status = 'Open'
+		doc.country = 'India'
 
-	doc.work_experience = experience
-	if company_1:
-		doc.append("work_history", {
-					"company_name": company_1,
-					"designation": designation_1,
-					"salary": salary_1,
-					"joining_date": joining_date_1,
-					"exit_date": exit_date_1
-				})
-	if company_2:
-		doc.append("work_history", {
-					"company_name": company_2,
-					"designation": designation_2,
-					"salary": salary_2,
-					"joining_date": joining_date_2,
-					"exit_date": exit_date_2
-				})
+		doc.aadhar_number = aadhar_card
+		doc.pan_number = pan_no
+		doc.candidate_photo = pic
+		doc.notice_period = notice_period
+
+		doc.date_of_birth = dob
+		doc.marital_status = marital_status
+		doc.address = address
+		doc.does_candidate_have_disabilities = have_disability
+		doc.disabilities = mention_disability
+		doc.in_hand_salary = float(in_hand_salary or 0)
+		doc.ctc_per_month = float(ctc_per_month or 0)
+		doc.expected_salary = float(expected_salary or 0)
+
+		doc.source = source
+		doc.source_name = source_name
+
+		if school_1:
+			doc.append("education", {
+						"school_univ": school_1,
+						"qualification": qualification_1,
+						"year_of_passing": year_1
+					})
 		
-	# if company_3:
-	# 	doc.append("work_history", {
-	# 				"company_name": company_3,
-	# 				"salary": salary_3,
-	# 				"joining_date": joining_date_3,
-	# 				"exit_date": exit_date_3
-	# 			})
-		
-	doc.total_experience = total_exp
-	doc.notice_period = notice_period
-	doc.reason_of_job_change = reason
 
-	doc.resume_link = user_resume
+		doc.work_experience = experience
+		if company_1:
+			doc.append("work_history", {
+						"company_name": company_1,
+						"designation": designation_1,
+						"salary": salary_1,
+						"contact": contact_person_1,
+						"mobile_no": contact_person_mobile_1,
+						"start_date": joining_date_1,
+						"end_date": exit_date_1
+					})
+		if company_2:
+			doc.append("work_history", {
+						"company_name": company_2,
+						"designation": designation_2,
+						"salary": salary_2,
+						"contact": contact_person_2,
+						"mobile_no": contact_person_mobile_2,
+						"start_date": joining_date_2,
+						"end_date": exit_date_2
+					})
+			
+		doc.resume_attachment = user_resume
 
-	doc.current_ctc_fixed = current_gross
-	doc.expected_ctc = expected_gross
+		# doc.save()
+		# doc.db_insert()
 
-	doc.save()
+		# doc.insert(
+		# 	ignore_permissions=True, # ignore write permissions during insert
+		# 	ignore_links=True, # ignore Link validation in the document
+		# 	ignore_if_duplicate=True, # dont insert if DuplicateEntryError is thrown
+		# 	ignore_mandatory=True # insert even if mandatory fields are not set
+		# )
 
-	doc.add_comment('Comment', text='This form is save through pinkcityindia website.')
+		# doc.add_comment('Comment', text='This form is save through pinkcityindia website.')
 
-	data['status'] = True
-	data['data'] = doc
-	data['msg'] = "Your application is successfully submitted."
-	frappe.response["data"] = data
+		data['status'] = True
+		data['data'] = doc
+		data['msg'] = "Your application is successfully submitted."
+	except Exception as e :
+		data['status'] = False
+		data['data'] = []
+		data['data1'] = "hi22"
+		data['msg'] = e
+		# data['msg'] = str(e or '')
+	frappe.response['data'] = data
 
 
 
 
 @frappe.whitelist()
-def create_job_applicant_updated() :
+def create_job_applicant() :
 	
 	job_opening = frappe.form_dict.get("job_opening", "")
 	name = frappe.form_dict.get("name", "")

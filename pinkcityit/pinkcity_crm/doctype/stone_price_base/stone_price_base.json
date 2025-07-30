@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-28 15:56:53.708622",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "stone_details_tab",
+  "item_sub_group",
+  "stone_cut",
+  "stone_width",
+  "column_break_ghzu",
+  "item_type",
+  "stone_shape",
+  "quality",
+  "amended_from",
+  "column_break_sksn",
+  "item_category",
+  "stone_length",
+  "mine",
+  "section_break_dctv",
+  "gold_rate",
+  "column_break_kmlt",
+  "silver_rate",
+  "stone_price_details_tab",
+  "sp_price_history"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_sub_group",
+   "fieldtype": "Link",
+   "label": "Item Sub Group",
+   "options": "Item Sub Group"
+  },
+  {
+   "fieldname": "item_type",
+   "fieldtype": "Select",
+   "label": "Item Type",
+   "options": "\nBeads\nPearl\nRough\nColor Stone"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stone Price Base",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_ghzu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sksn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_category",
+   "fieldtype": "Link",
+   "label": "Item Category",
+   "options": "Item Category"
+  },
+  {
+   "fieldname": "stone_cut",
+   "fieldtype": "Link",
+   "label": "Stone Cut",
+   "options": "Stone Cut"
+  },
+  {
+   "fieldname": "stone_width",
+   "fieldtype": "Link",
+   "label": "Stone Width",
+   "options": "Item Width"
+  },
+  {
+   "fieldname": "stone_shape",
+   "fieldtype": "Link",
+   "label": "Stone Shape",
+   "options": "Stone Shape"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Select",
+   "label": "Quality",
+   "options": "\nQS\nQG"
+  },
+  {
+   "fieldname": "stone_length",
+   "fieldtype": "Link",
+   "label": "Stone Length",
+   "options": "Item Length"
+  },
+  {
+   "fieldname": "mine",
+   "fieldtype": "Link",
+   "label": "Mine",
+   "options": "Country"
+  },
+  {
+   "fieldname": "section_break_dctv",
+   "fieldtype": "Section Break",
+   "label": "Stone Base Price"
+  },
+  {
+   "fieldname": "stone_price_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stone Price Details"
+  },
+  {
+   "fieldname": "stone_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Stone Details"
+  },
+  {
+   "fieldname": "gold_rate",
+   "fieldtype": "Float",
+   "label": "Gold Rate"
+  },
+  {
+   "fieldname": "sp_price_history",
+   "fieldtype": "Table",
+   "label": "SP Price History",
+   "options": "SP Price History"
+  },
+  {
+   "fieldname": "silver_rate",
+   "fieldtype": "Float",
+   "label": "Silver Rate"
+  },
+  {
+   "fieldname": "column_break_kmlt",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-28 17:35:24.298347",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Stone Price Base",
+ "owner": "akansha.saxena@pinkcityindia.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

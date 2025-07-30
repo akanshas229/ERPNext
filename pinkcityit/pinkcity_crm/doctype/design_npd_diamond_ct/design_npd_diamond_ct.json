@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-28 19:24:16.809514",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_type",
+  "diamond_width",
+  "diamond_setting",
+  "column_break_hmje",
+  "diamond_cut",
+  "diamond_depth",
+  "diamond_qty",
+  "column_break_adkx",
+  "diamond_shape",
+  "diamond_quality",
+  "column_break_uwer",
+  "diamond_length",
+  "diamond_color"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_type",
+   "fieldtype": "Data",
+   "label": "Item Type"
+  },
+  {
+   "fieldname": "column_break_hmje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_cut",
+   "fieldtype": "Data",
+   "label": "Cut"
+  },
+  {
+   "fieldname": "column_break_adkx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_shape",
+   "fieldtype": "Data",
+   "label": "Shape"
+  },
+  {
+   "fieldname": "column_break_uwer",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_length",
+   "fieldtype": "Float",
+   "label": "Length"
+  },
+  {
+   "fieldname": "diamond_width",
+   "fieldtype": "Float",
+   "label": "Width"
+  },
+  {
+   "fieldname": "diamond_depth",
+   "fieldtype": "Float",
+   "label": "Depth"
+  },
+  {
+   "fieldname": "diamond_quality",
+   "fieldtype": "Data",
+   "label": "Quality"
+  },
+  {
+   "fieldname": "diamond_color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "diamond_setting",
+   "fieldtype": "Data",
+   "label": "Setting Type"
+  },
+  {
+   "fieldname": "diamond_qty",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-28 19:33:33.530365",
+ "modified_by": "Administrator",
+ "module": "PinkCity CRM",
+ "name": "Design NPD Diamond CT",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
