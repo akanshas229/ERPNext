@@ -69,6 +69,13 @@ doctype_js = {
 
 # after_install = "pinkcityit.install.after_install"
 
+
+# migrate   ---------
+# ---------------------------------
+# before_migrate = "app.migrate.before_migrate"
+# after_migrate = "app.migrate.after_migrate"
+# after_migrate = "app.install.after_install"
+
 # Uninstallation
 # ------------
 

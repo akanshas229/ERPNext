@@ -24,23 +24,31 @@
    "label": "Plating Type"
   },
   {
+   "columns": 2,
    "fieldname": "micron",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Micron"
   },
   {
+   "columns": 2,
    "fieldname": "gold_kt",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Gold KT"
   },
   {
+   "columns": 2,
    "fieldname": "color",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Color"
   },
   {
+   "columns": 2,
    "fieldname": "gold",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Gold"
   },
   {
@@ -62,7 +70,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-28 19:52:27.946197",
+ "modified": "2025-07-30 10:52:36.895126",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "Design NPD Plating CT",

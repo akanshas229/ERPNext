@@ -22,8 +22,7 @@
   "gold_rate",
   "column_break_kmlt",
   "silver_rate",
-  "stone_price_details_tab",
-  "sp_price_history"
+  "stone_price_details_tab"
  ],
  "fields": [
   {
@@ -119,12 +118,6 @@
    "label": "Gold Rate"
   },
   {
-   "fieldname": "sp_price_history",
-   "fieldtype": "Table",
-   "label": "SP Price History",
-   "options": "SP Price History"
-  },
-  {
    "fieldname": "silver_rate",
    "fieldtype": "Float",
    "label": "Silver Rate"
@@ -138,7 +131,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-28 17:35:24.298347",
+ "modified": "2025-07-31 10:08:02.263598",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "Stone Price Base",

@@ -42,6 +42,7 @@
   "product_specification",
   "attachment_detail",
   "tab_2_tab",
+  "assignment_detail_section",
   "assignment_details",
   "design_codes_section",
   "two_d",
@@ -50,7 +51,9 @@
   "column_break_oynl",
   "stonediamondfinding_section",
   "stone_details",
+  "diamond_section",
   "diamond_details",
+  "finding_section",
   "finding_details",
   "section_break_taed",
   "plating_details",
@@ -81,7 +84,13 @@
   "image_evzd",
   "column_break_ldgm",
   "attached_3three",
-  "image_ssdq"
+  "image_ssdq",
+  "npd_sheet_section",
+  "attach_npd",
+  "image_mxjd",
+  "column_break_tbby",
+  "attach_npdd",
+  "image_lggi"
  ],
  "fields": [
   {
@@ -107,6 +116,7 @@
   {
    "fieldname": "customer_name",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Customer Name",
    "options": "Customer"
   },
@@ -215,6 +225,7 @@
    "depends_on": "eval:doc.npd_status == 'Converted'",
    "fieldname": "value_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Value"
   },
   {
@@ -274,7 +285,7 @@
   {
    "fieldname": "assignment_details",
    "fieldtype": "Table",
-   "label": "Assignment Details",
+   "label": " ",
    "options": "Design NPD Assign CT"
   },
   {
@@ -301,10 +312,9 @@
    "fieldtype": "Column Break"
   },
   {
-   "collapsible": 1,
    "fieldname": "stonediamondfinding_section",
    "fieldtype": "Section Break",
-   "label": "Stone/Diamond/Finding"
+   "label": "Stone"
   },
   {
    "fieldname": "stone_details",
@@ -326,17 +336,19 @@
   },
   {
    "fieldname": "section_break_taed",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Plating"
   },
   {
    "fieldname": "plating_details",
    "fieldtype": "Table",
    "label": "Plating Details",
-   "options": "Design NPD Plating CT"
+   "options": "NPD Plating CT"
   },
   {
    "fieldname": "section_break_tmmb",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "CAD Detail"
   },
   {
    "fieldname": "manufacturing_type",
@@ -380,7 +392,7 @@
   {
    "fieldname": "attachment_tab",
    "fieldtype": "Tab Break",
-   "label": "Attachment"
+   "label": "Attachments"
   },
   {
    "fieldname": "attached_twod",
@@ -467,12 +479,56 @@
   {
    "fieldname": "column_break_ldgm",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assignment_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Assignment Detail"
+  },
+  {
+   "fieldname": "diamond_section",
+   "fieldtype": "Section Break",
+   "label": "Diamond"
+  },
+  {
+   "fieldname": "finding_section",
+   "fieldtype": "Section Break",
+   "label": "Finding "
+  },
+  {
+   "fieldname": "npd_sheet_section",
+   "fieldtype": "Section Break",
+   "label": "NPD Sheet"
+  },
+  {
+   "fieldname": "attach_npd",
+   "fieldtype": "Attach",
+   "label": "Attachment-1"
+  },
+  {
+   "fieldname": "image_mxjd",
+   "fieldtype": "Image",
+   "options": "attach_npd"
+  },
+  {
+   "fieldname": "attach_npdd",
+   "fieldtype": "Attach",
+   "label": "Attachment-2"
+  },
+  {
+   "fieldname": "column_break_tbby",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_lggi",
+   "fieldtype": "Image",
+   "options": "attach_npdd"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-29 09:54:14.081694",
+ "modified": "2025-07-31 10:31:28.363922",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "Design NPD",

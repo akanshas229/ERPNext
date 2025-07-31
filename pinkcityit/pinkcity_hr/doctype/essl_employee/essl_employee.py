@@ -10,6 +10,7 @@ class ESSLEmployee(Document):
 	def db_insert(self, *args, **kwargs):
 		pass
 
+
 	def load_from_db(self):
 		server = '192.168.5.110'
 		user = 'esslNew'
@@ -177,7 +178,7 @@ class ESSLEmployee(Document):
 
 
 
-# @frappe.whitelist()
+@frappe.whitelist()
 def create_job_applicant_updated() :
 	# print("hello")
 	# return ""
@@ -231,9 +232,9 @@ def create_job_applicant_updated() :
 	user_resume = frappe.form_dict.get("user_resume", "")
 
 	data = {}
-	data['job_opening'] = job_opening
-	data['name'] = name
-	data['mobile'] = mobile
+	# data['job_opening'] = job_opening
+	# data['name'] = name
+	# data['mobile'] = mobile
 
 	try :
 		doc = frappe.new_doc('Job Applicant')
@@ -273,20 +274,20 @@ def create_job_applicant_updated() :
 
 		doc.work_experience = experience
 		if company_1:
-			doc.append("work_history", {
+			doc.append("external_work_history", {
 						"company_name": company_1,
 						"designation": designation_1,
-						"salary": salary_1,
+						"salary": float(salary_1 or 0),
 						"contact": contact_person_1,
 						"mobile_no": contact_person_mobile_1,
 						"start_date": joining_date_1,
 						"end_date": exit_date_1
 					})
 		if company_2:
-			doc.append("work_history", {
+			doc.append("external_work_history", {
 						"company_name": company_2,
 						"designation": designation_2,
-						"salary": salary_2,
+						"salary": float(salary_2 or 0),
 						"contact": contact_person_2,
 						"mobile_no": contact_person_mobile_2,
 						"start_date": joining_date_2,
@@ -295,7 +296,7 @@ def create_job_applicant_updated() :
 			
 		doc.resume_attachment = user_resume
 
-		# doc.save()
+		doc.save()
 		# doc.db_insert()
 
 		# doc.insert(
@@ -305,7 +306,7 @@ def create_job_applicant_updated() :
 		# 	ignore_mandatory=True # insert even if mandatory fields are not set
 		# )
 
-		# doc.add_comment('Comment', text='This form is save through pinkcityindia website.')
+		doc.add_comment('Comment', text='This form is save through pinkcityindia website.')
 
 		data['status'] = True
 		data['data'] = doc
@@ -313,7 +314,7 @@ def create_job_applicant_updated() :
 	except Exception as e :
 		data['status'] = False
 		data['data'] = []
-		data['data1'] = "hi22"
+		# data['data1'] = "hi22"
 		data['msg'] = e
 		# data['msg'] = str(e or '')
 	frappe.response['data'] = data

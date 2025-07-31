@@ -42,6 +42,13 @@ CUSTOM_FIELDS = {
             "label": "Expected Salary",
             "insert_after": "ctc_per_month",
         },
+        {
+            "fieldname": "work_experience",
+            "fieldtype": "Select",
+            "label": "Experience",
+            "options": "\nExperience\nFresher",
+            "insert_after": "sb_ja_education",
+        },
     ],
     "Employee External Work History" : [
         {
@@ -49,6 +56,14 @@ CUSTOM_FIELDS = {
             "fieldtype": "Data",
             "label": "Mobile No",
             "insert_after": "contact",
+        },
+    ],
+    "Customer" : [
+        {
+            "fieldname": "client_code",
+            "fieldtype": "Data",
+            "label": "EMR Client Code",
+            "insert_after": "customer_name",
         },
     ],
 }
@@ -74,6 +89,14 @@ PROPERTY_SETTERS = [
         "property": "options",
         "property_type": "Small Text",
         "value": "",
+    },
+    {
+        "doctype_or_field": "DocField",
+        "doctype": "Job Applicant",
+        "fieldname": "source_name",
+        "property": "hidden",
+        "property_type": "Check",
+        "value": "1",
     },
     # Employee Education
     {

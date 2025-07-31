@@ -18,96 +18,83 @@
   "customer_name",
   "column_break_ebcc",
   "collections_name",
+  "customer_code",
+  "design_details_section",
+  "metal_types",
+  "finishing_types",
+  "column_break_yjnz",
+  "product_category",
+  "stampings_locations",
+  "column_break_aenu",
+  "jewellery_category",
+  "stamping_instruction",
+  "column_break_ctxu",
+  "target_metal_weights",
+  "npd_status",
   "section_break_xmxj",
   "product_specification",
-  "section_break_bbil",
   "attatchments_links",
-  "2d_designer_tab",
-  "two_d",
-  "column_break_rwhr",
-  "design_code",
-  "column_break_cbxo",
-  "metal_type",
-  "column_break_xwtz",
-  "jewellery_type",
-  "section_break_ggzoe",
+  "npd_data_tab",
+  "assignment_detail_section",
+  "table_ftbf",
+  "design_codes_section",
+  "two_ds",
+  "column_break_iotn",
+  "three_d",
+  "stone_section",
   "stone_details",
-  "dia_sec_break",
+  "diamond_section",
   "diamond_details",
-  "finding_sec_break",
+  "findings_section",
   "finding_details",
-  "section_break_tles",
-  "2d_drawing",
-  "imgdrw",
-  "column_break_jcda",
-  "2d_drawing_2",
-  "imgdrw2",
-  "3d_attachment_tab",
-  "designer_name",
+  "plating_section",
+  "plating_details",
+  "cad_details_section",
+  "manufacturing_type",
+  "metal_weight",
+  "column_break_rkre",
   "surface_area",
-  "column_break_epvc",
-  "3d_creation_date",
-  "metal_weight_three",
-  "column_break_raql",
-  "ddue_date",
-  "finding_weight_three",
-  "column_break_bwte",
+  "finding_weight",
+  "column_break_uopy",
   "chain_length",
-  "cad_weight",
+  "cad_design_weight",
+  "3d_attachment_tab",
   "approved_cad_images_section",
   "top_view",
-  "img1",
-  "side_view",
-  "img2",
-  "front_view",
-  "img3",
+  "image_dkto",
   "column_break_vsam",
   "back_view",
   "img4",
+  "column_break_weho",
   "perspective_view",
   "img5",
-  "stamping_location_view",
-  "img6",
-  "pd_sheet_tab",
-  "costing_id",
-  "fetch_costing",
-  "product_details_section",
-  "2d_design_no",
-  "column_break_zdkc",
-  "itemproduct_category",
-  "column_break_qlgg",
-  "assigner_name",
-  "production_details_section",
-  "manufacturing_type",
-  "finishing_type",
-  "column_break_tclt",
-  "metal_type1",
-  "stamping_location",
-  "column_break_mqsz",
-  "target_metal_weight",
-  "stamping_instructions",
-  "column_break_bcit",
-  "dimensions",
-  "pd_stone",
-  "pd_stoned",
-  "pd_diamond",
-  "pd_diamondd",
-  "pd_finding",
-  "finding_details_pd",
-  "plating_section",
-  "plating_details",
+  "attachment",
+  "attachment__1",
+  "image_ktwx",
+  "column_break_zlek",
+  "attachment_2",
+  "image_jahi",
+  "column_break_rlnp",
+  "attachment_3",
+  "image_tpkn",
+  "npd_sheet_section",
+  "attatchments_1",
+  "image_fkbe",
+  "column_break_rovy",
+  "attachments_2",
+  "image_gwmt",
   "production_tab",
   "production_sequence",
   "section_break_btaf",
   "production_instructions_if_any",
   "bom_changes_if_any",
   "photography_tab",
-  "amended_from",
   "assigned_to_employee",
   "column_break_fddw",
   "collection_name",
   "section_break_losq",
-  "photography_links"
+  "photography_links",
+  "amended_from"
  ],
  "fields": [
   {
@@ -117,7 +104,8 @@
   },
   {
    "fieldname": "section_break_iccx",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Details"
   },
   {
    "fieldname": "designer",
@@ -157,56 +145,13 @@
   },
   {
    "fieldname": "section_break_xmxj",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Design Brief"
   },
   {
    "fieldname": "product_specification",
    "fieldtype": "Small Text",
    "label": "Product Specification"
-  },
-  {
-   "fieldname": "2d_designer_tab",
-   "fieldtype": "Tab Break",
-   "label": "2D Design"
-  },
-  {
-   "fieldname": "two_d",
-   "fieldtype": "Link",
-   "label": "Assigned to",
-   "options": "Designers"
-  },
-  {
-   "fieldname": "column_break_rwhr",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "design_code",
-   "fieldtype": "Data",
-   "label": "2D Design Code"
-  },
-  {
-   "fieldname": "column_break_cbxo",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "metal_type",
-   "fieldtype": "Link",
-   "label": "Metal Type",
-   "options": "Metal Type"
-  },
-  {
-   "fieldname": "column_break_xwtz",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "jewellery_type",
-   "fieldtype": "Data",
-   "label": "Jewellery Type"
-  },
-  {
-   "fieldname": "section_break_ggzoe",
-   "fieldtype": "Section Break",
-   "label": "Stone"
   },
   {
    "fieldname": "stone_details",
@@ -215,21 +160,10 @@
    "options": "Opportunity Stone CT"
   },
   {
-   "fieldname": "dia_sec_break",
-   "fieldtype": "Section Break",
-   "label": "Diamond"
-  },
-  {
    "fieldname": "diamond_details",
    "fieldtype": "Table",
-   "hidden": 1,
-   "label": "Diamond details",
+   "label": "Diamond Details",
    "options": "Opportunity Diamond CT"
-  },
-  {
-   "fieldname": "finding_sec_break",
-   "fieldtype": "Section Break",
-   "label": "Finding"
   },
   {
    "fieldname": "finding_details",
@@ -238,86 +172,19 @@
    "options": "NPD Test Finding CT"
   },
   {
-   "fieldname": "section_break_tles",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "2d_drawing",
-   "fieldtype": "Attach Image",
-   "label": "2D Drawing 1"
-  },
-  {
-   "fieldname": "imgdrw",
-   "fieldtype": "Image",
-   "label": "Image",
-   "options": "2d_drawing"
-  },
-  {
    "fieldname": "3d_attachment_tab",
    "fieldtype": "Tab Break",
-   "label": "3D Design"
-  },
-  {
-   "fieldname": "designer_name",
-   "fieldtype": "Link",
-   "label": "3D Designer ",
-   "options": "Designers"
-  },
-  {
-   "fieldname": "column_break_epvc",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "3d_creation_date",
-   "fieldtype": "Date",
-   "label": "3D Creation Date"
-  },
-  {
-   "fieldname": "column_break_raql",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "ddue_date",
-   "fieldtype": "Date",
-   "label": "3D Due Date"
+   "label": "Attachment "
   },
   {
    "fieldname": "approved_cad_images_section",
    "fieldtype": "Section Break",
-   "label": "Approved CAD Images"
+   "label": "Attachment-2D"
   },
   {
    "fieldname": "top_view",
    "fieldtype": "Attach Image",
-   "label": "Top View"
-  },
-  {
-   "fieldname": "img1",
-   "fieldtype": "Image",
-   "label": "Image",
-   "options": "top_view"
-  },
-  {
-   "fieldname": "side_view",
-   "fieldtype": "Attach Image",
-   "label": "Side View"
-  },
-  {
-   "fieldname": "img2",
-   "fieldtype": "Image",
-   "label": "Image",
-   "options": "side_view"
-  },
-  {
-   "fieldname": "front_view",
-   "fieldtype": "Attach Image",
-   "label": "Front View"
-  },
-  {
-   "fieldname": "img3",
-   "fieldtype": "Image",
-   "label": "Image",
-   "options": "front_view"
+   "label": "Attachment 1"
   },
   {
    "fieldname": "column_break_vsam",
@@ -326,7 +193,7 @@
   {
    "fieldname": "back_view",
    "fieldtype": "Attach Image",
-   "label": "Back View"
+   "label": "Attachment 2"
   },
   {
    "fieldname": "img4",
@@ -337,7 +204,7 @@
   {
    "fieldname": "perspective_view",
    "fieldtype": "Attach Image",
-   "label": "Perspective View"
+   "label": "Attachment 3"
   },
   {
    "fieldname": "img5",
@@ -346,165 +213,15 @@
    "options": "perspective_view"
   },
   {
-   "fieldname": "stamping_location_view",
-   "fieldtype": "Attach Image",
-   "label": "Stamping Location View"
-  },
-  {
-   "fieldname": "img6",
-   "fieldtype": "Image",
-   "label": "Image",
-   "options": "stamping_location_view"
-  },
-  {
-   "fieldname": "pd_sheet_tab",
-   "fieldtype": "Tab Break",
-   "label": "NPD Sheet"
-  },
-  {
-   "fieldname": "costing_id",
-   "fieldtype": "Link",
-   "label": "Costing ID",
-   "options": "Costing"
-  },
-  {
-   "fieldname": "fetch_costing",
-   "fieldtype": "Button",
-   "label": "Fetch Costing Details"
-  },
-  {
-   "fieldname": "product_details_section",
-   "fieldtype": "Section Break",
-   "label": "Product Details"
-  },
-  {
-   "fieldname": "2d_design_no",
-   "fieldtype": "Data",
-   "label": "2D Design No"
-  },
-  {
-   "fieldname": "column_break_zdkc",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "itemproduct_category",
-   "fieldtype": "Link",
-   "label": "Item/Product Category",
-   "options": "Design Category"
-  },
-  {
-   "fieldname": "column_break_qlgg",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "assigner_name",
-   "fieldtype": "Data",
-   "label": "PD Assigner Name"
-  },
-  {
-   "fieldname": "production_details_section",
-   "fieldtype": "Section Break",
-   "label": "Production Details"
-  },
-  {
    "fieldname": "manufacturing_type",
    "fieldtype": "Select",
    "label": "Manufacturing Type",
-   "options": "\nCasting\nHollow Casting\nE-Form\nHandmade"
-  },
-  {
-   "fieldname": "finishing_type",
-   "fieldtype": "Select",
-   "label": "Finishing Type",
-   "options": "\nHigh Polish\nBrush Polish\nMatt Finish"
-  },
-  {
-   "fieldname": "column_break_tclt",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "metal_type1",
-   "fieldtype": "Link",
-   "label": "PD Metal Type",
-   "options": "Metal Type"
-  },
-  {
-   "fieldname": "stamping_location",
-   "fieldtype": "Data",
-   "label": "Stamping Location"
-  },
-  {
-   "fieldname": "column_break_mqsz",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "target_metal_weight",
-   "fieldtype": "Float",
-   "label": "Target Metal Weight"
-  },
-  {
-   "fieldname": "stamping_instructions",
-   "fieldtype": "Data",
-   "label": "Stamping Instructions"
-  },
-  {
-   "fieldname": "column_break_bcit",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "dimensions",
-   "fieldtype": "Data",
-   "label": "Surface Area"
+   "options": "\nCasting\nHolo\nEfom\nHandmade"
   },
   {
    "fieldname": "production_sequence",
    "fieldtype": "Data",
    "label": "Production Sequence"
-  },
-  {
-   "fieldname": "pd_stone",
-   "fieldtype": "Section Break",
-   "label": "Stone"
-  },
-  {
-   "fieldname": "pd_stoned",
-   "fieldtype": "Table",
-   "label": "Stone Details",
-   "options": "Opportunity Stone CT"
-  },
-  {
-   "fieldname": "pd_diamond",
-   "fieldtype": "Section Break",
-   "hidden": 1,
-   "label": "Diamond"
-  },
-  {
-   "fieldname": "pd_diamondd",
-   "fieldtype": "Table",
-   "label": "Diamond Details",
-   "options": "Opportunity Diamond CT"
-  },
-  {
-   "fieldname": "pd_finding",
-   "fieldtype": "Section Break",
-   "label": "Finding"
-  },
-  {
-   "fieldname": "finding_details_pd",
-   "fieldtype": "Table",
-   "label": "Finding Details",
-   "options": "NPD Test Finding CT"
-  },
-  {
-   "fieldname": "plating_section",
-   "fieldtype": "Section Break",
-   "label": "Plating"
-  },
-  {
-   "fieldname": "plating_details",
-   "fieldtype": "Table",
-   "label": "Plating Details",
-   "options": "NPD Plating CT"
   },
   {
    "fieldname": "production_tab",
@@ -550,29 +267,9 @@
    "label": "Surface Area"
   },
   {
-   "fieldname": "metal_weight_three",
-   "fieldtype": "Float",
-   "label": "Metal Weight"
-  },
-  {
-   "fieldname": "finding_weight_three",
-   "fieldtype": "Float",
-   "label": "Finding Weight"
-  },
-  {
-   "fieldname": "column_break_bwte",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "chain_length",
    "fieldtype": "Float",
    "label": "Chain Length"
-  },
-  {
-   "fieldname": "cad_weight",
-   "fieldtype": "Float",
-   "label": "CAD Weight",
-   "read_only": 1
   },
   {
    "fieldname": "section_break_btaf",
@@ -587,10 +284,6 @@
    "fieldname": "bom_changes_if_any",
    "fieldtype": "Small Text",
    "label": "BOM Changes (If Any)"
-  },
-  {
-   "fieldname": "section_break_bbil",
-   "fieldtype": "Section Break"
   },
   {
    "fieldname": "attatchments_links",
@@ -619,28 +312,11 @@
    "options": "NPD File Photography Links"
   },
   {
-   "depends_on": "eval:doc.npd_type == \"Customer\"",
+   "depends_on": "eval:doc.npd_type == \"Customer\";\n     doc.customer !=\" \"",
    "fetch_from": "customer.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "label": "Customer Name"
-  },
-  {
-   "fieldname": "column_break_jcda",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "eval:doc.two_d",
-   "fieldname": "2d_drawing_2",
-   "fieldtype": "Attach Image",
-   "label": "2D Drawing 2"
-  },
-  {
-   "depends_on": "eval:doc.two_d",
-   "fieldname": "imgdrw2",
-   "fieldtype": "Image",
-   "label": "Image",
-   "options": "2d_drawing_2"
   },
   {
    "fieldname": "collections_name",
@@ -650,13 +326,249 @@
   {
    "fieldname": "column_break_ebcc",
    "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.npd_type == \"Customer\";\n     doc.customer !=\" \"",
+   "fieldname": "customer_code",
+   "fieldtype": "Data",
+   "label": "Customer Code"
+  },
+  {
+   "fieldname": "design_details_section",
+   "fieldtype": "Section Break",
+   "label": "Design Details"
+  },
+  {
+   "fieldname": "metal_types",
+   "fieldtype": "Data",
+   "label": "Metal Type"
+  },
+  {
+   "fieldname": "finishing_types",
+   "fieldtype": "Select",
+   "label": "Finishing Type",
+   "options": "\nHigh Polish\nBrush Polish"
+  },
+  {
+   "fieldname": "column_break_yjnz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_category",
+   "fieldtype": "Data",
+   "label": "Product Category"
+  },
+  {
+   "fieldname": "column_break_aenu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jewellery_category",
+   "fieldtype": "Select",
+   "label": "Jewellery Category",
+   "options": "\nPlain\nStudded\nBeads\nDiamonds\nFashion"
+  },
+  {
+   "fieldname": "column_break_ctxu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_metal_weights",
+   "fieldtype": "Float",
+   "label": "Target Metal Weight"
+  },
+  {
+   "fieldname": "stampings_locations",
+   "fieldtype": "Data",
+   "label": "Stamping Location"
+  },
+  {
+   "fieldname": "stamping_instruction",
+   "fieldtype": "Data",
+   "label": "Stamping Instructions"
+  },
+  {
+   "fieldname": "npd_status",
+   "fieldtype": "Select",
+   "label": "NPD Status",
+   "options": "\nOpen\nNPD WIP\nNPD Completed\nNon Converted\nConverted"
+  },
+  {
+   "fieldname": "npd_data_tab",
+   "fieldtype": "Tab Break",
+   "label": "NPD Data"
+  },
+  {
+   "fieldname": "assignment_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Assignment Detail"
+  },
+  {
+   "fieldname": "table_ftbf",
+   "fieldtype": "Table",
+   "options": "Design NPD Assign CT"
+  },
+  {
+   "fieldname": "design_codes_section",
+   "fieldtype": "Section Break",
+   "label": "Design Codes"
+  },
+  {
+   "fieldname": "two_ds",
+   "fieldtype": "Data",
+   "label": "2D Design Code"
+  },
+  {
+   "fieldname": "column_break_iotn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "three_d",
+   "fieldtype": "Data",
+   "label": "3D Design Code"
+  },
+  {
+   "fieldname": "stone_section",
+   "fieldtype": "Section Break",
+   "label": "Stone"
+  },
+  {
+   "fieldname": "diamond_section",
+   "fieldtype": "Section Break",
+   "label": "Diamond"
+  },
+  {
+   "fieldname": "findings_section",
+   "fieldtype": "Section Break",
+   "label": "Findings"
+  },
+  {
+   "fieldname": "cad_details_section",
+   "fieldtype": "Section Break",
+   "label": "CAD Details"
+  },
+  {
+   "fieldname": "column_break_rkre",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uopy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metal_weight",
+   "fieldtype": "Float",
+   "label": "Metal Weight"
+  },
+  {
+   "fieldname": "finding_weight",
+   "fieldtype": "Float",
+   "label": "Finding Weight"
+  },
+  {
+   "fieldname": "cad_design_weight",
+   "fieldtype": "Float",
+   "label": "CAD Design Weight"
+  },
+  {
+   "fieldname": "image_dkto",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "top_view"
+  },
+  {
+   "fieldname": "column_break_weho",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Section Break",
+   "label": "Attachment-3D"
+  },
+  {
+   "fieldname": "attachment__1",
+   "fieldtype": "Attach",
+   "label": "Attachment  1"
+  },
+  {
+   "fieldname": "image_ktwx",
+   "fieldtype": "Image",
+   "options": "attachment__1"
+  },
+  {
+   "fieldname": "attachment_2",
+   "fieldtype": "Attach",
+   "label": "Attachment 2"
+  },
+  {
+   "fieldname": "column_break_zlek",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_jahi",
+   "fieldtype": "Image",
+   "options": "attachment_2"
+  },
+  {
+   "fieldname": "column_break_rlnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachment_3",
+   "fieldtype": "Attach",
+   "label": "Attachment 3"
+  },
+  {
+   "fieldname": "image_tpkn",
+   "fieldtype": "Image",
+   "options": "attachment_3"
+  },
+  {
+   "fieldname": "npd_sheet_section",
+   "fieldtype": "Section Break",
+   "label": "NPD Sheet"
+  },
+  {
+   "fieldname": "attatchments_1",
+   "fieldtype": "Attach",
+   "label": "Attachment 1"
+  },
+  {
+   "fieldname": "image_fkbe",
+   "fieldtype": "Image",
+   "options": "attatchments_1"
+  },
+  {
+   "fieldname": "column_break_rovy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachments_2",
+   "fieldtype": "Attach",
+   "label": "Attachment 2"
+  },
+  {
+   "fieldname": "image_gwmt",
+   "fieldtype": "Image",
+   "options": "attachments_2"
+  },
+  {
+   "fieldname": "plating_section",
+   "fieldtype": "Section Break",
+   "label": "Plating"
+  },
+  {
+   "fieldname": "plating_details",
+   "fieldtype": "Table",
+   "label": "Plating Details",
+   "options": "Design NPD Plating CT"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-25 17:26:21.813134",
+ "modified": "2025-07-31 10:06:51.089391",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "NPD Product Developement New",
