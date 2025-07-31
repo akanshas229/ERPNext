@@ -340,8 +340,9 @@
   },
   {
    "fieldname": "metal_types",
-   "fieldtype": "Data",
-   "label": "Metal Type"
+   "fieldtype": "Link",
+   "label": "Metal Type",
+   "options": "Metal Type"
   },
   {
    "fieldname": "finishing_types",
@@ -355,8 +356,9 @@
   },
   {
    "fieldname": "product_category",
-   "fieldtype": "Data",
-   "label": "Product Category"
+   "fieldtype": "Link",
+   "label": "Product Category",
+   "options": "Product Category"
   },
   {
    "fieldname": "column_break_aenu",
@@ -561,14 +563,14 @@
    "fieldname": "plating_details",
    "fieldtype": "Table",
    "label": "Plating Details",
-   "options": "Design NPD Plating CT"
+   "options": "NPD Plating CT"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-31 10:06:51.089391",
+ "modified": "2025-07-31 15:04:48.451863",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "NPD Product Developement New",

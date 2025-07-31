@@ -168,8 +168,9 @@
   },
   {
    "fieldname": "metal_type",
-   "fieldtype": "Data",
-   "label": "Metal Type"
+   "fieldtype": "Link",
+   "label": "Metal Type",
+   "options": "Metal Type"
   },
   {
    "fieldname": "column_break_rmmf",
@@ -181,8 +182,9 @@
   },
   {
    "fieldname": "product_category",
-   "fieldtype": "Data",
-   "label": "Product Category"
+   "fieldtype": "Link",
+   "label": "Product Category",
+   "options": "Product Category"
   },
   {
    "fieldname": "jewellery_category",
@@ -528,7 +530,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-31 10:31:28.363922",
+ "modified": "2025-07-31 15:05:13.823618",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "Design NPD",
