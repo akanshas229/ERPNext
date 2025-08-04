@@ -168,9 +168,9 @@
   },
   {
    "fieldname": "metal_type",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
    "label": "Metal Type",
-   "options": "Metal Type"
+   "options": "\nS925\nS999\nBrass\nGold 9KT\nGold 14KT\nGold 18KT\nGold 22KT\nGold 24KT"
   },
   {
    "fieldname": "column_break_rmmf",
@@ -530,7 +530,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-31 15:05:13.823618",
+ "modified": "2025-08-01 11:24:09.648143",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "Design NPD",

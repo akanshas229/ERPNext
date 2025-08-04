@@ -49,6 +49,7 @@
   "finding_details",
   "plating_section",
   "plating_details",
+  "plating",
   "cad_details_section",
   "manufacturing_type",
   "metal_weight",
@@ -100,7 +101,7 @@
   {
    "fieldname": "design_brief_tab",
    "fieldtype": "Tab Break",
-   "label": "Design Brief"
+   "label": "CRM Base"
   },
   {
    "fieldname": "section_break_iccx",
@@ -157,7 +158,7 @@
    "fieldname": "stone_details",
    "fieldtype": "Table",
    "label": "Stone Details",
-   "options": "Opportunity Stone CT"
+   "options": "Design NPD Stone CT"
   },
   {
    "fieldname": "diamond_details",
@@ -169,7 +170,7 @@
    "fieldname": "finding_details",
    "fieldtype": "Table",
    "label": "Finding Details",
-   "options": "NPD Test Finding CT"
+   "options": "NPD Findings"
   },
   {
    "fieldname": "3d_attachment_tab",
@@ -437,6 +438,7 @@
   {
    "fieldname": "diamond_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Diamond"
   },
   {
@@ -562,15 +564,21 @@
   {
    "fieldname": "plating_details",
    "fieldtype": "Table",
+   "hidden": 1,
    "label": "Plating Details",
    "options": "NPD Plating CT"
+  },
+  {
+   "fieldname": "plating",
+   "fieldtype": "Data",
+   "label": "Plating "
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-31 15:04:48.451863",
+ "modified": "2025-08-01 16:26:08.510271",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "NPD Product Developement New",

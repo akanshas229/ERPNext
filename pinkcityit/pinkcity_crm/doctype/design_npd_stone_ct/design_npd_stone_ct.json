@@ -24,10 +24,10 @@
   {
    "columns": 2,
    "fieldname": "item_sub_group",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Item Sub Group",
-   "options": "Item Sub Group"
+   "options": "\nBeads\nColor Stone\nPearl"
   },
   {
    "columns": 2,
@@ -39,8 +39,9 @@
   },
   {
    "fieldname": "setting_type",
-   "fieldtype": "Data",
-   "label": "Setting Type"
+   "fieldtype": "Link",
+   "label": "Setting Type",
+   "options": "Setting"
   },
   {
    "fieldname": "column_break_jpwu",
@@ -106,7 +107,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-31 10:20:24.613617",
+ "modified": "2025-08-01 12:57:13.988961",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "Design NPD Stone CT",
