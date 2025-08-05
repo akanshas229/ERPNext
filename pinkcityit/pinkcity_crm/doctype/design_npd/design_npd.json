@@ -170,7 +170,7 @@
    "fieldname": "metal_type",
    "fieldtype": "Select",
    "label": "Metal Type",
-   "options": "\nS925\nS999\nBrass\nGold 9KT\nGold 14KT\nGold 18KT\nGold 22KT\nGold 24KT"
+   "options": "\n9K Yellow Gold\n9K White Gold\n10K Yellow Gold\n10K White Gold\n14K Yellow Gold\n14K White Gold\n18K Yellow Gold\n18K White Gold\n925 Sterling Silver\n925 Sterling Silver Recycled\n999 White Silver\nPure Brass\nPure Zinc"
   },
   {
    "fieldname": "column_break_rmmf",
@@ -389,7 +389,8 @@
   {
    "fieldname": "cad_design_weight",
    "fieldtype": "Float",
-   "label": "CAD Design Weight"
+   "label": "CAD Design Weight",
+   "read_only": 1
   },
   {
    "fieldname": "attachment_tab",
@@ -530,7 +531,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-01 11:24:09.648143",
+ "modified": "2025-08-05 16:29:39.339802",
  "modified_by": "Administrator",
  "module": "PinkCity CRM",
  "name": "Design NPD",
