@@ -934,7 +934,7 @@
    "fieldname": "license_type",
    "fieldtype": "Select",
    "label": "License Type",
-   "options": "\nTrade/Business\nFood Safety (FSSAI)\nHealth and Safety\nEnvironmental Permit\nFire Safety Certificate\nSignage/Advertising Permit"
+   "options": "\nTrade/Business\nFood Safety (FSSAI)\nHealth and Safety\nEnvironmental Permit\nFire Safety Certificate\nSignage/Advertising Permit\nPollution-Consent to Operate (CTO)\nPollution-Consent to Establish (CTE)\nFactory Licence\nStanding Order\nStability Certificate\nBuilding Layout Approval"
   },
   {
    "fieldname": "consultant_name",
@@ -1934,7 +1934,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-26 11:50:17.188579",
+ "modified": "2025-08-13 14:41:53.964218",
  "modified_by": "Administrator",
  "module": "Pinkcity HR",
  "name": "Document Library",
@@ -1954,6 +1954,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

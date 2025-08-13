@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "naming_series:",
  "color": "green",
@@ -16,6 +17,7 @@
   "department",
   "designation",
   "sub_department",
+  "working_location",
   "column_break_6",
   "date_of_joining",
   "category",
@@ -77,9 +79,9 @@
    "options": "Designation"
   },
   {
-   "fetch_from": "employee.custom_sub_department",
    "fieldname": "sub_department",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Sub Department",
    "options": "Sub Department"
   },
@@ -94,12 +96,11 @@
    "label": "Date of Joining"
   },
   {
-   "fetch_from": "employee.occupation",
+   "fetch_from": "employee.employee_category",
    "fieldname": "category",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_standard_filter": 1,
-   "label": "Category",
-   "options": "Employee Group"
+   "label": "Category"
   },
   {
    "fetch_from": "employee.reports_to",
@@ -144,15 +145,20 @@
    "in_filter": 1,
    "in_standard_filter": 1,
    "options": "Document Checklist Table"
+  },
+  {
+   "fieldname": "working_location",
+   "fieldtype": "Link",
+   "label": "Working Location",
+   "options": "Working Location"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-24 11:01:36.522409",
+ "modified": "2025-08-13 16:00:58.552120",
  "modified_by": "Administrator",
  "module": "Pinkcity HR",
  "name": "Document Checklist",
- "name_case": "Title Case",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
@@ -205,6 +211,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
