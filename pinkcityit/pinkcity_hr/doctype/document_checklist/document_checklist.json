@@ -98,9 +98,10 @@
   {
    "fetch_from": "employee.employee_category",
    "fieldname": "category",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_standard_filter": 1,
-   "label": "Category"
+   "label": "Category",
+   "options": "Employee Group"
   },
   {
    "fetch_from": "employee.reports_to",
@@ -155,7 +156,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-13 16:00:58.552120",
+ "modified": "2025-08-14 11:47:02.929591",
  "modified_by": "Administrator",
  "module": "Pinkcity HR",
  "name": "Document Checklist",
