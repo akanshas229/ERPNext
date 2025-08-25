@@ -109,7 +109,9 @@ def get_salary_detail(employee_docname, salary_structure_assignment_docname=None
             
             # if d.abbr == "B" :
                 # salary_component_abbr['B'] = amount
-            # frappe.msgprint(formula)
+            # frappe.msgprint(d.abbr)
+            # frappe.msgprint(str(amount or 'hi22'))
+            # frappe.msgprint(str(data or 'hi33'))
             if amount is not None:
                 if int(amount or 0) > 0:
                     final_data["earnings"].append(
@@ -186,9 +188,27 @@ class Helper:
             )
 
     def eval_condition_and_formula(self, d, data, salary_component_abbr = []):
+        # frappe.msgprint(d.abbr)
+        # frappe.msgprint('hi21')
+            
         try:
+            # frappe.msgprint('hi22')
+            
             condition = d.condition.strip().replace("\n", " ") if d.condition else None
             if condition:
+                if salary_component_abbr :
+                    if salary_component_abbr['B'] :
+                        if d.abbr == "PF" or d.abbr == "EPF" :
+                            if salary_component_abbr['B'] >= 15000 :
+                                condition = condition.replace("B ", f"15000")
+                            else :
+                                condition = condition.replace("B ", f"{salary_component_abbr['B']}")
+                        else :
+                            condition = condition.replace("B ", f"{salary_component_abbr['B']}")
+
+                # frappe.msgprint('hi23')
+                # frappe.msgprint(str(condition))
+                
                 if not frappe.safe_eval(
                     condition,
                     self.whitelisted_globals,
@@ -197,6 +217,8 @@ class Helper:
                     return None
             amount = d.amount
             if d.amount_based_on_formula:
+                # frappe.msgprint('hi24')
+                
                 formula = d.formula.strip().replace("\n", " ") if d.formula else None
 
                 if salary_component_abbr :
@@ -216,23 +238,28 @@ class Helper:
                     formula = formula.replace("total_working_days", "1")
                     formula = formula.replace("payment_days", "1")
 
-                    # frappe.msgprint(formula)
+                # frappe.msgprint(formula)
                 
                 # frappe.msgprint(formula)
                 # if d.abbr == "ESIC" and d.parentfield == "deductions" :
                     
                     
                 if formula:
+                    # frappe.msgprint('hi25')
+
                     try:
+                        # frappe.msgprint('hi23')
+
                         amount = flt(
                             frappe.safe_eval(formula, self.whitelisted_globals, data),
                             d.precision("amount"),
                         )
                         # frappe.msgprint(  str(salary_component_abbr or 'hi22')   )
-                        # frappe.msgprint(d.abbr + " " + str(amount or 'hi22')   )
+                        # frappe.msgprint(d.abbr + " " + str(amount or 'hi26')   )
                         # frappe.msgprint( str(frappe.safe_eval(formula, self.whitelisted_globals, data) or "hi55") )
                     except Exception:
                         amount = 0
+                        # frappe.msgprint(d.abbr + " " + str(amount or 'hi27')   )
                 if amount:
                     data[d.abbr] = amount
 
