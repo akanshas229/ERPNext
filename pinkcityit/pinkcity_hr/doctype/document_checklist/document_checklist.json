@@ -26,6 +26,9 @@
   "ctc_salary",
   "gross_salary",
   "naming_series",
+  "travel_type",
+  "bus_route",
+  "bus_no",
   "documents_checklist_section",
   "document_checklist_table"
  ],
@@ -152,11 +155,30 @@
    "fieldtype": "Link",
    "label": "Working Location",
    "options": "Working Location"
+  },
+  {
+   "fieldname": "travel_type",
+   "fieldtype": "Select",
+   "label": "Travel Type",
+   "options": "\nBus\nOwn Vehicle\nCab\nBoth"
+  },
+  {
+   "depends_on": "eval:doc.bus_route || doc.travel_type == 'Bus'",
+   "fieldname": "bus_no",
+   "fieldtype": "Data",
+   "label": "Bus No"
+  },
+  {
+   "depends_on": "eval:doc.travel_type == 'Bus'",
+   "fieldname": "bus_route",
+   "fieldtype": "Link",
+   "label": "Bus Route",
+   "options": "Bus Route"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-14 11:47:02.929591",
+ "modified": "2025-08-29 10:22:15.722306",
  "modified_by": "Administrator",
  "module": "Pinkcity HR",
  "name": "Document Checklist",
