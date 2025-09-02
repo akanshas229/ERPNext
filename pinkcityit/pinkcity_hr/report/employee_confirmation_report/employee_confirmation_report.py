@@ -35,12 +35,22 @@ def get_columns():
 def get_employees(filters):
 	conditions = get_conditions(filters)
 	return frappe.db.sql(
-		"""select name, employee_name, date_of_birth, date_of_joining, empconfirm_month,
-	branch, department, designation,
-	gender, company from tabEmployee where status = 'Active' %s"""
+		"""select 
+				name, 
+				employee_name, 
+				date_of_birth, 
+				date_of_joining, 
+				DATE_ADD(date_of_joining, INTERVAL 6 MONTH) AS confirmation_month,
+				branch, 
+				department, 
+				designation,
+				gender, 
+				company 
+				from tabEmployee where status = 'Active' %s"""
 		% conditions,
 		as_list=1,
 	)
+
 
 
 def get_conditions(filters):
@@ -60,12 +70,12 @@ def get_conditions(filters):
 			"Nov",
 			"Dec",
 		].index(filters["month"]) + 1
-		conditions += " and month(empconfirm_month) = '%s' " % month
+		conditions += " and MONTH(DATE_ADD(date_of_joining, INTERVAL 6 MONTH)) = '{0}' ".format(month)
 
 	if filters.get("company"):
 		conditions += " and company = '%s' " % filters["company"].replace("'", "\\'")
 
 	if filters.get("year"):
-		conditions += " and year(empconfirm_month) = '%s' " % filters["year"]
+		conditions += " and YEAR(DATE_ADD(date_of_joining, INTERVAL 6 MONTH)) = '{0}' ".format(filters["year"])
 
 	return conditions
